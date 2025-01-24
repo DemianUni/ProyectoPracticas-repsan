@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="{% static 'img/unisanp.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+
+    <!-- Viewer.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/base_sin_boostrap.css' %}" />
+  </head>
+
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-brand" href="{% url 'mapa-procesos' %}"><img src="{% static 'img/logo_blanco.png' %}" alt="..." /></a>
+        <ul class="navbar-nav">
+          <li style="margin-top: 1.3%;" class="nav-item {% if request.resolver_match.url_name == 'atras' %}active{% endif %}">
+            <a style="color: #fff; text-decoration: none;" href="javascript:window.history.back();" title="Volver atrás" class="volver">&#9664;</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'mapa-procesos' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'mapa-procesos' %}"><i class="bi bi-fan"></i> Mapa de Procesos</a>
+          </li>
+          <li class="nav-item dropdown {% if request.resolver_match.url_name in 'procesos,categorias,documentos,manuales' %}active{% endif %}">
+            <a class="nav-link" href="#" onclick="toggleDropdown(event, this.parentElement)"><i class="bi bi-book"></i> Documentación</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="{% url 'documentos' %}"><i class="bi bi-list"></i> Listado maestro de documentos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="{% url 'politica-calidad' %}"><i class="bi bi-list"></i> Política de calidad</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'glosario' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'glosario' %}"><i class="bi bi-journal"></i> Glosario</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" onclick="toggleDropdown(event, this.parentElement)"><i class="bi bi-person-circle"></i> {{ user.first_name }} {{ user.last_name }}</a>
+            <ul style="margin-left: -15px; margin-top: 1%; padding: 6px;" class="dropdown-menu">
+              {% if user.is_authenticated and user.is_superuser %}
+                <li>
+                  <a class="dropdown-item" href="/admin/"><i class="bi bi-person-plus"></i> Panel Administración</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'logout' %}"><i class="bi bi-power"></i> Cerrar sesión</a>
+                </li>
+              {% else %}
+                <li>
+                  <a class="dropdown-item" href="{% url 'logout' %}"><i class="bi bi-power"></i> Cerrar sesión</a>
+                </li>
+              {% endif %}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Contenido -->
+    <main class="main-content" style="background-color: white;">
+      {% block contenido %}
+
+      {% endblock %}
+    </main>
+    <!-- Pie de Pagina -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img src="{% static 'img/logo_blanco.png' %}" alt="Logo UNISANPABLO" style="max-width: 80%; height: auto;" />
+          <p style="font-size: 10pt;">Copyright &copy; 2024 - Todos los derechos reservados Sociedad San Pablo.</p>
+        </div>
+        <div class="footer-section">
+          <h5 style="margin-top: 0; font-size: 24px; margin-bottom: 30px;">Contacto</h5>
+          <p style="margin-bottom: 15px; font-size: 10pt;">Avenida Calle 170 # 8G - 31 - Bogotá Colombia</p>
+          <p style="margin-bottom: 15px; font-size: 10pt;">Teléfono: (+57) 304 632 9604</p>
+          <p style="margin-bottom: 15px; font-size: 10pt;">Email: Ejemplo@unisanpablo.edu.co</p>
+        </div>
+        <div class="footer-section">
+          <h5 style="margin-top: 0; font-size: 24px; margin-bottom: 13px;">Síguenos</h5>
+          <div class="social-icons" style="margin: 15px;">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/unisanpablocol" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/unisanpablo/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/573046329604" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="https://unisanpablo.edu.co/" style="color: #fff; text-decoration: none;" target="_blank">Página web</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Asegúrate de incluir primero jQuery (si no lo tienes ya) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Viewer.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <script>
+      function toggleDropdown(event, parent) {
+        event.preventDefault()
+        const menu = parent.querySelector('.dropdown-menu')
+        const isOpen = menu.style.display === 'block'
+      
+        // Cerrar todos los menús desplegables
+        document.querySelectorAll('.dropdown-menu').forEach((m) => {
+          m.style.display = 'none'
+          m.parentElement.classList.remove('active')
+        })
+      
+        // Abrir o cerrar el menú actual
+        if (!isOpen) {
+          menu.style.display = 'block'
+          parent.classList.add('active')
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdowns = document.querySelectorAll('.dropdown')
+        dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener('mouseleave', function () {
+            if (window.innerWidth > 768) {
+              this.querySelector('.dropdown-menu').style.display = 'none'
+              this.classList.remove('active')
+            }
+          })
+        })
+      
+        // Cerrar menús desplegables al hacer clic fuera de ellos
+        document.addEventListener('click', function (event) {
+          if (!event.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach((menu) => {
+              menu.style.display = 'none'
+              menu.parentElement.classList.remove('active')
+            })
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

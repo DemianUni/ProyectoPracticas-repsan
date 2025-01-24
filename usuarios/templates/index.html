@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_index.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="{% static 'img/unisanp.ico' %}" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login" method="post">
+            <img src="{% static 'img/logo_oficial_fondo_blanco.jpg' %}" alt="logo_unisanpablo" style="max-width: 300px; height: auto; margin-bottom: 20px; margin-top: 15px; margin-left: 5px;" />
+
+            {% csrf_token %}
+
+            <h2 class="form-title" style="color: #8B0000; margin-bottom: 30px;">Iniciar Sesión</h2>
+
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              {{ form.username }}
+            </div>
+
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              {{ form.password }}
+            </div>
+
+            <button type="submit" class="login__submit">
+              <span class="button__text">Ingresar</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape5"></span>
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1" style="text-align: center; vertical-align: middle; padding: 0; padding-top: 50px;"><img src="{% static 'img/Fondo_login.jpg' %}" alt="logo_unisanpablo" style="width: 400px; height: 300px; border-radius: 10px;" /></span>
+          <span class="screen__background__shape screen__background__shape0"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        localStorage.removeItem('modalShown');
+        
+        // Mostrar mensaje de error si existe
+        {% if error %}
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: '{{ error }}',
+                confirmButtonColor: '#FF3030',
+                confirmButtonText: 'Cerrar'
+            });
+        {% endif %}
+    </script>
+  </body>
+</html>

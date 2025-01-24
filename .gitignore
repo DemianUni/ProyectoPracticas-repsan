@@ -1,0 +1,8 @@
+# Ignorar la carpeta env
+env/
+
+# Ignorar la carpeta vscode
+.vscode/
+
+# Ignorar la carpeta history
+.history/
