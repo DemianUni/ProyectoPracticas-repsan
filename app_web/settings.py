@@ -42,6 +42,7 @@ DEBUG = True
 # Para servidor en la red: "10.1.4.96", "localhost"
 # ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = [
+    "*",
     # (IPv4)
     "10.1.4.96",
     # localhost
@@ -294,7 +295,7 @@ JAZZMIN_SETTINGS = {
     # Texto de bienvenida en la pantalla de inicio de sesión
     "welcome_sign": "bienvenido al sitio de administracion del repositorio",
     # Copyright en el pie de página
-    "copyright": "Unisanpablo",
+    "copyright": "Uniminuto",
     # Lista de modelos de administradores para buscar desde la barra de búsqueda
     # Si se omite, la barra de búsqueda no aparecerá
     # Si quieres usar un único campo de búsqueda, puedes usar solo una cadena
