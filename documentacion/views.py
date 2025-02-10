@@ -505,25 +505,8 @@ def combined_view(request, document_id, model_name, image_form, formatos_form):
         formatos_data.append(
             {"formato": formato, "file_name": file_name, "url_formato": url_formato}
         )
-
+        # este es el que no se diferencia
     if request.method == "POST":
-        # Actualización de archivo
-        if "file" in request.FILES:
-            nuevo_archivo = request.FILES["file"]
-            if document.file:
-                document.file.storage.delete(
-                    document.file.name
-                )  # Eliminar archivo anterior
-            document.file = nuevo_archivo
-            document.save()
-            return redirect(
-                "ver_pdf",
-                id=document_id,
-                model_name=model_name,
-                image_form=image_form,
-                formatos_form=formatos_form,
-            )
-
         # Procesar formulario de imagen
         if "image_submit" in request.POST:
             image_form_instance = image_form_class(request.POST, request.FILES)
@@ -543,13 +526,15 @@ def combined_view(request, document_id, model_name, image_form, formatos_form):
         # Procesar formulario de formatos
         if "formatos_submit" in request.POST:
             print("Formulario de formatos recibido")
-            print("POST data:", request.POST)
+            print("POST data completa:", dict(request.POST))
             print("FILES data:", request.FILES)
+
             formatos_form_instance = formatos_form_class(request.POST, request.FILES)
 
-            print("Formulario es válido:", formatos_form_instance.is_valid())
+            # Depuración detallada de errores
             if not formatos_form_instance.is_valid():
-                print("Errores del formulario:", formatos_form_instance.errors)
+                for field, errors in formatos_form_instance.errors.items():
+                    print(f"Error en campo {field}: {errors}")
 
             if formatos_form_instance.is_valid():
                 messages.success(request, "El formato se ha cargado correctamente.")
@@ -563,6 +548,22 @@ def combined_view(request, document_id, model_name, image_form, formatos_form):
                     image_form=image_form,
                     formatos_form=formatos_form,
                 )
+        # Actualización de archivo
+        if "file" in request.FILES:
+            nuevo_archivo = request.FILES["file"]
+            if document.file:
+                document.file.storage.delete(
+                    document.file.name
+                )  # Eliminar archivo anterior
+            document.file = nuevo_archivo
+            document.save()
+            return redirect(
+                "ver_pdf",
+                id=document_id,
+                model_name=model_name,
+                image_form=image_form,
+                formatos_form=formatos_form,
+            )
 
     return render(
         request,

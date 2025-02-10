@@ -12,6 +12,16 @@ urlpatterns = [
         name="lista_documentos_especificos",
     ),
     path(
+        "buscar-requisitos-legales-normativos-epecificos/<str:model_name>/",
+        views.lista_requisitos_legales_normativos_epecificos,
+        name="lista_requisitos_legales_normativos_epecificos",
+    ),
+    path(
+        "buscar-requisitos-necesidades-partes-interesadas-epecificos/<str:model_name>/",
+        views.lista_requisitos_necesidades_partes_interesadas_epecificos,
+        name="lista_requisitos_necesidades_partes_interesadas_epecificos",
+    ),
+    path(
         "buscar-indicadores-especificos/<str:model_name>/",
         views.lista_indicadores_especificos,
         name="lista_indicadores_especificos",

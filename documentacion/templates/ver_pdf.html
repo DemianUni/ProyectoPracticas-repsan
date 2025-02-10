@@ -58,11 +58,11 @@
   <!-- Botón para actualizar el archivo PDF -->
   {% if user.is_authenticated %}
     <h3>Actualizar Documento</h3>
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" id="update-document-form">
       {% csrf_token %}
       <label for="id_file">Nuevo Documento:</label>
       <input type="file" name="file" id="id_file" required />
-      <button type="submit" class="btn btn-gradient">Actualizar Procedimiento</button>
+      <button type="submit" id="update-document-btn" class="btn btn-gradient">Actualizar Procedimiento</button>
     </form>
   {% endif %}
 
@@ -355,8 +355,13 @@
         // Copiar el texto del párrafo editable3 al campo de Caracterización
         caracterizacionField.value = editable5.textContent || editable5.innerText
       }
-      caracterizacionField.hidden = true // Esto lo oculta pero sigue enviándose con el formulario
-      caracterizacionLabel.hidden = true // Oculta la etiqueta
+      if (caracterizacionField) {
+        caracterizacionField.style.display = 'none' // Oculta el campo correctamente
+      }
+    
+      if (caracterizacionLabel) {
+        caracterizacionLabel.style.display = 'none' // Oculta el label correctamente
+      }
     })
     
     function showLoadingModal() {

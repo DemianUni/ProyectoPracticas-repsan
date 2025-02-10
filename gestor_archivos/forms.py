@@ -3,6 +3,9 @@ from gestor_archivos.models import (
     # Modelos Padres
     Document,
     DiagramasProcedimientos,
+    # Globales
+    RequisitosLegalesNormativos_globales,
+    RequisitosNecesidadesPartesInteresadas_globales,
     # Documentos asociados
     Document_admisiones_registro_control,
     Document_gestion_documental,
@@ -104,6 +107,34 @@ class DocumentForm(forms.ModelForm):
             widget=forms.TextInput(attrs={"class": "form-control"}),
             label="caracterizacion",
         )
+
+
+# Archivos globales caracterizacion REQUISITOS LEGALES Y NORMATIVOS ///////
+
+
+class RequisitosLegalesNormativos_globales(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = RequisitosLegalesNormativos_globales  # Especifica el nuevo modelo
+        fields = (
+            DocumentForm.Meta.fields
+        )  # Usa los mismos campos que el formulario base
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+# Archivos globales caracterizacion REQUISITOS Y NECESIDADES DE LAS PARTES INTERESADAS ////////
+
+
+class RequisitosNecesidadesPartesInteresadas_globales(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = RequisitosNecesidadesPartesInteresadas_globales  # Especifica el nuevo modelo
+        fields = (
+            DocumentForm.Meta.fields
+        )  # Usa los mismos campos que el formulario base
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
 # Documentos asociados especificos caracterizacion //////

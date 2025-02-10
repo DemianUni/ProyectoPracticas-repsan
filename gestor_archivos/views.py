@@ -187,6 +187,48 @@ def lista_documentos_especificos(request, model_name):
         return HttpResponse(f"Error: {str(e)}", status=500)
 
 
+# LISTA TABLA ESPECIFICA globales
+@never_cache
+@login_required_custom
+def lista_requisitos_legales_normativos_epecificos(request, model_name):
+    try:
+        # Obtener el modelo usando el nombre
+        DocumentModel = apps.get_model("gestor_archivos", model_name)
+
+        # Obtener todos los documentos del modelo específico
+        documentos = DocumentModel.objects.all()
+
+        return render(
+            request,
+            "lista_requisitos_legales_normativos_epecificos.html",
+            {"documentos": documentos},
+        )
+    except Exception as e:
+        # Solo retorna el mensaje de error en lugar de renderizar una página HTML
+        return HttpResponse(f"Error: {str(e)}", status=500)
+
+
+# LISTA TABLA ESPECIFICA globales
+@never_cache
+@login_required_custom
+def lista_requisitos_necesidades_partes_interesadas_epecificos(request, model_name):
+    try:
+        # Obtener el modelo usando el nombre
+        DocumentModel = apps.get_model("gestor_archivos", model_name)
+
+        # Obtener todos los documentos del modelo específico
+        documentos = DocumentModel.objects.all()
+
+        return render(
+            request,
+            "lista_requisitos_necesidades_partes_interesadas_epecificos.html",
+            {"documentos": documentos},
+        )
+    except Exception as e:
+        # Solo retorna el mensaje de error en lugar de renderizar una página HTML
+        return HttpResponse(f"Error: {str(e)}", status=500)
+
+
 # LISTA TABLA ESPECIFICA INDICADORES
 @never_cache
 @login_required_custom

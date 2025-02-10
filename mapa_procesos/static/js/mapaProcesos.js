@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: `¡Bienvenido, ${window.USER_NAME}!`,
             html: `
             <p>Te damos la bienvenida al Repositorio UNISANPABLO, un espacio diseñado para almacenar y gestionar los procesos clave que sustentan nuestra institución.</p>
-            <p>Te invitamos a explorar nuestro Mapa de Procesos, donde podrás entender cómo interactúan las distintas áreas misionales, de apoyo y estratégicas, y cómo cada una contribuye al éxito y crecimiento de UNISANPABLO.</p>
+            <p>Te invitamos a explorar nuestro Mapa de Procesos, donde podrás entender cómo interactúan los distintos procesos misionales, de apoyo y estratégicas, y cómo cada una contribuye al éxito y crecimiento de UNISANPABLO.</p>
             <p>¡Bienvenido a un entorno de eficiencia y excelencia!</p>
         `,
             confirmButtonText: 'Continuar',

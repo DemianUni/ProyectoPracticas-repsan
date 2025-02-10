@@ -37,7 +37,7 @@ urlpatterns = [
     ########################################################################
     ###============
     path(
-        "mapa-procesos/investigacion-pertinente",
+        "mapa-procesos/investigacion-pertinente/",
         views.investigacion_pertinente,
         name="investigacion-pertinente",
     ),
@@ -51,7 +51,7 @@ urlpatterns = [
     ########################################################################
     ###============
     path(
-        "mapa-procesos/proyeccion-social-impacto",
+        "mapa-procesos/proyeccion-social-impacto/",
         views.proyeccion_social_impacto,
         name="proyeccion-social-impacto",
     ),
@@ -98,7 +98,7 @@ urlpatterns = [
     ########################################################################
     ###============
     path(
-        "mapa-procesos/gestion-administrativa-financiera",
+        "mapa-procesos/gestion-administrativa-financiera/",
         views.gestion_administrativa_financiera,
         name="gestion-administrativa-financiera",
     ),
@@ -111,21 +111,21 @@ urlpatterns = [
     ),
     ############################################################################
     path(
-        "mapa-procesos/gestion-administrativa-financiera/gestion-documental",
+        "mapa-procesos/gestion-administrativa-financiera/gestion-documental/",
         views.gestion_documental,
         name="gestion-documental",
     ),
     ############################################################################
     ###============
     path(
-        "mapa-procesos/gestion-mercadeo-admisiones",
+        "mapa-procesos/gestion-mercadeo-admisiones/",
         views.gestion_mercadeo_admisiones,
         name="gestion-mercadeo-admisiones",
     ),
     # ==============
     ###########################################################################
     path(
-        "mapa-procesos/gestion-mercadeo-admisiones/admisiones-registro-control",
+        "mapa-procesos/gestion-mercadeo-admisiones/admisiones-registro-control/",
         views.admisiones_registro_control,
         name="admisiones-registro-control",
     ),
@@ -153,7 +153,7 @@ urlpatterns = [
     # DIRECCIONAMINETO ESTRATEGICO
     ###============
     path(
-        "mapa-procesos/talento-humano-bienestar",
+        "mapa-procesos/talento-humano-bienestar/",
         views.talento_humano_bienestar,
         name="talento-humano-bienestar",
     ),
@@ -179,7 +179,7 @@ urlpatterns = [
     ############################################################################
     ###============
     path(
-        "mapa-procesos/calidad-integral",
+        "mapa-procesos/calidad-integral/",
         views.calidad_integral,
         name="calidad-integral",
     ),
@@ -217,7 +217,7 @@ urlpatterns = [
     ############################################################################
     ###============
     path(
-        "mapa-procesos/relaciones-internacionales",
+        "mapa-procesos/relaciones-internacionales/",
         views.relaciones_internacionales,
         name="relaciones-internacionales",
     ),
@@ -237,7 +237,7 @@ urlpatterns = [
     ############################################################################
     ###============
     path(
-        "mapa-procesos/planeacion-estrategica",
+        "mapa-procesos/planeacion-estrategica/",
         views.planeacion_estrategica,
         name="planeacion-estrategica",
     ),

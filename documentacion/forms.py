@@ -318,6 +318,22 @@ class DocumentImage_gestion_desarrollo_humano(DocumentImageAsociada):
 
 
 class DocumentFormatosAsociados(forms.ModelForm):
+    def clean(self):
+        cleaned_data = super().clean()
+
+        # Depuración de campos
+        for field, value in cleaned_data.items():
+            print(f"Campo {field}: {value}")
+
+        # Validaciones adicionales
+        if not cleaned_data.get("title"):
+            self.add_error("title", "El título es obligatorio")
+
+        if not cleaned_data.get("codigo"):
+            self.add_error("codigo", "El código es obligatorio")
+
+        return cleaned_data
+
     class Meta:
         model = DocumentFormatosAsociados
         fields = ["title", "codigo", "caracterizacion", "procedimiento", "file"]

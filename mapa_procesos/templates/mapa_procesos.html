@@ -17,6 +17,46 @@
 
   <main>
     <h1 class="mb-4" style="font-size: 3.5rem; text-align: center; font-family: 'Signika Negative', sans-serif; font-style: italic;">MAPA DE PROCESOS</h1>
+    <!-- Videos Inicio -->
+    <div class="sidebar pb-4" style="position: fixed; top: -30px; left: 0; width: 280px; z-index: 9999; background-color: #fff; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); padding: 10px;">
+      <div class="accordion" id="tutorialAccordion">
+        <!-- Solo los 4 videos -->
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#videosadmin"><i class="bi bi-play-circle me-2"></i>Videos</button></h2>
+          <div id="videosadmin" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul class="tutorial-list">
+                <li class="tutorial-item">
+                  <a href="#" data-video-url="https://youtube.com/embed/EewRQsE2frw">
+                    <i class="bi bi-bar-chart-line"></i>
+                    Macroproceso Estratégico
+                  </a>
+                </li>
+                <li class="tutorial-item">
+                  <a href="#" data-video-url="https://youtube.com/embed/jO5G2rXDhiI">
+                    <i class="bi bi-shield-lock"></i>
+                    Por qué es importante SGC
+                  </a>
+                </li>
+                <li class="tutorial-item">
+                  <a href="#" data-video-url="https://youtube.com/embed/aKDGxiW1Tn8">
+                    <i class="bi bi-gear"></i>
+                    Macroproceso Misional
+                  </a>
+                </li>
+                <li class="tutorial-item">
+                  <a href="#" data-video-url="https://youtube.com/embed/CFZIFXSC5fc">
+                    <i class="bi bi-briefcase"></i>
+                    Macroproceso de apoyo
+                  </a>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Mapa Procesos -->
     <div id="svgContainer" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 0; padding: 0;">
       <object type="image/svg+xml" data="{% static 'svg/mapa_de_procesosUS.svg' %}" style="width: 85%; height: auto; border: none;"></object>

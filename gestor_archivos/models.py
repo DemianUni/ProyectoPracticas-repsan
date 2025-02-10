@@ -51,6 +51,28 @@ class Document(models.Model):
         unique_together = ["codigo"]
 
 
+# Archivos globales caracterizacion REQUISITOS LEGALES Y NORMATIVOS ///////
+
+
+class RequisitosLegalesNormativos_globales(Document):
+    class Meta:
+        db_table = (
+            # REQUISITOS LEGALES Y NORMATIVOS
+            "RequisitosLegalesNormativos_globales"  # Nombre de la tabla en la base de datos
+        )
+
+
+# Archivos globales caracterizacion REQUISITOS Y NECESIDADES DE LAS PARTES INTERESADAS ////////
+
+
+class RequisitosNecesidadesPartesInteresadas_globales(Document):
+    class Meta:
+        db_table = (
+            # REQUISITOS Y NECESIDADES DE LAS PARTES INTERESADAS
+            "RequisitosNecesidadesPartesInteresadas_globales"  # Nombre de la tabla en la base de datos
+        )
+
+
 # Documentos asociados especificos caracterizacion ///////
 
 
