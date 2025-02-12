@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function cargarDocumentos() {
         console.log('Cargando requisitos legales normativos para:', "RequisitosNecesidadesPartesInteresadas_globales")
-        fetch(`/buscar-requisitos-legales-normativos-epecificos/RequisitosNecesidadesPartesInteresadas_globales/`)
+        fetch(`/buscar-requisitos-necesidades-partes-interesadas-epecificos/RequisitosNecesidadesPartesInteresadas_globales/`)
             .then((response) => {
                 console.log('Respuesta del servidor:', response)
                 if (!response.ok) {

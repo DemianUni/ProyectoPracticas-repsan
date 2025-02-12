@@ -8,6 +8,7 @@ from .models import (
     # diagramas
     DocumentImage_admisiones_registro_control,
     DocumentImage_gestion_documental,
+    DocumentImage_gestion_cartera,
     DocumentImage_gestion_recursos_financieros,
     DocumentImage_gestion_contractual,
     DocumentImage_gestion_juridica,
@@ -34,6 +35,7 @@ from .models import (
     # formatos
     DocumentDoAs_admisiones_registro_control_FoAs,
     DocumentDoAs_gestion_documental_FoAs,
+    DocumentDoAs_gestion_cartera_FoAs,
     DocumentDoAs_gestion_recursos_financieros_FoAs,
     DocumentDoAs_gestion_contractual_FoAs,
     DocumentDoAs_gestion_juridica_FoAs,
@@ -84,6 +86,15 @@ class DocumentImage_admisiones_registro_control(DocumentImageAsociada):
 class DocumentImage_gestion_documental(DocumentImageAsociada):
     class Meta(DocumentImageAsociada.Meta):
         model = DocumentImage_gestion_documental
+        fields = DocumentImageAsociada.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentImage_gestion_cartera(DocumentImageAsociada):
+    class Meta(DocumentImageAsociada.Meta):
+        model = DocumentImage_gestion_cartera
         fields = DocumentImageAsociada.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -358,6 +369,15 @@ class DocumentDoAs_admisiones_registro_control_FoAs(DocumentFormatosAsociados):
 class DocumentDoAs_gestion_documental_FoAs(DocumentFormatosAsociados):
     class Meta(DocumentFormatosAsociados.Meta):
         model = DocumentDoAs_gestion_documental_FoAs
+        fields = DocumentFormatosAsociados.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentDoAs_gestion_cartera_FoAs(DocumentFormatosAsociados):
+    class Meta(DocumentFormatosAsociados.Meta):
+        model = DocumentDoAs_gestion_cartera_FoAs
         fields = DocumentFormatosAsociados.Meta.fields
 
     def __init__(self, *args, **kwargs):

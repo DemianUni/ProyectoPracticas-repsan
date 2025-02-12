@@ -105,6 +105,12 @@ urlpatterns = [
     # ==============
     ############################################################################
     path(
+        "mapa-procesos/gestion-administrativa-financiera/gestion-cartera/",
+        views.gestion_cartera,
+        name="gestion-cartera",
+    ),
+    ############################################################################
+    path(
         "mapa-procesos/gestion-administrativa-financiera/gestion-recursos-financieros/",
         views.gestion_recursos_financieros,
         name="gestion-recursos-financieros",

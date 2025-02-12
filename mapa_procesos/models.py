@@ -18,6 +18,14 @@ class EC_gestion_documental(models.Model):
         return self.identifier
 
 
+class EC_gestion_cartera(models.Model):
+    identifier = models.CharField(max_length=100, unique=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.identifier
+
+
 class EC_gestion_recursos_financieros(models.Model):
     identifier = models.CharField(max_length=100, unique=True)
     content = models.TextField()

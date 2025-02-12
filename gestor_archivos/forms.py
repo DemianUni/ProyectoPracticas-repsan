@@ -9,6 +9,7 @@ from gestor_archivos.models import (
     # Documentos asociados
     Document_admisiones_registro_control,
     Document_gestion_documental,
+    Document_gestion_cartera,
     Document_gestion_recursos_financieros,
     Document_gestion_contractual,
     Document_gestion_juridica,
@@ -35,6 +36,7 @@ from gestor_archivos.models import (
     # Diagramas procedimientos
     DiPr_admisiones_registro_control,
     DiPr_gestion_documental,
+    DiPr_gestion_cartera,
     DiPr_gestion_recursos_financieros,
     DiPr_gestion_contractual,
     DiPr_gestion_juridica,
@@ -61,6 +63,7 @@ from gestor_archivos.models import (
     # Indicadores
     Indicadores_admisiones_registro_control,
     Indicadores_gestion_documental,
+    Indicadores_gestion_cartera,
     Indicadores_gestion_recursos_financieros,
     Indicadores_gestion_contractual,
     Indicadores_gestion_juridica,
@@ -154,6 +157,15 @@ class Document_admisiones_registro_control(DocumentForm):
 class Document_gestion_documental(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Document_gestion_documental
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Document_gestion_cartera(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Document_gestion_cartera
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -384,6 +396,15 @@ class Indicadores_admisiones_registro_control(DocumentForm):
 class Indicadores_gestion_documental(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Indicadores_gestion_documental
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Indicadores_gestion_cartera(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Indicadores_gestion_cartera
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -630,6 +651,15 @@ class DiPr_admisiones_registro_control_form(DiagramasProcedimientos):
 class DiPr_gestion_documental_form(DiagramasProcedimientos):
     class Meta(DiagramasProcedimientos.Meta):
         model = DiPr_gestion_documental
+        fields = DiagramasProcedimientos.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DiPr_gestion_cartera_form(DiagramasProcedimientos):
+    class Meta(DiagramasProcedimientos.Meta):
+        model = DiPr_gestion_cartera
         fields = DiagramasProcedimientos.Meta.fields
 
     def __init__(self, *args, **kwargs):

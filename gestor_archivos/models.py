@@ -89,6 +89,11 @@ class Document_gestion_documental(Document):
         db_table = "document_gestion_documental"
 
 
+class Document_gestion_cartera(Document):
+    class Meta:
+        db_table = "document_gestion_cartera"
+
+
 class Document_gestion_recursos_financieros(Document):
     class Meta:
         db_table = "document_gestion_recursos_financieros"
@@ -218,6 +223,11 @@ class Indicadores_admisiones_registro_control(Document):
 class Indicadores_gestion_documental(Document):
     class Meta:
         db_table = "Indicadores_gestion_documental"
+
+
+class Indicadores_gestion_cartera(Document):
+    class Meta:
+        db_table = "Indicadores_gestion_cartera"
 
 
 class Indicadores_gestion_recursos_financieros(Document):
@@ -365,6 +375,11 @@ class DiPr_admisiones_registro_control(DiagramasProcedimientos):
 class DiPr_gestion_documental(DiagramasProcedimientos):
     class Meta:
         db_table = "DiPr_gestion_documental"
+
+
+class DiPr_gestion_cartera(DiagramasProcedimientos):
+    class Meta:
+        db_table = "DiPr_gestion_cartera"
 
 
 class DiPr_gestion_recursos_financieros(DiagramasProcedimientos):

@@ -399,6 +399,20 @@ def gestion_administrativa_financiera(request):
 ##############################################################
 @never_cache
 @login_required_custom
+def gestion_cartera(request):
+    context = {
+        "is_superuser": request.user.is_authenticated and request.user.is_superuser,
+    }
+    return render(
+        request,
+        "procesos/gestion_administrativa_financiera/gestion_cartera.html",
+        context,
+    )
+
+
+##############################################################
+@never_cache
+@login_required_custom
 def gestion_recursos_financieros(request):
     context = {
         "is_superuser": request.user.is_authenticated and request.user.is_superuser,

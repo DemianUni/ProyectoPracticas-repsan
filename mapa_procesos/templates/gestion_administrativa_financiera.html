@@ -9,7 +9,7 @@
 {% block contenido %}
   <style>
     /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 1205px) {
+    @media screen and (max-width: 1349px) {
       .left-side,
       .right-side {
         width: 50%;
@@ -33,7 +33,7 @@
     
       .right-side .image-container {
         margin: 20px 0 !important;
-        width: 37% !important;
+        width: 30% !important;
         max-width: 350px;
       }
     
@@ -142,6 +142,13 @@
             <img src="{% static 'img/svg/librito1.png' %}?version=2" class="interactive-image zoomable-image" />
             <div class="text-overlay">
               GESTIÓN <br /> DOCUMENTAL
+            </div>
+          </div>
+
+          <div class="image-container zoomable-container element3" style="margin-left: 250px; margin-top: 20px; cursor: pointer;" onclick="window.location.href='{% url 'gestion-cartera' %}'">
+            <img src="{% static 'img/svg/librito1.png' %}?version=2" class="interactive-image zoomable-image" />
+            <div class="text-overlay">
+              GESTIÓN CARTERA
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ from django.db import models
 from gestor_archivos.models import (
     Document_admisiones_registro_control,
     Document_gestion_documental,
+    Document_gestion_cartera,
     Document_gestion_recursos_financieros,
     Document_gestion_contractual,
     Document_gestion_juridica,
@@ -62,6 +63,17 @@ class DocumentImage_gestion_documental(DocumentAsociadosDiagramasFlujo):
 
     class Meta:
         db_table = "DocumentImage_gestion_documental"
+
+
+class DocumentImage_gestion_cartera(DocumentAsociadosDiagramasFlujo):
+    document = models.ForeignKey(
+        Document_gestion_cartera,
+        on_delete=models.CASCADE,
+        related_name="DocumentImage_gestion_cartera",
+    )
+
+    class Meta:
+        db_table = "DocumentImage_gestion_cartera"
 
 
 class DocumentImage_gestion_recursos_financieros(DocumentAsociadosDiagramasFlujo):
@@ -360,6 +372,17 @@ class DocumentDoAs_gestion_documental_FoAs(DocumentFormatosAsociados):
 
     class Meta:
         db_table = "DocumentDoAs_gestion_documental_FoAs"
+
+
+class DocumentDoAs_gestion_cartera_FoAs(DocumentFormatosAsociados):
+    document = models.ForeignKey(
+        Document_gestion_cartera,
+        on_delete=models.CASCADE,
+        related_name="DocumentDoAs_gestion_cartera_FoAs",
+    )
+
+    class Meta:
+        db_table = "DocumentDoAs_gestion_cartera_FoAs"
 
 
 class DocumentDoAs_gestion_recursos_financieros_FoAs(DocumentFormatosAsociados):
