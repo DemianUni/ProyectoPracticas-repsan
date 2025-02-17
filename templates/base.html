@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <link rel="shortcut icon" href="{% static 'img/unisanp.ico' %}" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/base_anim.css' %}" />
-    <style></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -128,11 +128,21 @@
     <footer class="footer mt-auto footer-dark" style="min-height: 80px; padding: 10px 0; color: #fff;">
       <div class="container-fluid">
         <div class="row p-2">
-          <div class="col-md-4 text-center ms-3 mt-1">
-            <h1 style="font-family: 'Playfair Display', serif; font-size: 1.5em; margin-bottom: 0;">innproc</h1>
-            <img src="{% static 'img/logotipo.png' %}" alt="Logo UNISANPABLO" style="max-width: 80%; height: auto;" />
-            <p style="font-size: 0.8em; padding-top: 10px">Copyright &copy; 2025 - Todos los derechos reservados Uniminuto.</p>
+          <div class="col-md-4 d-flex flex-column align-items-center text-center gap-3">
+            <h5 style="font-size: 1.5em; margin-bottom: 7px;">Innovación y Desarrollo de Uniminuto</h5>
+
+            <div class="d-flex align-items-center justify-content-center gap-3">
+              <div class="flex-grow-1">
+                <img src="{% static 'img/logo2.ico' %}" alt="Logo UNISANPABLO" style="max-width: 55%; height: auto; border-radius: 10px;" />
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 1em; margin-bottom: 0; margin-top: 7px;">INNPROC</h2>
+              </div>
+              <div class="flex-grow-1">
+                <img src="{% static 'img/logotipo.png' %}" alt="Logo UNISANPABLO" style="max-width: 75%; height: auto;" />
+                <p class="mt-2" style="font-size: 0.8em;">Copyright &copy; 2025 - Todos los derechos reservados Uniminuto.</p>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-4 text-center">
             <h5 style="font-size: 1.5em;">Contacto</h5>
             <p style="font-size: 0.8em; padding-top: 20px">Avenida Calle 170 # 8G - 31 - Bogotá Colombia</p>

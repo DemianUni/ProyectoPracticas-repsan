@@ -1,6 +1,19 @@
 from django.db import models
 
 
+class VideoTutorial(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Título")
+    icon_class = models.CharField(max_length=50, verbose_name="Clase del ícono")
+    video_id = models.CharField(max_length=20, verbose_name="ID del Video")
+
+    class Meta:
+        verbose_name = "Tutorial"
+        verbose_name_plural = "Tutoriales"
+
+    def __str__(self):
+        return self.title
+
+
 # EditableContent admisiones_registro_control
 class EC_admisiones_registro_control(models.Model):
     identifier = models.CharField(max_length=100, unique=True)
@@ -147,6 +160,22 @@ class EC_aseguramiento_calidad_procesos(models.Model):
 
 
 class EC_auditorias(models.Model):
+    identifier = models.CharField(max_length=100, unique=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.identifier
+
+
+class EC_evaluacion_control(models.Model):
+    identifier = models.CharField(max_length=100, unique=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.identifier
+
+
+class EC_gestion_integrada(models.Model):
     identifier = models.CharField(max_length=100, unique=True)
     content = models.TextField()
 

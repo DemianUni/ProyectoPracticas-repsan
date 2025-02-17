@@ -52,7 +52,8 @@
       .right-side .element2,
       .right-side .element3,
       .right-side .element4,
-      .right-side .element5 {
+      .right-side .element5,
+      .right-side .element6, {
         margin-left: 20px !important;
         margin-right: 0 !important;
       }
@@ -146,14 +147,24 @@
             <div class="text-overlay">GESTIÓN DEL REGISTRO CALIFICADO</div>
           </div>
 
-          <div class="image-container zoomable-container element4" style="margin-left: 140px; cursor: pointer;" onclick="window.location.href='{% url 'aseguramiento-calidad-procesos' %}'">
+          <div class="image-container zoomable-container element4" style="margin-left: 140px; margin-right: 30px; cursor: pointer;" onclick="window.location.href='{% url 'aseguramiento-calidad-procesos' %}'">
             <img src="{% static 'img/svg/piezaderecha.png' %}?version=2" class="interactive-image zoomable-image" />
             <div class="text-overlay">ASEGURAMIENTO DE LA CALIDAD DE PROCESOS</div>
           </div>
 
-          <div class="image-container zoomable-container element5" style="margin-top: 40px; margin-left: 178px; cursor: pointer;" onclick="window.location.href='{% url 'aseguramiento-calidad-academica' %}'">
+          <div class="image-container zoomable-container element5" style="margin-top: 40px; cursor: pointer;" onclick="window.location.href='{% url 'aseguramiento-calidad-academica' %}'">
             <img src="{% static 'img/svg/piezaderecha.png' %}?version=2" class="interactive-image zoomable-image" />
             <div class="text-overlay">ASEGURAMIENTO DE LA CALIDAD ACADÉMICA</div>
+          </div>
+
+          <div class="image-container zoomable-container element6" style="margin-left: 140px; margin-right: 30px; cursor: pointer;" onclick="window.location.href='{% url 'evaluacion-control' %}'">
+            <img src="{% static 'img/svg/piezaderecha.png' %}?version=2" class="interactive-image zoomable-image" />
+            <div class="text-overlay">EVALUACIÓN Y CONTROL</div>
+          </div>
+
+          <div class="image-container zoomable-container element5" style="margin-top: 40px; cursor: pointer;" onclick="window.location.href='{% url 'gestion-integrada' %}'">
+            <img src="{% static 'img/svg/piezaderecha.png' %}?version=2" class="interactive-image zoomable-image" />
+            <div class="text-overlay">GESTIÓN INTEGRADA</div>
           </div>
         </div>
       </div>

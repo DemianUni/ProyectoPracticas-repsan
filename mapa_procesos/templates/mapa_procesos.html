@@ -22,34 +22,43 @@
       <div class="accordion" id="tutorialAccordion">
         <!-- Solo los 4 videos -->
         <div class="accordion-item bg-transparent">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#videosadmin"><i class="bi bi-play-circle me-2"></i>Videos</button></h2>
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#videosadmin"><i class="fa-solid fa-video"></i>&nbsp;&nbsp;&nbsp;Introducción al Sistema</button></h2>
           <div id="videosadmin" class="accordion-collapse collapse">
             <div class="accordion-body">
               <ul class="tutorial-list">
                 <li class="tutorial-item">
                   <a href="#" data-video-url="https://youtube.com/embed/EewRQsE2frw">
-                    <i class="bi bi-bar-chart-line"></i>
-                    Macroproceso Estratégico
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" stroke-width="2">
+                      <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
+                      <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
+                      <path d="M9.7 17l4.6 0"></path>
+                    </svg>Macroproceso Estratégico
                   </a>
                 </li>
                 <li class="tutorial-item">
                   <a href="#" data-video-url="https://youtube.com/embed/jO5G2rXDhiI">
-                    <i class="bi bi-shield-lock"></i>
-                    Por qué es importante SGC
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" stroke-width="2">
+                      <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path> <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path> <path d="M9 14l2 2l4 -4"></path>
+                    </svg>Por qué es importante SGC
                   </a>
                 </li>
                 <li class="tutorial-item">
                   <a href="#" data-video-url="https://youtube.com/embed/aKDGxiW1Tn8">
-                    <i class="bi bi-gear"></i>
-                    Macroproceso Misional
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" stroke-width="2">
+                      <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                      <path d="M12 7a5 5 0 1 0 5 5"></path>
+                      <path d="M13 3.055a9 9 0 1 0 7.941 7.945"></path>
+                      <path d="M15 6v3h3l3 -3h-3v-3z"></path>
+                      <path d="M15 9l-3 3"></path>
+                    </svg>Macroproceso Misional
                   </a>
                 </li>
                 <li class="tutorial-item">
                   <a href="#" data-video-url="https://youtube.com/embed/CFZIFXSC5fc">
-                    <i class="bi bi-briefcase"></i>
+                    <i class="fa-solid fa-gears"></i>
                     Macroproceso de apoyo
                   </a>
-                </li> 
+                </li>
               </ul>
             </div>
           </div>
@@ -65,79 +74,58 @@
     <div class="container mt-2"></div>
     <h1 class="text-center mb-5" style="font-size: 3.5rem;"><i class="bi bi-play-btn-fill me-2"></i>Tutoriales</h1>
     <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+      {% if user.is_authenticated and user.is_superuser %}
+      <!-- Formulario para agregar/editar -->
+      <div class="sidebar pb-4">
+        <h4 class="text-center" style="margin-bottom: 15px;"><i class="bi bi-plus-circle-dotted me-2"></i> Agregar Video</h4>
+
+        <form method="post" class="p-3 bg-dark text-white rounded shadow">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="id_title" class="form-label">Título del Video</label>
+            <input type="text" name="title" id="id_title" class="form-control" placeholder="Ejemplo: Cambiar ontraseña" />
+          </div>
+          <div class="mb-3">
+            <label for="id_video_id" class="form-label">ID de YouTube</label>
+            <input type="text" name="video_id" id="id_video_id" class="form-control" placeholder="Ejemplo: dQw4w9WgXcQ" />
+            <small class="form-text text-muted">Copie la parte final de la URL del video.</small>
+          </div>
+          <div class="mb-3">
+            <label for="id_icon_class" class="form-label">Ícono (Bootstrap Icons y Font Awesome)</label>
+            <input type="text" name="icon_class" id="id_icon_class" class="form-control" placeholder="Ejemplo: bi bi-play-circle" />
+          </div>
+          <button type="submit" class="btn btn-primary w-100"><i class="bi bi-save me-2"></i>Guardar Video</button>
+        </form>
+      </div>
+      {% endif %}
+
       <!-- Usuario Consultas -->
       <div class="sidebar pb-4">
         <h4 class="text-center"><i class="bi bi-search me-2"></i>Consultas</h4>
         <div class="accordion" id="tutorialAccordion">
-          <!-- Cadena de Valor -->
           <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cadenavalorconsultas"><i class="bi bi-diagram-3 me-2"></i>Cadena de Valor</button></h2>
-            <div id="cadenavalorconsultas" class="accordion-collapse collapse">
-              <div class="accordion-body">
+            <div class="accordion-body">
+              {% if tutorials %}
                 <ul class="tutorial-list">
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/oSJgFVkOw1Q">
-                      <i class="bi bi-map"></i>
-                      Exploración
-                    </a>
-                  </li>
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/cXLWuZaKUDo">
-                      <i class="bi bi-eye-fill"></i>
-                      Ver Proceso
-                    </a>
-                  </li>
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/ejemplo3">
-                      <i class="bi bi-eye"></i>
-                      Ver Procedimiento
-                    </a>
-                  </li>
+                  {% for tutorial in tutorials %}
+                    <li class="tutorial-item d-flex justify-content-between align-items-center">
+                      <a href="#" data-video-url="https://youtube.com/embed/{{ tutorial.video_id }}"><i class="{{ tutorial.icon_class }}"></i> {{ tutorial.title }}</a>
+                      <form method="post" action="{% url 'eliminar_tutorial' tutorial.id %}" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-sm"><i class="bi bi-trash"></i></button>
+                      </form>
+                    </li>
+                  {% endfor %}
                 </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Documentación -->
-          <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#documentacionconsultas"><i class="bi bi-file-earmark me-2"></i>Documentación</button></h2>
-            <div id="documentacionconsultas" class="accordion-collapse collapse">
-              <div class="accordion-body" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                <ul class="tutorial-list">
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/oSJgFVkOw1Q">
-                      <i class="bi bi-list-task"></i>
-                      Lista Maestra de Documentos
-                    </a>
-                  </li>
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/ejemplo5">
-                      <i class="bi bi-journal-bookmark-fill"></i>
-                      Manuales
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Glosario -->
-          <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#glosarioconsultas"><i class="bi bi-book me-2"></i>Glosario</button></h2>
-            <div id="glosarioconsultas" class="accordion-collapse collapse">
-              <div class="accordion-body" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                <ul class="tutorial-list">
-                  <li class="tutorial-item">
-                    <a href="#" data-video-url="https://youtube.com/embed/oSJgFVkOw1Q">
-                      <i class="bi bi-search"></i>
-                      Busqueda
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              {% else %}
+                <p class="text-center text-white">No hay videos agregados</p>
+              {% endif %}
             </div>
           </div>
         </div>
       </div>
-      {% if user.is_authenticated and user.is_superuser %}
+
+      {% comment %} {% if user.is_authenticated and user.is_superuser %}
         <!-- Usuario Administrativo -->
         <div class="sidebar pb-4">
           <h4 class="text-center"><i class="bi bi-tools me-2"></i>Administrativo</h4>
@@ -250,7 +238,7 @@
             </div>
           </div>
         </div>
-      {% endif %}
+      {% endif %} {% endcomment %}
     </div>
 
     <!-- Video Modal -->

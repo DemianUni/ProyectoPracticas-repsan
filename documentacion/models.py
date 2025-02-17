@@ -20,6 +20,8 @@ from gestor_archivos.models import (
     Document_aseguramiento_calidad_academica,
     Document_aseguramiento_calidad_procesos,
     Document_auditorias,
+    Document_evaluacion_control,
+    Document_gestion_integrada,
     Document_gestion_registro_calificado,
     Document_gestion_servicio_usuario,
     Document_comunicacion,
@@ -252,6 +254,28 @@ class DocumentImage_auditorias(DocumentAsociadosDiagramasFlujo):
 
     class Meta:
         db_table = "DocumentImage_auditorias"
+
+
+class DocumentImage_evaluacion_control(DocumentAsociadosDiagramasFlujo):
+    document = models.ForeignKey(
+        Document_evaluacion_control,
+        on_delete=models.CASCADE,
+        related_name="DocumentImage_evaluacion_control",
+    )
+
+    class Meta:
+        db_table = "DocumentImage_evaluacion_control"
+
+
+class DocumentImage_gestion_integrada(DocumentAsociadosDiagramasFlujo):
+    document = models.ForeignKey(
+        Document_gestion_integrada,
+        on_delete=models.CASCADE,
+        related_name="DocumentImage_gestion_integrada",
+    )
+
+    class Meta:
+        db_table = "DocumentImage_gestion_integrada"
 
 
 class DocumentImage_gestion_registro_calificado(DocumentAsociadosDiagramasFlujo):
@@ -559,6 +583,28 @@ class DocumentDoAs_auditorias_FoAs(DocumentFormatosAsociados):
 
     class Meta:
         db_table = "DocumentDoAs_auditorias_FoAs"
+
+
+class DocumentDoAs_evaluacion_control_FoAs(DocumentFormatosAsociados):
+    document = models.ForeignKey(
+        Document_evaluacion_control,
+        on_delete=models.CASCADE,
+        related_name="DocumentDoAs_evaluacion_control_FoAs",
+    )
+
+    class Meta:
+        db_table = "DocumentDoAs_evaluacion_control_FoAs"
+
+
+class DocumentDoAs_gestion_integrada_FoAs(DocumentFormatosAsociados):
+    document = models.ForeignKey(
+        Document_gestion_integrada,
+        on_delete=models.CASCADE,
+        related_name="DocumentDoAs_gestion_integrada_FoAs",
+    )
+
+    class Meta:
+        db_table = "DocumentDoAs_gestion_integrada_FoAs"
 
 
 class DocumentDoAs_gestion_registro_calificado_FoAs(DocumentFormatosAsociados):

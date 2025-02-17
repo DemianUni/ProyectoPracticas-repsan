@@ -25,6 +25,8 @@ from .models import (
     DocumentImage_aseguramiento_calidad_academica,
     DocumentImage_aseguramiento_calidad_procesos,
     DocumentImage_auditorias,
+    DocumentImage_evaluacion_control,
+    DocumentImage_gestion_integrada,
     DocumentImage_gestion_registro_calificado,
     DocumentImage_gestion_servicio_usuario,
     DocumentImage_comunicacion,
@@ -52,6 +54,8 @@ from .models import (
     DocumentDoAs_aseguramiento_calidad_academica_FoAs,
     DocumentDoAs_aseguramiento_calidad_procesos_FoAs,
     DocumentDoAs_auditorias_FoAs,
+    DocumentDoAs_evaluacion_control_FoAs,
+    DocumentDoAs_gestion_integrada_FoAs,
     DocumentDoAs_gestion_registro_calificado_FoAs,
     DocumentDoAs_gestion_servicio_usuario_FoAs,
     DocumentDoAs_comunicacion_FoAs,
@@ -248,6 +252,26 @@ class DocumentImage_aseguramiento_calidad_procesos(DocumentImageAsociada):
 class DocumentImage_auditorias(DocumentImageAsociada):
     class Meta(DocumentImageAsociada.Meta):
         model = DocumentImage_auditorias
+
+        fields = DocumentImageAsociada.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentImage_evaluacion_control(DocumentImageAsociada):
+    class Meta(DocumentImageAsociada.Meta):
+        model = DocumentImage_evaluacion_control
+
+        fields = DocumentImageAsociada.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentImage_gestion_integrada(DocumentImageAsociada):
+    class Meta(DocumentImageAsociada.Meta):
+        model = DocumentImage_gestion_integrada
 
         fields = DocumentImageAsociada.Meta.fields
 
@@ -522,6 +546,24 @@ class DocumentDoAs_aseguramiento_calidad_procesos_FoAs(DocumentFormatosAsociados
 class DocumentDoAs_auditorias_FoAs(DocumentFormatosAsociados):
     class Meta(DocumentFormatosAsociados.Meta):
         model = DocumentDoAs_auditorias_FoAs
+        fields = DocumentFormatosAsociados.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentDoAs_evaluacion_control_FoAs(DocumentFormatosAsociados):
+    class Meta(DocumentFormatosAsociados.Meta):
+        model = DocumentDoAs_evaluacion_control_FoAs
+        fields = DocumentFormatosAsociados.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DocumentDoAs_gestion_integrada_FoAs(DocumentFormatosAsociados):
+    class Meta(DocumentFormatosAsociados.Meta):
+        model = DocumentDoAs_gestion_integrada_FoAs
         fields = DocumentFormatosAsociados.Meta.fields
 
     def __init__(self, *args, **kwargs):

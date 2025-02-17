@@ -288,6 +288,7 @@
 .modal-video-close:hover {
     color: #ff4444;
 }
+
 /* Page Load Animations */
 @keyframes fadeIn {
     from {

@@ -13,6 +13,11 @@ urlpatterns = [
         name="obtener_contenido",
     ),
     path("mapa-procesos/", views.mapa_procesos, name="mapa-procesos"),
+    path(
+        "eliminar-tutorial/<int:tutorial_id>/",
+        views.eliminar_tutorial,
+        name="eliminar_tutorial",
+    ),
     # URLS a HTML mapa de procesos primer paso
     # PROCESOS MISIONALES
     ###============
@@ -207,6 +212,18 @@ urlpatterns = [
         "mapa-procesos/calidad-integral/auditorias/",
         views.auditorias,
         name="auditorias",
+    ),
+    ############################################################################
+    path(
+        "mapa-procesos/calidad-integral/evaluacion-control/",
+        views.evaluacion_control,
+        name="evaluacion-control",
+    ),
+    ############################################################################
+    path(
+        "mapa-procesos/calidad-integral/gestion-integrada/",
+        views.gestion_integrada,
+        name="gestion-integrada",
     ),
     ############################################################################
     path(

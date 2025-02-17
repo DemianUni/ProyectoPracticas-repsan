@@ -5,7 +5,6 @@ from django.conf import settings
 from django.utils.html import escape
 from django.apps import apps
 from django.http import JsonResponse
-from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_exempt
@@ -14,6 +13,9 @@ from gestor_archivos.models import Document
 from documentacion.models import DocumentFormatosAsociados
 import re  # Usamos expresiones regulares para encontrar el id y el contenido dentro de cualquier etiqueta
 from datetime import timedelta
+from django.shortcuts import render, redirect
+from .models import VideoTutorial
+from .forms import VideoTutorialForm
 
 
 # Funcion verificacion logeado custom
@@ -199,9 +201,21 @@ def get_content_view(request, model_name):
 @never_cache
 @login_required_custom
 def mapa_procesos(request):
+    # Manejo del formulario de tutoriales
+    if request.method == "POST":
+        form = VideoTutorialForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("mapa-procesos")
+    else:
+        form = VideoTutorialForm()
+
     # Obtener todos los documentos de ambos modelos
     documentos_list = Document.objects.all().order_by("-fecha_creacion")
     formatos_list = DocumentFormatosAsociados.objects.all().order_by("-fecha_creacion")
+
+    # Obtener videos
+    tutorials = VideoTutorial.objects.all()
 
     # Filtrar los archivos con extensión .pdf o .docx y sin la palabra "procedimiento" en el título
     documentos_list = [
@@ -222,16 +236,29 @@ def mapa_procesos(request):
 
     # Restar 5 horas de la fecha_creacion para cada documento
     for item in combined_list:
-        # Restar 5 horas
         item.fecha_creacion = item.fecha_creacion - timedelta(hours=5)
 
     # Limitar a los últimos 4 documentos
     ultimos_4_documentos = combined_list[:3]
 
-    # Pasar los últimos 4 documentos al template
-    return render(
-        request, "mapa_procesos.html", {"ultimos_archivos": ultimos_4_documentos}
-    )
+    # Pasar todos los datos necesarios al template
+    context = {
+        "ultimos_archivos": ultimos_4_documentos,
+        "tutorials": tutorials,
+        "form": form,
+    }
+
+    return render(request, "mapa_procesos.html", context)
+
+
+from django.shortcuts import get_object_or_404, redirect
+from django.urls import reverse
+
+
+def eliminar_tutorial(request, tutorial_id):
+    tutorial = get_object_or_404(VideoTutorial, id=tutorial_id)
+    tutorial.delete()
+    return redirect(reverse("mapa-procesos"))  # O cambia a donde quieras redirigir
 
 
 # HTMLS Mapa de procesos primer paso
@@ -594,6 +621,34 @@ def auditorias(request):
     return render(
         request,
         "procesos/calidad_integral/auditorias.html",
+        context,
+    )
+
+
+##########################################################################################
+@never_cache
+@login_required_custom
+def evaluacion_control(request):
+    context = {
+        "is_superuser": request.user.is_authenticated and request.user.is_superuser,
+    }
+    return render(
+        request,
+        "procesos/calidad_integral/evaluacion_control.html",
+        context,
+    )
+
+
+##########################################################################################
+@never_cache
+@login_required_custom
+def gestion_integrada(request):
+    context = {
+        "is_superuser": request.user.is_authenticated and request.user.is_superuser,
+    }
+    return render(
+        request,
+        "procesos/calidad_integral/gestion_integrada.html",
         context,
     )
 

@@ -26,6 +26,8 @@ from gestor_archivos.models import (
     Document_aseguramiento_calidad_academica,
     Document_aseguramiento_calidad_procesos,
     Document_auditorias,
+    Document_evaluacion_control,
+    Document_gestion_integrada,
     Document_gestion_registro_calificado,
     Document_gestion_servicio_usuario,
     Document_comunicacion,
@@ -53,6 +55,8 @@ from gestor_archivos.models import (
     DiPr_aseguramiento_calidad_academica,
     DiPr_aseguramiento_calidad_procesos,
     DiPr_auditorias,
+    DiPr_evaluacion_control,
+    DiPr_gestion_integrada,
     DiPr_gestion_registro_calificado,
     DiPr_gestion_servicio_usuario,
     DiPr_comunicacion,
@@ -80,6 +84,8 @@ from gestor_archivos.models import (
     Indicadores_aseguramiento_calidad_academica,
     Indicadores_aseguramiento_calidad_procesos,
     Indicadores_auditorias,
+    Indicadores_evaluacion_control,
+    Indicadores_gestion_integrada,
     Indicadores_gestion_registro_calificado,
     Indicadores_gestion_servicio_usuario,
     Indicadores_comunicacion,
@@ -310,6 +316,24 @@ class Document_aseguramiento_calidad_procesos(DocumentForm):
 class Document_auditorias(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Document_auditorias
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Document_evaluacion_control(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Document_evaluacion_control
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Document_gestion_integrada(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Document_gestion_integrada
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -549,6 +573,24 @@ class Indicadores_aseguramiento_calidad_procesos(DocumentForm):
 class Indicadores_auditorias(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Indicadores_auditorias
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Indicadores_evaluacion_control(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Indicadores_evaluacion_control
+        fields = DocumentForm.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class Indicadores_gestion_integrada(DocumentForm):
+    class Meta(DocumentForm.Meta):
+        model = Indicadores_gestion_integrada
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -812,6 +854,26 @@ class DiPr_aseguramiento_calidad_procesos_form(DiagramasProcedimientos):
 class DiPr_auditorias_form(DiagramasProcedimientos):
     class Meta(DiagramasProcedimientos.Meta):
         model = DiPr_auditorias
+
+        fields = DiagramasProcedimientos.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DiPr_evaluacion_control_form(DiagramasProcedimientos):
+    class Meta(DiagramasProcedimientos.Meta):
+        model = DiPr_evaluacion_control
+
+        fields = DiagramasProcedimientos.Meta.fields
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class DiPr_gestion_integrada_form(DiagramasProcedimientos):
+    class Meta(DiagramasProcedimientos.Meta):
+        model = DiPr_gestion_integrada
 
         fields = DiagramasProcedimientos.Meta.fields
 

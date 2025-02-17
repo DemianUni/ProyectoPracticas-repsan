@@ -174,6 +174,16 @@ class Document_auditorias(Document):
         db_table = "document_auditorias"
 
 
+class Document_evaluacion_control(Document):
+    class Meta:
+        db_table = "document_evaluacion_control"
+
+
+class Document_gestion_integrada(Document):
+    class Meta:
+        db_table = "document_gestion_integrada"
+
+
 class Document_gestion_registro_calificado(Document):
     class Meta:
         db_table = "document_gestion_registro_calificado"
@@ -308,6 +318,16 @@ class Indicadores_aseguramiento_calidad_procesos(Document):
 class Indicadores_auditorias(Document):
     class Meta:
         db_table = "Indicadores_auditorias"
+
+
+class Indicadores_evaluacion_control(Document):
+    class Meta:
+        db_table = "Indicadores_evaluacion_control"
+
+
+class Indicadores_gestion_integrada(Document):
+    class Meta:
+        db_table = "Indicadores_gestion_integrada"
 
 
 class Indicadores_gestion_registro_calificado(Document):
@@ -460,6 +480,16 @@ class DiPr_aseguramiento_calidad_procesos(DiagramasProcedimientos):
 class DiPr_auditorias(DiagramasProcedimientos):
     class Meta:
         db_table = "DiPr_auditorias"
+
+
+class DiPr_evaluacion_control(DiagramasProcedimientos):
+    class Meta:
+        db_table = "DiPr_evaluacion_control"
+
+
+class DiPr_gestion_integrada(DiagramasProcedimientos):
+    class Meta:
+        db_table = "gestion_integrada"
 
 
 class DiPr_gestion_registro_calificado(DiagramasProcedimientos):
