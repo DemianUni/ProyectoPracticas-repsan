@@ -1,4 +1,4 @@
-# ProyectoPracticas-repsan
+# ProyectoPracticas-INNPROC
 En la rama master esta el aplicativo tines que descargarlo y crear el entorno virtual hay indicaciones en el archivo manual.txt pero tambien las dejare aca:
 
 ENTORNO VIRTUAL 
