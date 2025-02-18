@@ -120,6 +120,17 @@ CREATE TABLE public."DiPr_enseñanza_prendizaje_evaluacion" (
 ALTER TABLE public."DiPr_enseñanza_prendizaje_evaluacion" OWNER TO postgres;
 
 --
+-- Name: DiPr_evaluacion_control; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DiPr_evaluacion_control" (
+    diagramasprocedimientos_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DiPr_evaluacion_control" OWNER TO postgres;
+
+--
 -- Name: DiPr_extension_proyeccion; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -129,6 +140,17 @@ CREATE TABLE public."DiPr_extension_proyeccion" (
 
 
 ALTER TABLE public."DiPr_extension_proyeccion" OWNER TO postgres;
+
+--
+-- Name: DiPr_gestion_cartera; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DiPr_gestion_cartera" (
+    diagramasprocedimientos_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DiPr_gestion_cartera" OWNER TO postgres;
 
 --
 -- Name: DiPr_gestion_contractual; Type: TABLE; Schema: public; Owner: postgres
@@ -404,6 +426,18 @@ CREATE TABLE public."DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs" (
 ALTER TABLE public."DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs" OWNER TO postgres;
 
 --
+-- Name: DocumentDoAs_evaluacion_control_FoAs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentDoAs_evaluacion_control_FoAs" (
+    documentformatosasociados_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentDoAs_evaluacion_control_FoAs" OWNER TO postgres;
+
+--
 -- Name: DocumentDoAs_extension_proyeccion_FoAs; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -414,6 +448,18 @@ CREATE TABLE public."DocumentDoAs_extension_proyeccion_FoAs" (
 
 
 ALTER TABLE public."DocumentDoAs_extension_proyeccion_FoAs" OWNER TO postgres;
+
+--
+-- Name: DocumentDoAs_gestion_cartera_FoAs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentDoAs_gestion_cartera_FoAs" (
+    documentformatosasociados_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentDoAs_gestion_cartera_FoAs" OWNER TO postgres;
 
 --
 -- Name: DocumentDoAs_gestion_contractual_FoAs; Type: TABLE; Schema: public; Owner: postgres
@@ -462,6 +508,18 @@ CREATE TABLE public."DocumentDoAs_gestion_informacion_FoAs" (
 
 
 ALTER TABLE public."DocumentDoAs_gestion_informacion_FoAs" OWNER TO postgres;
+
+--
+-- Name: DocumentDoAs_gestion_integrada_FoAs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentDoAs_gestion_integrada_FoAs" (
+    documentformatosasociados_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentDoAs_gestion_integrada_FoAs" OWNER TO postgres;
 
 --
 -- Name: DocumentDoAs_gestion_investigacion_FoAs; Type: TABLE; Schema: public; Owner: postgres
@@ -704,6 +762,18 @@ CREATE TABLE public."DocumentImage_enseñanza_prendizaje_evaluacion" (
 ALTER TABLE public."DocumentImage_enseñanza_prendizaje_evaluacion" OWNER TO postgres;
 
 --
+-- Name: DocumentImage_evaluacion_control; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentImage_evaluacion_control" (
+    documentasociadosdiagramasflujo_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentImage_evaluacion_control" OWNER TO postgres;
+
+--
 -- Name: DocumentImage_extension_proyeccion; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -714,6 +784,18 @@ CREATE TABLE public."DocumentImage_extension_proyeccion" (
 
 
 ALTER TABLE public."DocumentImage_extension_proyeccion" OWNER TO postgres;
+
+--
+-- Name: DocumentImage_gestion_cartera; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentImage_gestion_cartera" (
+    documentasociadosdiagramasflujo_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentImage_gestion_cartera" OWNER TO postgres;
 
 --
 -- Name: DocumentImage_gestion_contractual; Type: TABLE; Schema: public; Owner: postgres
@@ -762,6 +844,18 @@ CREATE TABLE public."DocumentImage_gestion_informacion" (
 
 
 ALTER TABLE public."DocumentImage_gestion_informacion" OWNER TO postgres;
+
+--
+-- Name: DocumentImage_gestion_integrada; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."DocumentImage_gestion_integrada" (
+    documentasociadosdiagramasflujo_ptr_id bigint NOT NULL,
+    document_id integer NOT NULL
+);
+
+
+ALTER TABLE public."DocumentImage_gestion_integrada" OWNER TO postgres;
 
 --
 -- Name: DocumentImage_gestion_investigacion; Type: TABLE; Schema: public; Owner: postgres
@@ -995,6 +1089,17 @@ CREATE TABLE public."Indicadores_enseñanza_prendizaje_evaluacion" (
 ALTER TABLE public."Indicadores_enseñanza_prendizaje_evaluacion" OWNER TO postgres;
 
 --
+-- Name: Indicadores_evaluacion_control; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Indicadores_evaluacion_control" (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."Indicadores_evaluacion_control" OWNER TO postgres;
+
+--
 -- Name: Indicadores_extension_proyeccion; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1004,6 +1109,17 @@ CREATE TABLE public."Indicadores_extension_proyeccion" (
 
 
 ALTER TABLE public."Indicadores_extension_proyeccion" OWNER TO postgres;
+
+--
+-- Name: Indicadores_gestion_cartera; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Indicadores_gestion_cartera" (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."Indicadores_gestion_cartera" OWNER TO postgres;
 
 --
 -- Name: Indicadores_gestion_contractual; Type: TABLE; Schema: public; Owner: postgres
@@ -1048,6 +1164,17 @@ CREATE TABLE public."Indicadores_gestion_informacion" (
 
 
 ALTER TABLE public."Indicadores_gestion_informacion" OWNER TO postgres;
+
+--
+-- Name: Indicadores_gestion_integrada; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Indicadores_gestion_integrada" (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."Indicadores_gestion_integrada" OWNER TO postgres;
 
 --
 -- Name: Indicadores_gestion_investigacion; Type: TABLE; Schema: public; Owner: postgres
@@ -1169,6 +1296,28 @@ CREATE TABLE public."Indicadores_relacionamineto_egresados" (
 
 
 ALTER TABLE public."Indicadores_relacionamineto_egresados" OWNER TO postgres;
+
+--
+-- Name: RequisitosLegalesNormativos_globales; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."RequisitosLegalesNormativos_globales" (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."RequisitosLegalesNormativos_globales" OWNER TO postgres;
+
+--
+-- Name: RequisitosNecesidadesPartesInteresadas_globales; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."RequisitosNecesidadesPartesInteresadas_globales" (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public."RequisitosNecesidadesPartesInteresadas_globales" OWNER TO postgres;
 
 --
 -- Name: auth_group; Type: TABLE; Schema: public; Owner: postgres
@@ -1541,6 +1690,17 @@ CREATE TABLE public."document_enseñanza_prendizaje_evaluacion" (
 ALTER TABLE public."document_enseñanza_prendizaje_evaluacion" OWNER TO postgres;
 
 --
+-- Name: document_evaluacion_control; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.document_evaluacion_control (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public.document_evaluacion_control OWNER TO postgres;
+
+--
 -- Name: document_extension_proyeccion; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1550,6 +1710,17 @@ CREATE TABLE public.document_extension_proyeccion (
 
 
 ALTER TABLE public.document_extension_proyeccion OWNER TO postgres;
+
+--
+-- Name: document_gestion_cartera; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.document_gestion_cartera (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public.document_gestion_cartera OWNER TO postgres;
 
 --
 -- Name: document_gestion_contractual; Type: TABLE; Schema: public; Owner: postgres
@@ -1594,6 +1765,17 @@ CREATE TABLE public.document_gestion_informacion (
 
 
 ALTER TABLE public.document_gestion_informacion OWNER TO postgres;
+
+--
+-- Name: document_gestion_integrada; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.document_gestion_integrada (
+    document_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public.document_gestion_integrada OWNER TO postgres;
 
 --
 -- Name: document_gestion_investigacion; Type: TABLE; Schema: public; Owner: postgres
@@ -1773,6 +1955,17 @@ ALTER TABLE public.documentacion_documentformatosasociados ALTER COLUMN id ADD G
     CACHE 1
 );
 
+
+--
+-- Name: gestion_integrada; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.gestion_integrada (
+    diagramasprocedimientos_ptr_id integer NOT NULL
+);
+
+
+ALTER TABLE public.gestion_integrada OWNER TO postgres;
 
 --
 -- Name: gestor_archivos_diagramasprocedimientos; Type: TABLE; Schema: public; Owner: postgres
@@ -2103,6 +2296,33 @@ ALTER TABLE public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" ALTER COL
 
 
 --
+-- Name: mapa_procesos_ec_evaluacion_control; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.mapa_procesos_ec_evaluacion_control (
+    id bigint NOT NULL,
+    identifier character varying(100) NOT NULL,
+    content text NOT NULL
+);
+
+
+ALTER TABLE public.mapa_procesos_ec_evaluacion_control OWNER TO postgres;
+
+--
+-- Name: mapa_procesos_ec_evaluacion_control_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.mapa_procesos_ec_evaluacion_control ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME public.mapa_procesos_ec_evaluacion_control_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
 -- Name: mapa_procesos_ec_extension_proyeccion; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2121,6 +2341,33 @@ ALTER TABLE public.mapa_procesos_ec_extension_proyeccion OWNER TO postgres;
 
 ALTER TABLE public.mapa_procesos_ec_extension_proyeccion ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
     SEQUENCE NAME public.mapa_procesos_ec_extension_proyeccion_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.mapa_procesos_ec_gestion_cartera (
+    id bigint NOT NULL,
+    identifier character varying(100) NOT NULL,
+    content text NOT NULL
+);
+
+
+ALTER TABLE public.mapa_procesos_ec_gestion_cartera OWNER TO postgres;
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.mapa_procesos_ec_gestion_cartera ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME public.mapa_procesos_ec_gestion_cartera_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2229,6 +2476,33 @@ ALTER TABLE public.mapa_procesos_ec_gestion_informacion OWNER TO postgres;
 
 ALTER TABLE public.mapa_procesos_ec_gestion_informacion ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
     SEQUENCE NAME public.mapa_procesos_ec_gestion_informacion_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.mapa_procesos_ec_gestion_integrada (
+    id bigint NOT NULL,
+    identifier character varying(100) NOT NULL,
+    content text NOT NULL
+);
+
+
+ALTER TABLE public.mapa_procesos_ec_gestion_integrada OWNER TO postgres;
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.mapa_procesos_ec_gestion_integrada ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME public.mapa_procesos_ec_gestion_integrada_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2535,6 +2809,34 @@ ALTER TABLE public.mapa_procesos_ec_relacionamineto_egresados ALTER COLUMN id AD
 
 
 --
+-- Name: mapa_procesos_videotutorial; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.mapa_procesos_videotutorial (
+    id bigint NOT NULL,
+    title character varying(200) NOT NULL,
+    icon_class character varying(50) NOT NULL,
+    video_id character varying(20) NOT NULL
+);
+
+
+ALTER TABLE public.mapa_procesos_videotutorial OWNER TO postgres;
+
+--
+-- Name: mapa_procesos_videotutorial_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.mapa_procesos_videotutorial ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME public.mapa_procesos_videotutorial_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
 -- Data for Name: DiPr_admisiones_registro_control; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -2616,11 +2918,29 @@ COPY public."DiPr_enseñanza_prendizaje_evaluacion" (diagramasprocedimientos_ptr
 
 
 --
+-- Data for Name: DiPr_evaluacion_control; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DiPr_evaluacion_control" (diagramasprocedimientos_ptr_id) FROM stdin;
+31
+\.
+
+
+--
 -- Data for Name: DiPr_extension_proyeccion; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public."DiPr_extension_proyeccion" (diagramasprocedimientos_ptr_id) FROM stdin;
 10
+\.
+
+
+--
+-- Data for Name: DiPr_gestion_cartera; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DiPr_gestion_cartera" (diagramasprocedimientos_ptr_id) FROM stdin;
+30
 \.
 
 
@@ -2812,7 +3132,6 @@ COPY public."DocumentDoAs_comunicacion_FoAs" (documentformatosasociados_ptr_id, 
 --
 
 COPY public."DocumentDoAs_control_disciplinario_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
-1	30
 \.
 
 
@@ -2833,10 +3152,26 @@ COPY public."DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs" (documentformat
 
 
 --
+-- Data for Name: DocumentDoAs_evaluacion_control_FoAs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentDoAs_evaluacion_control_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
+\.
+
+
+--
 -- Data for Name: DocumentDoAs_extension_proyeccion_FoAs; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public."DocumentDoAs_extension_proyeccion_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: DocumentDoAs_gestion_cartera_FoAs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentDoAs_gestion_cartera_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
 \.
 
 
@@ -2853,6 +3188,11 @@ COPY public."DocumentDoAs_gestion_contractual_FoAs" (documentformatosasociados_p
 --
 
 COPY public."DocumentDoAs_gestion_desarrollo_humano_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
+15	100
+16	100
+17	100
+18	100
+19	101
 \.
 
 
@@ -2869,6 +3209,14 @@ COPY public."DocumentDoAs_gestion_documental_FoAs" (documentformatosasociados_pt
 --
 
 COPY public."DocumentDoAs_gestion_informacion_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: DocumentDoAs_gestion_integrada_FoAs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentDoAs_gestion_integrada_FoAs" (documentformatosasociados_ptr_id, document_id) FROM stdin;
 \.
 
 
@@ -2973,6 +3321,7 @@ COPY public."DocumentImage_admisiones_registro_control" (documentasociadosdiagra
 --
 
 COPY public."DocumentImage_aseguramiento_calidad_academica" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
+32	92
 \.
 
 
@@ -2997,8 +3346,8 @@ COPY public."DocumentImage_auditorias" (documentasociadosdiagramasflujo_ptr_id, 
 --
 
 COPY public."DocumentImage_bienestar_institucional" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-16	49
-18	50
+37	109
+38	110
 \.
 
 
@@ -3015,7 +3364,6 @@ COPY public."DocumentImage_comunicacion" (documentasociadosdiagramasflujo_ptr_id
 --
 
 COPY public."DocumentImage_control_disciplinario" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-15	30
 \.
 
 
@@ -3032,8 +3380,16 @@ COPY public."DocumentImage_desarrollo_curricular" (documentasociadosdiagramasflu
 --
 
 COPY public."DocumentImage_enseñanza_prendizaje_evaluacion" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-12	20
-13	19
+20	71
+21	72
+\.
+
+
+--
+-- Data for Name: DocumentImage_evaluacion_control; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentImage_evaluacion_control" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
 \.
 
 
@@ -3042,6 +3398,14 @@ COPY public."DocumentImage_enseñanza_prendizaje_evaluacion" (documentasociadosd
 --
 
 COPY public."DocumentImage_extension_proyeccion" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: DocumentImage_gestion_cartera; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentImage_gestion_cartera" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
 \.
 
 
@@ -3058,7 +3422,9 @@ COPY public."DocumentImage_gestion_contractual" (documentasociadosdiagramasflujo
 --
 
 COPY public."DocumentImage_gestion_desarrollo_humano" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-8	29
+34	100
+35	101
+36	102
 \.
 
 
@@ -3079,12 +3445,20 @@ COPY public."DocumentImage_gestion_informacion" (documentasociadosdiagramasflujo
 
 
 --
+-- Data for Name: DocumentImage_gestion_integrada; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."DocumentImage_gestion_integrada" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
+\.
+
+
+--
 -- Data for Name: DocumentImage_gestion_investigacion; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public."DocumentImage_gestion_investigacion" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-4	15
-5	16
+22	73
+23	74
 \.
 
 
@@ -3101,8 +3475,8 @@ COPY public."DocumentImage_gestion_juridica" (documentasociadosdiagramasflujo_pt
 --
 
 COPY public."DocumentImage_gestion_recursos_financieros" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-1	9
-2	10
+24	79
+25	80
 \.
 
 
@@ -3111,8 +3485,9 @@ COPY public."DocumentImage_gestion_recursos_financieros" (documentasociadosdiagr
 --
 
 COPY public."DocumentImage_gestion_registro_calificado" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-10	36
-11	37
+29	88
+30	90
+31	91
 \.
 
 
@@ -3121,7 +3496,7 @@ COPY public."DocumentImage_gestion_registro_calificado" (documentasociadosdiagra
 --
 
 COPY public."DocumentImage_gestion_servicio_usuario" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-9	34
+27	85
 \.
 
 
@@ -3154,7 +3529,6 @@ COPY public."DocumentImage_infraestructura_fisica" (documentasociadosdiagramasfl
 --
 
 COPY public."DocumentImage_internacionalizacion" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-7	25
 \.
 
 
@@ -3171,7 +3545,6 @@ COPY public."DocumentImage_planeacion_estrategica_institucional" (documentasocia
 --
 
 COPY public."DocumentImage_relacionamineto_egresados" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
-3	14
 \.
 
 
@@ -3248,10 +3621,26 @@ COPY public."Indicadores_enseñanza_prendizaje_evaluacion" (document_ptr_id) FRO
 
 
 --
+-- Data for Name: Indicadores_evaluacion_control; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."Indicadores_evaluacion_control" (document_ptr_id) FROM stdin;
+\.
+
+
+--
 -- Data for Name: Indicadores_extension_proyeccion; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public."Indicadores_extension_proyeccion" (document_ptr_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: Indicadores_gestion_cartera; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."Indicadores_gestion_cartera" (document_ptr_id) FROM stdin;
 \.
 
 
@@ -3284,6 +3673,14 @@ COPY public."Indicadores_gestion_documental" (document_ptr_id) FROM stdin;
 --
 
 COPY public."Indicadores_gestion_informacion" (document_ptr_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: Indicadores_gestion_integrada; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."Indicadores_gestion_integrada" (document_ptr_id) FROM stdin;
 \.
 
 
@@ -3372,6 +3769,25 @@ COPY public."Indicadores_planeacion_estrategica_institucional" (document_ptr_id)
 --
 
 COPY public."Indicadores_relacionamineto_egresados" (document_ptr_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: RequisitosLegalesNormativos_globales; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."RequisitosLegalesNormativos_globales" (document_ptr_id) FROM stdin;
+67
+68
+\.
+
+
+--
+-- Data for Name: RequisitosNecesidadesPartesInteresadas_globales; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."RequisitosNecesidadesPartesInteresadas_globales" (document_ptr_id) FROM stdin;
+69
 \.
 
 
@@ -4040,6 +4456,90 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 642	Can change e c_relacionamineto_egresados	161	change_ec_relacionamineto_egresados
 643	Can delete e c_relacionamineto_egresados	161	delete_ec_relacionamineto_egresados
 644	Can view e c_relacionamineto_egresados	161	view_ec_relacionamineto_egresados
+645	Can add requisitos legales normativos_globales	162	add_requisitoslegalesnormativos_globales
+646	Can change requisitos legales normativos_globales	162	change_requisitoslegalesnormativos_globales
+647	Can delete requisitos legales normativos_globales	162	delete_requisitoslegalesnormativos_globales
+648	Can view requisitos legales normativos_globales	162	view_requisitoslegalesnormativos_globales
+649	Can add requisitos necesidades partes interesadas_globales	163	add_requisitosnecesidadespartesinteresadas_globales
+650	Can change requisitos necesidades partes interesadas_globales	163	change_requisitosnecesidadespartesinteresadas_globales
+651	Can delete requisitos necesidades partes interesadas_globales	163	delete_requisitosnecesidadespartesinteresadas_globales
+652	Can view requisitos necesidades partes interesadas_globales	163	view_requisitosnecesidadespartesinteresadas_globales
+653	Can add e c_gestion_cartera	164	add_ec_gestion_cartera
+654	Can change e c_gestion_cartera	164	change_ec_gestion_cartera
+655	Can delete e c_gestion_cartera	164	delete_ec_gestion_cartera
+656	Can view e c_gestion_cartera	164	view_ec_gestion_cartera
+657	Can add di pr_gestion_cartera	165	add_dipr_gestion_cartera
+658	Can change di pr_gestion_cartera	165	change_dipr_gestion_cartera
+659	Can delete di pr_gestion_cartera	165	delete_dipr_gestion_cartera
+660	Can view di pr_gestion_cartera	165	view_dipr_gestion_cartera
+661	Can add document_gestion_cartera	166	add_document_gestion_cartera
+662	Can change document_gestion_cartera	166	change_document_gestion_cartera
+663	Can delete document_gestion_cartera	166	delete_document_gestion_cartera
+664	Can view document_gestion_cartera	166	view_document_gestion_cartera
+665	Can add indicadores_gestion_cartera	167	add_indicadores_gestion_cartera
+666	Can change indicadores_gestion_cartera	167	change_indicadores_gestion_cartera
+667	Can delete indicadores_gestion_cartera	167	delete_indicadores_gestion_cartera
+668	Can view indicadores_gestion_cartera	167	view_indicadores_gestion_cartera
+669	Can add document do as_gestion_cartera_ fo as	168	add_documentdoas_gestion_cartera_foas
+670	Can change document do as_gestion_cartera_ fo as	168	change_documentdoas_gestion_cartera_foas
+671	Can delete document do as_gestion_cartera_ fo as	168	delete_documentdoas_gestion_cartera_foas
+672	Can view document do as_gestion_cartera_ fo as	168	view_documentdoas_gestion_cartera_foas
+673	Can add document image_gestion_cartera	169	add_documentimage_gestion_cartera
+674	Can change document image_gestion_cartera	169	change_documentimage_gestion_cartera
+675	Can delete document image_gestion_cartera	169	delete_documentimage_gestion_cartera
+676	Can view document image_gestion_cartera	169	view_documentimage_gestion_cartera
+677	Can add di pr_evaluacion_control	170	add_dipr_evaluacion_control
+678	Can change di pr_evaluacion_control	170	change_dipr_evaluacion_control
+679	Can delete di pr_evaluacion_control	170	delete_dipr_evaluacion_control
+680	Can view di pr_evaluacion_control	170	view_dipr_evaluacion_control
+681	Can add document_evaluacion_control	171	add_document_evaluacion_control
+682	Can change document_evaluacion_control	171	change_document_evaluacion_control
+683	Can delete document_evaluacion_control	171	delete_document_evaluacion_control
+684	Can view document_evaluacion_control	171	view_document_evaluacion_control
+685	Can add indicadores_evaluacion_control	172	add_indicadores_evaluacion_control
+686	Can change indicadores_evaluacion_control	172	change_indicadores_evaluacion_control
+687	Can delete indicadores_evaluacion_control	172	delete_indicadores_evaluacion_control
+688	Can view indicadores_evaluacion_control	172	view_indicadores_evaluacion_control
+689	Can add document do as_evaluacion_control_ fo as	173	add_documentdoas_evaluacion_control_foas
+690	Can change document do as_evaluacion_control_ fo as	173	change_documentdoas_evaluacion_control_foas
+691	Can delete document do as_evaluacion_control_ fo as	173	delete_documentdoas_evaluacion_control_foas
+692	Can view document do as_evaluacion_control_ fo as	173	view_documentdoas_evaluacion_control_foas
+693	Can add document image_evaluacion_control	174	add_documentimage_evaluacion_control
+694	Can change document image_evaluacion_control	174	change_documentimage_evaluacion_control
+695	Can delete document image_evaluacion_control	174	delete_documentimage_evaluacion_control
+696	Can view document image_evaluacion_control	174	view_documentimage_evaluacion_control
+697	Can add e c_evaluacion_control	175	add_ec_evaluacion_control
+698	Can change e c_evaluacion_control	175	change_ec_evaluacion_control
+699	Can delete e c_evaluacion_control	175	delete_ec_evaluacion_control
+700	Can view e c_evaluacion_control	175	view_ec_evaluacion_control
+701	Can add video tutorial	176	add_videotutorial
+702	Can change video tutorial	176	change_videotutorial
+703	Can delete video tutorial	176	delete_videotutorial
+704	Can view video tutorial	176	view_videotutorial
+705	Can add di pr_gestion_integrada	177	add_dipr_gestion_integrada
+706	Can change di pr_gestion_integrada	177	change_dipr_gestion_integrada
+707	Can delete di pr_gestion_integrada	177	delete_dipr_gestion_integrada
+708	Can view di pr_gestion_integrada	177	view_dipr_gestion_integrada
+709	Can add document_gestion_integrada	178	add_document_gestion_integrada
+710	Can change document_gestion_integrada	178	change_document_gestion_integrada
+711	Can delete document_gestion_integrada	178	delete_document_gestion_integrada
+712	Can view document_gestion_integrada	178	view_document_gestion_integrada
+713	Can add indicadores_gestion_integrada	179	add_indicadores_gestion_integrada
+714	Can change indicadores_gestion_integrada	179	change_indicadores_gestion_integrada
+715	Can delete indicadores_gestion_integrada	179	delete_indicadores_gestion_integrada
+716	Can view indicadores_gestion_integrada	179	view_indicadores_gestion_integrada
+717	Can add document do as_gestion_integrada_ fo as	180	add_documentdoas_gestion_integrada_foas
+718	Can change document do as_gestion_integrada_ fo as	180	change_documentdoas_gestion_integrada_foas
+719	Can delete document do as_gestion_integrada_ fo as	180	delete_documentdoas_gestion_integrada_foas
+720	Can view document do as_gestion_integrada_ fo as	180	view_documentdoas_gestion_integrada_foas
+721	Can add document image_gestion_integrada	181	add_documentimage_gestion_integrada
+722	Can change document image_gestion_integrada	181	change_documentimage_gestion_integrada
+723	Can delete document image_gestion_integrada	181	delete_documentimage_gestion_integrada
+724	Can view document image_gestion_integrada	181	view_documentimage_gestion_integrada
+725	Can add e c_gestion_integrada	182	add_ec_gestion_integrada
+726	Can change e c_gestion_integrada	182	change_ec_gestion_integrada
+727	Can delete e c_gestion_integrada	182	delete_ec_gestion_integrada
+728	Can view e c_gestion_integrada	182	view_ec_gestion_integrada
 \.
 
 
@@ -4048,10 +4548,20 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 --
 
 COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-1	pbkdf2_sha256$870000$LnhTIj7NI5dSGrbjIBfY4d$9cbVZPRxsmpGuvrC2qZpwXjtsydPlwhSKXUCqcDRulU=	2024-11-19 08:58:27.946119-05	t	merodriguez	Martha	Rodriguez	merodriguez@uniminuto.edu	t	t	2024-11-14 14:19:22-05
-2	pbkdf2_sha256$870000$QLjj0tbRb9vSAgcBdXvc2b$T0tMFcI8ySzJg4hgUZ5bM/4fTx60mo4VVM5HvpnC5cA=	2025-01-24 08:17:20.259538-05	f	consultas	Consultas	Apellido Consultas	consultas@ejem.com	f	t	2024-11-14 12:14:18-05
-4	pbkdf2_sha256$870000$n7O30zsBFQ27OqKEkPLsz7$imLEtkY0VUnDazvuqwokyg8tmA7JmF6OIpPkRYU4QSA=	2025-01-23 11:52:52.12319-05	t	Daniela	Daniela	Torres Torres	angie.torres.t@uniminuto.edu	t	t	2024-11-14 14:27:36-05
-3	pbkdf2_sha256$870000$oegE5WntjLMgtbg7HAdYcH$c6ka9vRUqtkQYYlu/uiqjp13WuzPPClCcalta9CjFw4=	2025-01-24 08:14:36.74857-05	t	superuser	Damian	Rojas Castillo	superuser@superuser.com	t	t	2024-11-14 12:12:23-05
+13	pbkdf2_sha256$870000$55QBYcCOofwrsNJJlYdpn1$M99uIaPHnnU1JmzsxC7hrPFbArn0hstNjDW3YOR94GU=	\N	f	sergioamado	Sergio	Amado	comercial@unisanpablo.edu.co	f	t	2025-02-10 15:52:42-05
+14	pbkdf2_sha256$870000$qcYTKgLSdVwFuBfzRQ9Oyj$hSAPmoghGg+Y0aOEkc4YVp4wwQjgXmKhY7WjBoJWbVo=	\N	f	juancharry	Juan Miguel	Charry	registroycontrol@gmail.com	f	t	2025-02-10 15:53:40-05
+15	pbkdf2_sha256$870000$vg2SHLAGC6XOiHugMWPXVe$ioQ178dLABVqZb6l5jkjpLZlfA3unfSiyTJwhkiYtsU=	\N	f	paolavasquez	Paola	Vasquez	dir.comunicaciones@unisanpablo.edu.co	f	t	2025-02-10 15:54:23-05
+16	pbkdf2_sha256$870000$hGc0u80FAzQFxrWV45BjgN$jyv0c0w60eQUSd4fHy1jLCVCDKFG2EGdZ8fh4i7SEFA=	\N	f	juliansanchez	Julian	Sanchez	asistenteadministrativo@unisanpablo.edu.co	f	t	2025-02-10 15:55:21-05
+11	pbkdf2_sha256$870000$lqQyxGnmcsVPz7w8hVf3C5$QPrqcih9USffQlJUXMAysvebQd/Vk8iYSoRImctnseM=	2025-02-10 15:59:21.078804-05	f	diegosolis	Diego	Solis	sistemas@unisanpablo.edu.co	f	t	2025-02-10 15:50:51-05
+4	pbkdf2_sha256$870000$n7O30zsBFQ27OqKEkPLsz7$imLEtkY0VUnDazvuqwokyg8tmA7JmF6OIpPkRYU4QSA=	2025-02-17 08:14:48.90866-05	t	daniela	Daniela	Torres Torres	angie.torres.t@uniminuto.edu	t	t	2024-11-14 14:27:36-05
+2	pbkdf2_sha256$870000$DGAOlUXaAr6sbTZKcbMwc2$80xvoSjWmB5Rm345d+uHJltkoFfMpmvvtZreFTQgGhM=	2025-02-17 10:17:34.569486-05	f	consultas	Consultas	Apellido Consultas	consultas@ejem.com	f	t	2024-11-14 12:14:18-05
+3	pbkdf2_sha256$870000$fx0vtr9UC9eV8sBiBp2OKS$JhAVZCok5jfLRgvQvXlusLoEjrOpEbSoukKcOVQH1Ss=	2025-02-17 15:08:47.284963-05	t	superuser	Damian	Rojas Castillo	superuser@superuser.com	t	t	2024-11-14 12:12:23-05
+7	pbkdf2_sha256$870000$BmpUZVlLt86UuVqm7TS7z7$VAsjP8SRbSdGZYJ2Q3nXs1tK22eOY2iCna1fwoLwMHY=	\N	f	henryhueso	Henry	Hueso	henryhueso@unisanpablo.edu.co	f	t	2025-02-10 15:45:59-05
+8	pbkdf2_sha256$870000$h4YniNpbvDUQICID3cVNRZ$WEerxxzm4P5qytnV+xX0HFT2AFGaq9c0TdyR+3evLrE=	\N	f	jesusparada	Jesus	Parada	asistenterectoria@unisanpablo.edu.co	f	t	2025-02-10 15:47:14-05
+9	pbkdf2_sha256$870000$uzgO0TadfNuIoPUkoy3m40$3+u6a3kW0sTo8tle8voNI8QKsyDZaev8Dd72KdvpFkA=	\N	f	normabonilla	Norma	Bonilla	normabonilla@unisanpablo.edu.co	f	t	2025-02-10 15:48:38-05
+10	pbkdf2_sha256$870000$6OjiWShKqWCXdSSbFYbecg$k8KlS0aeHHMeKqHXKpnGqp//uATgLFShIxuj4hRD2o8=	\N	f	rafaelramires	Rafael	Ramires	rafael.ramirez@unisanpablo.edu.co	f	t	2025-02-10 15:50:01-05
+12	pbkdf2_sha256$870000$BJaYnTVcZn5H5WwuhL3977$mup9qU6VSS8BwKKzWDva1+8vmhzgu3/PDmp4cC6C3Mc=	\N	f	gersonmedina	Gerson	Medina	medias@unisanpablo.edu.co	f	t	2025-02-10 15:51:33-05
+1	pbkdf2_sha256$870000$ZRwcJ0wqfLORYrVoSVwAHm$EgabC/GPOXHNXyXYGVmcPsfiezVV5oxWJk7LNjwwQ6I=	2025-02-14 09:24:33.864437-05	t	merodriguez	Martha	Rodriguez	merodriguez@uniminuto.edu	t	t	2024-11-14 14:19:22-05
 \.
 
 
@@ -4078,6 +4588,30 @@ COPY public.auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
 COPY public.django_admin_log (id, action_time, object_id, object_repr, action_flag, change_message, content_type_id, user_id) FROM stdin;
 1	2024-12-04 15:12:13.94906-05	5	prueba	1	[{"added": {}}]	4	3
 2	2024-12-04 15:12:54.463794-05	5	prueba	3		4	3
+3	2025-02-04 10:17:24.304812-05	1	merodriguez	2	[{"changed": {"fields": ["password"]}}]	4	3
+4	2025-02-04 10:32:15.879155-05	6	normabonilla	1	[{"added": {}}]	4	1
+5	2025-02-04 10:35:11.387373-05	6	normabonilla	3		4	1
+6	2025-02-10 15:46:00.852798-05	7	henryhueso	1	[{"added": {}}]	4	3
+7	2025-02-10 15:46:44.994188-05	7	henryhueso	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+8	2025-02-10 15:47:15.487955-05	8	jesusparada	1	[{"added": {}}]	4	3
+9	2025-02-10 15:47:53.657934-05	8	jesusparada	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+10	2025-02-10 15:48:40.090122-05	9	normabonilla	1	[{"added": {}}]	4	3
+11	2025-02-10 15:48:58.851642-05	9	normabonilla	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+12	2025-02-10 15:50:02.9341-05	10	rafaelramires	1	[{"added": {}}]	4	3
+13	2025-02-10 15:50:20.478273-05	10	rafaelramires	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+14	2025-02-10 15:50:52.675072-05	11	diegosolis	1	[{"added": {}}]	4	3
+15	2025-02-10 15:51:10.310411-05	11	diegosolis	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+16	2025-02-10 15:51:34.416918-05	12	gersonmedina	1	[{"added": {}}]	4	3
+17	2025-02-10 15:52:04.119171-05	12	gersonmedina	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+18	2025-02-10 15:52:44.049302-05	13	sergioamado	1	[{"added": {}}]	4	3
+19	2025-02-10 15:53:11.972881-05	13	sergioamado	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+20	2025-02-10 15:53:41.888195-05	14	juancharry	1	[{"added": {}}]	4	3
+21	2025-02-10 15:53:59.031353-05	14	juancharry	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+22	2025-02-10 15:54:24.718389-05	15	paolavasquez	1	[{"added": {}}]	4	3
+23	2025-02-10 15:54:58.65728-05	15	paolavasquez	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+24	2025-02-10 15:55:22.142845-05	16	juliansanchez	1	[{"added": {}}]	4	3
+25	2025-02-10 15:55:49.214147-05	16	juliansanchez	2	[{"changed": {"fields": ["First name", "Last name", "Email address"]}}]	4	3
+26	2025-02-10 15:57:00.521253-05	4	daniela	2	[{"changed": {"fields": ["Username"]}}]	4	3
 \.
 
 
@@ -4247,6 +4781,27 @@ COPY public.django_content_type (id, app_label, model) FROM stdin;
 159	mapa_procesos	ec_internacionalizacion
 160	mapa_procesos	ec_planeacion_estrategica_institucional
 161	mapa_procesos	ec_relacionamineto_egresados
+162	gestor_archivos	requisitoslegalesnormativos_globales
+163	gestor_archivos	requisitosnecesidadespartesinteresadas_globales
+164	mapa_procesos	ec_gestion_cartera
+165	gestor_archivos	dipr_gestion_cartera
+166	gestor_archivos	document_gestion_cartera
+167	gestor_archivos	indicadores_gestion_cartera
+168	documentacion	documentdoas_gestion_cartera_foas
+169	documentacion	documentimage_gestion_cartera
+170	gestor_archivos	dipr_evaluacion_control
+171	gestor_archivos	document_evaluacion_control
+172	gestor_archivos	indicadores_evaluacion_control
+173	documentacion	documentdoas_evaluacion_control_foas
+174	documentacion	documentimage_evaluacion_control
+175	mapa_procesos	ec_evaluacion_control
+176	mapa_procesos	videotutorial
+177	gestor_archivos	dipr_gestion_integrada
+178	gestor_archivos	document_gestion_integrada
+179	gestor_archivos	indicadores_gestion_integrada
+180	documentacion	documentdoas_gestion_integrada_foas
+181	documentacion	documentimage_gestion_integrada
+182	mapa_procesos	ec_gestion_integrada
 \.
 
 
@@ -4277,6 +4832,25 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 20	glosario	0001_initial	2024-12-04 14:47:17.399156-05
 21	mapa_procesos	0001_initial	2024-12-04 14:47:17.956897-05
 22	sessions	0001_initial	2024-12-04 14:47:17.990949-05
+24	gestor_archivos	0002_requisitoslegalesnormativos_globales_and_more	2025-02-07 09:35:08.02545-05
+25	documentacion	0002_alter_documentformatosasociados_fecha_creacion	2025-02-07 11:58:04.828542-05
+26	documentacion	0003_alter_documentformatosasociados_fecha_creacion	2025-02-07 12:00:25.977078-05
+27	documentacion	0004_alter_documentformatosasociados_fecha_creacion	2025-02-10 08:33:39.520805-05
+28	gestor_archivos	0003_requisitosnecesidadespartesinteresadas_globales	2025-02-10 08:33:39.72673-05
+29	documentacion	0005_alter_documentformatosasociados_fecha_creacion	2025-02-12 14:12:09.61838-05
+30	mapa_procesos	0002_ec_gestion_cartera	2025-02-12 14:12:09.747058-05
+31	documentacion	0006_alter_documentformatosasociados_fecha_creacion	2025-02-12 14:19:58.554515-05
+32	gestor_archivos	0004_dipr_gestion_cartera	2025-02-12 14:19:58.707882-05
+33	gestor_archivos	0005_document_gestion_cartera_indicadores_gestion_cartera	2025-02-12 14:34:21.299209-05
+34	documentacion	0007_alter_documentformatosasociados_fecha_creacion_and_more	2025-02-12 14:34:21.548345-05
+35	gestor_archivos	0006_dipr_evaluacion_control_document_evaluacion_control_and_more	2025-02-14 08:31:18.717805-05
+36	documentacion	0008_alter_documentformatosasociados_fecha_creacion_and_more	2025-02-14 08:31:18.976887-05
+37	mapa_procesos	0003_ec_evaluacion_control	2025-02-14 08:31:19.029803-05
+38	documentacion	0009_alter_documentformatosasociados_fecha_creacion	2025-02-17 08:35:31.067721-05
+39	mapa_procesos	0004_videotutorial	2025-02-17 08:35:31.14253-05
+40	gestor_archivos	0007_dipr_gestion_integrada_document_gestion_integrada_and_more	2025-02-17 11:18:03.110491-05
+41	documentacion	0010_alter_documentformatosasociados_fecha_creacion_and_more	2025-02-17 11:18:03.375134-05
+42	mapa_procesos	0005_ec_gestion_integrada_alter_videotutorial_options_and_more	2025-02-17 11:18:03.422172-05
 \.
 
 
@@ -4314,13 +4888,34 @@ d7fp0cu3vzl451yq63whm12v43c580qu	.eJxVjEEOgjAURO_StWna8tuiS_eeofm_HQQ1kFBYGe8uJC
 uonoqd0cyg42j366wdye9x7z0njakkpz	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tVGoe:_C1vq2htvGaZwZMZ63mXaFDx4o_tw7dLw6zTH9rrsdE	2025-01-21 16:08:44.447744-05
 g6i1wpydc53zhdeh9sgpift4thrbt86u	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tTRGg:Xf3SpCnt-BgPWWLSYwHucC3oGdUTG2mYS2G9d0bU-ko	2025-01-16 14:54:06.89257-05
 zp0mwjl3fm8ado6q7a8iq35jtjbqhyji	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tTl6W:URbo543Hjrj8-8a6SUGvXM6C3QJ2699_7whNry_2tDc	2025-01-17 12:04:56.718144-05
-1w2majx2wg5azrvbykomi1x7t7hpv873	.eJxVjDsOwjAQBe_iGln-rWNT0ucM1tq74ABypDipEHeHSCmgfTPzXiLhtta0dV7SROIsjDj9bhnLg9sO6I7tNssyt3WZstwVedAux5n4eTncv4OKvX5rB9ZTNBa0Y1dIac1QnLlGxxQ8Q7DaBNQFYoCiM4DKNGAeFFufmUG8P8D6N3E:1tbJYm:het1swtyQ1BA9_qnkOCBsZdtO_QJCwfTXXxAp2SqoZ0	2025-02-07 08:17:20.508167-05
+fatjf4wjrdxa16tfvy8wowrynn2yqukm	.eJxVjDsOwjAQBe_iGln-rWNT0ucM1tq74ABypDipEHeHSCmgfTPzXiLhtta0dV7SROIsjDj9bhnLg9sO6I7tNssyt3WZstwVedAux5n4eTncv4OKvX5rB9ZTNBa0Y1dIac1QnLlGxxQ8Q7DaBNQFYoCiM4DKNGAeFFufmUG8P8D6N3E:1tgRzO:mMF71TBwv8cJBzG0aEmEP_d72TV-0KfsPNc1uEW7lQ8	2025-02-21 12:18:02.745944-05
+2gm8pztakch8fxsq7wr2bgiuu1vu6ylo	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tg54Z:Ruh_rMgVN4avAj5Ln47UidC_f3LTqbGAn3I8gJihx_g	2025-02-20 11:49:51.715469-05
+yv6tlbqr7xr5rct6gua3280df5v6o5pr	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tg3GA:6XAsQUc-FHGZPsltkRPk5dI4012dnL51KQv4hRmxq-o	2025-02-20 09:53:42.746158-05
+gfh7vmw1d6e6qcbsugra8qjq087isah8	e30:1tj1tn:PBKq1ag2cne-Ezaim5X0UHKgfMU9IuwuOoQk6jmatx0	2025-02-28 15:02:55.121956-05
+e8prjirfby9sr7iwwcbrglcqm0wv1i5k	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk0vl:BBnY11lYLA0RannLDAlu3HVTxPiOB6PuXBEZnYI3BgY	2025-03-03 08:13:01.090211-05
+2h88mch82l4kwoe7yb94gc3x5juhnskf	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tivtz:6vWScgqCzsVa3kcLYasGUTWwzaNO4kO2dBJr4lWMhk4	2025-02-28 08:38:43.033574-05
+if4vbnc892xp6sk6a5ivn1gmxln8sjz3	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tgVLh:1BNrtfyUjOgnDX9MAm_nGCV08095Qg4QODYWSR8m67w	2025-02-21 15:53:17.203197-05
 ur82nbdzczxzha9aq3bdvbvurrvtpght	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tYRxp:y8A37o3p5-b9-k1N-dwrznOmK0DVLcRmSvfqSvFODrc	2025-01-30 10:39:21.18982-05
+qx98qjf3upghvja7lk566dprigyvhh2a	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tigwx:bsNdDubWqhQf3-CWdnwIsC2mg4Ret4bhzthjInyLhI4	2025-02-27 16:40:47.263061-05
 pfg43kswzk5zzpcy76l5cgkwy1ofaw6s	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tXomv:yz7N60QANcvM-dv4EyVtJgVfvT2ORPL0NqA0OkdSKXg	2025-01-28 16:49:29.688445-05
 gpl0aznvakitc2b3cimx79ygjpr7oiwu	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tY3R2:goWfmZO8kO0jA_b0Yp-9m-Iens7NY8uAyZvxp5nbdJ0	2025-01-29 08:27:52.590736-05
 9sg652ljfijewvjz58oqnlj3nb9ls905	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tXgln:YmfOyQ57SCUEl87E80LckUZtXnZsjGZhzERZkaBJ_l4	2025-01-28 08:15:47.155894-05
+gkz9yalh7eo950rj41egar0n40si31ic	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tg2zc:8_ErfdPLx7J6e-evjNX473zn7z57uZtGUN0wSFW3N5o	2025-02-20 09:36:36.959707-05
+taualhd0cfupg4uytgist8cj001aa5z1	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tiJIB:UygGbrFMFJyz3-utZt4BuUkQAwefkg5LxhMVWntJcBU	2025-02-26 15:25:07.817698-05
+ig5uejetvfb2xok1oze6d5a29t94yxyr	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk88z:0W_7Rh8f-bF8HHGKd6KU3TV1eG_f19VWQivGxr4fetQ	2025-03-03 15:55:09.516203-05
+lvxdidmsx5avtfc9bu8s1lhjagbjrip2	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tg32G:wMrbZaa5Csglp2zFrbsEVej2rWSVUwA5Ps_bhKCO6sE	2025-02-20 09:39:20.587071-05
 n0t3m60yj4pg7zhe4saronvok4eo5ipe	.eJxVjEEOgjAURO_StWna8tuiS_eeofm_HQQ1kFBYGe8uJCx0N5n3Zt4q8br0aa2Y01DURZE6_XbC-YlxB-XB433SeRqXeRC9K_qgVd-mgtf1cP8Oeq79tg5kSUyHzoljlEIQcq1kagO7SNii5eBhG24cQOaMGKPPPlsEEaM-XwDqOIM:1tXoT3:VFu1I-rFzE9UDOLFgpSLtFExIVEq0m5PcmtyFjpAn0Y	2025-01-28 16:28:57.056496-05
+reu7t4cgzk7uk1nj9en02fg8k5hq2dyl	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tg3Vf:C_toDwhxeiZhdKz8fOxamnX9PqqzYJET5GIV8DkcNkA	2025-02-20 10:09:43.460667-05
+2yzd11dbtoo3crtwcy4ew51ic6cx3jkl	.eJxVjDsOwjAQRO_iGlkb4i8lPWew1rs2DiBbipMKcXcSKQV0o3lv5i0CrksJa09zmFhcxCBOv11Eeqa6A35gvTdJrS7zFOWuyIN2eWucXtfD_Tso2Mu2pjN4Z1N042hhZOPYemeUNYk8e8jebpkjqAh5UAY16YiZkCGz1tmKzxfKzTfw:1tiwlC:--ha2nYwHkIN0CwKIxZywBbhauQUtdkUbFmGP5j9O00	2025-02-28 09:33:42.009972-05
+fjgwdlda70qr91gkroje8q70ohh06i2m	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tdbSP:XwijMtRmuJF-NPhlLXAYqG7PcNA_I0NHA7hShkkqPvA	2025-02-13 15:48:13.954255-05
 5ddyw571bdk19qur39oqlm8utc7czjg1	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apAvd_vfef6lI21ri1vISJ1FnZdXpd0vEj1x3IHeqt1nzXNdlSnpX9EGbvs6Sn5fD_Tso1Mq3ZrGDI_KBIY09jOzEiwsWEiSfBzQeCDsDbAJ2mRENCfYWJbFzwKjeH-2nN8o:1tXjKk:cB_JVK1gVf8n7g1DzO0UzE1haPiocLw9WuSSw82sGSY	2025-01-28 11:00:02.537533-05
+d0yi53jeecmsbyloupiq560gg0paddtc	.eJxVjDsOwjAQBe_iGln-rWNT0ucM1tq74ABypDipEHeHSCmgfTPzXiLhtta0dV7SROIsjDj9bhnLg9sO6I7tNssyt3WZstwVedAux5n4eTncv4OKvX5rB9ZTNBa0Y1dIac1QnLlGxxQ8Q7DaBNQFYoCiM4DKNGAeFFufmUG8P8D6N3E:1tg2Z4:F_PaTneWkg_prFZIyeO4I5j16IgGm8JH4af2uhHxEro	2025-02-20 09:09:10.237653-05
+6ees12kpbnarqfzgoltbaxs09mu6t12j	e30:1thZma:gHhj1og_eiyOj5yamkCVcxw36c9hXkegLnI5HtZtX2M	2025-02-24 14:49:28.623029-05
+839qo7bz1aab53nij2yth1ljx9tdmny2	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tiwPN:jfKTECFn5hTmoDzoU1qAshPlKh6qKVKJ5EO7W_8OMHw	2025-02-28 09:11:09.411244-05
+j9gy2p0p84g927iw0h53pcbc79i3w4zd	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1thqSZ:8rPGbXlp-ch1tXnMJZ2yeWTSaqitb9zyvxw_AolrzKQ	2025-02-25 08:37:55.759536-05
+ocllc25wa84brh7xi36639xx0ujhs0ya	.eJxVjEEOgjAURO_StWna8tuiS_eeofm_HQQ1kFBYGe8uJCx0N5n3Zt4q8br0aa2Y01DURZE6_XbC-YlxB-XB433SeRqXeRC9K_qgVd-mgtf1cP8Oeq79tg5kSUyHzoljlEIQcq1kagO7SNii5eBhG24cQOaMGKPPPlsEEaM-XwDqOIM:1tk87z:eD296xyO1XjvINma7P3uqBM5YFyJfiIDTuNnpD5hYkw	2025-03-03 15:54:07.878766-05
+j5ru8i4lvlzy7ei0jf9a8d8uj17hkz76	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk0vJ:OulPDkJcY-sSBTXA9JpHMq93JTMJugekQA7yDp9Ps4c	2025-03-03 08:12:33.224433-05
+0deu9v27zx8d57vhnljuypbbuls0dgh3	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk0xn:y_mSrgOs0jLOR1-csN60mwXArkyvCM1jiUieHsefzvQ	2025-03-03 08:15:07.049632-05
 \.
 
 
@@ -4337,6 +4932,7 @@ COPY public.document_admisiones_registro_control (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_aseguramiento_calidad_academica (document_ptr_id) FROM stdin;
+92
 \.
 
 
@@ -4361,8 +4957,9 @@ COPY public.document_auditorias (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_bienestar_institucional (document_ptr_id) FROM stdin;
-49
-50
+108
+109
+110
 \.
 
 
@@ -4371,6 +4968,9 @@ COPY public.document_bienestar_institucional (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_comunicacion (document_ptr_id) FROM stdin;
+93
+94
+95
 \.
 
 
@@ -4379,11 +4979,11 @@ COPY public.document_comunicacion (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_control_disciplinario (document_ptr_id) FROM stdin;
-30
-57
-58
-59
-60
+103
+104
+105
+106
+107
 \.
 
 
@@ -4400,9 +5000,16 @@ COPY public.document_desarrollo_curricular (document_ptr_id) FROM stdin;
 --
 
 COPY public."document_enseñanza_prendizaje_evaluacion" (document_ptr_id) FROM stdin;
-19
-20
-63
+71
+72
+\.
+
+
+--
+-- Data for Name: document_evaluacion_control; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.document_evaluacion_control (document_ptr_id) FROM stdin;
 \.
 
 
@@ -4411,6 +5018,14 @@ COPY public."document_enseñanza_prendizaje_evaluacion" (document_ptr_id) FROM s
 --
 
 COPY public.document_extension_proyeccion (document_ptr_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: document_gestion_cartera; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.document_gestion_cartera (document_ptr_id) FROM stdin;
 \.
 
 
@@ -4427,12 +5042,9 @@ COPY public.document_gestion_contractual (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_gestion_desarrollo_humano (document_ptr_id) FROM stdin;
-29
-52
-53
-54
-55
-65
+100
+101
+102
 \.
 
 
@@ -4441,7 +5053,7 @@ COPY public.document_gestion_desarrollo_humano (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_gestion_documental (document_ptr_id) FROM stdin;
-64
+81
 \.
 
 
@@ -4454,14 +5066,20 @@ COPY public.document_gestion_informacion (document_ptr_id) FROM stdin;
 
 
 --
+-- Data for Name: document_gestion_integrada; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.document_gestion_integrada (document_ptr_id) FROM stdin;
+\.
+
+
+--
 -- Data for Name: document_gestion_investigacion; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.document_gestion_investigacion (document_ptr_id) FROM stdin;
-15
-16
-61
-62
+73
+74
 \.
 
 
@@ -4478,8 +5096,8 @@ COPY public.document_gestion_juridica (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_gestion_recursos_financieros (document_ptr_id) FROM stdin;
-9
-10
+79
+80
 \.
 
 
@@ -4488,8 +5106,10 @@ COPY public.document_gestion_recursos_financieros (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_gestion_registro_calificado (document_ptr_id) FROM stdin;
-36
-37
+88
+89
+90
+91
 \.
 
 
@@ -4498,7 +5118,7 @@ COPY public.document_gestion_registro_calificado (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_gestion_servicio_usuario (document_ptr_id) FROM stdin;
-34
+85
 \.
 
 
@@ -4531,7 +5151,6 @@ COPY public.document_infraestructura_fisica (document_ptr_id) FROM stdin;
 --
 
 COPY public.document_internacionalizacion (document_ptr_id) FROM stdin;
-25
 \.
 
 
@@ -4548,7 +5167,7 @@ COPY public.document_planeacion_estrategica_institucional (document_ptr_id) FROM
 --
 
 COPY public.document_relacionamineto_egresados (document_ptr_id) FROM stdin;
-14
+75
 \.
 
 
@@ -4557,21 +5176,22 @@ COPY public.document_relacionamineto_egresados (document_ptr_id) FROM stdin;
 --
 
 COPY public.documentacion_documentasociadosdiagramasflujo (id, image, uploaded_at) FROM stdin;
-1	images/Flujograma_de_procedimiento_de_matriculas.jpg	2024-12-05 09:21:05.090196-05
-2	images/Flujograma_Procedimiento_aplicacion_de_becas_y_decuentos.jpg	2024-12-05 09:25:35.059677-05
-3	images/Flujograma_de_Relacionamientos_con_egresados.jpg	2024-12-05 09:56:48.3888-05
-4	images/Diagrama_PR_FORMULACION_Y_VINCULACION_DE_GRUPOS_DE_SEMILLEROS_.jpg	2024-12-05 10:10:05.163476-05
-5	images/flujograma_de_procedimiento_de_creacion_formulacion_y_vinculacion_de_grupos_de_in_cCQBQUy.jpg	2024-12-05 10:15:12.209924-05
-7	images/Fluograma_del_procedimiento_de_comunicaciones.jpg	2024-12-05 11:49:47.465469-05
-8	images/flujograma_del_procedimiento_Induccion_y_reinduccion_a_estudiantes.jpg	2024-12-05 14:21:27.809328-05
-9	images/Flujograma_del_servicio_al_cliente_PQRF.jpg	2024-12-05 14:45:53.602936-05
-10	images/Flujograma_de_procedimiento_de_modificacion_de_los_progamas_academicos.jpg	2024-12-05 14:52:36.294651-05
-11	images/flujograma_de_procedimiento_de_pre_radicacion_de_cumplimiento_de_condiciones.jpg	2024-12-05 14:54:47.967879-05
-12	images/Flujograma_del_procedimiento_registro_publicacion_y_administración_de_trabajos_de_grado.jpg	2024-12-09 14:29:34.69168-05
-13	images/flujograma_de_proceimiento_de_solicitud_de_grados_pregrado_y_posgrados.jpg	2024-12-09 14:41:48.307455-05
-15	images/Flujograma_Procedimiento_de_control_disciplinario.jpg	2024-12-17 09:20:03.951896-05
-16	images/Flujograma_de_procedimiento_desarrollo_e_implementación_de_programa_de_salud_y_bienestar_.jpg	2024-12-17 12:02:36.834789-05
-18	images/flujograma_Procedimiento_de_detención_de_plagio.jpg	2024-12-18 08:23:31.553791-05
+20	images/flujograma_de_procedimiento_de_solicitud_de_gradopregradoposgrado_y_educacion_continua.jpg	2025-02-10 09:55:48.305956-05
+21	images/Flujograma_del_procediminto_registro_publicacion_y_administración_de_trabajos_de_grado_.jpg	2025-02-10 10:18:56.312896-05
+22	images/creacion_formulacion_y_vinculacion_de_grupos_de_investigacion.jpg	2025-02-11 16:49:04.307853-05
+23	images/CREACIONFORMULACION_Y_VINCULACION_DE_GRUPOS_DE_SEMILLEROS.jpg	2025-02-12 08:32:00.35538-05
+24	images/MATRICULAS.jpg	2025-02-12 11:14:25.721449-05
+25	images/aplicacion_de_becas_y_decuentos_.jpg	2025-02-12 11:56:57.920763-05
+27	images/SERVICIO_AL_CLIENTE_.jpg	2025-02-12 14:58:35.2464-05
+29	images/Imagen1.jpg	2025-02-14 15:02:37.967611-05
+30	images/modificacion_de_prgramas_.jpg	2025-02-14 15:29:48.653372-05
+31	images/RADICACIÓN_DE_CUMPLIMIENTO_DE_CONDICIONES_DE_CALIDAD_INSTITUCIONAL.jpg	2025-02-17 08:19:38.187336-05
+32	images/FLUJOGRAMA_DE_AUTOEVALUACION_DE_PROGRAMAS.jpg	2025-02-17 10:14:40.47248-05
+34	images/Imagen1.png	2025-02-17 12:06:45.195516-05
+35	images/Imagen2.png	2025-02-17 12:25:53.188533-05
+36	images/Imagen3.png	2025-02-17 12:41:32.879937-05
+37	images/Procedimiento_de_detención_de_plagio.jpg	2025-02-17 15:27:13.837449-05
+38	images/Induccion_y_reinduccion_a_estudiantes_.jpg	2025-02-17 15:38:39.123692-05
 \.
 
 
@@ -4580,7 +5200,19 @@ COPY public.documentacion_documentasociadosdiagramasflujo (id, image, uploaded_a
 --
 
 COPY public.documentacion_documentformatosasociados (id, title, codigo, caracterizacion, procedimiento, file, fecha_creacion) FROM stdin;
-1	Formato de denuncia o reporte	FR-TB-CDI-01	CONTROL DISCIPLINARIO	CONTROL DISCIPLINARIO	lib/FR-TB-CDI-01_Formato_de_denuncia_o_reporte.docx	2024-12-05 03:08:07-05
+15	FR-TB-GDT-01 REQUERIMIENTO  DE PERSONAL	FR-TB-GDT-01	GESTION Y DESARROLLO DEL TALENTO HUMANO	Selección y contratación	lib/FR-TB-GDT-01_Formato_de_requerimiento_de_personal.docx	2025-02-17 06:17:27-05
+16	FR-TB-GDT-02 CRITERIOS DE SELECCIÓN  Y PUNTUACIÓN DE EVALUADORES	FR-TB-GDT-02	GESTION Y DESARROLLO DEL TALENTO HUMANO	Selección y contratación	lib/FR-TB-GDT-02_Formato_de_criterios_de_selección_y_puntuación.docx	2025-02-17 06:17:27-05
+17	FR-TB-GDT-03 SEGUIMIENTO DE APLICACIONES RECIBIDAS	FR-TB-GDT-03	GESTION Y DESARROLLO DEL TALENTO HUMANO	Selección y contratación	lib/FR-TB-GDT-03_Formato_de_seguimiento_postulantes.xlsx	2025-02-17 06:17:27-05
+18	FR-TB-GDT-04 ANUNCIO DE CONVOCATORIA INTERNA	FR-TB-GDT-04	GESTION Y DESARROLLO DEL TALENTO HUMANO	Selección y contratación	lib/FR-TB-GDT-04_Formato_de_anuncio_de_convocatoria_interna.docx	2025-02-17 06:17:27-05
+19	FR-TB-GDT-05 INFORME DE INDUCCIÓN O REINDUCCIÓN	FR-TB-GDT-05	GESTION Y DESARROLLO DEL TALENTO HUMANO	Inducción a colaboradores	lib/FR-TB-GDT-05_Informe_de_inducción.xlsx	2025-02-17 06:17:27-05
+\.
+
+
+--
+-- Data for Name: gestion_integrada; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.gestion_integrada (diagramasprocedimientos_ptr_id) FROM stdin;
 \.
 
 
@@ -4614,6 +5246,8 @@ COPY public.gestor_archivos_diagramasprocedimientos (id, image, uploaded_at, nom
 27	images/flujograma_de_caracterización_Gestion_y_Desarrollo_del_Talento_Humano.jpg	2024-12-18 10:44:28.298001-05	flujograma de caracterización Gestion y Desarrollo del Talento Humano
 28	images/flujograma_caracterizacion_de_control_disciplinario_.jpg	2024-12-18 11:55:31.969527-05	flujograma caracterizacion de control disciplinario 
 29	images/flujograma_bienestar_institucional_.jpg	2024-12-20 13:23:43.688757-05	flujograma bienestar institucional 
+30	images/Flujograma_Gestión_de_Cartera.jpg	2025-02-12 14:52:22.949295-05	Flujograma Gestión de Cartera
+31	images/Flujograma_Evaluación_y_Control.jpg	2025-02-14 08:52:31.631917-05	Flujograma Evaluación y Control
 \.
 
 
@@ -4622,61 +5256,65 @@ COPY public.gestor_archivos_diagramasprocedimientos (id, image, uploaded_at, nom
 --
 
 COPY public.gestor_archivos_document (id_archivo, codigo, titulo, caracterizacion, file, fecha_creacion) FROM stdin;
-33	CR-CI-GSU	GESTIÓN DEL SERVICIO AL USUARIO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_SERVICIO_AL_USUARIO.pdf	2024-12-05 03:08:07-05
-35	CR-CA-ADT	AUDITORIAS	CALIDAD INTEGRAL	documents/AUDITORIAS.pdf	2024-12-05 03:08:07-05
-2	MPIP	Matriz de partes interesadas pertinentes UNISANPABLO	GLOBAL	uploads\\MatrizdePartesInteresadasPertinentes_12092019.xlsx	2024-12-04 10:24:45-05
-3	MRISO	Matriz de requisitos ISO	GLOBAL	uploads\\MatrizdeRequisitosISO_18112021.xlsx	2024-12-04 10:24:45-05
-5	CR-JC-GEJ	GESTIÓN JURÍDICA	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_JURÍDICA.pdf	2024-12-09 15:40:27.391874-05
-4	CR-JC-GEC	GESTIÓN CONTRACTUAL	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_CONTRACTUAL.pdf	2024-12-09 15:39:25.146025-05
-6	CR-AF-GDO	GESTIÓN DOCUMENTAL	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DOCUMENTAL.pdf	2024-12-04 09:57:36-05
 7	CR-FT-GIB	GESTIÓN DE LA INFORMACIÓN BIBLIOGRÁFICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN_BIBLIOGRÁFICA.pdf	2024-12-04 09:57:36-05
-9	PR-AF GRF-01	Procedimiento de matriculas	GESTION DE RECURSOS FINANCIEROS	documents/Procedimiento_de_matriculas.docx	2024-12-05 03:08:07-05
-10	PR-AF-GRF-02	Procedimiento de aplicación de becas y descuentos	GESTION DE RECURSOS FINANCIEROS	documents/Pocedimiento_de_Aplicación_de_becas_descuentos_y_patrocinios.docx	2024-12-05 03:08:07-05
-49	PR-TB-BIN-01	Procedimiento desarrollo e implementación de programas de salud y bienestar	BIENESTAR INSTITUCIONAL	documents/PR-TB-BIN-01_Desarrollo_e_Implementación_de_Programas_de_Salud_y_Bienestar.docx	2024-12-17 09:30:44.283782-05
-11	CR-FT-GIF	GESTION DE LA INFRAESTRUCTURA FISICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTION_DE_LA_INFRAESTRUCTURA_FISICA.pdf	2024-12-05 03:08:07-05
-14	PR-PS-GRA-01	Procedimiento de relacionamientos con egresados	RELACIONAMIENTO CON EGRESADOS	documents/PR-PS-GRA-01_Relacionamiento_con_egresados..docx	2024-12-05 03:08:07-05
-15	PR-IP-GIV-02	Procedimiento de creación, formulación y vinculación de grupos de semilleros	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_semilleros.docx	2024-12-05 03:08:07-05
-16	PR-IP-GIV-01	Procedimiento de creación, formulación y vinculación de grupos de investigación	GESTIÓN DE INVESTIGACIÓN	documents/PR-IP-GIV-01-_Creacion_formulacion_y_vinculacion_de_grupos_investigacion.docx	2024-12-05 03:08:07-05
-19	PR-DC-EAE-01	Procedimiento de solicitud de grado, pregrado, posgrado y educación continua	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-AF-GRF-01_Procedimiento_de_solicitud_de_grado_pregrado_posgrado_y_educación_continua.docx	2024-12-05 03:08:07-05
-20	PR-DO-RPATGRI-02	Procedimiento registro, publicación y administración de los trabajos de grado en el repositorio	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/Procedimiento_registro_publicacion_y_administraccion_de_los_trabajos_de_grado_en_el_repositorio_institucional.docx	2024-12-05 03:08:07-05
-18	CR-DC-GDC	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	DOCENCIA DE CALIDAD	documents/ENSEÑANZA_APRENDIZAJE_Y_EVALUACIÓN.pdf	2024-12-05 03:08:07-05
-21	CR-DC-DRC	DESARROLLO CURRICULAR	DOCENCIA DE CALIDAD	documents/DESARROLLO_CURRICULAR.pdf	2024-12-05 03:08:07-05
-22	CR-PE-PEI	PLANEACIÓN ESTRATEGICA INSTITUCIONAL	PLANEACIÓN ESTRATÉGICA	documents/PLANEACIÓN_ESTRATEGICA_INSTITUCIONAL.pdf	2024-12-05 03:08:07-05
-25	PR-RI-COM-01	Procedimiento de comunicaciones	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN	documents/Procedimiento_de_comunicaciones.docx	2024-12-05 03:08:07-05
-27	CR-RI-COM	COMUNICACIÓN	RELACIONES INTERINSTITUCIONALES	documents/COMUNICACIÓN.pdf	2024-12-05 03:08:07-05
-29	PR-TB-BIN-03	Procedimiento de inducción y reinducción de estudiantes	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-BIN-03_Inducción_de_estudiantes_1.docx	2024-12-05 03:08:07-05
-31	CR-TB-CDI	CONTROL DISCIPLINARIO	TALENTO HUMANO Y BIENESTAR	documents/CONTROL_DISCIPLINARIO.pdf	2024-12-05 03:08:07-05
-34	PR-CA-GSU-01	Procedimiento del servicio al cliente PQRF	GESTIÓN DEL SERVICIO AL USUARIO	documents/PR-CA-GSU-01_Servicio_al_cliente_FPQRS_1.docx	2024-12-05 03:08:07-05
-36	PR-CA-GRC-03	Procedimiento de modificación a los programas académicos	GESTIÓN DEL REGISTRO CALIFICADO	documents/Procedimiento_de_modificación_a_los_programas_académicos.docx	2024-12-05 03:08:07-05
-37	PR-CA-GRC-04	Procedimiento de Pre-radicación de cumplimiento de condiciones de calidad institucional	GESTIÓN DEL REGISTRO CALIFICADO	documents/Procedimiento_de_Pre-radicación_de_cumplimiento_de_condiciones_de_calidad_institucional.docx	2024-12-05 03:08:07-05
-38	CR-CI-GRC	GESTIÓN DEL REGISTRO CALIFICADO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_REGISTRO_CALIFICADO.pdf	2024-12-05 03:08:07-05
-39	CR-CI-ACP	ASEGURAMIENTO DE LA CALIDAD DE PROCESOS	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_DE_PROCESOS.pdf	2024-12-05 03:08:07-05
-40	CR-CI-ACA	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_ACADÉMICA.pdf	2024-12-05 03:08:07-05
-32	CR-TB-BIN	BIENESTAR INSTITUCIONAL	TALENTO HUMANO Y BIENESTAR	documents/BIENESTAR_INSTITUCIONAL.pdf	2024-12-19 11:31:29.532315-05
-45	CR-RI-INI	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN	RELACIONES INTERINSTITUCIONALES	documents/INTERINSTITUCIONALIZACIÓN_E_INTERNACIONALIZACIÓN.pdf	2024-12-17 08:57:45.675258-05
-8	CR-AF-GRF	GESTIÓN DE RECURSOS FINANCIEROS	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_RECURSOS_FINANCIEROS.pdf	2024-12-09 15:45:00.6124-05
-12	CR-FT-GCT	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA	documents/GESTION_DE_LOS_SISTEMAS_DE_COMUNICACIÓN_Y_TELECOMUNICACIONES.pdf	2024-12-09 19:53:17.428185-05
-23	CR-PE-GIN	GESTIÓN DE LA INFORMACIÓN	PLANEACIÓN ESTRATÉGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN.pdf	2024-12-12 14:18:56.724876-05
-30	PR-TB-CDI-01	Procedimiento control diciplinario	CONTROL DISCIPLINARIO	documents/PR-TB-CDI-01_Control_Disciplinario.docx	2024-12-05 03:08:07-05
-48	CR-IP-GIV	GESTIÓN DE INVESTIGACIÓN	INVESTIGACIÓN PERTINENTE	documents/GESTIÓN_DE_INVESTIGACIÓN.pdf	2024-12-17 08:58:08.3871-05
-43	CR-PS-EPS	EXTENSIÓN Y PROYECCIÓN SOCIAL	PROYECCION SOCIAL DE IMPACTO	documents/EXTENSIÓN_Y_PROYECCIÓN_SOCIAL.pdf	2024-12-17 08:59:16.555109-05
-41	CR-PS-GRA	RELACIONAMIENTO CON EGRESADOS	PROYECCIÓN SOCIAL DE IMPACTO	documents/RELACIONAMIENTO_CON_EGRESADOS.pdf	2024-12-18 09:13:15.798776-05
-50	PR-TB-BIN-02	Procedimiento detención del plagio	BIENESTAR INSTITUCIONAL	documents/PR-TB-BIN-02_Detección_de_Plagio.docx	2024-12-17 12:33:26.648549-05
-1	CR-GM-ARC	ADMISIONES, REGISTRO Y CONTROL	GESTIÓN DE MERCADEO	documents/ADMISIONES_REGISTRO_Y_CONTROL.pdf	2024-12-30 15:09:58.478219-05
-52	FR-TB-GDT-01	Formato de requerimiento de personal	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/FR-TB-GDT-01_Formato_de_requerimiento_de_personal.docx	2025-01-14 16:22:44.257998-05
-53	FR-TB-GDT-02	Formato de criterios de selección y puntuación	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/FR-TB-GDT-02_Formato_de_criterios_de_selección_y_puntuación.docx	2025-01-14 16:23:24.242365-05
-54	FR-TB-GDT-03	Formato de seguimiento postulantes	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/FR-TB-GDT-03_Formato_de_seguimiento_postulantes.xlsx	2025-01-14 16:24:30.009578-05
-55	FR-TB-GDT-04	Formato de anuncio de convocatoria interna	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/FR-TB-GDT-04_Formato_de_anuncio_de_convocatoria_interna.docx	2025-01-14 16:28:00.017707-05
-28	CR-TB-GDT	GESTION Y DESARROLLO DEL TALENTO HUMANO	TALENTO HUMANO Y BIENESTAR	documents/GESTION_Y_DESARROLLO_DEL_TALENTO_HUMANO.pdf	2025-01-14 16:48:12.866937-05
-57	FR-TB-CDI-01	Formato de denuncia o reporte	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-01_Formato_de_denuncia_o_reporte_1.docx	2025-01-15 08:33:14.164811-05
-58	FR-TB-CDI-02	Formato de informe de investigación preliminar	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-02_Formato_de_informe_de_investigación_preliminar_1.docx	2025-01-15 08:34:05.421935-05
-59	FR-TB-CDI-03	Formato de evaluación de gravedad de infracciones	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-03_Formato_de_evaluación_de_gravedad_de_infracciones_1.docx	2025-01-15 08:34:36.171788-05
-60	FR-TB-CDI-04	Formato de notificación formal	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-04_Formato_de_notificación_formal_1.docx	2025-01-15 08:35:04.782726-05
-61	FR-IP-GIV-01	Formato de proyecto de investigación	GESTIÓN DE INVESTIGACIÓN	documents/UNSP_-_FR-IP-GIV-01_FORMATO_PROYECTO_DE_INVESTIGACIÓN.docx	2025-01-15 09:40:18.319259-05
-62	FR-IP-GIV-02	Formato documento semillero de investigación	GESTIÓN DE INVESTIGACIÓN	documents/FR-IP-GIV-02_FORMATO_DOCUMENTO_SEMILLERO_DE_INVESTIGACION.docx	2025-01-15 09:43:40.049917-05
-63	FR-DC-EAE-01	Formato documento trabajo o tesis de grado	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/FR-DC-EAE-01_FORMATO_DOCUMENTO_TRABAJO_O_TESIS_DE_GRADO.docx	2025-01-15 09:52:44.713081-05
-64	IN-AF-GDO-01	Instructivo de organización y transferencias documentales	GESTIÓN DOCUMENTAL	documents/Instructivo_de_Organización_de_Archivos_y_Transferencias.docx	2025-01-23 11:35:57.818191-05
-65	FR-TB-GDT-05	Formato Informe de inducción y reinducción	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/FR-TB-GDT-05_Informe_de_inducción.xlsx	2025-01-23 11:54:54.773993-05
+8	CR-AF-GRF	GESTIÓN DE RECURSOS FINANCIEROS	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_RECURSOS_FINANCIEROS.pdf	2025-02-12 11:58:06.110782-05
+18	CR-DC-GDC	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	DOCENCIA DE CALIDAD	documents/ENSEÑANZA_APRENDIZAJE_Y_EVALUACIÓN.pdf	2025-02-10 09:03:21.156243-05
+48	CR-IP-GIV	GESTIÓN DE INVESTIGACIÓN	INVESTIGACIÓN PERTINENTE	documents/GESTIÓN_DE_INVESTIGACIÓN.pdf	2025-02-12 08:32:52.643416-05
+43	CR-PS-EPS	EXTENSIÓN Y PROYECCIÓN SOCIAL	PROYECCION SOCIAL DE IMPACTO	documents/EXTENSIÓN_Y_PROYECCIÓN_SOCIAL.pdf	2025-02-12 10:39:34.965566-05
+5	CR-JC-GEJ	GESTIÓN JURÍDICA	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_JURÍDICA.pdf	2025-02-12 10:56:03.874697-05
+21	CR-DC-DRC	DESARROLLO CURRICULAR	DOCENCIA DE CALIDAD	documents/DESARROLLO_CURRICULAR.pdf	2025-02-11 15:01:49.260626-05
+6	CR-AF-GDO	GESTIÓN DOCUMENTAL	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DOCUMENTAL.pdf	2025-02-12 12:07:21.591213-05
+41	CR-PS-GRA	RELACIONAMIENTO CON EGRESADOS	PROYECCIÓN SOCIAL DE IMPACTO	documents/RELACIONAMIENTO_CON_EGRESADOS.pdf	2025-02-12 10:44:35.2223-05
+4	CR-JC-GEC	GESTIÓN CONTRACTUAL	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_CONTRACTUAL.pdf	2025-02-12 10:49:54.445787-05
+1	CR-GM-ARC	ADMISIONES, REGISTRO Y CONTROL	GESTIÓN DE MERCADEO	documents/ADMISIONES_REGISTRO_Y_CONTROL.pdf	2025-02-12 11:00:08.376953-05
+23	CR-PE-GIN	GESTIÓN DE LA INFORMACIÓN	PLANEACIÓN ESTRATÉGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN.pdf	2025-02-12 14:23:01.926241-05
+11	CR-FT-GIF	GESTION DE LA INFRAESTRUCTURA FISICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTION_DE_LA_INFRAESTRUCTURA_FISICA.pdf	2025-02-12 12:14:59.835238-05
+39	CR-CI-ACP	ASEGURAMIENTO DE LA CALIDAD DE PROCESOS	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_DE_PROCESOS.pdf	2025-02-17 08:36:56.866316-05
+33	CR-CI-GSU	GESTIÓN DEL SERVICIO AL USUARIO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_SERVICIO_AL_USUARIO.pdf	2025-02-12 14:28:06.378229-05
+12	CR-FT-GCT	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA	documents/GESTION_DE_LOS_SISTEMAS_DE_COMUNICACIÓN_Y_TELECOMUNICACIONES.pdf	2025-02-12 12:21:47.700634-05
+22	CR-PE-PEI	PLANEACIÓN ESTRATEGICA INSTITUCIONAL	PLANEACIÓN ESTRATÉGICA	documents/PLANEACIÓN_ESTRATEGICA_INSTITUCIONAL.pdf	2025-02-12 14:20:14.718783-05
+35	CR-CA-ADT	AUDITORIAS	CALIDAD INTEGRAL	documents/AUDITORIAS.pdf	2025-02-13 15:36:32.386771-05
+40	CR-CI-ACA	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_ACADÉMICA.pdf	2025-02-17 10:15:00.584124-05
+31	CR-TB-CDI	CONTROL DISCIPLINARIO	TALENTO HUMANO Y BIENESTAR	documents/CONTROL_DISCIPLINARIO.pdf	2025-02-17 15:12:25.661619-05
+38	CR-CI-GRC	GESTIÓN DEL REGISTRO CALIFICADO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_REGISTRO_CALIFICADO.pdf	2025-02-17 08:20:01.067341-05
+45	CR-RI-INI	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN	RELACIONES INTERINSTITUCIONALES	documents/INTERINSTITUCIONALIZACIÓN_E_INTERNACIONALIZACIÓN.pdf	2025-02-17 10:18:15.105482-05
+32	CR-TB-BIN	BIENESTAR INSTITUCIONAL	TALENTO HUMANO Y BIENESTAR	documents/BIENESTAR_INSTITUCIONAL.pdf	2025-02-17 15:41:15.546395-05
+27	CR-RI-COM	COMUNICACIÓN	RELACIONES INTERINSTITUCIONALES	documents/COMUNICACIÓN.pdf	2025-02-17 12:07:39.806192-05
+67	PDI	Plan de Desarrollo Institucional	GLOBAL	documents/PDI-UNISANPABLO.-completo.pdf	2025-02-07 15:47:23.436854-05
+68	MRISO	Matriz de requisitos ISO	GLOBAL	documents/MatrizdeRequisitosISO_18112021.xlsx	2025-02-07 15:48:48.37628-05
+69	MPIP	Matriz de partes interesadas pertinentes UNISANPABLO	GLOBAL	documents/MatrizdePartesInteresadasPertinentes_12092019.xlsx	2025-02-10 08:54:52.313876-05
+71	PR-DC-EAE-01	PR-DC-EAE-01-SOLICITUD DE GRADO PREGRADO,POSGRADO Y EDUCACIÓN CONTINUA.	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-AF-GRF-01_SOLICITUd_DE_GRADOS_PREGRADO_Y_POSGRADOS_Y_EDUCACION_CONTINUA.docx	2025-02-10 09:49:47.661641-05
+72	PR-DC-EAE-02	PR-DC-EAE-02 REGISTRO, PUBLICACIÓN Y ADMINISTRACIÓN DE LOS TRABAJOS DE GRADO EN EL REPOSITORIO	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-_REGISTRO_PUBLICACIÓN_Y_ADMINISTRACIÓN_DE_LOS_TRABAJOS_DE_GRADO_EN_EL_REPOSITORIO_INSTITUCIONAL.docx	2025-02-10 10:18:32.466207-05
+73	PR-IP-GIV-01	PR-IP-GIV-01-CREACIÓN, FORMULACIÓN  Y VINCULACIÓN DE GRUPOS DE INVESTIGACIÓN	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_grupos_investiga_27sep2024.docx	2025-02-11 16:46:28.708105-05
+74	PR-IP-GIV-02	PR-IP-GIV-02 CREACIÓN, FORMULACIÓN Y VINCULACIÓN DE SEMILLEROS	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_semilleros.docx	2025-02-12 08:31:34.093082-05
+75	PR-PS-RCE-01	PR-PS-RCE-01 RELACIONAMIENTO CON EGRESADOS	RELACIONAMIENTO CON EGRESADOS	documents/PR-PS-GRA-01_Relacionamiento_con_egresados.docx	2025-02-12 08:48:20.769855-05
+79	PR-AF GRF-01	PR-AF GRF-01  MATRICULAS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-01_Matriculas.docx	2025-02-12 11:14:01.074081-05
+80	PR-AF-GRF-02	PR-AF-GRF-02 APLICACIÓN DE BECAS, DESCUENTOS Y PATROCINIOS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-02_Aplicación_de_becas_descuentos_y_patrocinios.docx	2025-02-12 11:56:28.093092-05
+81	IN-AF-GDO-01	IN-AF-GDO-01 Organización de Archivos y Transferencias Documentales	GESTIÓN DOCUMENTAL	documents/Instructivo_de_Organización_de_Archivos_y_Transferencias.docx	2025-02-12 12:06:15.559213-05
+89	PR-CA-GRC-02	PR-CA-GRC-02 RENOVACIÓN DE REGISTRO CALIFICADOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-02_Renovación_de_registros_calificados.docx	2025-02-14 15:18:21.29506-05
+90	PR-CA-GRC-03	PR-CA-GRC-03 MODIFICACIÓN A LOS PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-03_Modificación_a_los_Programas_Académicos.docx	2025-02-14 15:27:47.361367-05
+91	PR-CA-GRC-04	PR-CA-GRC-04 PRE-RADICACIÓN DE CUMPLIMIENTO DE CONDICIONES DE CALIDAD INSTITUCIONAL	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-04_Pre-radicación_de_Cumplimiento_de_Condiciones_de_Calidad_Institucional.docx	2025-02-14 15:40:32.106765-05
+92	PR-CA-ACA-01	PR-CA-ACA-01 AUTOEVALUACIÓN DE PROGRAMAS E INSTITUCIONAL	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	documents/PR-CA-ACA-01_Autoevaluación_Programas_e_Institucional_22may2024.docx	2025-02-17 08:55:38.246909-05
+84	CR-AF-GC	GESTIÓN DE CARTERA	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_CARTERA.pdf	2025-02-12 14:46:05.236441-05
+85	PR-CA-GSU-01	PR-CA-GSU-01 SERVICIO AL CLIENTE PQRF	GESTIÓN DEL SERVICIO AL USUARIO	documents/PR-CA-GSU-01_Servicio_al_cliente_FPQRS.docx	2025-02-12 14:58:14.940133-05
+86	CR-CA-EVC	EVALUACIÓN Y CONTROL	CALIDAD INTEGRAL	documents/EVALUACIÓN_Y_CONTROL.pdf	2025-02-14 08:46:23.767658-05
+93	FR-RI-COM-01	FR-RI-COM-01 Autorización de uso de derechos de imagen sobre fotografías y fijaciones audiovisuales	COMUNICACIÓN	documents/FRAutorizacindederechosdeimagensobrefotografasyfijacionesaudiovisuales29abril2024.docx	2025-02-17 10:51:01.297537-05
+88	PR-CA-GRC-01	PR-CA-GRC-01 CREACIÓN DE PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-CPA-01_Creación_de_Programas_Académicos.docx	2025-02-14 15:02:14.367098-05
+94	FR-RI-COM-02	FR-RI-COM-02 AUTORIZACIÓN DE USO DE DERECHOS DE IMAGEN PARA MENORES	COMUNICACIÓN	documents/FR2_AUTORIZACIÓN_DE_DERECHOS_DE_IMAGEN_MENORES_29abril2024.docx	2025-02-17 10:52:51.107206-05
+95	PR-RI-COM-01	PR-RI-COM-01 COMUNICACIONES	COMUNICACIÓN	documents/PROCEDIMIENTO_DE_COMUNICACIÓNES.docx	2025-02-17 11:07:02.776018-05
+100	PR-TB-GDT-01	PR-TB-GDT-01 SELECCIÓN Y CONTRATACIÓN	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-GDT-01_Selección_y_Contratación.docx	2025-02-17 12:06:22.712402-05
+96	CR-CA-GIT	GESTIÓN INTEGRADA	CALIDAD INTEGRAL	documents/GESTIÓN_INTEGRADA.pdf	2025-02-17 11:27:30.002164-05
+101	PR-TB-GDT-02	PR-TB-GDT-02 INDUCCIÓN A COLABORADES	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-GDT-02_Inducción_a_Colaboradores.docx	2025-02-17 12:24:57.994178-05
+102	PR-TB-GDT-03	PR-TB-GDT-03 DESVINCULACIÓN	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-GDT-03_Desvinculación_1.docx	2025-02-17 12:40:55.617074-05
+106	FR-TB-CDI-03	FR-TB-CDI-03 EVALUACIÓN  DE GRAVEDAD DE INFRACCIONES	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-03_Formato_de_evaluación_de_gravedad_de_infracciones.docx	2025-02-17 14:46:54.558476-05
+107	FR-TB-CDI-04	FR-TB-CDI-04 NOTIFICACIÓN	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-04_Formato_de_notificación_formal.docx	2025-02-17 15:12:22.030274-05
+108	PR-TB-BIN-01	PR-TB-BIN-01 DESARROLLO E IMPLEMENTACIÓN DE PROGRAMAS DE SALUD Y BIENESTAR	BIENESTAR INSTITUCIONAL	documents/PR-TB-BIN-01_Desarrollo_e_Implementación_de_Programas_de_Salud_y_Bienestar.docx	2025-02-17 15:20:59.676712-05
+28	CR-TB-GDT	GESTION Y DESARROLLO DEL TALENTO HUMANO	TALENTO HUMANO Y BIENESTAR	documents/GESTION_Y_DESARROLLO_DEL_TALENTO_HUMANO.pdf	2025-02-17 12:43:54.38546-05
+103	PR-TB-CDI-01	PR-TB-CDI-01 CONTROL DISCIPLINARIO	CONTROL DISCIPLINARIO	documents/PR-TB-CDI-01_Control_Disciplinario_1.docx	2025-02-17 14:44:06.436738-05
+104	FR-TB-CDI-01	FR-TB-CDI-01 DE DENUNCIA O  REPORTE DE INFRACCIÓN	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-01_Formato_de_denuncia_o_reporte.docx	2025-02-17 14:45:20.504095-05
+105	FR-TB-CDI-02	INFORME DE INVESTIGACIÓN PRELIMINAR	CONTROL DISCIPLINARIO	documents/FR-TB-CDI-02_Formato_de_informe_de_investigación_preliminar.docx	2025-02-17 14:46:08.357431-05
+109	PR-TB-BIN-02	PR-TB-BIN-02 DETECCIÓN DE PLAGIO	BIENESTAR INSTITUCIONAL	documents/PR-TB-BIN-02_Detección_de_Plagio_1.docx	2025-02-17 15:25:54.036192-05
+110	PR-TB-BIN-03	PR-TB-BIN-03 INDUCCIÓN Y REINDUCCION DE ESTUDIANTES	BIENESTAR INSTITUCIONAL	documents/PR-TB-BIN-03_Inducción_de_estudiantes_1.docx	2025-02-17 15:38:06.568837-05
 \.
 
 
@@ -4796,6 +5434,8 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 116	Revisión	Actividad que garantiza la conveniencia, adecuación y eficacia de la cuestión objeto de revisión, para lograr los objetivos establecidos.
 117	Liderazgo	Los líderes dentro de la organización deben establecer un sentido de dirección, involucrar a todos los niveles en la gestión de la calidad y crear un entorno propicio para el trabajo en equipo y la mejora.
 118	ISO 9001 2015	SO 9001 es una norma para la gestión de calidad reconocida mundialmente. Ayuda a organizaciones de todos los tamaños y sectores a mejorar su desempeño, cumplir con las expectativas de los clientes y demostrar su compromiso con la calidad. Sus requisitos definen cómo establecer, implementar, mantener y mejorar constantemente un sistema de gestión de calidad (SGC).
+119	Proceso	conjunto de actividades planificadas que implican la participación de un número de personas y de recursos materiales coordinados para conseguir un objetivo previamente identificado.
+120	Caracterización	herramienta táctica que facilita la descripción del como funciona el proceso a través de la identificación de elementos esenciales que permiten la gestión y control de los proceso.
 \.
 
 
@@ -4804,28 +5444,7 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 --
 
 COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-GM-ARC
-3	editable3	GESTIÓN DE MERCADEO
-4	editable4	Versión: 1
-5	editable5	ADMISIONES, REGISTRO Y CONTROL
-6	editable6	Fecha: 12/Sep/2024
-7	editable7	Admisiones, Registro y Control
-8	editable8	Inicia desde el establecimiento de los lineamientos generales para la determinación de la oferta de cupos, admisión, incorporación de estudiantes a la institución, ya sea, por primera vez, reintegro o como transferencia y el otorgamiento de certificaciones que requiera cada estudiante y/o egresado.
-9	editable9	Garantizar el ingreso de nuevos estudiantes mediante la inscripción, transferencia, así como el reingreso y la gestión del registro y control académico tanto de estudiantes como de los egresados, que se lleva a cabo en los distintos programas académicos y cursos de educación continua que oferta la institución, bajo preceptos de equidad y transparencia.
 10	editable10	(P1) Estudiantes.\n(P2) Admitidos.
-11	editable11	(P3) Proceso Comercialización y Ventas.\n(P4) Proceso Gestión del Registro Calificado\n(P5) Todos los procesos.
-12	editable12	(E3) Calendario académico.\n(E3) Información relacionada con el comportamiento de los Aspirantes.\n(E4) Confirmación de programas académicos configurados en los sistemas transaccionales institucionales.\n(E4) Información del estado los registros calificados.\n(E5) Necesidades de los clientes internos.
-13	editable13	1. Establecer los Lineamientos para el proceso de Admisiones de pregrado y posgrado.
-14	editable14	2. Gestionar la admisión de aspirantes nuevos de pregrado y posgrado.\n3. Estudiar las solicitudes de transferencias, reingreso a programas académicos de pregrado y posgrado.\n4. Expedición de constancias de estudios y sábana de notas.\n5. Trámites para grado.\n6. Retiro definitivo y voluntario (cancelación o aplazamiento) de estudiantes activos en programas académicos.\n7. Actualización de datos personales.
-15	editable15	8. Verificar que la información académica cumpla con los requerimientos establecidos y desarrollar planes de mejoramiento.\n9.Verificar el cumplimiento de los diferentes procesos descritos.\n10. Verificar la tasa de absorción e indicador de retención y permanencia.
-16	editable16	11. Implementar acciones de mejora.
-17	editable17	(S4) Programas académicos parametrizados en los sistemas de información.\n(S3,S4,S6) Reportes estadísticos de ingresos de matrícula.\n(S1,S2,S5) Estudiante matriculado\nCifras de graduados \n(S7) Informes de seguimiento.
-18	editable18	(C1) Aspirantes \n(C2) Admitidos Estudiantes
-19	editable19	(C3) Proceso Planeación Estratégica\n(C4) Proceso Comercialización y Ventas\n(C5) Proceso al acompañamiento al Estudiante.\n(C6) Proceso Articulación. \n(C7) Todos los procesos.
-20	editable20	1
-21	editable21	Fecha: 12/Sep/2024
-22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	12/Sep/2024
@@ -4836,14 +5455,35 @@ COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, conten
 30	editable30	...
 31	editable31	...
 32	editable32	...
+11	editable11	(P3) Proceso Comercialización y Ventas.\n(P4) Proceso Gestión del Registro Calificado\n(P5) Todos los procesos.
+12	editable12	(E3) Calendario académico.\n(E3) Información relacionada con el comportamiento de los Aspirantes.\n(E4) Confirmación de programas académicos configurados en los sistemas transaccionales institucionales.\n(E4) Información del estado los registros calificados.\n(E5) Necesidades de los clientes internos.
+13	editable13	1. Establecer los Lineamientos para el proceso de Admisiones de pregrado y posgrado.
+14	editable14	2. Gestionar la admisión de aspirantes nuevos de pregrado y posgrado.\n3. Estudiar las solicitudes de transferencias, reingreso a programas académicos de pregrado y posgrado.\n4. Expedición de constancias de estudios y sábana de notas.\n5. Trámites para grado.\n6. Retiro definitivo y voluntario (cancelación o aplazamiento) de estudiantes activos en programas académicos.\n7. Actualización de datos personales.
+15	editable15	8. Verificar que la información académica cumpla con los requerimientos establecidos y desarrollar planes de mejoramiento.\n9.Verificar el cumplimiento de los diferentes procesos descritos.\n10. Verificar la tasa de absorción e indicador de retención y permanencia.
+16	editable16	11. Implementar acciones de mejora.
+17	editable17	(S4) Programas académicos parametrizados en los sistemas de información.\n(S3,S4,S6) Reportes estadísticos de ingresos de matrícula.\n(S1,S2,S5) Estudiante matriculado\nCifras de graduados \n(S7) Informes de seguimiento.
+18	editable18	(C1) Aspirantes \n(C2) Admitidos Estudiantes
+19	editable19	(C3) Proceso Planeación Estratégica\n(C4) Proceso Comercialización y Ventas\n(C5) Proceso al acompañamiento al Estudiante.\n(C6) Proceso Articulación. \n(C7) Todos los procesos.
+20	editable20	1
+21	editable21	12/Sep/2024
+22	editable22	Creación del proceso
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	12/Sep/2024
 38	editable38	...
 39	editable39	...
 40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-GM-ARC
+3	editable3	GESTIÓN DE MERCADEO
+4	editable4	Versión: 1
+5	editable5	ADMISIONES, REGISTRO Y CONTROL
+6	editable6	Fecha: 12/Sep/2024
+7	editable7	Admisiones, Registro y Control
+8	editable8	Inicia desde el establecimiento de los lineamientos generales para la determinación de la oferta de cupos, admisión, incorporación de estudiantes a la institución, ya sea, por primera vez, reintegro o como transferencia y el otorgamiento de certificaciones que requiera cada estudiante y/o egresado.
+9	editable9	Garantizar el ingreso de nuevos estudiantes mediante la inscripción, transferencia, así como el reingreso y la gestión del registro y control académico tanto de estudiantes como de los egresados, que se lleva a cabo en los distintos programas académicos y cursos de educación continua que oferta la institución, bajo preceptos de equidad y transparencia.
 \.
 
 
@@ -4852,7 +5492,8 @@ COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, conten
 --
 
 COPY public.mapa_procesos_ec_aseguramiento_calidad_academica (id, identifier, content) FROM stdin;
-4	editable2	Código: CR-CI-ACA
+3	editable5	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA
+5	editable6	Fecha: 18/Feb/2025
 7	editable7	Aseguramiento de la Calidad Académica
 8	editable8	Inicia con la identificación de los programas académicos en ejecución y culmina con la evaluación programas e instituciones, todo con el propósito de promover la mejora continua de la calidad. Este proceso se desarrolla a partir de la implementación de planes de mejora, generando así facilidades para la renovación de registros calificados y las acreditaciones correspondientes a programas e instituciones.
 11	editable9	Afianzar la cultura de calidad en la Institución y sus programas académicos se lleva a cabo mediante un enfoque sistemático y riguroso de autoevaluación. Este proceso implica la realización de ejercicios reflexivos, críticos y de análisis por parte de la comunidad educativa. El objetivo es asegurar el óptimo desarrollo de la Institución y sus programas en condiciones de calidad, buscando constantemente la mejora en las funciones sustantivas y de apoyo. Esto, a su vez, contribuye a facilitar los procesos de planeación estratégica y a obtener reconocimiento a nivel nacional e internacional por sus elevados estándares de calidad, cumpliendo con la normatividad institucional y la legislación vigente.
@@ -4867,31 +5508,30 @@ COPY public.mapa_procesos_ec_aseguramiento_calidad_academica (id, identifier, co
 17	editable18	(C1) Ministerio de Educación Nacional-MEN.\n(C2) Entes acreditadores.
 19	editable19	(C3) Comunidad educativa.\n(C4) Proceso Planeación financiera y presupuesto.\n(C5) Proceso Gestión del Registro Calificado.\n(C6) Todos los procesos.
 20	editable20	1
-21	editable21	27/Dic/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	14/Nov/2024
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	14/Nov/2024
+28	editable28	18/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
-34	editable34	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 40	editable39	...
 39	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+4	editable2	Código: CR-CI-ACA
 6	editable3	CALIDAD INTEGRAL
 2	editable4	Versión: 1
-3	editable5	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA
-5	editable6	Fecha: 14/Nov/2024
-35	editable35	...
+24	editable24	Aprendiz
+34	editable34	...
 \.
 
 
@@ -4900,46 +5540,46 @@ COPY public.mapa_procesos_ec_aseguramiento_calidad_academica (id, identifier, co
 --
 
 COPY public.mapa_procesos_ec_aseguramiento_calidad_procesos (id, identifier, content) FROM stdin;
-10	editable10	(P1) Ente certificador.
-11	editable11	(P2) Todos los procesos.\n(P3) Órganos colegiados .\n(P4) Proceso planeación estratégica.\n(P5) Proceso de planeación financiera y presupuesto.\n(P6) Proceso de gestión de experiencia al usuario.
 12	editable12	(E2, E3) Necesidad de creación y/o actualización de los procesos, roles y responsabilidades y documentación del sistema de gestión.\n(E4) Plan de desarrollo.\n(E4) Informes de ajuste y adaptación a la estrategia.\n(E2) Información del desempeño de los procesos.\n(E2) Información Documentada del proceso.\n(E2) Normatividad interna y externa.\n(E1) Plan de auditoría de ente certificador.\n(E2) Solicitudes de asesoría y acompañamiento del sistema de gestión.\n(E5) Presupuesto asignado.\n(E6) Resultados de mediciones de la satisfacción del usuario.
 13	editable13	1. Planificar el sistema de gestión.\n2. Establecer criterios de calidad y estándares específicos que deben cumplirse.\n3. Definir el plan anual de calidad y procesos.\n4. Identificar necesidades de creación y/o actualización del proceso, roles y responsabilidades, o documentación del sistema de gestión.
-14	editable14	5. Ejecutar el plan anual de calidad y proceso.\n6. Ejecutar actividades de implementación del sistema de gestión.\n7. Realizar la creación y/o actualización del procesos, roles y responsabilidades y documentación del sistema de gestión.\n8. Desarrollar las actividades para la planificación de los cambios del sistema de gestión.
-17	editable15	9. Seguimiento a la implementación del sistema de gestión.\n10. Evaluar el desempeño de la gestión por procesos.\n11. Realizar seguimiento al plan anual de calidad y procesos.
-16	editable16	12. Implementar acciones de mejora de acuerdo con los resultados del proceso.
-15	editable17	(S4) Plan anual calidad y procesos.\n(S1, S2, S3) Mapa de procesos con sus elementos de la línea de producción (Caracterización de procesos, procedimientos, roles y responsabilidad e indicadores de gestión).\n(S2) Programa de auditorias del sistema de gestión.\n(S2, S3) Informe de seguimiento de las herramientas del sistema de gestión.\n(S2, S3) Informe revisión por la dirección.\n(S2, S3) Informes de gestión.
 18	editable18	(C1) Ente certificador.
 19	editable19	(C2) Todos los procesos.\n(C3) Proceso de planeación estratégica.\n(C4) Proceso de planeación financiera y presupuesto.
 20	editable20	1
-21	editable21	27/Dic/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-37	editable37	...
-38	editable38	...
-39	editable39	...
-40	editable40	...
+23	editable23	Daniela Torres Torres
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-CI-ACP
 6	editable3	CALIDAD INTEGRAL
 5	editable4	Versión: 1
 4	editable5	ASEGURAMIENTO DE LA CALIDAD DE PROCESOS
-3	editable6	Fecha: 27/Dic/2023
+3	editable6	Fecha: 18/Feb/2025
 7	editable7	Aseguramiento de la calidad de procesos
 8	editable8	Inicia con la elaboración del sistema de gestión, considerando los elementos fundamentales del mapa de procesos como impulsores de la estrategia y las funciones esenciales y de apoyo en el ámbito de la educación superior.
 9	editable9	Unificar y perfeccionar los procedimientos de la institución a través de un Sistema de Gestión, respaldado por un modelo de gobernanza y un enfoque basado en procesos. Este sistema busca garantizar una cultura de calidad en los servicios académicos y administrativos, con el propósito de cumplir con los requisitos y demandas de las partes involucradas de acuerdo con la estrategia institucional.
-25	editable25	27/Dic/2023
+10	editable10	(P1) Ente certificador.
+11	editable11	(P2) Todos los procesos.\n(P3) Órganos colegiados .\n(P4) Proceso planeación estratégica.\n(P5) Proceso de planeación financiera y presupuesto.\n(P6) Proceso de gestión de experiencia al usuario.
+14	editable14	5. Ejecutar el plan anual de calidad y proceso.\n6. Ejecutar actividades de implementación del sistema de gestión.\n7. Realizar la creación y/o actualización del procesos, roles y responsabilidades y documentación del sistema de gestión.\n8. Desarrollar las actividades para la planificación de los cambios del sistema de gestión.
+17	editable15	9. Seguimiento a la implementación del sistema de gestión.\n10. Evaluar el desempeño de la gestión por procesos.\n11. Realizar seguimiento al plan anual de calidad y procesos.
+16	editable16	12. Implementar acciones de mejora de acuerdo con los resultados del proceso.
+15	editable17	(S4) Plan anual calidad y procesos.\n(S1, S2, S3) Mapa de procesos con sus elementos de la línea de producción (Caracterización de procesos, procedimientos, roles y responsabilidad e indicadores de gestión).\n(S2) Programa de auditorias del sistema de gestión.\n(S2, S3) Informe de seguimiento de las herramientas del sistema de gestión.\n(S2, S3) Informe revisión por la dirección.\n(S2, S3) Informes de gestión.
+24	editable24	Aprendiz
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-29	editable28	29/Dic/2023
+29	editable28	18/Feb/2025
 28	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 35	editable34	...
-34	editable35	...
-36	editable36	...
+34	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
+38	editable38	...
+39	editable39	...
+40	editable40	...
 \.
 
 
@@ -4953,7 +5593,7 @@ COPY public.mapa_procesos_ec_auditorias (id, identifier, content) FROM stdin;
 3	editable3	CALIDAD INTEGRAL
 5	editable4	Versión: 1
 6	editable5	AUDITORIAS
-2	editable6	Fecha: 02/Ene/2024
+2	editable6	Fecha: 18/Feb/2025
 7	editable7	Auditorias
 8	editable8	Inicia aplicando a todos los procesos de la Institución.
 9	editable9	Medir y evaluar la eficiencia, eficacia y economía de los  procesos de UNISANPABLO, asesorando a la Alta Dirección en el mejoramiento continuo del proceso administrativo, para la evaluación de los planes establecidos y de los correctivos que sean necesarios para el cumplimiento de las metas y objetivos institucionales, basados en las diferentes funciones en las que se enmarcan los roles de la Oficina Asesora de Control Interno, como lo son el Liderazgo Estratégico, Enfoque hacia la prevención, Evaluación de la Gestión del Riesgo, Evaluación y Seguimiento, y la Relación con entes externos de control.
@@ -4970,21 +5610,21 @@ COPY public.mapa_procesos_ec_auditorias (id, identifier, content) FROM stdin;
 20	editable20	1
 21	editable21	02/Ene/2024
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+23	editable23	Daniela Torres
 25	editable24	Aprendiz
-24	editable25	02/Ene/2024
+24	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	06/Ene/2024
+28	editable28	18/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 36	editable33	...
 33	editable34	...
-34	editable35	...
-35	editable36	...
-37	editable37	...
+34	editable35	Henry Lurbey Hueso
+35	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 40	editable39	...
 39	editable40	...
@@ -5008,34 +5648,34 @@ COPY public.mapa_procesos_ec_bienestar_institucional (id, identifier, content) F
 16	editable18	(C1) Comunidad.\n(C2) Estudiantes.\n(C3) Egresados.\n(C4) Instituciones de Educación.
 19	editable19	(C5) Todos los procesos.
 20	editable20	1
-21	editable21	20/Oct/2023
+21	editable21	18/Feb/2025
 23	editable22	Creación del proceso
-22	editable23	Cristian Guillermo Velandia
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+30	editable28	18/Feb/2025
+29	editable29	...
+31	editable30	...
+28	editable31	...
+32	editable32	...
 33	editable33	...
 34	editable34	...
-36	editable35	...
-35	editable36	...
-38	editable37	...
+36	editable35	Henry Lurbey Hueso
+35	editable36	Rector
+38	editable37	18/Feb/2025
 37	editable38	...
-39	editable39	...
-40	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-TB-BIN
 6	editable3	TALENTO HUMANO Y BIENESTAR
 4	editable4	Versión: 1
 3	editable5	BIENESTAR INSTITUCIONAL
-5	editable6	Fecha: 20/Oct/2023
+5	editable6	Fecha:18/Feb/2025
 7	editable7	Bienestar Institucional
 8	editable8	Inicia con la formulación del plan de acción de bienestar institucional y finaliza con el establecimiento de proyectos para mejorar la calidad y aumentar la cobertura de servicios. Aplica para los procesos, que se enlacen con programas participativos de desarrollo humano, interacción social y reflexión.
+22	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	20/Oct/2023
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-30	editable28	23/Oct/2023
-29	editable29	...
-31	editable30	...
-28	editable31	...
-32	editable32	...
+39	editable39	...
+40	editable40	...
 \.
 
 
@@ -5044,33 +5684,33 @@ COPY public.mapa_procesos_ec_bienestar_institucional (id, identifier, content) F
 --
 
 COPY public.mapa_procesos_ec_comunicacion (id, identifier, content) FROM stdin;
+16	editable16	13. Establecer Plan de Mejoramiento (Acciones Correctivas y Preventivas).
+17	editable17	(S1, S2, S3, S4, S5, S6, S7, S12, S13) Modelo Estratégico de Comunicación Corporativa.\n(S7, S12, S13) Plan integral de comunicación interna y externa.\n(S4, S9, S10) Plan de Relaciones Públicas.\n(S13) Uso y aplicación de imagen y marca institucional.\n(S13) Manejo de Voceros.\n(S13) Asesoría integral en comunicación.\n(S8) Medición y evaluación de canales de comunicación.\n(S8) Informe del Modelo Estratégico de Comunicación.\n(S8, S11) Resultados de la medición de posicionamiento y prestigio.\n(S8, S13) Informes de seguimiento.
+22	editable22	Creación del proceso
+23	editable23	Cristian Guillermo Velandia
+24	editable24	Aprendiz
+25	editable25	06/Nov/2023
+26	editable26	Martha Esperanza Rodríguez.
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-RI-COM
 3	editable3	RELACIONES INTERINSTITUCIONALES
 4	editable4	Versión: 1
 5	editable5	COMUNICACIÓN
-6	editable6	Fecha: 06/Nov/2023
+6	editable6	Fecha: 06/Nov/2023
 7	editable7	Comunicación
-8	editable8	Inicia con actividades de planeación, ejecución, evaluación y mejora, este proceso de comunicación busca impactar en la apropiación.
-9	editable9	Coordinar las actividades de comunicación institucional interna y externa, a través de la difusión y publicación oportuna de la información generada por la Universidad y de interés general de la misma, con el fin de garantizar la visibilidad, el posicionamiento y el mejoramiento de la imagen institucional.
+8	editable8	Inicia con actividades de planeación, ejecución, evaluación y mejora, y busca impactar la imagen institucional.
+9	editable9	Coordinar las actividades de comunicación institucional interna y externa, a través de la difusión y publicación oportuna de la información generada por la Institución y de interés general de la misma, con el fin de garantizar la visibilidad, el posicionamiento y el mejoramiento de la imagen institucional.
 10	editable10	(P1) Entidades gubernamentales o del sector privado.\n(P2) Redes universitarias y asociaciones del sector educativo.\n(P3) Medios de comunicación externos.
 11	editable11	(P4) Proceso Planeación Estratégica.\n(P5) Proceso Aseguramiento de la Calidad de los procesos.\n(P6) Proceso Gestión Editorial.\n(P7) Proceso Comercialización y Ventas\n(P8) Todos los procesos.
-12	editable12	(E1) Agendas públicas.\n(E2, E3) Información de interés del sector, investigación, docencia y proyección social.\n(E4) Necesidades de comunicación estratégicas.\n(E5) Caracterización de proceso creado o mejorado.\n(E6) Catálogo de Publicaciones.\n(E7) Plan de Divulgación de campaña por periodo de matrícula a nivel orgánico.\n(E8) Necesidades de comunicación de acuerdo a los planes operativos.
-13	editable13	1. Estructurar el Modelo Estratégico de Comunicación.\n2. Formular y mantener la Política de Comunicaciones a través del Plan Estratégico de Comunicaciones y la formulación de sus Planes de Acción.\n3. Identificar necesidades de comunicación.\n4. Diseñar plan integral de comunicación interna y externa.
-14	editable14	5. Socializar el Modelo Estratégico ** Comunicación.\n6. Promover la participación oral y escrita con inclusión de la comunidad en general, a través de los medios de la Universidad posicionándola y desarrollando Eventos, Foros, Seminarios, Revistas, Páginas Web, Libros, Programas radiales, entre otros.\n7. Presentar y aprobar el plan integral de comunicación interna y externa.
-15	editable15	8. Verificar la ejecución del plan integral de comunicación interna y externa.\n9. Presentar resultados del plan integral de comunicación interna y externa.\n10. Generar informes de seguimiento de la planeación y gestión del proceso.\n11. Realizar el seguimiento al impacto de las acciones realizadas tendientes al posicionamiento de la Universidad.
-16	editable16	12. Establecer Plan de Mejoramiento (Acciones Correctivas y Preventivas).
-17	editable17	(S1, S2, S3, S4, S5, S6, S7, S12, S13) Modelo Estratégico de Comunicación Corporativa.\n(S7, S12, S13) Plan integral de comunicación interna y externa\n(S4, S9, S10) Plan de Relaciones Públicas\n(S13) Uso y aplicación de imagen y marca institucional.\n(S13) Manejo de Voceros.\n(S13) Asesoría integral en comunicación.\n(S8) Medición y evaluación de canales de comunicación.\n(S8) Informe del Modelo Estratégico de Comunicación.\n(S8, S11) Resultados de la medición de posicionamiento y prestigio.\n(S8, S13) informes de seguimiento.
+12	editable12	(E1) Agendas públicas.\n(E2, E3) Información de interés del sector, investigación, docencia y proyección social.\n(E4) Necesidades de comunicación estratégicas.\n(E5) Caracterización de proceso creado o mejorado\n(E6) Catálogo de Publicaciones.\n(E7) Plan de Divulgación de campaña por periodo de matrícula a nivel orgánico.\n(E8) Necesidades de comunicación de acuerdo a los planes operativos.
+13	editable13	1. Estructurar el Modelo Estratégico de Comunicación.\n2. Formular y mantener la Política de Comunicaciones a través del Plan Estratégico de Comunicaciones y la formulación de sus Planes de Acción.\n3. Identificar necesidades de comunicación\n4. Diseñar y aprobar el plan integral de comunicación interna y externa.
+14	editable14	5. Socializar el Modelo Estratégico de Comunicación.\n6. Promover la participación oral y escrita con inclusión de la comunidad en general, a través de los medios de la institución posicionándola y desarrollando Eventos, Foros, Seminarios, Revistas, Páginas Web, Libros, Programas radiales, entre otros.\n7. Socializar el plan integral de comunicación interna y externa.
+15	editable15	9. Verificar la ejecución del plan integral de comunicación interna y externa.\n10. Presentar resultados del plan integral de comunicación interna y externa.\n11. Generar informes de seguimiento de la planeación y gestión del proceso.\n12. Realizar el seguimiento al impacto de las acciones realizadas tendientes al posicionamiento de la institución.
 18	editable18	(C1) IES nacionales e internacionales.\n(C2) Entidades gubernamentales y no gubernamentales.\n(C3) Entidades públicas y privadas.\n(C4) Medios de comunicación externos.\n(C5) Aspirantes\n(C6) Estudiantes.\n(C7) Graduados.
 19	editable19	(C8) Proceso Planeación Estratégica.\n(C9) Proceso Alianzas e Iniciativas Estratégicas.\n(C10) Proceso de Asuntos Globales.\n(C11) Proceso Inteligencia de Mercado.\n(C12) Proceso Relación con Egresados y Graduados\n(C16) Todos los procesos.
 20	editable20	1
 21	editable21	06/Nov/2023
-22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	06/Nov/2023
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	08/Nov/2023
 29	editable29	...
 30	editable30	...
@@ -5092,12 +5732,30 @@ COPY public.mapa_procesos_ec_comunicacion (id, identifier, content) FROM stdin;
 --
 
 COPY public.mapa_procesos_ec_control_disciplinario (id, identifier, content) FROM stdin;
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	18/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	18/Feb/2025
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+35	editable34	...
+34	editable35	Hector Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
+38	editable38	...
+40	editable39	...
+39	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 5	editable2	Código: CR-TB-CDI
 6	editable3	TALENTO HUMANO Y BIENESTAR
 2	editable4	Versión: 1
 4	editable5	CONTROL DISCIPLINARIO
-3	editable6	Fecha: 12/Dic/2023
+3	editable6	Fecha: 18/Feb/2025
 7	editable7	Control Disciplinario
 8	editable8	Inicia desde la recepción de la queja hasta el cumplimiento del fallo, y aplica a todo el personal de UNISANPABLO.
 9	editable9	Evaluar y tramitar, de manera imparcial, oportuna y según la normativa aplicable, la totalidad de acciones disciplinarias que puedan implicar la responsabilidad de integrantes del personal administrativo y docentes de planta de UNISANPABLO, esto con el fin de apoyar y fortalecer el proceso de control disciplinario en la universidad.
@@ -5112,26 +5770,8 @@ COPY public.mapa_procesos_ec_control_disciplinario (id, identifier, content) FRO
 16	editable18	(C1) Autoridades judiciales y administrativas.
 19	editable19	(C2) Todos los procesos.
 20	editable20	1
-21	editable21	12/Dic/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	12/Dic/2023
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	12/Dic/2023
-29	editable29	...
-30	editable30	...
-31	editable31	...
-32	editable32	...
-33	editable33	...
-35	editable34	...
-34	editable35	...
-36	editable36	...
-37	editable37	...
-38	editable38	...
-40	editable39	...
-39	editable40	...
 \.
 
 
@@ -5140,33 +5780,8 @@ COPY public.mapa_procesos_ec_control_disciplinario (id, identifier, content) FRO
 --
 
 COPY public.mapa_procesos_ec_desarrollo_curricular (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-DC-DRC
-3	editable3	DOCENCIA DE CALIDAD
-4	editable4	Versión: 1
-5	editable5	DESARROLLO CURRICULAR
-6	editable6	Fecha: 02/Ene/2024
-7	editable7	Desarrollo Curricular.
-8	editable8	Inicia con la elaboración de la hoja de ruta para diseñar los syllabus de los programas académicos y avanza hacia el monitoreo de los planes de actualización curricular de dichos programas.
-9	editable9	Asegurar que los syllabus de los programas académicos de educación superior sean diseñados, implementados, evaluados y actualizados de manera que sean pertinentes, innovadores y transformadores. Esto se logra respondiendo a las necesidades de los contextos regionales, nacionales e internacionales, en conformidad con la normativa actual, la misión institucional y la planificación estratégica.
-10	editable10	(P1) Ministerio de Educación Nacional.
-11	editable11	(P2) Proceso Aseguramiento de la Calidad Académica.\n(P3) Proceso Gestión del Registro Calificado.\n(P4) Proceso Relacionamiento con Egresados.\n(P5) Todos los procesos.
 12	editable12	(E1) Análisis de tendencias y necesidades de los sectores y de los campos de conocimiento.\n(E2) Resultados de la autoevaluación periódica de programas.\n(E3) Información del estado de los registros calificados.\n(E4) Caracterización de los egresados.\n(E4) Informe del seguimiento a la trayectoria de los egresados de acuerdo con los momentos definidos.\n(E5) Requisitos y necesidades de los clientes internos.
 13	editable13	1.Planear la ruta para la creación de los planes de curso de los programas académicos.\n2.Reconocer los marcos normativos, disciplinarios y contextuales, así como los requisitos del entorno externo, necesarios para la concepción de los planes educativos de los programas educativos.\n3.Gestionar los ambientes de aprendizaje para el óptimo desarrollo de los programas académicos.
-14	editable14	4.Ejecutar las iniciativas educativas de los programas académicos.\n5.Evaluación de propósito de formación.
-15	editable15	6.Gestionar el desarrollo del comité único de programa.\n7.Realizar seguimiento a los planes de actualización curricular de los programas académicos.\n8.Generar informe de seguimiento de la planeación y gestión del proceso.
-16	editable16	9.Implementar acciones de mejora de acuerdo con los resultados del proceso.
-17	editable17	(S1, S2)Cursos actualizados.\n(S2) Plan de estudios.\n(S2) Ambientes de aprendizaje.\n(S3) Planes de mejoramiento y actualización curricular.\n(S4) Informes de gestión.
-18	editable18	(C1)Estudiantes.
-19	editable19	(C2) Proceso gestión del registro calificado.\n(C3) Proceso de aseguramiento de la calidad académica.\n(C4) Todos los Proceso.
-20	editable20	1
-21	editable21	02/Ene/2024
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	03/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	03/Sep/2024
 29	editable29	...
 30	editable30	...
@@ -5174,12 +5789,37 @@ COPY public.mapa_procesos_ec_desarrollo_curricular (id, identifier, content) FRO
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	03/Sep/2024
 38	editable38	...
+14	editable14	4.Ejecutar las iniciativas educativas de los programas académicos.\n5.Evaluación de propósito de formación.
+15	editable15	6.Gestionar el desarrollo del comité único de programa.\n7.Realizar seguimiento a los planes de actualización curricular de los programas académicos.\n8.Generar informe de seguimiento de la planeación y gestión del proceso.
+16	editable16	9.Implementar acciones de mejora de acuerdo con los resultados del proceso.
+17	editable17	(S1, S2)Cursos actualizados.\n(S2) Plan de estudios.\n(S2) Ambientes de aprendizaje.\n(S3) Planes de mejoramiento y actualización curricular.\n(S4) Informes de gestión.
+18	editable18	(C1)Estudiantes.
+19	editable19	(C2) Proceso gestión del registro calificado.\n(C3) Proceso de aseguramiento de la calidad académica.\n(C4) Todos los Proceso.
+20	editable20	1
+21	editable21	03/Sep/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	03/Sep/2024
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
 39	editable39	...
 40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-DC-DRC
+3	editable3	DOCENCIA DE CALIDAD
+4	editable4	Versión: 1
+5	editable5	DESARROLLO CURRICULAR
+6	editable6	Fecha: 03/Sep/2024
+7	editable7	Desarrollo Curricular.
+8	editable8	Inicia con la elaboración de la hoja de ruta para diseñar los syllabus de los programas académicos y avanza hacia el monitoreo de los planes de actualización curricular de dichos programas.
+9	editable9	Asegurar que los syllabus de los programas académicos de educación superior sean diseñados, implementados, evaluados y actualizados de manera que sean pertinentes, innovadores y transformadores. Esto se logra respondiendo a las necesidades de los contextos regionales, nacionales e internacionales, en conformidad con la normativa actual, la misión institucional y la planificación estratégica.
+10	editable10	(P1) Ministerio de Educación Nacional.
+11	editable11	(P2) Proceso Aseguramiento de la Calidad Académica.\n(P3) Proceso Gestión del Registro Calificado.\n(P4) Proceso Relacionamiento con Egresados.\n(P5) Todos los procesos.
 \.
 
 
@@ -5208,7 +5848,7 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 18	editable18	(C1) Estudiantes.
 19	editable19	(C2) Todos los Procesos.
 20	editable20	1
-21	editable21	30/Oct/2023
+21	editable21	03/Sep/2024
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
@@ -5222,9 +5862,57 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry  Lurbey Hueso
+36	editable36	Rector
+37	editable37	03/Sep/2024
+38	editable38	...
+39	editable39	...
+40	editable40	...
+\.
+
+
+--
+-- Data for Name: mapa_procesos_ec_evaluacion_control; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.mapa_procesos_ec_evaluacion_control (id, identifier, content) FROM stdin;
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-CA-EVC
+3	editable3	CALIDAD INTEGRAL
+4	editable4	Versión: 1
+5	editable5	EVALUACIÓN Y CONTROL
+6	editable6	Fecha: 07/Nov/2024
+7	editable7	Evaluación y control
+8	editable8	Inicia aplicando a todos los procesos de la Institución.
+9	editable9	Medir y evaluar la eficiencia, eficacia y economía de los procesos de UNISANPABLO, asesorando a la Alta Dirección en el mejoramiento continuo del proceso administrativo, para la evaluación de los planes establecidos y de los correctivos que sean necesarios para el cumplimiento de las metas y objetivos institucionales, basados en las diferentes funciones en las que se enmarcan los roles de la Oficina Asesora de Control Interno, como lo son el Liderazgo Estratégico, Enfoque hacia la prevención, Evaluación de la Gestión del Riesgo, Evaluación y Seguimiento, y la Relación con entes externos de control.
+10	editable10	(P1) Entes de control \n(P2) Revisoría fiscal
+11	editable11	(P3) Todos los procesos
+12	editable12	(E1) Normatividad aplicable y requerimientos normativos. \n(E3) Información documentada del proceso, normatividad, soportes de información. \n(E2, E3) Informes de auditorías anteriores. \n(E3) Matrices y mapas de riesgos. \n(E3) Plan de desarrollo. \n(E3) Diagnostico estratégico ajustado.
+13	editable13	1. Definir el programa anual de auditorías y los planes de las mismas. \n2. Analizar el contexto para la identificación de riesgos y oportunidades. \n3. Definir la programación de la ejecución de las auditorias de control.
+14	editable14	4. Desarrollar el Plan de Auditorías y realizar los seguimientos según Programa de Auditoria.\n5. Identificar los riesgos y las oportunidades. \n6. Establecer el equipo de auditoría de control. \n7. Realizar las auditorias de control, de acuerdo con el programa y los requerimientos de los entes de gobierno. \n8. Aplicar los planes de tratamiento para los riesgos y las oportunidades
+15	editable15	9. Controlar el cumplimiento al programa anual de auditorías y seguimientos. \n10. Evaluar el plan de acción,auditorias y autoevaluación.\n11. Elaborar y consolidar los informes de auditoría de control. \n12. Aplicar los controles para los riesgos identificados. \n13. Realizar seguimiento a la gestión del tratamiento de los riesgos y las oportunidades.\n14. Verificar la implementación de las acciones de mejora de acuerdo con los compromisos y los resultados del proceso.\n15. Evaluar la adecuada ejecución de las auditorias de control
+16	editable16	16. Reformular el programa de auditorías para aprobación del consejo superior.\n17. Realizar monitoreo a la gestión de los riesgos y oportunidades.\n18. Establecer acciones de mejora.
+17	editable17	(S2) Plan anual de auditoría de control. \n(S2) Seguimiento a planes de mejoramiento \n(S2) Matrices y mapas de riesgos. \n(S2) informes de auditoría de control. \n(S2) Reporte de evaluación de diseño de controles. \n(S2) Informe de monitoreo de los riesgos estratégicos críticos y de oportunidades priorizadas. \n(S2) Informe de monitoreo de los riesgos residuales. \n(S2) Controles correctivos, preventivos y defectivos.
+18	editable18	(C1) Entidades públicas.
+19	editable19	(C2) Todos los procesos.
+20	editable20	1
+21	editable21	07/Nov/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	07/Nov/2024
+26	editable26	Martha Esperanza Rodríguez.
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	07/Nov/2024
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector.
+37	editable37	07/Nov/2024
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5236,18 +5924,30 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 --
 
 COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM stdin;
+10	editable10	(P1) Ministerio de Educación Nacional de Colombia\n(P2) Ministerio del Trabajo\n(P3) Organizaciones, entidades públicas o privadas legalmente constituidas\n(P4) Organizaciones sociales y comunitarias\n(P5) Comunidad en general.
+11	editable11	(P6) Proceso Vida estudiantil\n(P7) Proceso Desarrollo Curricular.\n(P8) Macroproceso Investigación.\n(P9) Proceso Gestión de la información.\n(P9) Todos los procesos.
+12	editable12	(E3) Requerimiento de practicantes.\n(E4, E5) Necesidades de fortalecimiento de procesos sociales y territoriales en organizaciones sociales y comunitarias.\n(E4) Interés de organizaciones en convertirse en contextos de práctica en responsabilidad social.\n(E7) Plan de estudio de programa académico.\n(E7) Cursos actualizados.\n(E8) Información del cumplimiento del plan de trabajo de los estudiantes en práctica profesional en investigación.\n(E9) Información detallada según requerimiento\n(E10) Requisitos y necesidades de los clientes internos.
 13	editable13	1. Definir las políticas o lineamientos de Extensión y Proyección Social.\n2. Programar la inducción e inscripción de los estudiantes en las diferentes clasificaciones de la Práctica Profesional.\n3. Realizar la gestión para la consecución de escenarios de la Práctica Profesional.\n4. Garantizar la existencia de convenios para la realización de las prácticas en responsabilidad social.\n5. Definir los planes operativos para el desarrollo de las prácticas en responsabilidad social.\n6. Planear los seguimientos a los planes, programas y proyectos.\n7. Realizar la gestión de proyectos de Extensión y Proyección Social.
 14	editable14	8. La gestión de la Comunicación de la Extensión.\n9. Gestionar las condiciones administrativas y logísticas para el desarrollo de la oferta de educación continua.\n10. Implementar la evaluación del desarrollo de la práctica en responsabilidad social y Prácticas profesional.
 15	editable15	11. Seguimiento y acompañamiento a las prácticas en responsabilidad social, práctica en los diferentes contextos y prácticas profesionales.\n12. Evaluar la Gestión de los Proyectos de Extensión y Proyección Social.\n13. Generar informes de seguimiento de la planeación y gestión del proceso.\n14. Evaluar el porcentaje de satisfacción de los servicios de la Práctica Profesional.
 16	editable16	15. Realizar los ajustes al Proceso de Extensión y Proyección Social de la Institución, enfocados en la consolidación y/o acreditación del proceso.\n16. Implementar acciones de mejora de acuerdo con los resultados del proceso.
 17	editable17	(S1, S2) Proyectos de Práctica Profesional.\n(S2) Vinculación a las diferentes clasificaciones de Práctica Profesional.\n(S1) Evaluación de la Práctica por parte del escenario de la Práctica, el estudiante y el programa académico.\n(S3) Contextos de Práctica en Responsabilidad Social\n(S3, S4) Calificaciones del curso.\n(S4) Oportunidades de oferta de educación continua para el desarrollo de proyectos.\n(S5) Informes de gestión.
 18	editable18	(C1) Organizaciones, entidades públicas o privadas legalmente constituidas.\n(C2) Estudiantes.
+19	editable19	(C3) Proceso Vida Estudiantil.\n(C4) Proceso Gestión de Proyectos.\n(C5) Todos los Proceso.
+20	editable20	1
+21	editable21	26/Sep/2024
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	26/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	26/Sep/2024
+38	editable38	...
+39	editable39	...
+40	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-PS-EPS
 3	editable3	PROYECCION SOCIAL DE IMPACTO
@@ -5257,18 +5957,54 @@ COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM
 7	editable7	Extensión y Proyección Social.
 8	editable8	Inicia con la definición y planeación de las políticas, los planes y los programas de Extensión y Proyección Social. Finaliza con la realización de ajustes al proceso de Extensión y Proyección Social, enfocados en la consolidación y/o acreditación del proceso.
 9	editable9	Promover la vinculación de la UNISANPABLO con su entorno social, a través de la coordinación de los programas, planes y proyectos de Extensión y Proyección Social, en articulación a la Docencia y la Investigación.
-10	editable10	(P1) Ministerio de Educación Nacional de Colombia\n(P2) Ministerio del Trabajo\n(P3) Organizaciones, entidades públicas o privadas legalmente constituidas\n(P4) Organizaciones sociales y comunitarias\n(P5) Comunidad en general.
-11	editable11	(P6) Proceso Vida estudiantil\n(P7) Proceso Desarrollo Curricular.\n(P8) Macroproceso Investigación.\n(P9) Proceso Gestión de la información.\n(P9) Todos los procesos.
-12	editable12	(E3) Requerimiento de practicantes.\n(E4, E5) Necesidades de fortalecimiento de procesos sociales y territoriales en organizaciones sociales y comunitarias.\n(E4) Interés de organizaciones en convertirse en contextos de práctica en responsabilidad social.\n(E7) Plan de estudio de programa académico.\n(E7) Cursos actualizados.\n(E8) Información del cumplimiento del plan de trabajo de los estudiantes en práctica profesional en investigación.\n(E9) Información detallada según requerimiento\n(E10) Requisitos y necesidades de los clientes internos.
-19	editable19	(C3) Proceso Vida Estudiantil.\n(C4) Proceso Gestión de Proyectos.\n(C5) Todos los Proceso.
-20	editable20	1
-21	editable21	26/Sep/2024
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	26/Sep/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
+\.
+
+
+--
+-- Data for Name: mapa_procesos_ec_gestion_cartera; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.mapa_procesos_ec_gestion_cartera (id, identifier, content) FROM stdin;
+6	editable6	Fecha: 10/Sep/2024
+7	editable7	Gestión De Cartera
+8	editable8	Inicia con la verificación de los saldos de los clientes de la cartera por edades hasta el recaudo de dicho cobro o determinación del castigo de dicha cuenta.
+9	editable9	Establecer las directrices y políticas que se deben seguir en el Departamento de Cartera para el cobro de las acreencias a favor de la Fundación Universitaria San Pablo.
+10	editable10	(P1) Entidades públicas y privadas.\n(P2) Entidades financieras.
+20	editable20	1
+21	editable21	10/Sep/2024
+22	editable22	Creación del proceso
+23	editable23	Cristian Guillermo Velandia
+24	editable24	Aprendiz
+25	editable25	12/Dic/2023
+26	editable26	Martha Esperanza Rodríguez.
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	12/Dic/2023
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-AF-GC
+3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
+4	editable4	Versión: 1
+5	editable5	GESTIÓN DE CARTERA
+11	editable11	(P3) Proceso de Alianzas e Iniciativas Estratégicas.\n(P4) Todos los procesos.
+12	editable12	(E1) Soportes de pagos por transferencias bancarias y consignaciones manuales.\n(E2) Informes de pagos en entidades financieras.\n(E3) Banco de Alianzas y Aliados.\n(E4) Necesidades de los clientes internos.
+13	editable13	1.  Verificar la identificación plena del Deudor.\n2. Establecer las acreencias pendientes de pago, su exigibilidad, la existencia de hechos que den lugar a la suspensión de la prescripción.
+14	editable14	3. Incentivar el pago voluntario por parte del cliente.\n4. Gestionar cobro de cartera administrativa.\n5. Solicitar póliza de cumplimiento.\n6. Realizar notificaciones y citaciones.\n7. Efectuar cargos legales por obligaciones pendientes.\n8. Realizar acuerdos de pago.\n9. Generar pedidos y facturas administrativas.\n10. Registrar contablemente los ingresos.\n11. Elaborar certificaciones de pago.\n12. Realizar informe de cartera administrativa.\n13. Aplicar castigo de cartera según incumplimiento del deudor
+15	editable15	14. Evaluar facilidades de pago solicitadas por el deudor.\n15. Verificar el cumplimiento de los acuerdos de pago.\n16. Conciliar registro de ingresos.\n17. Realizar seguimiento al cobro de la cartera administrativa.\n18. Generar informes de la gestión del proceso.
+16	editable16	19. Implementar acciones de mejora, de acuerdo a los resultados del proceso.
+17	editable17	(S1) Certificaciones de pagos.\n(S2) Recursos financieros disponibles.\n(S3) Información cobro de impuestos.\n(S3, S4) Cartera administrativa\n(S5) Informes de seguimiento.
+18	editable18	(C1) Entidades Públicas y Privadas.
+19	editable19	(C2) Proceso Administración de Tesorería\n(C3) Proceso de Contabilidad Financiera y Costeo.\n(C4) Proceso Planeación Financiera y Presupuesto
 34	editable34	...
 35	editable35	...
 36	editable36	...
@@ -5284,27 +6020,12 @@ COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM
 --
 
 COPY public.mapa_procesos_ec_gestion_contractual (id, identifier, content) FROM stdin;
-14	editable14	2. Determinar el mecanismo de selección del contratista y seleccionar la oferta o propuesta más favorable.\n3. Realizar solicitud de pedido acorde a Data Maestra de Materiales, presupuesto y activo fijo según aplique.\n4. Seleccionar el proveedor.\n5. Realizar la contratación de acuerdo con los lineamientos del Manual de Contratación.\n6. Generar orden de pedido.\n7. Liberar pedido.
-15	editable15	8. Consolidar y aprobar la evaluación de proveedores.\n9. Evaluar los productos y/o servicios recibidos y evaluar los aspectos técnicos.\n10. Actualizar datos de proveedores de bienes o servicios.\n11. Evaluar y reevaluar proveedores de bienes y servicios.\n12. Generar informes de seguimiento de la planeación y gestión del proceso.\n13. Realizar seguimiento al plan anual de adquisiciones.
-16	editable16	14. Ajustar al plan anual de adquisiciones.\n15. Implementar acciones de mejora de acuerdo a los resultados del proceso.
-17	editable17	(S1,S5) Orden de pedido.\n(S1) Contratos de servicios o suministros.\n(S7) Bien o servicio entregado.\n(S4) Informe de movimiento de activos fijos\n(S1) Ordenes de servicio personas naturales.\n(S1,S7) Evaluación y revaluación de proveedores.\n(S6) Listado de bienes y equipos sujetos a mantenimiento.\n(S7) Informes de seguimiento.
-18	editable18	(C1) Proveedores de bienes.\n(C2) Proveedores de servicios.
-19	editable19	(C3) Proceso Gestión del Riesgo.\n(C4) Proceso de Contabilidad Financiera y Costeo.\n(C5) Proceso Administración de Tesorería.\n(C6) Proceso Adecuaciones y Mantenimiento de la Infraestructura Física.\n(C7) Todos los procesos.
-20	editable20	1
-21	editable21	12/Dic/2023
-22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	12/Dic/2023
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	15/Dic/2023
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-JC-GEC
 3	editable3	GESTIÓN JURÍDICA Y CONTRACTUAL
 4	editable4	Versión: 1
 5	editable5	GESTIÓN CONTRACTUAL
-6	editable6	Fecha: 12/Dic/2023
+6	editable6	Fecha: 18/Feb/2025
 7	editable7	Gestión contractual
 8	editable8	Inicia con la identificación de la necesidad de las dependencias académicas y administrativas, la elaboración del Plan Anual de Adquisiciones y la solicitud de adquisición de un bien y/o servicio para determinar el mecanismo de contratación acorde con los estándares y normatividad vigente y termina con la evaluación a los proveedores y el ajuste al Plan Anual de Adquisiciones de la vigencia.
 9	editable9	Gestionar de manera transparente y eficaz los recursos para la contratación de los bienes y/o servicios a través de los diferentes mecanismos de contratación necesarios para el cumplimiento de la misión y visión de UNISANPABLO de acuerdo a los estándares y normatividad vigente.
@@ -5312,15 +6033,30 @@ COPY public.mapa_procesos_ec_gestion_contractual (id, identifier, content) FROM 
 11	editable11	(P2) Proceso de Alianzas e Iniciativas Estratégicas.\n(P3) Proceso Gestión de Proyectos.\n(P4) Proceso Contratación y Nómina.\n(P5) Todos los procesos.
 12	editable12	(E1) información actualizada de los proveedores.\n(E2) Donaciones.\n(E3) Necesidades de bienes o servicios.\n(E4) Relación de finalización contractual.\n(E5) Necesidades de los clientes internos.
 13	editable13	1. Elaborar el plan anual de adquisiciones.
+14	editable14	2. Determinar el mecanismo de selección del contratista y seleccionar la oferta o propuesta más favorable.\n3. Realizar solicitud de pedido acorde a Data Maestra de Materiales, presupuesto y activo fijo según aplique.\n4. Seleccionar el proveedor.\n5. Realizar la contratación de acuerdo con los lineamientos del Manual de Contratación.\n6. Generar orden de pedido.\n7. Liberar pedido.
+15	editable15	8. Consolidar y aprobar la evaluación de proveedores.\n9. Evaluar los productos y/o servicios recibidos y evaluar los aspectos técnicos.\n10. Actualizar datos de proveedores de bienes o servicios.\n11. Evaluar y reevaluar proveedores de bienes y servicios.\n12. Generar informes de seguimiento de la planeación y gestión del proceso.\n13. Realizar seguimiento al plan anual de adquisiciones.
+16	editable16	14. Ajustar al plan anual de adquisiciones.\n15. Implementar acciones de mejora de acuerdo a los resultados del proceso.
+17	editable17	(S1,S5) Orden de pedido.\n(S1) Contratos de servicios o suministros.\n(S7) Bien o servicio entregado.\n(S4) Informe de movimiento de activos fijos\n(S1) Ordenes de servicio personas naturales.\n(S1,S7) Evaluación y revaluación de proveedores.\n(S6) Listado de bienes y equipos sujetos a mantenimiento.\n(S7) Informes de seguimiento.
+18	editable18	(C1) Proveedores de bienes.\n(C2) Proveedores de servicios.
+19	editable19	(C3) Proceso Gestión del Riesgo.\n(C4) Proceso de Contabilidad Financiera y Costeo.\n(C5) Proceso Administración de Tesorería.\n(C6) Proceso Adecuaciones y Mantenimiento de la Infraestructura Física.\n(C7) Todos los procesos.
+20	editable20	1
+21	editable21	18/Feb/2025
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	18/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	18/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5332,16 +6068,13 @@ COPY public.mapa_procesos_ec_gestion_contractual (id, identifier, content) FROM 
 --
 
 COPY public.mapa_procesos_ec_gestion_desarrollo_humano (id, identifier, content) FROM stdin;
-2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-1	editable2	Código: CR-TB-GDT
-3	editable3	TALENTO HUMANO Y BIENESTAR
-4	editable4	Versión: 1
+18	editable18	(C1) Entidades de seguridad social (EPS-AFP-ARL-CAJAS).\n(C2) Revisoría Fiscal.\n(C3) Entidades gubernamentales y de salud.\n(C4) Entidades públicas y privadas (bancos, cooperativas, juzgados).\n(C5) Operador PILA.
+19	editable19	(C6) Todos los procesos.
+29	editable29	...
+30	editable30	...
 5	editable5	GESTION Y DESARROLLO DEL TALENTO HUMANO
-6	editable6	Fecha: 01/Nov/2023
+6	editable6	Fecha: 18/Feb/2025
 7	editable7	Gestión y desarrollo del talento humano
-8	editable8	Inicia con el diseño de políticas, estrategias, planes, programas y proyectos orientados al desarrollo del Talento Humano hasta la medición y mejora a los mismos. Aplica para todos los Procesos de la UNISANPABLO.
-9	editable9	Promover trabajadores altamente calificados y comprometidos con la organización, creando condiciones para su bienestar, seguridad e integralidad, a través del diseño e implementación de políticas, estrategias, planes, programas y proyectos, encaminados a la consecución de los objetivos y cumplimiento de las funciones institucionales.
-11	editable10	(P1) Entidades públicas y privadas.
 12	editable11	(P2) Todos los procesos.
 10	editable12	(E1) Documentos para vinculación.\n(E1) Relación de candidatos contratables. \n(E2) Estructura organizacional.\n(E2) Información de desempeño del colaborador.\n(E2) Resultado de Gestión del desempeño para continuidad.\n(E2) Requisitos y necesidades de los clientes internos.
 13	editable13	1. Elaborar y formular el Plan de acción de desarrollo humano.\n2. Identificar la planta personal aprobada, con su respectivo presupuesto.\n3. Establecer lineamientos para el acceso a planes de capacitación y estudios de alto nivel.\n4. Definir y concertar con el área encargada, la gestión del desarrollo desde el componente de formación.\n5. Definir el plan de Bienestar Social e incentivos.\n6. Definir el Plan Institucional de Educación para el Trabajo y el Desarrollo Humano.
@@ -5349,28 +6082,31 @@ COPY public.mapa_procesos_ec_gestion_desarrollo_humano (id, identifier, content)
 15	editable15	18. Verificar la gestión y seguimiento al cumplimiento del plan de acción de desarrollo del talento humano.\n19. Generar informes de seguimiento de la planeación y gestión del proceso.\n20. Monitorear el resguardo de las evidencias documentales inherentes a la contratación.\n21. Evaluar y contrastar las solicitudes de formación de alto nivel y capacitación Docente con los lineamientos establecidos en el plan de Formación.
 16	editable16	22. Actualizar las rutas de desarrollo de los colaboradores.\n23. Implementar las acciones de mejora al producto de la verificación de la gestión del proceso y al plan de acción de desarrollo del talento humano.\n24. Implementar acciones de mejora de acuerdo con los resultados del proceso.
 17	editable17	(S1) Afiliaciones a seguridad social.\n(S6)Contrato laboral firmado y soportes de afiliación a la seguridad social.\n(S6) Información de ingresos de colaboradores.\n(S6) Información sobre el colaborador y su contrato laboral.\n(S6) Cronograma de actividades de contratación y nómina.\n(S2) Informe y entrega documental para revisoría Fiscal.\n(S6) Informes para entidades gubernamentales y de salud.\n(S6) Comprobante de liquidación del contrato y generación del paquete de finalización contractual.\n(S6) Informe de cartera de incapacidades, de nómina y de deudas presuntas y reales de Seguridad Social.\n(S6) Informes de gestión.
-18	editable18	(C1) Entidades de seguridad social (EPS-AFP-ARL-CAJAS).\n(C2) Revisoría Fiscal.\n(C3) Entidades gubernamentales y de salud.\n(C4) Entidades públicas y privadas (bancos, cooperativas, juzgados).\n(C5) Operador PILA.
-19	editable19	(C6) Todos los procesos.
 20	editable20	1
-21	editable21	01/Nov/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
-24	editable23	Cristian Guillermo Velandia
-23	editable24	Aprendiz
-25	editable25	01/Nov/2023
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	05/Nov/2023
-29	editable29	...
-30	editable30	...
+24	editable23	Daniela Torres Torres
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+8	editable8	Inicia con el diseño de políticas, estrategias, planes, programas y proyectos orientados al desarrollo del Talento Humano hasta la medición y mejora a los mismos. Aplica para todos los Procesos de la UNISANPABLO.
+9	editable9	Promover trabajadores altamente calificados y comprometidos con la organización, creando condiciones para su bienestar, seguridad e integralidad, a través del diseño e implementación de políticas, estrategias, planes, programas y proyectos, encaminados a la consecución de los objetivos y cumplimiento de las funciones institucionales.
+11	editable10	(P1) Entidades públicas y privadas.
+23	editable24	Aprendiz
+25	editable25	18/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	18/Feb/2025
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
+2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+1	editable2	Código: CR-TB-GDT
+3	editable3	TALENTO HUMANO Y BIENESTAR
+4	editable4	Versión: 1
 40	editable40	...
 \.
 
@@ -5380,15 +6116,6 @@ COPY public.mapa_procesos_ec_gestion_desarrollo_humano (id, identifier, content)
 --
 
 COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-AF-GDO
-3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
-4	editable4	Versión: 1
-5	editable5	GESTIÓN DOCUMENTAL
-6	editable6	Fecha: 26/Sep/2024
-7	editable7	Gestión Documental
-8	editable8	Inicia con la planeación estratégica de la gestión documental y finaliza con la evaluación, seguimiento y control de la implementación de las políticas, directrices y procesos técnicos de la misma. Aplica a todas y cada una de las Unidades Académico y/o Administrativas de la institución.
-9	editable9	Garantizar la correcta planeación, organización, manejo, control y funcionamiento de la gestión documental, desde la producción hasta la disposición final de los documentos físicos, electrónicos e híbridos, en los archivos de gestión y central, que en su conjunto conforman el archivo total de UNISANPABLO, de forma lógica de acuerdo con la naturaleza y fines de la institución, cumpliendo con los estándares técnicos para el tratamiento de los documentos y la legislación vigente, para proteger el patrimonio documental, preservar los archivos en las mejores condiciones de acceso y seguridad, y garantizar la disponibilidad a la academia, la comunidad en general y del mejoramiento institucional.
 10	editable10	(P1) Archivo General de la Nación.\n(P2) Entidades Públicas y Privadas.\n(P3) Personas Naturales o Jurídicas.
 11	editable11	(P4) Todos los Procesos.
 12	editable12	(E1, E2, E4) Lineamientos y directrices de los programas de gestión documental.\n(E2, E3, E4) Correspondencia.\n(E4) Necesidades de los clientes internos.\n(E4) Transferencias documentales de los archivos de gestión que cumplieron su tiempo de retención en la oficina productora.\n(E4) Transferencias documentales de las historias laborales de colaboradores.\n(E4) Transferencias documentales de las historias académicas de estudiantes inactivos y graduados.\n(E4) Transferencias documentales de las historias académicas de Aspirantes que no finalizan su inscripción.
@@ -5405,6 +6132,15 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	26/Sep/2024
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-AF-GDO
+3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
+4	editable4	Versión: 1
+5	editable5	GESTIÓN DOCUMENTAL
+6	editable6	Fecha: 26/Sep/2024
+7	editable7	Gestión Documental
+8	editable8	Inicia con la planeación estratégica de la gestión documental y finaliza con la evaluación, seguimiento y control de la implementación de las políticas, directrices y procesos técnicos de la misma. Aplica a todas y cada una de las Unidades Académico y/o Administrativas de la institución.
+9	editable9	Garantizar la correcta planeación, organización, manejo, control y funcionamiento de la gestión documental, desde la producción hasta la disposición final de los documentos físicos, electrónicos e híbridos, en los archivos de gestión y central, que en su conjunto conforman el archivo total de UNISANPABLO, de forma lógica de acuerdo con la naturaleza y fines de la institución, cumpliendo con los estándares técnicos para el tratamiento de los documentos y la legislación vigente, para proteger el patrimonio documental, preservar los archivos en las mejores condiciones de acceso y seguridad, y garantizar la disponibilidad a la academia, la comunidad en general y del mejoramiento institucional.
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	26/Sep/2024
@@ -5414,9 +6150,9 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	26/Sep/2024
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5428,13 +6164,9 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 --
 
 COPY public.mapa_procesos_ec_gestion_informacion (id, identifier, content) FROM stdin;
-2	editable2	Código: CR-PE-GIN
-3	editable3	PLANEACIÓN ESTRATÉGICA
-4	editable4	Versión: 1
 5	editable5	GESTIÓN DE LA INFORMACIÓN
 6	editable6	Fecha: 26/Sep/2024
 7	editable7	Gestión de la información.
-9	editable9	Garantizar que la información relevante, oportuna y confiable esté disponible y accesible, aportando valor a la toma de decisiones, y al mismo tiempo, promoviendo la protección, integridad y confidencialidad de los datos, en cumplimiento con las leyes y en línea con la estrategia institucional.
 10	editable10	(P1) Departamento Administrativo Nacional de Estadística (DANE).\n(P2) Ministerio de Educación Nacional (MEN).\n(P3) Instituciones de Educación Superior (IES).\n(P4) Cámara de Comercio.\n(P5) Registraduría Nacional de Estado Civil.\n(P6) Instituto Colombiano para la Evaluación de la Educación (ICFES).\n(P7) Entidades de Seguridad Social (EPS, AFP, ARL, Cajas).
 11	editable11	(P8) Todos los procesos.
 13	editable13	1. Definir el cronograma para reportes de información institucional.\n2. Definir la estructura, las fuentes y los medios para el tratamiento de la información.\n3. Definir los estándares y estrategia de calidad de datos e información.\n4. Definir la arquitectura de los datos.\n5. Definir la metodología para el adecuado gobierno y gestión de los datos e información de las partes interesadas.\n6. Definir la estrategia de datos.\n7. Establecer el almacenamiento y operación de los datos.\n8. Definir el gobierno de los datos a través de los buses de integración.\n9. Definir la estrategia de seguridad de los datos y de la información.\n10. Definir la metodología para el adecuado tratamiento de los datos personales e información.\n11. Diseñar la metodología de medición, evaluación y seguimiento de los indicadores de la institución.
@@ -5446,28 +6178,80 @@ COPY public.mapa_procesos_ec_gestion_informacion (id, identifier, content) FROM 
 19	editable19	(C5) Todos los Procesos.
 20	editable20	1
 21	editable21	26/Sep/2024
-22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	26/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+39	editable39	...
+40	editable40	...
+2	editable2	Código: CR-PE-GIN
+3	editable3	PLANEACIÓN ESTRATÉGICA
+4	editable4	Versión: 1
+9	editable9	Garantizar que la información relevante, oportuna y confiable esté disponible y accesible, aportando valor a la toma de decisiones, y al mismo tiempo, promoviendo la protección, integridad y confidencialidad de los datos, en cumplimiento con las leyes y en línea con la estrategia institucional.
+22	editable22	Creación del proceso
 28	editable28	26/Sep/2024
+29	editable29	...
+37	editable37	26/Sep/2024
+38	editable38	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+8	editable8	Inicia con la identificación y el análisis de las fuentes de información relevantes para el desarrollo de la institución y sus programas académicos y de investigación, y termina con la definición y el seguimiento de indicadores que permitan evaluar el impacto y la eficiencia de la gestión de la información.
+12	editable12	(E1, E2, E8) Solicitudes de información.\n(E1) Estadísticas nacionales.\n(E3) Información estadística del sector.\n(E4) Información de sector productivo.\n(E8) Plan de Desarrollo.\n(E8) Informe de profesores formados.\n(E8) Estructura de datos.\n(E8) Información estadística de infraestructura tecnológica.\n(E8) Información estudiantes y profesores participantes en semilleros, grupos y eventos en investigación.\n(E8) Información de cobertura y estrategias de bienestar y retención estudiantil.\n(E8) Informes de colocación.\n(E8) Información de metas.\n(E8) Presupuesto Operativo.\n(E8) Presupuesto de Inversión.\n(E8) Consolidado de la infraestructura física a nivel nacional.\n(E8) Caracterización de inscritos (información demográfica).\n(E8) Reporte de información recurso histórico-SNIES.\n(E8) Estructura Organizacional.\n(E8) Información para la medición de indicadores.
+\.
+
+
+--
+-- Data for Name: mapa_procesos_ec_gestion_integrada; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.mapa_procesos_ec_gestion_integrada (id, identifier, content) FROM stdin;
+13	editable13	1. Planificar el sistema de gestión. \n2. Definir las directrices de calidad del sistema integrado de gestión. \n3. Formulación del plan de acción del sistema integral de gestión. \n4. Definir Políticas y objetivos de calidad.
+14	editable14	5. Documentar el sistema integral de gestión con base a la norma.\n6. Implementación del sistema integral de gestión. \n7. Socializar los avances de la implementación y todo lo relacionado al establecimiento de subsistemas. \n8. Apoyar la identificación y seguimiento a la gestión de riesgos. \n9. Asesorar y acompañar sobre los servicios de calidad y procesos.
+15	editable15	10. Realizar los seguimientos a los planes de acción del sistema Integral de gestión. \n11. Analizar resultados de medición. \n12. Generar informes de seguimiento de la planeación y gestión del proceso.
+16	editable16	13. Ajustar los planes del sistema integrado de gestión de UNISANPABLO conforme al informe resultante del seguimiento. \n14. Implementar acciones de mejora de acuerdo a los resultados del proceso.
+17	editable17	Plan anual de calidad y procesos. \nPrograma de auditorías del sistema de gestión. \nInforme de seguimiento de las herramientas de gestión.\nCadena de Valor con sus elementos de la línea de producción (Caracterización de procesos, procedimientos, roles y responsabilidades e indicadores de gestión). \nRequisitos y expectativas de las partes interesadas. Informes de gestión.
+18	editable18	(C1) Ente certificador.
+19	editable19	Todos los Procesos.
+20	editable20	1
+21	editable21	18/Feb/2025
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos
+28	editable28	18/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-CA-GIT
+3	editable3	CALIDAD INTEGRAL
+4	editable4	Versión: 1
+5	editable5	GESTIÓN INTEGRADA
+6	editable6	Fecha: 18/Feb/2025
+7	editable7	Gestión integrada
+8	editable8	Inicia con la definición de las directrices de la Estructura Integral del Sistema integral de gestión y termina con la Implementación y seguimiento a los planes de mejoramiento.
+9	editable9	Articular y consolidar el Sistema Integrado de Gestión de la UNISANPABLO, con el fin de garantizar un desempeño institucional articulado y armónico, para la consecución de resultados y satisfacción de la Comunidad Universitaria y los Grupos de Valor, a través de acciones orientadas a la implementación de las Dimensiones, Políticas y Procesos que lo componen.
+10	editable10	(P1) Ente certificador
+11	editable11	(P10) Todos los procesos.
+12	editable12	(E1) Plan de desarrollo.\n(E2) Informes de ajuste y adaptación a la estrategia\n(E3) Informe del desempeño de los procesos. \n(E4) Solicitudes de asesoría y acompañamiento del sistema de gestión.\n(E5) Información de los requisitos, necesidades y expectativas de las partes interesadas \n(E6) Plan de acción del sistema integral. \n(E7) Diagnostico estratégico ajustado. \n(E8) Información del desempeño de los procesos.\n(E9) Sistemas de información, mejoras, nuevas funcionalidades, actualizaciones. \n(E10) Información de los requisitos, necesidades y expectativas de las partes interesadas
+25	editable25	18/Feb/2025
 39	editable39	...
 40	editable40	...
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-8	editable8	Inicia con la identificación y el análisis de las fuentes de información relevantes para el desarrollo de la institución y sus programas académicos y de investigación, y termina con la definición y el seguimiento de indicadores que permitan evaluar el impacto y la eficiencia de la gestión de la información.
-12	editable12	(E1, E2, E8) Solicitudes de información.\n(E1) Estadísticas nacionales.\n(E3) Información estadística del sector.\n(E4) Información de sector productivo.\n(E8) Plan de Desarrollo.\n(E8) Informe de profesores formados.\n(E8) Estructura de datos.\n(E8) Información estadística de infraestructura tecnológica.\n(E8) Información estudiantes y profesores participantes en semilleros, grupos y eventos en investigación.\n(E8) Información de cobertura y estrategias de bienestar y retención estudiantil.\n(E8) Informes de colocación.\n(E8) Información de metas.\n(E8) Presupuesto Operativo.\n(E8) Presupuesto de Inversión.\n(E8) Consolidado de la infraestructura física a nivel nacional.\n(E8) Caracterización de inscritos (información demográfica).\n(E8) Reporte de información recurso histórico-SNIES.\n(E8) Estructura Organizacional.\n(E8) Información para la medición de indicadores.
 \.
 
 
@@ -5476,45 +6260,45 @@ COPY public.mapa_procesos_ec_gestion_informacion (id, identifier, content) FROM 
 --
 
 COPY public.mapa_procesos_ec_gestion_investigacion (id, identifier, content) FROM stdin;
-14	editable14	6. Consolidar las líneas de investigación.\n7. Implementar el plan de publicaciones.\n8. Realizar convocatorias de investigación y de movilidad.\n9. Apoyar el desarrollo de proyectos de investigación.\n10. Desarrollar convenios y/o contratos de investigación.\n11. Divulgar los resultados de investigación.\n12. Realizar convocatorias formativas para estudiantes vinculados a semilleros de investigación.\n13. Apoyar la creación e indexación de revistas institucionales.
+16	editable16	18. Analizar los hallazgos de las actividades realizadas por el proceso de gestión de investigación.\n19. Generar e implementar las acciones de mejora correspondiente.
 18	editable18	(C1) Comunidades académicas y científicas externas (nacionales e internacionales) / Instituciones de educación superior.\n(C2) Entidades públicas y privadas.\n(C3) Ministerio de Ciencia, Tecnología e innovación.\n(C4) Redes Académicas.\n(C5) Estudiantes.
 29	editable29	...
 30	editable30	...
-6	editable6	Fecha: 12/Dic/2023
-7	editable7	Gestión de Investigación
-8	editable8	Inicia con la entrada de planes institucionales y propuestas de investigación, Abarca desde los investigadores, las estructuras (grupos, semilleros) pasando por cada Proyecto Curricular y sus Facultades (Programas académicos)  hasta obtener los resultados investigativos y sus oportunas transferencias.
+31	editable31	...
+4	editable4	Versión: 1
+5	editable5	GESTIÓN DE INVESTIGACIÓN
+6	editable6	Fecha: 12/Sep/2024
+10	editable10	(P1) Ministerio de Educación Nacional – MEN\n(P2) Ministerio de Ciencia, Tecnología e Innovación.\n(P4) Embajadas/ Organismos de Cooperación Internacional / Organismos multilaterales. \n(P6) Empresas Públicas y Privadas.
 11	editable11	(P7) Todos los procesos.
 12	editable12	(E1) Plan Nacional de desarrollo.\n(E2) Plan Estratégico Departamental de Ciencia y Tecnología (PEDCT).\n(E3) Lineamientos de investigación para la Educación Superior.\n(E4) Plan Nacional de Ciencia, tecnología e innovación.\n(E4) Política para los semilleros de investigación.\n(E5) Políticas y lineamientos para el fomento a la investigación.\n(E5) Convocatorias nacional e internacional y oportunidades de investigación.\n(E7) Información de las tendencias de desarrollo en los sectores de referencia.\n(E7) Requisitos y necesidades de los clientes internos.
 13	editable13	1. Elaborar el Plan Maestro de investigación.\n2. Realizar el Plan de Acción de investigación\n3. Apoyar la creación y actualización de estructuras de investigación.\n4. Generar plan de publicaciones.\n5. Definir pautas generales para la producción académica de libros y revistas.
+14	editable14	6. Consolidar las líneas de investigación.\n7. Implementar el plan de publicaciones.\n8. Realizar convocatorias de investigación y de movilidad.\n9. Apoyar el desarrollo de proyectos de investigación.\n10. Desarrollar convenios y/o contratos de investigación.\n11. Divulgar los resultados de investigación.\n12. Realizar convocatorias formativas para estudiantes vinculados a semilleros de investigación.\n13. Apoyar la creación e indexación de revistas institucionales.
 15	editable15	14. Hacer seguimiento mensual al cumplimiento del Plan de Publicaciones.\n15. Administrar, realizar resguardo y custodia de las publicaciones.\n16. Efectuar un seguimiento y evaluación a los proyectos, convenios y/o contratos de gestión investigativa.\n17. Hacer seguimiento y elaborar los informes de la gestión de los semilleros de investigación.
-16	editable16	18. Analizar los hallazgos de las actividades realizadas por el proceso de gestión de investigación.\n19. Generar e implementar las acciones de mejora correspondiente.
 17	editable17	(S3, S6) Plan estratégico de los grupos de investigación.\n(S6) Ruta en investigación formativa para los programas académicos en sus diferentes niveles de formación.\n(S5) Convocatorias formativas para estudiantes.\n(S1,S6) Listado de semilleros de investigación/Red de Semilleros.\n(S6) Informe de resultados de ejecución y cumplimiento a la ruta en investigación pertinente para los programas académicos.\n(S6) Desarrollo de trabajos de grado derivados de proyectos de investigación formativa.\n(S6) Necesidades y oportunidades de participación / desarrollo de proyectos de investigación en convocatorias internas y externas de acuerdo con los términos de referencia.\n(S6) Informes de seguimiento.
 19	editable19	(C6) Todos los Procesos.
 20	editable20	1
 21	editable21	12/Dic/2023
-22	editable22	Creación del proceso
-31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	12/Sep/2024
+7	editable7	Gestión de Investigación
+8	editable8	Inicia con la entrada de planes institucionales y propuestas de investigación, Abarca desde los investigadores, las estructuras (grupos, semilleros) pasando por cada Proyecto Curricular y sus Facultades (Programas académicos)  hasta obtener los resultados investigativos y sus oportunas transferencias.
 9	editable9	Administrar los recursos destinados al desarrollo de estrategias, programas, proyectos investigativos y contar con las condiciones estructurales-organizacionales para proyectarse como una universidad investigativa que promueva y potencie la capacidad del investigador de la Universidad y su labor tenga eco en el desarrollo científico y sociocultural de la ciudad, región y país.
-10	editable10	(P1) Ministerio de Educación Nacional – MEN\n(P2) Ministerio de Ciencia, Tecnología e Innovación.\n(P4) Embajadas/ Organismos de Cooperación Internacional / Organismos multilaterales. \n(P6) Empresas Públicas y Privadas.
-23	editable23	Cristian Guillermo Velandia
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	12/Dic/2023
+25	editable25	12/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	05/Ene/2024
-37	editable37	...
 38	editable38	...
 39	editable39	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-IP-GIV
 3	editable3	INVESTIGACIÓN PERTINENTE
-4	editable4	Versión: 1
-5	editable5	GESTIÓN DE INVESTIGACIÓN
+28	editable28	12/Sep/2024
 40	editable40	...
 \.
 
@@ -5524,14 +6308,6 @@ COPY public.mapa_procesos_ec_gestion_investigacion (id, identifier, content) FRO
 --
 
 COPY public.mapa_procesos_ec_gestion_juridica (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-JC-GEJ
-3	editable3	GESTIÓN JURÍDICA Y CONTRACTUAL
-4	editable4	Versión: 1
-5	editable5	GESTIÓN JURÍDICA
-6	editable6	Fecha: 11/Dic/2023
-7	editable7	Gestión Jurídica
-8	editable8	Inicia con la solicitud de asesoría jurídica, trámite judicial y apoyo a la gestión contractual y finaliza con la emisión de conceptos jurídicos, los trámites legales correspondientes y la revisión y aprobación a liquidación de contratos, como apoyo jurídico en el desarrollo de la misión de UNISANPABLO.
 9	editable9	Ejecutar y desarrollar políticas, planes, programas y proyectos de carácter jurídico, armonizando los actos administrativos emanados por la Institución con las leyes y la jurisprudencia vigente, llevando a cabo la representación legal, la defensa judicial, la asesoría en temas jurídicos y el apoyo a la gestión contractual, de UNISANPABLO.
 10	editable10	(C1) Personas naturales y jurídicas\n(C2) Autoridades judiciales y administrativas.
 11	editable11	(C3) Proceso Gestión de la Experiencia al usuario.\n(C4) Proceso Seguridad, Salud en el Trabajo y Gestión Ambiental. \n(C5) Todos los procesos.
@@ -5540,27 +6316,35 @@ COPY public.mapa_procesos_ec_gestion_juridica (id, identifier, content) FROM std
 14	editable14	2. Elaborar y revisar los contratos, minutas de adición, prórroga y/o cesión.\n3. Interponer tutelas y/o recibir notificaciones de tutelas y realizar el seguimiento a las mismas.\n4. Emitir conceptos jurídicos y realizar la respectiva impugnación cuando un fallo no resulte a favor.
 15	editable15	5. Revisar y dar visto bueno a actas de reinicio, suspensión, liquidación y terminación.\n6. Revisar y aprobar minutas.\n7. Revisar respuestas a tutelas.\n8. Revisar las tutelas a interponer.\n9. Verificar que la documentación sea jurídicamente correcta.
 16	editable16	10. Actualizar la jurisprudencia y normatividad relacionada con la institución.\n11. Generar planes de mejoramiento y acciones correctivas y preventivas del Proceso....
-17	editable17	(S1,S2) Contestación / Formulación de tutelas.\n(S1,S2) Contestación / Formulación de Demandas/Denuncias.\n(S2) Normas institucionales.\n(S2) Directrices jurídica.\n(S2) Informes de seguimiento.
-18	editable18	(C1) Autoridades judiciales y administrativas.
 19	editable19	(C2) Todos los procesos.
 20	editable20	1
 21	editable21	11/Dic/2023
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	11/Dic/2023
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	13/Dic/2023
+28	editable28	18/Feb/2025
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-JC-GEJ
+3	editable3	GESTIÓN JURÍDICA Y CONTRACTUAL
+4	editable4	Versión: 1
+5	editable5	GESTIÓN JURÍDICA
+6	editable6	Fecha: 18/Feb/2025
+7	editable7	Gestión Jurídica
+8	editable8	Inicia con la solicitud de asesoría jurídica, trámite judicial y apoyo a la gestión contractual y finaliza con la emisión de conceptos jurídicos, los trámites legales correspondientes y la revisión y aprobación a liquidación de contratos, como apoyo jurídico en el desarrollo de la misión de UNISANPABLO.
+17	editable17	(S1,S2) Contestación / Formulación de tutelas.\n(S1,S2) Contestación / Formulación de Demandas/Denuncias.\n(S2) Normas institucionales.\n(S2) Directrices jurídica.\n(S2) Informes de seguimiento.
+18	editable18	(C1) Autoridades judiciales y administrativas.
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5572,28 +6356,9 @@ COPY public.mapa_procesos_ec_gestion_juridica (id, identifier, content) FROM std
 --
 
 COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, content) FROM stdin;
-14	editable14	5. Generar y registrar las operaciones presupuestales.\n6. Producir y registrar las órdenes de pago.\n7. Realizar el giro o pago de las obligaciones.\n8. Modificar y trasladar apropiaciones presupuestales.\n9. Declarar y pagar los Impuestos Nacionales y Distritales y realizar el cierre de la vigencia.
-15	editable15	10. Conciliar los movimientos de ingresos y egresos, de los saldos con las diferentes dependencias que manejan información financiera.\n11. Ajustar los movimientos de ingresos y egresos del registro físico del inventario en almacén contra las partidas contables.\n12. Analizar la naturaleza y razonabilidad de las cuentas y estados financieros.\n13. Realizar el seguimiento a la ejecución presupuestal.
-16	editable16	14. Generar toma de decisiones y acciones que mejoren la gestión contable y financiera derivadas de los resultados de estados financieros, informes financieros y estadísticos.\n15. Generar acciones correctivas frente a los ordenadores que incumplan los compromisos estipulados en el Programa Anual de Caja.
-17	editable17	(S4, S6) Reporte contable a través del sistema de información financiero.\n(S1, S2, S5) Comprobante de Pagos.\n(S1) Certificación de montos facturados.\n(S6) Informe de portafolio de inversiones.\n(S6) Extractos bancarios.\n(S6) Flujo de Caja Real.\n(S4, S6) Resultado de arqueos.\n(S3, S6) Informes de seguimiento.
-18	editable18	(C1) Proveedores y Acreedores.\n(C2) Entidades públicas o privadas.\n(C3) Unidades de Control.\n(C4) Revisoría Fiscal.\n(C5) Estudiantes.
 19	editable19	(C6) Todos los Procesos.
 20	editable20	1
-21	editable21	12/Dic/2023
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	10/Oct/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	10/Oct/2024
-29	editable29	...
-30	editable30	...
-31	editable31	...
-32	editable32	...
-33	editable33	...
-34	editable34	...
-35	editable35	...
+21	editable21	10/Oct/2024
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-AF-GRF
 3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
@@ -5604,11 +6369,30 @@ COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, conte
 8	editable8	Inicia con la aprobación del presupuesto por parte del Rector, gestionando el recaudo de los ingresos y los pagos de las obligaciones; realizando el registro de todos los movimientos contables, emitir los informes que sean requeridos y responder las solicitudes de los organismos de control.
 9	editable9	Administrar, gestionar, registrar y controlar los recursos financieros en UNISANPABLO, cumpliendo con el marco constitucional, legal y normativo vigente; garantizando la transparencia y sostenibilidad financiera de acuerdo a los lineamientos establecidos en el contexto estratégico y misional de la institución.
 10	editable10	(P1) Entidades Gubernamentales.
+13	editable13	1. Elaborar el Programa Anual de Caja y realizar las provisiones de la vigencia.\n2. Generar cronograma de cierres mensual y anual.\n3. Preparar información de estados financieros.\n4. Definir modelos de distribución de costos y gastos.
+14	editable14	5. Generar y registrar las operaciones presupuestales.\n6. Producir y registrar las órdenes de pago.\n7. Realizar el giro o pago de las obligaciones.\n8. Modificar y trasladar apropiaciones presupuestales.\n9. Declarar y pagar los Impuestos Nacionales y Distritales y realizar el cierre de la vigencia.
+15	editable15	10. Conciliar los movimientos de ingresos y egresos, de los saldos con las diferentes dependencias que manejan información financiera.\n11. Ajustar los movimientos de ingresos y egresos del registro físico del inventario en almacén contra las partidas contables.\n12. Analizar la naturaleza y razonabilidad de las cuentas y estados financieros.\n13. Realizar el seguimiento a la ejecución presupuestal.
+16	editable16	14. Generar toma de decisiones y acciones que mejoren la gestión contable y financiera derivadas de los resultados de estados financieros, informes financieros y estadísticos.\n15. Generar acciones correctivas frente a los ordenadores que incumplan los compromisos estipulados en el Programa Anual de Caja.
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
 11	editable11	(P2) Todos los procesos.
 12	editable12	(E2) Reporte contable.\n(E2) Reporte contable del cierre de nómina.\n(E2) Información cobro de impuestos (estampillas).\n(E2) Cartera de estudiantes.\n(E2) Cartera administrativa.\n(E1) Cronograma tributario.\n(E2) Confirmación de programas académicos.\n(E2) Reporte contable del cierre de nómina\n(E2) Informe del movimiento de activos fijos.\n(E2) Necesidades de los clientes internos.
-13	editable13	1. Elaborar el Programa Anual de Caja y realizar las provisiones de la vigencia.\n2. Generar cronograma de cierres mensual y anual.\n3. Preparar información de estados financieros.\n4. Definir modelos de distribución de costos y gastos.
-36	editable36	...
-37	editable37	...
+17	editable17	(S4, S6) Reporte contable a través del sistema de información financiero.\n(S1, S2, S5) Comprobante de Pagos.\n(S1) Certificación de montos facturados.\n(S6) Informe de portafolio de inversiones.\n(S6) Extractos bancarios.\n(S6) Flujo de Caja Real.\n(S4, S6) Resultado de arqueos.\n(S3, S6) Informes de seguimiento.
+18	editable18	(C1) Proveedores y Acreedores.\n(C2) Entidades públicas o privadas.\n(C3) Unidades de Control.\n(C4) Revisoría Fiscal.\n(C5) Estudiantes.
+25	editable25	10/Oct/2024
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	10/Oct/2024
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	10/Oct/2024
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5620,46 +6404,46 @@ COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, conte
 --
 
 COPY public.mapa_procesos_ec_gestion_registro_calificado (id, identifier, content) FROM stdin;
+15	editable14	7. Ejecutar cronograma para la renovación de programas académicos.\n8. Ejecutar cronograma para la modificación de programas académicos.\n9. Elaborar estudios de factibilidad del programa académico.\n10. Construir el Documento de registro calificado.\n11. Tramitar registro calificado ante el MEN.\n12. Ejecutar plan de contingencia por inactivación de programas.\n13. Socializar el programa académico (Obtención, renovación, modificación, ampliación de cobertura e inactivación).\n14. Atender las visitas de pares externos de acuerdo con el protocolo que la institución defina para ello.
+16	editable16	25. Implementar acciones de mejora de acuerdo con los resultados del proceso.\n26. Consolidar lecciones aprendidas.
+18	editable17	(S1,S2) Documentos oficiales para la gestión del Registro calificado.\n(S2) Iniciativas de creación de programas académicos.\n(S2) Solicitud de pago.\n(S2) Información del estado los registros calificados.\n(S2) Documento de registro calificado.\n(S2) Informes de gestión.\n(S2) Solicitud de configuración del programa académico en los sistemas transaccionales institucionales.
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	18/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
+40	editable40	...
+3	editable4	Versión: 1
 4	editable5	GESTIÓN DEL REGISTRO CALIFICADO
-6	editable6	Fecha: 26/Dic/2023
+6	editable6	Fecha: 18/Feb/2025
 7	editable7	Gestión del Registro Calificado
 8	editable8	Inicia con la formulación de la idea de un nuevo programa académico o la revisión de uno existente, la elaboración del documento de condiciones de calidad y la radicación de la solicitud de registro calificado ante el Ministerio de Educación Nacional, y finaliza con la recepción del acto administrativo que concede, deniega o cancela el registro calificado y la publicación de la información en el Sistema de Información de la Educación Superior (SNIES).
+9	editable9	Realizar los trámites necesarios para gestionar eficientemente los registros calificados, para garantizar la calidad de los programas académicos de la Institución, siguiendo las normas legales e internas correspondientes.
 10	editable10	(P1) Ministerio de Educación Nacional - MEN.\n(P2) Entes regulatorios del estado.
 12	editable11	(P3) Todos los procesos.
 11	editable12	(E1) Resoluciones de Registro Calificado.\n(E1) Aprobación de las condiciones de calidad institucionales.\n(E1, E2, E3) Notificaciones / Comunicaciones / Conceptos.\n(E3) Investigación de Mercado.\n(E3) Estudio de mercado de viabilidad de programa académico.\n(E3) Planes de mejoramiento.\n(E3) PEP y anexos actualizados.\n(E3) Cursos actualizados.\n(E3) Plan de Estudios.\n(E3) Información estadística institucional.\n(E3) Necesidades de los clientes internos.
 13	editable13	1. Garantizar las condiciones de calidad institucionales.\n2. Analizar factibilidad para la creación y renovación de programas académicos.\n3. Diseñar la propuesta preliminar del programa académico.\n4. Elaborar cronograma para la renovación de programas académicos.\n5. Elaborar cronograma para la modificación de programas académicos.\n6. Elaborar planes de contingencia por inactivación de programa.
-15	editable14	7. Ejecutar cronograma para la renovación de programas académicos.\n8. Ejecutar cronograma para la modificación de programas académicos.\n9. Elaborar estudios de factibilidad del programa académico.\n10. Construir el Documento de registro calificado.\n11. Tramitar registro calificado ante el MEN.\n12. Ejecutar plan de contingencia por inactivación de programas.\n13. Socializar el programa académico (Obtención, renovación, modificación, ampliación de cobertura e inactivación).\n14. Atender las visitas de pares externos de acuerdo con el protocolo que la institución defina para ello.
 14	editable15	15. Realizar seguimiento a la ejecución de los planes de mejora, para cerrar las brechas identificadas en relación con las condiciones de calidad institucional.\n16. Validar la alineación del estudio de factibilidad del programa académico con el Documento de registro calificado.\n17. Acompañar y retroalimentar el Documento de registro calificado.\n18. Verificar que los ajustes realizados al Documento de registro calificado se hayan implementado y den cuenta de la retroalimentación recibida.\n19. Validar y aprobar Documento de registro calificado.\n20. Hacer seguimiento al cronograma para la renovación de programas académicos.\n21. Hacer seguimiento al cronograma para la modificación de programas académicos.\n22. Hacer seguimiento a los planes de contingencia.\n23. Atender las visitas de inspección y vigilancia.\n24. Generar informes de seguimiento de la planeación y gestión del proceso.
-16	editable16	25. Implementar acciones de mejora de acuerdo con los resultados del proceso.\n26. Consolidar lecciones aprendidas.
-18	editable17	(S1,S2) Documentos oficiales para la gestión del Registro calificado.\n(S2) Iniciativas de creación de programas académicos.\n(S2) Solicitud de pago.\n(S2) Información del estado los registros calificados.\n(S2) Documento de registro calificado.\n(S2) Informes de gestión.\n(S2) Solicitud de configuración del programa académico en los sistemas transaccionales institucionales.
 17	editable18	(C1) Ministerio de educación Nacional - MEN.
 19	editable19	(C2) Todos los Procesos.
 21	editable20	1
-24	editable24	Aprendiz
-25	editable25	26/Dic/2023
-26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-29	editable28	28/Dic/2023
+29	editable28	18/Feb/2025
 28	editable29	...
-30	editable30	...
-31	editable31	...
-2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-1	editable2	Código: CR-CI-GRC
-5	editable3	CALIDAD INTEGRAL
-3	editable4	Versión: 1
-9	editable9	Realizar los trámites necesarios para gestionar eficientemente los registros calificados, para garantizar la calidad de los programas académicos de la Institución, siguiendo las normas legales e internas correspondientes.
 20	editable21	26/Dic/2023
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+30	editable30	...
+31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-37	editable36	...
-36	editable37	...
+35	editable35	Henry Lurbey Hueso
+37	editable36	Rector
+36	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
-40	editable40	...
+2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+1	editable2	Código: CR-CI-GRC
+5	editable3	CALIDAD INTEGRAL
 \.
 
 
@@ -5668,6 +6452,7 @@ COPY public.mapa_procesos_ec_gestion_registro_calificado (id, identifier, conten
 --
 
 COPY public.mapa_procesos_ec_gestion_servicio_usuario (id, identifier, content) FROM stdin;
+12	editable10	(P1) Medios de comunicación.\n(P2) Aliados.\n(P3) Agencias de publicidad.
 9	editable11	(P11) Todos los procesos.
 11	editable12	(E1) Canales masivos para la divulgación de campañas.\n(E11) Programación académica.\n(E11) Información para la toma de decisiones referente al portafolio de programas académico.\n(E11) Portafolio de la oferta de educación continua. \n(E11) Calendario Académico.\n(E11) información del cumplimiento de metas de estudiantes e ingresos.\n(E11) Acuerdos para consecución de prospectos.\n(E11) Necesidades de los clientes internos.
 13	editable13	1. Establecer mecanismos que permitan garantizar la adecuada atención y acceso a la información institucional.
@@ -5678,33 +6463,32 @@ COPY public.mapa_procesos_ec_gestion_servicio_usuario (id, identifier, content) 
 18	editable18	(C1) Aspirantes.\n(C2) Estudiantes.\n(C3) Entidades Públicas y Privadas.\n(C4) Colegios.\n(C5) Egresados.
 19	editable19	(C6) todos los procesos.
 20	editable20	1
-21	editable21	24/Dic/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+23	editable23	Daniela Torres Torres
 25	editable24	Aprendiz
-24	editable25	24/Dic/2023
+24	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 6	editable2	Código: CR-CI-GSU
 3	editable3	CALIDAD INTEGRAL
 2	editable4	Versión: 1
 5	editable5	GESTIÓN DEL SERVICIO AL USUARIO
-4	editable6	Fecha: 24/Dic/2023
+4	editable6	Fecha: 18/Feb/2025
 7	editable7	Gestión del Servicio al Usuario
 8	editable8	Inicia con la transversalidad a todos los procesos institucionales, incluyendo los mecanismos de participación y consulta que involucran a la comunidad universitaria y la ciudadanía en general, así mismo la determinación e implementación de acciones que permiten mejorar la satisfacción de la ciudadanía y grupos de interés.
 10	editable9	Garantizar el acceso a la información, la correcta y oportuna atención a la ciudadanía y grupos de interés, en temas relacionados con el funcionamiento y cumplimiento de la misión de la institución, mediante la adecuación e implementación de canales de atención, la oportuna divulgación de información y el trámite oportuno de peticiones que interpongan los ciudadanos en el ejercicio de su función de control social.
-12	editable10	(P1) Medios de comunicación.\n(P2) Aliados.\n(P3) Agencias de publicidad.
-28	editable28	26/Dic/2023
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	18/Feb/2025
 29	editable29	...
 31	editable30	...
 30	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-37	editable36	...
-36	editable37	...
+35	editable35	Henry Lurbey Hueso
+37	editable36	Rector
+36	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5716,7 +6500,12 @@ COPY public.mapa_procesos_ec_gestion_servicio_usuario (id, identifier, content) 
 --
 
 COPY public.mapa_procesos_ec_gestion_sistemas_comunicacion (id, identifier, content) FROM stdin;
-10	editable10	(P1) Proveedor de Tecnología.
+5	editable5	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES
+6	editable6	Fecha: 26/Sep/2024
+7	editable7	Gestión De Los Sistemas De Comunicación Y Telecomunicaciones.
+8	editable8	Inicia con la planificación de los Sistemas de Información y Telecomunicaciones y va hasta la mejora de los servicios prestados, las plataformas implementadas y la actualización de los documentos, procedimientos y servicios necesarios.
+12	editable12	(E4) Necesidades, requisitos y expectativas tecnológicas de las partes interesadas / Criterios funcionales y no funcionales.\n(E2) Requerimientos de alto nivel, Necesidades priorizadas, Documentos de estrategia tecnológica de alto nivel.\n(E1) Plan de las pruebas de concepto y evaluación de la prueba de concepto.\n(E1) Estrategia tecnológica detallada (investigación de mercado, documentos de arquitectura, diagramas de software, flujo, secuencia, modelos relacionales, de integración, de actividades, despliegue, etc.)\n(E2) Plan Maestro de Seguridad de la\ninformación y protección de datos personales.
+13	editable13	1. Formular políticas, estrategias, directrices, planes y proyectos para fortalecer la gestión de las TIC en la institución.\n2. Definir el plan estratégico de tecnologías de información.\n3. Definir el plan de mantenimiento y renovación de los equipos de tecnología.\n4. Definir el catálogo de servicios tecnológicos.
 14	editable14	5. Gestionar las solicitudes, incidentes, problemas, cambios y proyectos de TI con el fin de apoyar los procesos misionales de la institución.\n6. Implementar los servicios de tecnología.\n7. Administrar la gestión del conocimiento en tecnologías de la información.\n8. Gestionar y administrar la disponibilidad y continuidad de los sistemas, aplicaciones y plataformas tecnológicas.\n9. Gestionar y administrar los requerimientos e incidentes relacionados con el servicio.\n10. Gestionar el monitoreo de sistemas, aplicaciones y plataformas tecnológicas.\n11. Gestionar y administrar la infraestructura y plataformas tecnológicas.\n12. Prestar un servicio de calidad a la comunidad universitaria.
 15	editable15	13. Realizar el seguimiento al plan de acción y a la prestación de los servicios y Proyectos de TI asociados a las áreas gestoras de TIC en la institución.\n14. Efectuar seguimiento al plan de mantenimiento y renovación tecnológica
 16	editable16	15. Actualizar los procedimientos y la documentación asociada al proceso. \n16. Generar un Plan de Mejoramiento que contenga Acciones Correctivas y Preventivas.
@@ -5724,22 +6513,19 @@ COPY public.mapa_procesos_ec_gestion_sistemas_comunicacion (id, identifier, cont
 18	editable18	(C1) Proveedor de Tecnología.
 19	editable19	(C3) Proceso Gestión del Servicio de Tecnología.\n(C4) Proceso Aseguramiento de la calidad de procesos.\n(C6) Proceso Gestión de la Información.\n(C7) Todos los Procesos.
 20	editable20	1
-21	editable21	01/Dic/2023
+21	editable21	26/Sep/2024
 22	editable22	Creación del proceso
-2	editable2	Código: CR-FT-GCT
-3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA
-4	editable4	Versión: 1
-5	editable5	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES
-6	editable6	Fecha: 26/Sep/2024
-7	editable7	Gestión De Los Sistemas De Comunicación Y Telecomunicaciones.
-8	editable8	Inicia con la planificación de los Sistemas de Información y Telecomunicaciones y va hasta la mejora de los servicios prestados, las plataformas implementadas y la actualización de los documentos, procedimientos y servicios necesarios.
-9	editable9	Gestionar los Sistemas de Información y las Telecomunicaciones para asegurar el acceso, adquisición, disponibilidad, confiabilidad, confidencialidad y seguridad de los activos de información a través de la infraestructura y las soluciones Informáticas en el marco de la normatividad vigente aplicable, como apoyo a los Procesos Misionales de la institución para satisfacer las necesidades de la comunidad universitaria.
-11	editable11	(P2) Proceso Gestión de la Información.\n(P3) Gestión Soluciones TI.\n(P4) Todos los procesos.
-12	editable12	(E4) Necesidades, requisitos y expectativas tecnológicas de las partes interesadas / Criterios funcionales y no funcionales.\n(E2) Requerimientos de alto nivel, Necesidades priorizadas, Documentos de estrategia tecnológica de alto nivel.\n(E1) Plan de las pruebas de concepto y evaluación de la prueba de concepto.\n(E1) Estrategia tecnológica detallada (investigación de mercado, documentos de arquitectura, diagramas de software, flujo, secuencia, modelos relacionales, de integración, de actividades, despliegue, etc.)\n(E2) Plan Maestro de Seguridad de la\ninformación y protección de datos personales.
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	26/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-FT-GCT
+3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA
+4	editable4	Versión: 1
+9	editable9	Gestionar los Sistemas de Información y las Telecomunicaciones para asegurar el acceso, adquisición, disponibilidad, confiabilidad, confidencialidad y seguridad de los activos de información a través de la infraestructura y las soluciones Informáticas en el marco de la normatividad vigente aplicable, como apoyo a los Procesos Misionales de la institución para satisfacer las necesidades de la comunidad universitaria.
+10	editable10	(P1) Proveedor de Tecnología.
+11	editable11	(P2) Proceso Gestión de la Información.\n(P3) Gestión Soluciones TI.\n(P4) Todos los procesos.
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	26/Sep/2024
 29	editable29	...
@@ -5748,14 +6534,12 @@ COPY public.mapa_procesos_ec_gestion_sistemas_comunicacion (id, identifier, cont
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	26/Sep/2024
 38	editable38	...
 39	editable39	...
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 40	editable40	...
-13	editable13	1. Formular políticas, estrategias, directrices, planes y proyectos para fortalecer la gestión de las TIC en la institución.\n2. Definir el plan estratégico de tecnologías de información.\n3. Definir el plan de mantenimiento y renovación de los equipos de tecnología.\n4. Definir el catálogo de servicios tecnológicos.
 \.
 
 
@@ -5812,12 +6596,7 @@ COPY public.mapa_procesos_ec_informacion_bibliografica (id, identifier, content)
 --
 
 COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-FT-GIF
-3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA
-4	editable4	Versión: 1
-5	editable5	GESTION DE LA INFRAESTRUCTURA FISICA
-6	editable6	Fecha: 12/Dic/2023
+6	editable6	Fecha: 12/Sep/2024
 7	editable7	Gestión de la infraestructura física.
 8	editable8	Inicia con la Planeación operativa y ejecución de los diferentes servicios y finaliza con el servicio prestado en las distintas modalidades, incluyendo su seguimiento.
 9	editable9	Garantizar a través de su gestión los servicios relacionados con administración de bienes, infraestructura, planta física, mantenimiento, compras, inventarios, aseo y seguridad, requeridos para el óptimo desarrollo de las actividades académico-administrativas de UNISANPABLO.
@@ -5832,25 +6611,30 @@ COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FR
 18	editable18	(C1) Entidades públicas y/o privadas.\n(C2) Proveedor.
 19	editable19	(C3) Proceso Gestión de la Información.\n(C4) Proceso Registro Calificado.\n(C5) Proceso Seguridad, Salud en el Trabajo y Gestión Ambiental.\n(C6) Proceso Vida Estudiantil.\n(C7) Proceso Planeación Financiera y Presupuesto.\n(C8) Proceso Asesoría y Apoyo Jurídico.\n(C9) Todos los procesos.
 20	editable20	1
-21	editable21	12/Dic/2023
+21	editable21	12/Sep/2024
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	12/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	12/Sep/2024
-29	editable29	...
-30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	12/Sep/2024
 38	editable38	...
 39	editable39	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-FT-GIF
+3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA
+4	editable4	Versión: 1
+5	editable5	GESTION DE LA INFRAESTRUCTURA FISICA
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	12/Sep/2024
+29	editable29	...
+30	editable30	...
 40	editable40	...
 \.
 
@@ -5860,29 +6644,26 @@ COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FR
 --
 
 COPY public.mapa_procesos_ec_internacionalizacion (id, identifier, content) FROM stdin;
+6	editable6	Fecha: 26/Sep/2024
+7	editable7	Interinstitucionalización e Internacionalización
+8	editable8	Inicia con la revisión y ajuste de la Política de Inter institucionalización e Internacionalización y la elaboración y ejecución de dicha política, hasta el seguimiento y evaluación de la misma.
+9	editable9	Direccionar y Gestionar la Inter institucionalización e Internacionalización de UNISANPABLO para contribuir con la formación integral de profesionales e investigadores globalmente competitivos a través de acciones de direccionamiento estratégico para la inmersión y participación activa de la institución en la sociedad del conocimiento en el ámbito local, Nacional e Internacional.
+10	editable10	(P1) IES Externas Nacionales e Internacionales.\n(P2) Entidades Privadas Nacionales e Internacionales.\n(P3) Entidades Públicas Nacionales e Internacionales.\n(P4) Estudiantes.\n(P5) Graduados.\n(P6) Aspirantes.\n(P7) Egresados.
+12	editable12	(E1) Información de becas, programas y lineamientos de movilidad.\n(E1, E4, E5, E6, E7) Solicitudes de movilidad de Estudiantes y Graduados.\n(E13) Presupuesto asignado/Plan operativo.\n(E14, E15) Iniciativas de internacionalización y movilidad de programas académicos.\n(E19) Necesidades de los clientes internos.
+13	editable13	1. Formular e institucionalizar la política de Inter institucionalización e internacionalización. \n2. Formular el plan de acción anual.
+14	editable14	3. Establecer la gestión integral y las acciones de direccionamiento estratégico para la Inter institucionalización e internacionalización de la UNISANPABLO.\n4. Desarrollar e implementar un sistema de información.\n5. Difundir y socializar la gestión del proceso.\n6. Promover la movilidad académica estudiantil y docente y el aprendizaje de otros idiomas.\n7. Fomentar la internacionalización de la investigación y la extensión.\n8. Gestionar la consecución de recursos e identificar y promover las relaciones interinstitucionales de la UNISANPABLO por medio de la gestión de convenios.
+15	editable15	9. Realizar el seguimiento a corto plazo del plan de acción anual.\n10. Realizar a largo plazo, la política de Inter institucionalización e internacionalización.
 16	editable16	11. Retroalimentar y tomar acciones de mejora en el corto, mediano y largo plazo.
 17	editable17	(S1, S2, S3, S4, S5, S6, S7, S8, S9, S11, S12) Internacionalización en Casa.\n(S1, S2, S3, S4, S5, S6, S11, S12, S13, S14, S15) Movilidad estudiantes y graduados.\n(S1, S2, S3, S8, S9, S12) Movilidad Profesores y Colaboradores.\n(S1, S2, S3, S4, S5, S6, S7, S8, S9) Asesoramientos.\n(S4) Portafolio de servicios de movilidad.\n(S13) Informes de seguimiento.
 18	editable18	(C1) IES Externas Nacionales e Internacionales.\n(C2) Entidades Privadas Nacionales e Internacionales.\n(C3) Entidades Públicas Nacionales e Internacionales.\n(C4) Estudiantes.\n(C5) Graduados.\n(C6) Aspirantes.\n(C7) Egresados.
 19	editable19	(C8) Profesores.\n(C9) Colaboradores.\n(C10) Proceso Aseguramiento de la Calidad Académica.\n(C11) Proceso Relacionamiento con Graduado y Egresado.\n(C12) Proceso Aseguramiento de la Calidad Académica.\n(C13) Todos los Procesos.
+20	editable20	1
+21	editable21	26/Sep/2024
 24	editable24	Aprendiz
 25	editable25	26/Sep/2024
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
 28	editable28	26/Sep/2024
-6	editable6	Fecha: 01/Nov/2023
-7	editable7	Interinstitucionalización e Internacionalización
-8	editable8	Inicia con la revisión y ajuste de la Política de Inter institucionalización e Internacionalización y la elaboración y ejecución de dicha política, hasta el seguimiento y evaluación de la misma.
-9	editable9	Direccionar y Gestionar la Inter institucionalización e Internacionalización de UNISANPABLO para contribuir con la formación integral de profesionales e investigadores globalmente competitivos a través de acciones de direccionamiento estratégico para la inmersión y participación activa de la institución en la sociedad del conocimiento en el ámbito local, Nacional e Internacional.
-10	editable10	(P1) IES Externas Nacionales e Internacionales.\n(P2) Entidades Privadas Nacionales e Internacionales.\n(P3) Entidades Públicas Nacionales e Internacionales.\n(P4) Estudiantes.\n(P5) Graduados.\n(P6) Aspirantes.\n(P7) Egresados.
-11	editable11	(P8) Profesores.\n(P9) Colaboradores\n(P10) Proceso Vida Estudiantil.\n(P11) Proceso Alianzas e Iniciativas Estratégicas.\n(P12) Proceso Gestión de Registro Calificado.\n(P13) Proceso Planeación Financiera y Presupuesto.\n(P14) Programas Académicos.\n(P15) Macroproceso de Investigación.\n(P16) Proceso Relacionamiento con Graduado y Egresado.\n(P17) Proceso de Relaciones Laborales.\n(P18) Proceso Comunicaciones Corporativas\n(P19) Todos los procesos.
-12	editable12	(E1) Información de becas, programas y lineamientos de movilidad.\n(E1, E4, E5, E6, E7) Solicitudes de movilidad de Estudiantes y Graduados.\n(E13) Presupuesto asignado/Plan operativo.\n(E14, E15) Iniciativas de internacionalización y movilidad de programas académicos.\n(E19) Necesidades de los clientes internos.
-13	editable13	1. Formular e institucionalizar la política de Inter institucionalización e internacionalización. \n2. Formular el plan de acción anual.
-14	editable14	3. Establecer la gestión integral y las acciones de direccionamiento estratégico para la Inter institucionalización e internacionalización de la UNISANPABLO.\n4. Desarrollar e implementar un sistema de información.\n5. Difundir y socializar la gestión del proceso.\n6. Promover la movilidad académica estudiantil y docente y el aprendizaje de otros idiomas.\n7. Fomentar la internacionalización de la investigación y la extensión.\n8. Gestionar la consecución de recursos e identificar y promover las relaciones interinstitucionales de la UNISANPABLO por medio de la gestión de convenios.
-15	editable15	9. Realizar el seguimiento a corto plazo del plan de acción anual.\n10. Realizar a largo plazo, la política de Inter institucionalización e internacionalización.
-20	editable20	1
-21	editable21	01/Nov/2023
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -5891,12 +6672,15 @@ COPY public.mapa_procesos_ec_internacionalizacion (id, identifier, content) FROM
 3	editable3	RELACIONES INTERINSTITUCIONALES
 4	editable4	Versión: 1
 5	editable5	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN
+11	editable11	(P8) Profesores.\n(P9) Colaboradores\n(P10) Proceso Vida Estudiantil.\n(P11) Proceso Alianzas e Iniciativas Estratégicas.\n(P12) Proceso Gestión de Registro Calificado.\n(P13) Proceso Planeación Financiera y Presupuesto.\n(P14) Programas Académicos.\n(P15) Macroproceso de Investigación.\n(P16) Proceso Relacionamiento con Graduado y Egresado.\n(P17) Proceso de Relaciones Laborales.\n(P18) Proceso Comunicaciones Corporativas\n(P19) Todos los procesos.
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	26/Sep/2024
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5913,7 +6697,7 @@ COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifie
 3	editable3	PLANEACIÓN ESTRATÉGICA
 4	editable4	Versión: 1
 5	editable5	PLANEACIÓN ESTRATEGICA INSTITUCIONAL
-6	editable6	Fecha: 20/Nov/2023
+6	editable6	Fecha: 18/Feb/2025
 7	editable7	Planeación estratégica institucional.
 8	editable8	Inicia con la elaboración y ejecución del Plan de Desarrollo Institucional, conformado por los Planes: Estratégico, Operativo, de Acción y de Trabajo, y termina con su evaluación y seguimiento.
 9	editable9	Coordinar y orientar el diseño y la implementación de estrategias, políticas, programas, y proyectos con el fin de dar cumplimiento a la misión, visión y objetivos institucionales, enmarcados en el Sistema de Planeación Institucional.
@@ -5928,23 +6712,23 @@ COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifie
 18	editable18	(C1) Ministerio de Educación Nacional.\n(C2) Entidades Financieras.
 19	editable19	(C3) Proceso Planeación Financiera y Presupuesto.\n(C4) Todos los Procesos.
 20	editable20	1
-21	editable21	20/Nov/2023
+21	editable21	18/Feb/2025
 22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
+23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	20/Nov/2023
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	23/Nov/2023
+28	editable28	18/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5956,19 +6740,7 @@ COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifie
 --
 
 COPY public.mapa_procesos_ec_relacionamineto_egresados (id, identifier, content) FROM stdin;
-40	editable40	...
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 4	editable2	Código: CR-PS-GRA
-3	editable3	PROYECCIÓN SOCIAL DE IMPACTO
-5	editable4	Versión: 1
-6	editable5	RELACIONAMIENTO CON EGRESADOS
-2	editable6	Fecha: 28/Dic/2023
-7	editable7	Relacionamiento con egresados
-9	editable8	Inicia desde la elaboración de los planes operativos destinados a llevar a cabo las líneas de acción, y culmina con la valoración de la ejecución de estos planes.
-8	editable9	Fomentar una colaboración continua con graduados y exalumnos, mediante iniciativas constantes de comunicación, capacitación, oferta de servicios variados, participación en órganos colegiados institucionales y seguimiento de su progreso, con el objetivo de fortalecer su conexión y sentido de pertenencia.
-10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Egresados
-12	editable11	(P3) Proceso desarrollo curricular.\n(P4) Proceso aseguramiento de la calidad académica.\n(P5) Proceso gestión jurídica.\n(P6) Proceso vida estudiantil.\n(P7) Todos los procesos.
-11	editable12	(E1) Indicadores del factor de egresados en los procesos de registro calificado.\n(E6, E3) Datos de contacto, de caracterización e información de la trayectoria de los egresados.\n(E6) Estadísticas de egresados por programa y cohorte.\n(E6) Egresados de programas académico.\n(E6) Historia académica actualizada.\n(E4, E7) Requisito y necesidades de los clientes internos.
 14	editable15	8. Evaluar la implementación del plan operativo según las líneas de acción definidas y su eficiencia.\n9. Generar informe de seguimiento de la planeación y gestión del proceso.
 16	editable16	10. Implementar acciones de mejora de acuerdo con los resultados del proceso.
 17	editable17	(S3) Caracterización de los egresados .\n(S1) Reconocimientos a los egresados.\n(S1) Comunicación permanente con los egresados.\n(S2, S4, S6) Información sobre los indicadores de las dimensiones evaluadas.\n(S3, S4, S5) Informe del seguimiento a la trayectoria de los egresados de acuerdo con los momentos definidos.\n(S6) Informes de gestión.
@@ -5979,23 +6751,43 @@ COPY public.mapa_procesos_ec_relacionamineto_egresados (id, identifier, content)
 22	editable22	Creación del proceso
 23	editable23	Cristian Guillermo Velandia
 24	editable24	Aprendiz
-25	editable25	28/Dic/2024
+25	editable25	18/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	30/Dic/2024
-29	editable29	...
+39	editable39	...
+40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+3	editable3	PROYECCIÓN SOCIAL DE IMPACTO
+5	editable4	Versión: 1
+6	editable5	RELACIONAMIENTO CON EGRESADOS
+2	editable6	Fecha: 18/Feb/2025
+7	editable7	Relacionamiento con egresados
+9	editable8	Inicia desde la elaboración de los planes operativos destinados a llevar a cabo las líneas de acción, y culmina con la valoración de la ejecución de estos planes.
+8	editable9	Fomentar una colaboración continua con graduados y exalumnos, mediante iniciativas constantes de comunicación, capacitación, oferta de servicios variados, participación en órganos colegiados institucionales y seguimiento de su progreso, con el objetivo de fortalecer su conexión y sentido de pertenencia.
+10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Egresados
+12	editable11	(P3) Proceso desarrollo curricular.\n(P4) Proceso aseguramiento de la calidad académica.\n(P5) Proceso gestión jurídica.\n(P6) Proceso vida estudiantil.\n(P7) Todos los procesos.
+11	editable12	(E1) Indicadores del factor de egresados en los procesos de registro calificado.\n(E6, E3) Datos de contacto, de caracterización e información de la trayectoria de los egresados.\n(E6) Estadísticas de egresados por programa y cohorte.\n(E6) Egresados de programas académico.\n(E6) Historia académica actualizada.\n(E4, E7) Requisito y necesidades de los clientes internos.
 13	editable13	1. Definir el plan estratégico para el relacionamiento con los egresados.\n2. Definir los planes operativos para el cumplimiento de las líneas de acción.
 15	editable14	3. Ejecutar planes operativos según las líneas de acción definidas.\n4. Socializar los informes y seguimiento a la trayectoria de los egresados con las unidades pertinentes.\n5. Promover la participación de los egresados en los cuerpos colegiados de la institución.\n6. Promover la participación de los egresados en el voluntariado institucional.\n7. Promover los reconocimientos y las experiencias destacadas de los egresados.
+28	editable28	18/Feb/2025
+29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 34	editable33	...
 33	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/Feb/2025
 38	editable38	...
-39	editable39	...
+\.
+
+
+--
+-- Data for Name: mapa_procesos_videotutorial; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.mapa_procesos_videotutorial (id, title, icon_class, video_id) FROM stdin;
 \.
 
 
@@ -6017,7 +6809,7 @@ SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 1, false);
 -- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auth_permission_id_seq', 644, true);
+SELECT pg_catalog.setval('public.auth_permission_id_seq', 728, true);
 
 
 --
@@ -6031,7 +6823,7 @@ SELECT pg_catalog.setval('public.auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auth_user_id_seq', 5, true);
+SELECT pg_catalog.setval('public.auth_user_id_seq', 16, true);
 
 
 --
@@ -6045,56 +6837,56 @@ SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.django_admin_log_id_seq', 2, true);
+SELECT pg_catalog.setval('public.django_admin_log_id_seq', 26, true);
 
 
 --
 -- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.django_content_type_id_seq', 161, true);
+SELECT pg_catalog.setval('public.django_content_type_id_seq', 182, true);
 
 
 --
 -- Name: django_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.django_migrations_id_seq', 22, true);
+SELECT pg_catalog.setval('public.django_migrations_id_seq', 42, true);
 
 
 --
 -- Name: documentacion_documentasociadosdiagramasflujo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.documentacion_documentasociadosdiagramasflujo_id_seq', 18, true);
+SELECT pg_catalog.setval('public.documentacion_documentasociadosdiagramasflujo_id_seq', 38, true);
 
 
 --
 -- Name: documentacion_documentformatosasociados_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.documentacion_documentformatosasociados_id_seq', 2, true);
+SELECT pg_catalog.setval('public.documentacion_documentformatosasociados_id_seq', 19, true);
 
 
 --
 -- Name: gestor_archivos_diagramasprocedimientos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.gestor_archivos_diagramasprocedimientos_id_seq', 29, true);
+SELECT pg_catalog.setval('public.gestor_archivos_diagramasprocedimientos_id_seq', 31, true);
 
 
 --
 -- Name: gestor_archivos_document_id_archivo_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.gestor_archivos_document_id_archivo_seq', 65, true);
+SELECT pg_catalog.setval('public.gestor_archivos_document_id_archivo_seq', 110, true);
 
 
 --
 -- Name: glosario_glosario_id_termino_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.glosario_glosario_id_termino_seq', 118, true);
+SELECT pg_catalog.setval('public.glosario_glosario_id_termino_seq', 120, true);
 
 
 --
@@ -6161,10 +6953,24 @@ SELECT pg_catalog.setval('public."mapa_procesos_ec_enseñanza_prendizaje_evaluac
 
 
 --
+-- Name: mapa_procesos_ec_evaluacion_control_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.mapa_procesos_ec_evaluacion_control_id_seq', 40, true);
+
+
+--
 -- Name: mapa_procesos_ec_extension_proyeccion_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.mapa_procesos_ec_extension_proyeccion_id_seq', 40, true);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.mapa_procesos_ec_gestion_cartera_id_seq', 40, true);
 
 
 --
@@ -6193,6 +6999,13 @@ SELECT pg_catalog.setval('public.mapa_procesos_ec_gestion_documental_id_seq', 40
 --
 
 SELECT pg_catalog.setval('public.mapa_procesos_ec_gestion_informacion_id_seq', 40, true);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.mapa_procesos_ec_gestion_integrada_id_seq', 40, true);
 
 
 --
@@ -6273,6 +7086,13 @@ SELECT pg_catalog.setval('public.mapa_procesos_ec_relacionamineto_egresados_id_s
 
 
 --
+-- Name: mapa_procesos_videotutorial_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.mapa_procesos_videotutorial_id_seq', 4, true);
+
+
+--
 -- Name: DiPr_admisiones_registro_control DiPr_admisiones_registro_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -6345,11 +7165,27 @@ ALTER TABLE ONLY public."DiPr_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: DiPr_evaluacion_control DiPr_evaluacion_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DiPr_evaluacion_control"
+    ADD CONSTRAINT "DiPr_evaluacion_control_pkey" PRIMARY KEY (diagramasprocedimientos_ptr_id);
+
+
+--
 -- Name: DiPr_extension_proyeccion DiPr_extension_proyeccion_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DiPr_extension_proyeccion"
     ADD CONSTRAINT "DiPr_extension_proyeccion_pkey" PRIMARY KEY (diagramasprocedimientos_ptr_id);
+
+
+--
+-- Name: DiPr_gestion_cartera DiPr_gestion_cartera_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DiPr_gestion_cartera"
+    ADD CONSTRAINT "DiPr_gestion_cartera_pkey" PRIMARY KEY (diagramasprocedimientos_ptr_id);
 
 
 --
@@ -6545,11 +7381,27 @@ ALTER TABLE ONLY public."DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs"
 
 
 --
+-- Name: DocumentDoAs_evaluacion_control_FoAs DocumentDoAs_evaluacion_control_FoAs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_evaluacion_control_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_evaluacion_control_FoAs_pkey" PRIMARY KEY (documentformatosasociados_ptr_id);
+
+
+--
 -- Name: DocumentDoAs_extension_proyeccion_FoAs DocumentDoAs_extension_proyeccion_FoAs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DocumentDoAs_extension_proyeccion_FoAs"
     ADD CONSTRAINT "DocumentDoAs_extension_proyeccion_FoAs_pkey" PRIMARY KEY (documentformatosasociados_ptr_id);
+
+
+--
+-- Name: DocumentDoAs_gestion_cartera_FoAs DocumentDoAs_gestion_cartera_FoAs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_cartera_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_cartera_FoAs_pkey" PRIMARY KEY (documentformatosasociados_ptr_id);
 
 
 --
@@ -6582,6 +7434,14 @@ ALTER TABLE ONLY public."DocumentDoAs_gestion_documental_FoAs"
 
 ALTER TABLE ONLY public."DocumentDoAs_gestion_informacion_FoAs"
     ADD CONSTRAINT "DocumentDoAs_gestion_informacion_FoAs_pkey" PRIMARY KEY (documentformatosasociados_ptr_id);
+
+
+--
+-- Name: DocumentDoAs_gestion_integrada_FoAs DocumentDoAs_gestion_integrada_FoAs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_integrada_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_integrada_FoAs_pkey" PRIMARY KEY (documentformatosasociados_ptr_id);
 
 
 --
@@ -6745,11 +7605,27 @@ ALTER TABLE ONLY public."DocumentImage_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: DocumentImage_evaluacion_control DocumentImage_evaluacion_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_evaluacion_control"
+    ADD CONSTRAINT "DocumentImage_evaluacion_control_pkey" PRIMARY KEY (documentasociadosdiagramasflujo_ptr_id);
+
+
+--
 -- Name: DocumentImage_extension_proyeccion DocumentImage_extension_proyeccion_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DocumentImage_extension_proyeccion"
     ADD CONSTRAINT "DocumentImage_extension_proyeccion_pkey" PRIMARY KEY (documentasociadosdiagramasflujo_ptr_id);
+
+
+--
+-- Name: DocumentImage_gestion_cartera DocumentImage_gestion_cartera_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_cartera"
+    ADD CONSTRAINT "DocumentImage_gestion_cartera_pkey" PRIMARY KEY (documentasociadosdiagramasflujo_ptr_id);
 
 
 --
@@ -6782,6 +7658,14 @@ ALTER TABLE ONLY public."DocumentImage_gestion_documental"
 
 ALTER TABLE ONLY public."DocumentImage_gestion_informacion"
     ADD CONSTRAINT "DocumentImage_gestion_informacion_pkey" PRIMARY KEY (documentasociadosdiagramasflujo_ptr_id);
+
+
+--
+-- Name: DocumentImage_gestion_integrada DocumentImage_gestion_integrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_integrada"
+    ADD CONSTRAINT "DocumentImage_gestion_integrada_pkey" PRIMARY KEY (documentasociadosdiagramasflujo_ptr_id);
 
 
 --
@@ -6945,11 +7829,27 @@ ALTER TABLE ONLY public."Indicadores_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: Indicadores_evaluacion_control Indicadores_evaluacion_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_evaluacion_control"
+    ADD CONSTRAINT "Indicadores_evaluacion_control_pkey" PRIMARY KEY (document_ptr_id);
+
+
+--
 -- Name: Indicadores_extension_proyeccion Indicadores_extension_proyeccion_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."Indicadores_extension_proyeccion"
     ADD CONSTRAINT "Indicadores_extension_proyeccion_pkey" PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: Indicadores_gestion_cartera Indicadores_gestion_cartera_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_gestion_cartera"
+    ADD CONSTRAINT "Indicadores_gestion_cartera_pkey" PRIMARY KEY (document_ptr_id);
 
 
 --
@@ -6982,6 +7882,14 @@ ALTER TABLE ONLY public."Indicadores_gestion_documental"
 
 ALTER TABLE ONLY public."Indicadores_gestion_informacion"
     ADD CONSTRAINT "Indicadores_gestion_informacion_pkey" PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: Indicadores_gestion_integrada Indicadores_gestion_integrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_gestion_integrada"
+    ADD CONSTRAINT "Indicadores_gestion_integrada_pkey" PRIMARY KEY (document_ptr_id);
 
 
 --
@@ -7070,6 +7978,22 @@ ALTER TABLE ONLY public."Indicadores_planeacion_estrategica_institucional"
 
 ALTER TABLE ONLY public."Indicadores_relacionamineto_egresados"
     ADD CONSTRAINT "Indicadores_relacionamineto_egresados_pkey" PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: RequisitosLegalesNormativos_globales RequisitosLegalesNormativos_globales_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."RequisitosLegalesNormativos_globales"
+    ADD CONSTRAINT "RequisitosLegalesNormativos_globales_pkey" PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: RequisitosNecesidadesPartesInteresadas_globales RequisitosNecesidadesPartesInteresadas_globales_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."RequisitosNecesidadesPartesInteresadas_globales"
+    ADD CONSTRAINT "RequisitosNecesidadesPartesInteresadas_globales_pkey" PRIMARY KEY (document_ptr_id);
 
 
 --
@@ -7281,11 +8205,27 @@ ALTER TABLE ONLY public."document_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: document_evaluacion_control document_evaluacion_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_evaluacion_control
+    ADD CONSTRAINT document_evaluacion_control_pkey PRIMARY KEY (document_ptr_id);
+
+
+--
 -- Name: document_extension_proyeccion document_extension_proyeccion_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.document_extension_proyeccion
     ADD CONSTRAINT document_extension_proyeccion_pkey PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: document_gestion_cartera document_gestion_cartera_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_gestion_cartera
+    ADD CONSTRAINT document_gestion_cartera_pkey PRIMARY KEY (document_ptr_id);
 
 
 --
@@ -7318,6 +8258,14 @@ ALTER TABLE ONLY public.document_gestion_documental
 
 ALTER TABLE ONLY public.document_gestion_informacion
     ADD CONSTRAINT document_gestion_informacion_pkey PRIMARY KEY (document_ptr_id);
+
+
+--
+-- Name: document_gestion_integrada document_gestion_integrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_gestion_integrada
+    ADD CONSTRAINT document_gestion_integrada_pkey PRIMARY KEY (document_ptr_id);
 
 
 --
@@ -7422,6 +8370,14 @@ ALTER TABLE ONLY public.documentacion_documentasociadosdiagramasflujo
 
 ALTER TABLE ONLY public.documentacion_documentformatosasociados
     ADD CONSTRAINT documentacion_documentformatosasociados_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: gestion_integrada gestion_integrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.gestion_integrada
+    ADD CONSTRAINT gestion_integrada_pkey PRIMARY KEY (diagramasprocedimientos_ptr_id);
 
 
 --
@@ -7609,6 +8565,22 @@ ALTER TABLE ONLY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: mapa_procesos_ec_evaluacion_control mapa_procesos_ec_evaluacion_control_identifier_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_evaluacion_control
+    ADD CONSTRAINT mapa_procesos_ec_evaluacion_control_identifier_key UNIQUE (identifier);
+
+
+--
+-- Name: mapa_procesos_ec_evaluacion_control mapa_procesos_ec_evaluacion_control_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_evaluacion_control
+    ADD CONSTRAINT mapa_procesos_ec_evaluacion_control_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: mapa_procesos_ec_extension_proyeccion mapa_procesos_ec_extension_proyeccion_identifier_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -7622,6 +8594,22 @@ ALTER TABLE ONLY public.mapa_procesos_ec_extension_proyeccion
 
 ALTER TABLE ONLY public.mapa_procesos_ec_extension_proyeccion
     ADD CONSTRAINT mapa_procesos_ec_extension_proyeccion_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera mapa_procesos_ec_gestion_cartera_identifier_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_gestion_cartera
+    ADD CONSTRAINT mapa_procesos_ec_gestion_cartera_identifier_key UNIQUE (identifier);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera mapa_procesos_ec_gestion_cartera_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_gestion_cartera
+    ADD CONSTRAINT mapa_procesos_ec_gestion_cartera_pkey PRIMARY KEY (id);
 
 
 --
@@ -7686,6 +8674,22 @@ ALTER TABLE ONLY public.mapa_procesos_ec_gestion_informacion
 
 ALTER TABLE ONLY public.mapa_procesos_ec_gestion_informacion
     ADD CONSTRAINT mapa_procesos_ec_gestion_informacion_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada mapa_procesos_ec_gestion_integrada_identifier_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_gestion_integrada
+    ADD CONSTRAINT mapa_procesos_ec_gestion_integrada_identifier_key UNIQUE (identifier);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada mapa_procesos_ec_gestion_integrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_ec_gestion_integrada
+    ADD CONSTRAINT mapa_procesos_ec_gestion_integrada_pkey PRIMARY KEY (id);
 
 
 --
@@ -7865,6 +8869,14 @@ ALTER TABLE ONLY public.mapa_procesos_ec_relacionamineto_egresados
 
 
 --
+-- Name: mapa_procesos_videotutorial mapa_procesos_videotutorial_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mapa_procesos_videotutorial
+    ADD CONSTRAINT mapa_procesos_videotutorial_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: DocumentDoAs_admisiones_re_document_id_0becd359; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -7928,10 +8940,24 @@ CREATE INDEX "DocumentDoAs_enseñanza_pre_document_id_ab3d03ab" ON public."Docum
 
 
 --
+-- Name: DocumentDoAs_evaluacion_control_FoAs_document_id_9049eaa3; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentDoAs_evaluacion_control_FoAs_document_id_9049eaa3" ON public."DocumentDoAs_evaluacion_control_FoAs" USING btree (document_id);
+
+
+--
 -- Name: DocumentDoAs_extension_proyeccion_FoAs_document_id_a73cbcd6; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX "DocumentDoAs_extension_proyeccion_FoAs_document_id_a73cbcd6" ON public."DocumentDoAs_extension_proyeccion_FoAs" USING btree (document_id);
+
+
+--
+-- Name: DocumentDoAs_gestion_cartera_FoAs_document_id_1feff7d7; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentDoAs_gestion_cartera_FoAs_document_id_1feff7d7" ON public."DocumentDoAs_gestion_cartera_FoAs" USING btree (document_id);
 
 
 --
@@ -7960,6 +8986,13 @@ CREATE INDEX "DocumentDoAs_gestion_documental_FoAs_document_id_f61d3d73" ON publ
 --
 
 CREATE INDEX "DocumentDoAs_gestion_informacion_FoAs_document_id_d31c9ceb" ON public."DocumentDoAs_gestion_informacion_FoAs" USING btree (document_id);
+
+
+--
+-- Name: DocumentDoAs_gestion_integrada_FoAs_document_id_ce38f7f1; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentDoAs_gestion_integrada_FoAs_document_id_ce38f7f1" ON public."DocumentDoAs_gestion_integrada_FoAs" USING btree (document_id);
 
 
 --
@@ -8103,10 +9136,24 @@ CREATE INDEX "DocumentImage_enseñanza_pr_document_id_446e87ef" ON public."Docum
 
 
 --
+-- Name: DocumentImage_evaluacion_control_document_id_253ac6b1; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentImage_evaluacion_control_document_id_253ac6b1" ON public."DocumentImage_evaluacion_control" USING btree (document_id);
+
+
+--
 -- Name: DocumentImage_extension_proyeccion_document_id_abff3da1; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX "DocumentImage_extension_proyeccion_document_id_abff3da1" ON public."DocumentImage_extension_proyeccion" USING btree (document_id);
+
+
+--
+-- Name: DocumentImage_gestion_cartera_document_id_6ea82ab8; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentImage_gestion_cartera_document_id_6ea82ab8" ON public."DocumentImage_gestion_cartera" USING btree (document_id);
 
 
 --
@@ -8135,6 +9182,13 @@ CREATE INDEX "DocumentImage_gestion_documental_document_id_922848f6" ON public."
 --
 
 CREATE INDEX "DocumentImage_gestion_informacion_document_id_002c0e0e" ON public."DocumentImage_gestion_informacion" USING btree (document_id);
+
+
+--
+-- Name: DocumentImage_gestion_integrada_document_id_4a1d5604; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX "DocumentImage_gestion_integrada_document_id_4a1d5604" ON public."DocumentImage_gestion_integrada" USING btree (document_id);
 
 
 --
@@ -8376,10 +9430,24 @@ CREATE INDEX "mapa_procesos_ec_enseñan_identifier_fcbdb5c8_like" ON public."map
 
 
 --
+-- Name: mapa_procesos_ec_evaluacion_control_identifier_9784400f_like; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX mapa_procesos_ec_evaluacion_control_identifier_9784400f_like ON public.mapa_procesos_ec_evaluacion_control USING btree (identifier varchar_pattern_ops);
+
+
+--
 -- Name: mapa_procesos_ec_extension_proyeccion_identifier_29bd8b90_like; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX mapa_procesos_ec_extension_proyeccion_identifier_29bd8b90_like ON public.mapa_procesos_ec_extension_proyeccion USING btree (identifier varchar_pattern_ops);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_cartera_identifier_a83e4f0d_like; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX mapa_procesos_ec_gestion_cartera_identifier_a83e4f0d_like ON public.mapa_procesos_ec_gestion_cartera USING btree (identifier varchar_pattern_ops);
 
 
 --
@@ -8436,6 +9504,13 @@ CREATE INDEX mapa_procesos_ec_gestion_identifier_f13f8fd4_like ON public.mapa_pr
 --
 
 CREATE INDEX mapa_procesos_ec_gestion_informacion_identifier_bf6cca34_like ON public.mapa_procesos_ec_gestion_informacion USING btree (identifier varchar_pattern_ops);
+
+
+--
+-- Name: mapa_procesos_ec_gestion_integrada_identifier_98be19c3_like; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX mapa_procesos_ec_gestion_integrada_identifier_98be19c3_like ON public.mapa_procesos_ec_gestion_integrada USING btree (identifier varchar_pattern_ops);
 
 
 --
@@ -8560,11 +9635,27 @@ ALTER TABLE ONLY public."DiPr_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: DiPr_evaluacion_control DiPr_evaluacion_cont_diagramasprocedimien_14a33433_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DiPr_evaluacion_control"
+    ADD CONSTRAINT "DiPr_evaluacion_cont_diagramasprocedimien_14a33433_fk_gestor_ar" FOREIGN KEY (diagramasprocedimientos_ptr_id) REFERENCES public.gestor_archivos_diagramasprocedimientos(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DiPr_extension_proyeccion DiPr_extension_proye_diagramasprocedimien_853d0d01_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DiPr_extension_proyeccion"
     ADD CONSTRAINT "DiPr_extension_proye_diagramasprocedimien_853d0d01_fk_gestor_ar" FOREIGN KEY (diagramasprocedimientos_ptr_id) REFERENCES public.gestor_archivos_diagramasprocedimientos(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DiPr_gestion_cartera DiPr_gestion_cartera_diagramasprocedimien_19e4a765_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DiPr_gestion_cartera"
+    ADD CONSTRAINT "DiPr_gestion_cartera_diagramasprocedimien_19e4a765_fk_gestor_ar" FOREIGN KEY (diagramasprocedimientos_ptr_id) REFERENCES public.gestor_archivos_diagramasprocedimientos(id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -8832,6 +9923,22 @@ ALTER TABLE ONLY public."DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs"
 
 
 --
+-- Name: DocumentDoAs_evaluacion_control_FoAs DocumentDoAs_evaluac_document_id_9049eaa3_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_evaluacion_control_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_evaluac_document_id_9049eaa3_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_evaluacion_control(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentDoAs_evaluacion_control_FoAs DocumentDoAs_evaluac_documentformatosasoc_91322a4a_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_evaluacion_control_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_evaluac_documentformatosasoc_91322a4a_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DocumentDoAs_extension_proyeccion_FoAs DocumentDoAs_extensi_document_id_a73cbcd6_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -8845,6 +9952,14 @@ ALTER TABLE ONLY public."DocumentDoAs_extension_proyeccion_FoAs"
 
 ALTER TABLE ONLY public."DocumentDoAs_extension_proyeccion_FoAs"
     ADD CONSTRAINT "DocumentDoAs_extensi_documentformatosasoc_a7d1ebff_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentDoAs_gestion_cartera_FoAs DocumentDoAs_gestion_document_id_1feff7d7_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_cartera_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_document_id_1feff7d7_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_gestion_cartera(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -8896,6 +10011,14 @@ ALTER TABLE ONLY public."DocumentDoAs_gestion_servicio_usuario_FoAs"
 
 
 --
+-- Name: DocumentDoAs_gestion_integrada_FoAs DocumentDoAs_gestion_document_id_ce38f7f1_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_integrada_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_document_id_ce38f7f1_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_gestion_integrada(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DocumentDoAs_gestion_informacion_FoAs DocumentDoAs_gestion_document_id_d31c9ceb_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -8941,6 +10064,14 @@ ALTER TABLE ONLY public."DocumentDoAs_gestion_juridica_FoAs"
 
 ALTER TABLE ONLY public."DocumentDoAs_gestion_registro_calificado_FoAs"
     ADD CONSTRAINT "DocumentDoAs_gestion_documentformatosasoc_2d7ba4f5_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentDoAs_gestion_integrada_FoAs DocumentDoAs_gestion_documentformatosasoc_595e500a_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_integrada_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_documentformatosasoc_595e500a_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9005,6 +10136,14 @@ ALTER TABLE ONLY public."DocumentDoAs_gestion_informacion_FoAs"
 
 ALTER TABLE ONLY public."DocumentDoAs_gestion_servicio_usuario_FoAs"
     ADD CONSTRAINT "DocumentDoAs_gestion_documentformatosasoc_ba0c297f_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentDoAs_gestion_cartera_FoAs DocumentDoAs_gestion_documentformatosasoc_fcde07f1_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentDoAs_gestion_cartera_FoAs"
+    ADD CONSTRAINT "DocumentDoAs_gestion_documentformatosasoc_fcde07f1_fk_documenta" FOREIGN KEY (documentformatosasociados_ptr_id) REFERENCES public.documentacion_documentformatosasociados(id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9232,6 +10371,22 @@ ALTER TABLE ONLY public."DocumentImage_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: DocumentImage_evaluacion_control DocumentImage_evalua_document_id_253ac6b1_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_evaluacion_control"
+    ADD CONSTRAINT "DocumentImage_evalua_document_id_253ac6b1_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_evaluacion_control(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentImage_evaluacion_control DocumentImage_evalua_documentasociadosdia_9f28995c_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_evaluacion_control"
+    ADD CONSTRAINT "DocumentImage_evalua_documentasociadosdia_9f28995c_fk_documenta" FOREIGN KEY (documentasociadosdiagramasflujo_ptr_id) REFERENCES public.documentacion_documentasociadosdiagramasflujo(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DocumentImage_extension_proyeccion DocumentImage_extens_document_id_abff3da1_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -9264,11 +10419,27 @@ ALTER TABLE ONLY public."DocumentImage_gestion_recursos_financieros"
 
 
 --
+-- Name: DocumentImage_gestion_integrada DocumentImage_gestio_document_id_4a1d5604_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_integrada"
+    ADD CONSTRAINT "DocumentImage_gestio_document_id_4a1d5604_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_gestion_integrada(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DocumentImage_gestion_servicio_usuario DocumentImage_gestio_document_id_4b9a1150_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DocumentImage_gestion_servicio_usuario"
     ADD CONSTRAINT "DocumentImage_gestio_document_id_4b9a1150_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_gestion_servicio_usuario(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentImage_gestion_cartera DocumentImage_gestio_document_id_6ea82ab8_fk_document_; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_cartera"
+    ADD CONSTRAINT "DocumentImage_gestio_document_id_6ea82ab8_fk_document_" FOREIGN KEY (document_id) REFERENCES public.document_gestion_cartera(document_ptr_id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9352,11 +10523,27 @@ ALTER TABLE ONLY public."DocumentImage_gestion_juridica"
 
 
 --
+-- Name: DocumentImage_gestion_integrada DocumentImage_gestio_documentasociadosdia_974bef66_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_integrada"
+    ADD CONSTRAINT "DocumentImage_gestio_documentasociadosdia_974bef66_fk_documenta" FOREIGN KEY (documentasociadosdiagramasflujo_ptr_id) REFERENCES public.documentacion_documentasociadosdiagramasflujo(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: DocumentImage_gestion_desarrollo_humano DocumentImage_gestio_documentasociadosdia_b7e21f11_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."DocumentImage_gestion_desarrollo_humano"
     ADD CONSTRAINT "DocumentImage_gestio_documentasociadosdia_b7e21f11_fk_documenta" FOREIGN KEY (documentasociadosdiagramasflujo_ptr_id) REFERENCES public.documentacion_documentasociadosdiagramasflujo(id) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: DocumentImage_gestion_cartera DocumentImage_gestio_documentasociadosdia_bc16f5d9_fk_documenta; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."DocumentImage_gestion_cartera"
+    ADD CONSTRAINT "DocumentImage_gestio_documentasociadosdia_bc16f5d9_fk_documenta" FOREIGN KEY (documentasociadosdiagramasflujo_ptr_id) REFERENCES public.documentacion_documentasociadosdiagramasflujo(id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9560,6 +10747,14 @@ ALTER TABLE ONLY public."Indicadores_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: Indicadores_evaluacion_control Indicadores_evaluaci_document_ptr_id_cd726223_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_evaluacion_control"
+    ADD CONSTRAINT "Indicadores_evaluaci_document_ptr_id_cd726223_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: Indicadores_extension_proyeccion Indicadores_extensio_document_ptr_id_0e5f83b9_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -9632,6 +10827,14 @@ ALTER TABLE ONLY public."Indicadores_gestion_juridica"
 
 
 --
+-- Name: Indicadores_gestion_integrada Indicadores_gestion__document_ptr_id_d0df1aae_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_gestion_integrada"
+    ADD CONSTRAINT "Indicadores_gestion__document_ptr_id_d0df1aae_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: Indicadores_gestion_servicio_usuario Indicadores_gestion__document_ptr_id_e2b44e7a_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -9645,6 +10848,14 @@ ALTER TABLE ONLY public."Indicadores_gestion_servicio_usuario"
 
 ALTER TABLE ONLY public."Indicadores_gestion_informacion"
     ADD CONSTRAINT "Indicadores_gestion__document_ptr_id_ee961aed_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: Indicadores_gestion_cartera Indicadores_gestion__document_ptr_id_fce8c81a_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Indicadores_gestion_cartera"
+    ADD CONSTRAINT "Indicadores_gestion__document_ptr_id_fce8c81a_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9685,6 +10896,22 @@ ALTER TABLE ONLY public."Indicadores_planeacion_estrategica_institucional"
 
 ALTER TABLE ONLY public."Indicadores_relacionamineto_egresados"
     ADD CONSTRAINT "Indicadores_relacion_document_ptr_id_040078b6_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: RequisitosLegalesNormativos_globales RequisitosLegalesNor_document_ptr_id_b1665bd9_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."RequisitosLegalesNormativos_globales"
+    ADD CONSTRAINT "RequisitosLegalesNor_document_ptr_id_b1665bd9_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: RequisitosNecesidadesPartesInteresadas_globales RequisitosNecesidade_document_ptr_id_432378ac_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."RequisitosNecesidadesPartesInteresadas_globales"
+    ADD CONSTRAINT "RequisitosNecesidade_document_ptr_id_432378ac_fk_gestor_ar" FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9832,11 +11059,27 @@ ALTER TABLE ONLY public."document_enseñanza_prendizaje_evaluacion"
 
 
 --
+-- Name: document_evaluacion_control document_evaluacion__document_ptr_id_3c44ef42_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_evaluacion_control
+    ADD CONSTRAINT document_evaluacion__document_ptr_id_3c44ef42_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
 -- Name: document_extension_proyeccion document_extension_p_document_ptr_id_5643f1c2_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.document_extension_proyeccion
     ADD CONSTRAINT document_extension_p_document_ptr_id_5643f1c2_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: document_gestion_cartera document_gestion_car_document_ptr_id_6680d531_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_gestion_cartera
+    ADD CONSTRAINT document_gestion_car_document_ptr_id_6680d531_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9869,6 +11112,14 @@ ALTER TABLE ONLY public.document_gestion_documental
 
 ALTER TABLE ONLY public.document_gestion_informacion
     ADD CONSTRAINT document_gestion_inf_document_ptr_id_c2d43a5a_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: document_gestion_integrada document_gestion_int_document_ptr_id_20ecf2e4_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.document_gestion_integrada
+    ADD CONSTRAINT document_gestion_int_document_ptr_id_20ecf2e4_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
@@ -9957,6 +11208,14 @@ ALTER TABLE ONLY public.document_planeacion_estrategica_institucional
 
 ALTER TABLE ONLY public.document_relacionamineto_egresados
     ADD CONSTRAINT document_relacionami_document_ptr_id_2d053038_fk_gestor_ar FOREIGN KEY (document_ptr_id) REFERENCES public.gestor_archivos_document(id_archivo) DEFERRABLE INITIALLY DEFERRED;
+
+
+--
+-- Name: gestion_integrada gestion_integrada_diagramasprocedimien_fc42bec4_fk_gestor_ar; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.gestion_integrada
+    ADD CONSTRAINT gestion_integrada_diagramasprocedimien_fc42bec4_fk_gestor_ar FOREIGN KEY (diagramasprocedimientos_ptr_id) REFERENCES public.gestor_archivos_diagramasprocedimientos(id) DEFERRABLE INITIALLY DEFERRED;
 
 
 --
