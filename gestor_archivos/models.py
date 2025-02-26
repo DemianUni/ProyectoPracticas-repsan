@@ -119,11 +119,6 @@ class Document_gestion_sistemas_comunicacion(Document):
         db_table = "document_gestion_sistemas_comunicacion"
 
 
-class Document_informacion_bibliografica(Document):
-    class Meta:
-        db_table = "document_informacion_bibliografica"
-
-
 class Document_gestion_investigacion(Document):
     class Meta:
         db_table = "document_gestion_investigacion"
@@ -263,11 +258,6 @@ class Indicadores_infraestructura_fisica(Document):
 class Indicadores_gestion_sistemas_comunicacion(Document):
     class Meta:
         db_table = "Indicadores_gestion_sistemas_comunicacion"
-
-
-class Indicadores_informacion_bibliografica(Document):
-    class Meta:
-        db_table = "Indicadores_informacion_bibliografica"
 
 
 class Indicadores_gestion_investigacion(Document):
@@ -425,11 +415,6 @@ class DiPr_infraestructura_fisica(DiagramasProcedimientos):
 class DiPr_gestion_sistemas_comunicacion(DiagramasProcedimientos):
     class Meta:
         db_table = "DiPr_gestion_sistemas_comunicacion"
-
-
-class DiPr_informacion_bibliografica(DiagramasProcedimientos):
-    class Meta:
-        db_table = "DiPr_informacion_bibliografica"
 
 
 class DiPr_gestion_investigacion(DiagramasProcedimientos):

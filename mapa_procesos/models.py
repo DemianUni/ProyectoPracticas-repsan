@@ -79,14 +79,6 @@ class EC_gestion_sistemas_comunicacion(models.Model):
         return self.identifier
 
 
-class EC_informacion_bibliografica(models.Model):
-    identifier = models.CharField(max_length=100, unique=True)
-    content = models.TextField()
-
-    def __str__(self):
-        return self.identifier
-
-
 class EC_gestion_investigacion(models.Model):
     identifier = models.CharField(max_length=100, unique=True)
     content = models.TextField()

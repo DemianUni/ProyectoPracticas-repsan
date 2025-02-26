@@ -14,7 +14,6 @@ from .models import (
     DocumentImage_gestion_juridica,
     DocumentImage_infraestructura_fisica,
     DocumentImage_gestion_sistemas_comunicacion,
-    DocumentImage_informacion_bibliografica,
     DocumentImage_gestion_investigacion,
     DocumentImage_enseñanza_prendizaje_evaluacion,
     DocumentImage_desarrollo_curricular,
@@ -43,7 +42,6 @@ from .models import (
     DocumentDoAs_gestion_juridica_FoAs,
     DocumentDoAs_infraestructura_fisica_FoAs,
     DocumentDoAs_gestion_sistemas_comunicacion_FoAs,
-    DocumentDoAs_informacion_bibliografica_FoAs,
     DocumentDoAs_gestion_investigacion_FoAs,
     DocumentDoAs_enseñanza_prendizaje_evaluacion_FoAs,
     DocumentDoAs_desarrollo_curricular_FoAs,
@@ -144,15 +142,6 @@ class DocumentImage_infraestructura_fisica(DocumentImageAsociada):
 class DocumentImage_gestion_sistemas_comunicacion(DocumentImageAsociada):
     class Meta(DocumentImageAsociada.Meta):
         model = DocumentImage_gestion_sistemas_comunicacion
-        fields = DocumentImageAsociada.Meta.fields
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-
-class DocumentImage_informacion_bibliografica(DocumentImageAsociada):
-    class Meta(DocumentImageAsociada.Meta):
-        model = DocumentImage_informacion_bibliografica
         fields = DocumentImageAsociada.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -447,15 +436,6 @@ class DocumentDoAs_infraestructura_fisica_FoAs(DocumentFormatosAsociados):
 class DocumentDoAs_gestion_sistemas_comunicacion_FoAs(DocumentFormatosAsociados):
     class Meta(DocumentFormatosAsociados.Meta):
         model = DocumentDoAs_gestion_sistemas_comunicacion_FoAs
-        fields = DocumentFormatosAsociados.Meta.fields
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-
-class DocumentDoAs_informacion_bibliografica_FoAs(DocumentFormatosAsociados):
-    class Meta(DocumentFormatosAsociados.Meta):
-        model = DocumentDoAs_informacion_bibliografica_FoAs
         fields = DocumentFormatosAsociados.Meta.fields
 
     def __init__(self, *args, **kwargs):

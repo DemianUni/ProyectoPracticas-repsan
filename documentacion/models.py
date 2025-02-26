@@ -9,7 +9,6 @@ from gestor_archivos.models import (
     Document_gestion_juridica,
     Document_infraestructura_fisica,
     Document_gestion_sistemas_comunicacion,
-    Document_informacion_bibliografica,
     Document_gestion_investigacion,
     Document_enseñanza_prendizaje_evaluacion,
     Document_desarrollo_curricular,
@@ -131,17 +130,6 @@ class DocumentImage_gestion_sistemas_comunicacion(DocumentAsociadosDiagramasFluj
 
     class Meta:
         db_table = "DocumentImage_gestion_sistemas_comunicacion"
-
-
-class DocumentImage_informacion_bibliografica(DocumentAsociadosDiagramasFlujo):
-    document = models.ForeignKey(
-        Document_informacion_bibliografica,
-        on_delete=models.CASCADE,
-        related_name="DocumentImage_informacion_bibliografica",
-    )
-
-    class Meta:
-        db_table = "DocumentImage_informacion_bibliografica"
 
 
 class DocumentImage_gestion_investigacion(DocumentAsociadosDiagramasFlujo):
@@ -462,17 +450,6 @@ class DocumentDoAs_gestion_sistemas_comunicacion_FoAs(DocumentFormatosAsociados)
 
     class Meta:
         db_table = "DocumentDoAs_gestion_sistemas_comunicacion_FoAs"
-
-
-class DocumentDoAs_informacion_bibliografica_FoAs(DocumentFormatosAsociados):
-    document = models.ForeignKey(
-        Document_informacion_bibliografica,
-        on_delete=models.CASCADE,
-        related_name="DocumentDoAs_informacion_bibliografica_FoAs",
-    )
-
-    class Meta:
-        db_table = "DocumentDoAs_informacion_bibliografica_FoAs"
 
 
 class DocumentDoAs_gestion_investigacion_FoAs(DocumentFormatosAsociados):

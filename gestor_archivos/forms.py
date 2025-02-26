@@ -15,7 +15,6 @@ from gestor_archivos.models import (
     Document_gestion_juridica,
     Document_infraestructura_fisica,
     Document_gestion_sistemas_comunicacion,
-    Document_informacion_bibliografica,
     Document_gestion_investigacion,
     Document_enseñanza_prendizaje_evaluacion,
     Document_desarrollo_curricular,
@@ -44,7 +43,6 @@ from gestor_archivos.models import (
     DiPr_gestion_juridica,
     DiPr_infraestructura_fisica,
     DiPr_gestion_sistemas_comunicacion,
-    DiPr_informacion_bibliografica,
     DiPr_gestion_investigacion,
     DiPr_enseñanza_prendizaje_evaluacion,
     DiPr_desarrollo_curricular,
@@ -73,7 +71,6 @@ from gestor_archivos.models import (
     Indicadores_gestion_juridica,
     Indicadores_infraestructura_fisica,
     Indicadores_gestion_sistemas_comunicacion,
-    Indicadores_informacion_bibliografica,
     Indicadores_gestion_investigacion,
     Indicadores_enseñanza_prendizaje_evaluacion,
     Indicadores_desarrollo_curricular,
@@ -217,15 +214,6 @@ class Document_infraestructura_fisica(DocumentForm):
 class Document_gestion_sistemas_comunicacion(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Document_gestion_sistemas_comunicacion
-        fields = DocumentForm.Meta.fields
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-
-class Document_informacion_bibliografica(DocumentForm):
-    class Meta(DocumentForm.Meta):
-        model = Document_informacion_bibliografica
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -474,15 +462,6 @@ class Indicadores_infraestructura_fisica(DocumentForm):
 class Indicadores_gestion_sistemas_comunicacion(DocumentForm):
     class Meta(DocumentForm.Meta):
         model = Indicadores_gestion_sistemas_comunicacion
-        fields = DocumentForm.Meta.fields
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-
-class Indicadores_informacion_bibliografica(DocumentForm):
-    class Meta(DocumentForm.Meta):
-        model = Indicadores_informacion_bibliografica
         fields = DocumentForm.Meta.fields
 
     def __init__(self, *args, **kwargs):
@@ -747,15 +726,6 @@ class DiPr_infraestructura_fisica_form(DiagramasProcedimientos):
 class DiPr_gestion_sistemas_comunicacion_form(DiagramasProcedimientos):
     class Meta(DiagramasProcedimientos.Meta):
         model = DiPr_gestion_sistemas_comunicacion
-        fields = DiagramasProcedimientos.Meta.fields
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-
-class DiPr_informacion_bibliografica_form(DiagramasProcedimientos):
-    class Meta(DiagramasProcedimientos.Meta):
-        model = DiPr_informacion_bibliografica
         fields = DiagramasProcedimientos.Meta.fields
 
     def __init__(self, *args, **kwargs):
