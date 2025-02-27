@@ -2886,7 +2886,7 @@ COPY public."DiPr_bienestar_institucional" (diagramasprocedimientos_ptr_id) FROM
 --
 
 COPY public."DiPr_comunicacion" (diagramasprocedimientos_ptr_id) FROM stdin;
-18
+36
 \.
 
 
@@ -2949,7 +2949,7 @@ COPY public."DiPr_gestion_cartera" (diagramasprocedimientos_ptr_id) FROM stdin;
 --
 
 COPY public."DiPr_gestion_contractual" (diagramasprocedimientos_ptr_id) FROM stdin;
-3
+33
 \.
 
 
@@ -3021,7 +3021,7 @@ COPY public."DiPr_gestion_registro_calificado" (diagramasprocedimientos_ptr_id) 
 --
 
 COPY public."DiPr_gestion_servicio_usuario" (diagramasprocedimientos_ptr_id) FROM stdin;
-22
+34
 \.
 
 
@@ -3057,7 +3057,7 @@ COPY public."DiPr_infraestructura_fisica" (diagramasprocedimientos_ptr_id) FROM 
 --
 
 COPY public."DiPr_internacionalizacion" (diagramasprocedimientos_ptr_id) FROM stdin;
-17
+43
 \.
 
 
@@ -3066,7 +3066,7 @@ COPY public."DiPr_internacionalizacion" (diagramasprocedimientos_ptr_id) FROM st
 --
 
 COPY public."DiPr_planeacion_estrategica_institucional" (diagramasprocedimientos_ptr_id) FROM stdin;
-15
+35
 \.
 
 
@@ -3075,7 +3075,7 @@ COPY public."DiPr_planeacion_estrategica_institucional" (diagramasprocedimientos
 --
 
 COPY public."DiPr_relacionamineto_egresados" (diagramasprocedimientos_ptr_id) FROM stdin;
-27
+38
 \.
 
 
@@ -3356,6 +3356,7 @@ COPY public."DocumentImage_bienestar_institucional" (documentasociadosdiagramasf
 --
 
 COPY public."DocumentImage_comunicacion" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
+39	112
 \.
 
 
@@ -3545,6 +3546,7 @@ COPY public."DocumentImage_planeacion_estrategica_institucional" (documentasocia
 --
 
 COPY public."DocumentImage_relacionamineto_egresados" (documentasociadosdiagramasflujo_ptr_id, document_id) FROM stdin;
+40	75
 \.
 
 
@@ -4553,15 +4555,15 @@ COPY public.auth_user (id, password, last_login, is_superuser, username, first_n
 15	pbkdf2_sha256$870000$vg2SHLAGC6XOiHugMWPXVe$ioQ178dLABVqZb6l5jkjpLZlfA3unfSiyTJwhkiYtsU=	\N	f	paolavasquez	Paola	Vasquez	dir.comunicaciones@unisanpablo.edu.co	f	t	2025-02-10 15:54:23-05
 16	pbkdf2_sha256$870000$hGc0u80FAzQFxrWV45BjgN$jyv0c0w60eQUSd4fHy1jLCVCDKFG2EGdZ8fh4i7SEFA=	\N	f	juliansanchez	Julian	Sanchez	asistenteadministrativo@unisanpablo.edu.co	f	t	2025-02-10 15:55:21-05
 11	pbkdf2_sha256$870000$lqQyxGnmcsVPz7w8hVf3C5$QPrqcih9USffQlJUXMAysvebQd/Vk8iYSoRImctnseM=	2025-02-10 15:59:21.078804-05	f	diegosolis	Diego	Solis	sistemas@unisanpablo.edu.co	f	t	2025-02-10 15:50:51-05
-4	pbkdf2_sha256$870000$n7O30zsBFQ27OqKEkPLsz7$imLEtkY0VUnDazvuqwokyg8tmA7JmF6OIpPkRYU4QSA=	2025-02-17 08:14:48.90866-05	t	daniela	Daniela	Torres Torres	angie.torres.t@uniminuto.edu	t	t	2024-11-14 14:27:36-05
+4	pbkdf2_sha256$870000$n7O30zsBFQ27OqKEkPLsz7$imLEtkY0VUnDazvuqwokyg8tmA7JmF6OIpPkRYU4QSA=	2025-02-27 08:15:28.892774-05	t	daniela	Daniela	Torres Torres	angie.torres.t@uniminuto.edu	t	t	2024-11-14 14:27:36-05
 2	pbkdf2_sha256$870000$DGAOlUXaAr6sbTZKcbMwc2$80xvoSjWmB5Rm345d+uHJltkoFfMpmvvtZreFTQgGhM=	2025-02-17 10:17:34.569486-05	f	consultas	Consultas	Apellido Consultas	consultas@ejem.com	f	t	2024-11-14 12:14:18-05
-3	pbkdf2_sha256$870000$fx0vtr9UC9eV8sBiBp2OKS$JhAVZCok5jfLRgvQvXlusLoEjrOpEbSoukKcOVQH1Ss=	2025-02-17 15:08:47.284963-05	t	superuser	Damian	Rojas Castillo	superuser@superuser.com	t	t	2024-11-14 12:12:23-05
 7	pbkdf2_sha256$870000$BmpUZVlLt86UuVqm7TS7z7$VAsjP8SRbSdGZYJ2Q3nXs1tK22eOY2iCna1fwoLwMHY=	\N	f	henryhueso	Henry	Hueso	henryhueso@unisanpablo.edu.co	f	t	2025-02-10 15:45:59-05
 8	pbkdf2_sha256$870000$h4YniNpbvDUQICID3cVNRZ$WEerxxzm4P5qytnV+xX0HFT2AFGaq9c0TdyR+3evLrE=	\N	f	jesusparada	Jesus	Parada	asistenterectoria@unisanpablo.edu.co	f	t	2025-02-10 15:47:14-05
 9	pbkdf2_sha256$870000$uzgO0TadfNuIoPUkoy3m40$3+u6a3kW0sTo8tle8voNI8QKsyDZaev8Dd72KdvpFkA=	\N	f	normabonilla	Norma	Bonilla	normabonilla@unisanpablo.edu.co	f	t	2025-02-10 15:48:38-05
 10	pbkdf2_sha256$870000$6OjiWShKqWCXdSSbFYbecg$k8KlS0aeHHMeKqHXKpnGqp//uATgLFShIxuj4hRD2o8=	\N	f	rafaelramires	Rafael	Ramires	rafael.ramirez@unisanpablo.edu.co	f	t	2025-02-10 15:50:01-05
 12	pbkdf2_sha256$870000$BJaYnTVcZn5H5WwuhL3977$mup9qU6VSS8BwKKzWDva1+8vmhzgu3/PDmp4cC6C3Mc=	\N	f	gersonmedina	Gerson	Medina	medias@unisanpablo.edu.co	f	t	2025-02-10 15:51:33-05
 1	pbkdf2_sha256$870000$ZRwcJ0wqfLORYrVoSVwAHm$EgabC/GPOXHNXyXYGVmcPsfiezVV5oxWJk7LNjwwQ6I=	2025-02-14 09:24:33.864437-05	t	merodriguez	Martha	Rodriguez	merodriguez@uniminuto.edu	t	t	2024-11-14 14:19:22-05
+3	pbkdf2_sha256$870000$fx0vtr9UC9eV8sBiBp2OKS$JhAVZCok5jfLRgvQvXlusLoEjrOpEbSoukKcOVQH1Ss=	2025-02-26 13:58:34.676089-05	t	superuser	Damian	Rojas Castillo	superuser@superuser.com	t	t	2024-11-14 12:12:23-05
 \.
 
 
@@ -4912,10 +4914,19 @@ fjgwdlda70qr91gkroje8q70ohh06i2m	.eJxVjEEOwiAQRe_C2pAy0KG4dO8ZyDBDpWpoUtqV8e7apA
 d0yi53jeecmsbyloupiq560gg0paddtc	.eJxVjDsOwjAQBe_iGln-rWNT0ucM1tq74ABypDipEHeHSCmgfTPzXiLhtta0dV7SROIsjDj9bhnLg9sO6I7tNssyt3WZstwVedAux5n4eTncv4OKvX5rB9ZTNBa0Y1dIac1QnLlGxxQ8Q7DaBNQFYoCiM4DKNGAeFFufmUG8P8D6N3E:1tg2Z4:F_PaTneWkg_prFZIyeO4I5j16IgGm8JH4af2uhHxEro	2025-02-20 09:09:10.237653-05
 6ees12kpbnarqfzgoltbaxs09mu6t12j	e30:1thZma:gHhj1og_eiyOj5yamkCVcxw36c9hXkegLnI5HtZtX2M	2025-02-24 14:49:28.623029-05
 839qo7bz1aab53nij2yth1ljx9tdmny2	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tiwPN:jfKTECFn5hTmoDzoU1qAshPlKh6qKVKJ5EO7W_8OMHw	2025-02-28 09:11:09.411244-05
+ncg1p2nbn0q03sx796rzym2obakjl2hw	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tmdwA:GcURtUpterHywJPaa8kooKc7lwi895rokghn78vLCYw	2025-03-10 14:16:18.368003-05
+z2tscamrbf2j3xyxt13fyif8ci5s2t47	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tmdzQ:H8xZGv7sPjtP5DAzUTfD-pqG_2O6PsItivVXoU3KbzQ	2025-03-10 14:19:40.03568-05
+84op7hxkprq4i0p9eqtvpjmt1mdwhm2d	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tnMfl:HZ1HbmMbnXGsqL372JJlf-l4j4BpbdaCQk6iEOKjYHg	2025-03-12 14:02:21.811227-05
 j9gy2p0p84g927iw0h53pcbc79i3w4zd	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1thqSZ:8rPGbXlp-ch1tXnMJZ2yeWTSaqitb9zyvxw_AolrzKQ	2025-02-25 08:37:55.759536-05
+xvt91rtvd5n55q8tjimd5cdzpxvregbw	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tme52:5AsKZOugRYcV7VyoIGSgQGYkr5STsQvwPQqsczmygcc	2025-03-10 14:25:28.489291-05
 ocllc25wa84brh7xi36639xx0ujhs0ya	.eJxVjEEOgjAURO_StWna8tuiS_eeofm_HQQ1kFBYGe8uJCx0N5n3Zt4q8br0aa2Y01DURZE6_XbC-YlxB-XB433SeRqXeRC9K_qgVd-mgtf1cP8Oeq79tg5kSUyHzoljlEIQcq1kagO7SNii5eBhG24cQOaMGKPPPlsEEaM-XwDqOIM:1tk87z:eD296xyO1XjvINma7P3uqBM5YFyJfiIDTuNnpD5hYkw	2025-03-03 15:54:07.878766-05
-j5ru8i4lvlzy7ei0jf9a8d8uj17hkz76	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk0vJ:OulPDkJcY-sSBTXA9JpHMq93JTMJugekQA7yDp9Ps4c	2025-03-03 08:12:33.224433-05
+kqxmdal4crhlgjc4t037gf0pxww14ysi	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tmdvJ:4FTkvFMLrFbQWSCxjVVpEXCZHKvr-whdlMiL6ZLQbdw	2025-03-10 14:15:25.358856-05
+j5ru8i4lvlzy7ei0jf9a8d8uj17hkz76	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tnHan:7kUNjwfsU2CCQfWobFrev28YKcUxxZnEuquzw1wTe3c	2025-03-12 08:36:53.300428-05
+xdqdkbc5chbn8g4xet3mwcwcqj047ksl	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tn2YM:bR9YkSj_kTFprxYKCpFW6XuI_i9UZHEJ6zPnh4NNEsI	2025-03-11 16:33:22.634104-05
 0deu9v27zx8d57vhnljuypbbuls0dgh3	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tk0xn:y_mSrgOs0jLOR1-csN60mwXArkyvCM1jiUieHsefzvQ	2025-03-03 08:15:07.049632-05
+0swlqw70veixqg423jf5upar520yczs8	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tnJAK:qwgOdUZTCD2_iVm917zTvJvf7LN5v2b-2pR7Ujq3Kao	2025-03-12 10:17:40.033513-05
+qr3d37xkgt26zuepiobffsvc1sym15av	.eJxVjDkOwjAURO_iGlleZOxQ0nMG6_svOIBiKU4qxN1JpBTQTDHvzbxVhnWpee0855HURXl1-u0K4JOnHdADpnvT2KZlHoveFX3Qrm-N-HU93L-DCr1uayEQSYgigbwdUDj5aMpQkoUwEATnjOFIW7BgcTFCAGCxBqxxZ1SfLyjWOT8:1tn2gn:c7eM5KF7XDyVtu7JfwHbsPJQIFZBQjFFKsMjL5p_iok	2025-03-11 16:42:05.763757-05
+dkqpewa5wnbof80fqwbu4i5vgr7t9v2o	.eJxVjEEOgjAURO_StWna8tuiS_eeofm_HQQ1kFBYGe8uJCx0N5n3Zt4q8br0aa2Y01DURZE6_XbC-YlxB-XB433SeRqXeRC9K_qgVd-mgtf1cP8Oeq79tg5kSUyHzoljlEIQcq1kagO7SNii5eBhG24cQOaMGKPPPlsEEaM-XwDqOIM:1tnjcv:TI8mFMgedWrVdDcrqEMdze1d0fAj-esHQHnIcbDFUm8	2025-03-13 14:32:57.179156-05
 \.
 
 
@@ -4970,7 +4981,7 @@ COPY public.document_bienestar_institucional (document_ptr_id) FROM stdin;
 COPY public.document_comunicacion (document_ptr_id) FROM stdin;
 93
 94
-95
+112
 \.
 
 
@@ -5192,6 +5203,8 @@ COPY public.documentacion_documentasociadosdiagramasflujo (id, image, uploaded_a
 36	images/Imagen3.png	2025-02-17 12:41:32.879937-05
 37	images/Procedimiento_de_detención_de_plagio.jpg	2025-02-17 15:27:13.837449-05
 38	images/Induccion_y_reinduccion_a_estudiantes_.jpg	2025-02-17 15:38:39.123692-05
+39	images/flujograma_de_comunicacion_AV1RaQq.jpg	2025-02-26 15:01:23.88812-05
+40	images/Flujograma_Relacionamiento_con_egresados..jpg	2025-02-27 14:32:24.990822-05
 \.
 
 
@@ -5222,7 +5235,6 @@ COPY public.gestion_integrada (diagramasprocedimientos_ptr_id) FROM stdin;
 
 COPY public.gestor_archivos_diagramasprocedimientos (id, image, uploaded_at, nombre) FROM stdin;
 2	images/flujograma_Admisiones_de_registro_y_control.jpg	2024-12-04 15:22:38.834529-05	flujograma Admisiones de registro y control
-3	images/Flujograma_Gestion_Contractual.jpg	2024-12-04 15:38:01.498241-05	Flujograma Gestion Contractual
 4	images/Flujograma_Gestión_Júridica.JPG	2024-12-04 15:39:50.945735-05	Flujograma Gestión Júridica
 5	images/Flujograma_Gestion_Documental.jpg	2024-12-04 15:45:05.23496-05	Flujograma Gestion Documental
 6	images/Flujograma_Gestión_de_la_Información_Bibliográfica.JPG	2024-12-04 15:50:12.296311-05	Flujograma Gestión de la Información Bibliográfica
@@ -5233,21 +5245,22 @@ COPY public.gestor_archivos_diagramasprocedimientos (id, image, uploaded_at, nom
 12	images/Flujograma_Gestion_de_Investigación.jpg	2024-12-05 09:58:08.776165-05	Flujograma Gestion de Investigación
 13	images/Flujograma_Enseñanza_Aprendizaje.jpg	2024-12-05 11:08:51.082011-05	Flujograma Enseñanza Aprendizaje
 14	images/Flujograma_Desarrollo_Curricular.JPG	2024-12-05 11:24:41.344277-05	Flujograma Desarrollo Curricular
-15	images/Flujograma_Planeación_Estratégica_Institucional.jpg	2024-12-05 11:31:18.813436-05	Flujograma Planeación Estratégica Institucional
 16	images/Flujograma_Gestion_de_la_Información.jpg	2024-12-05 11:35:16.075428-05	Flujograma Gestion de la Información
-17	images/Flujograma_Interinstitucionaliación.jpg	2024-12-05 11:48:20.85809-05	Flujograma Interinstitucionaliación
-18	images/Flujograma_Comunicación.JPG	2024-12-05 11:54:07.84169-05	Flujograma Comunicación
 19	images/Flujograma_Gestión_y_Desarrollo_del_Talento_Humano.JPG	2024-12-05 14:09:26.269248-05	Flujograma Gestión y Desarrollo del Talento Humano
-22	images/Flujograma_Gestion_de_Servicio_al_Usuario.jpg	2024-12-05 14:40:56.944603-05	Flujograma Gestion de Servicio al Usuario
 23	images/Flujograma_Auditorias.jpg	2024-12-05 14:47:06.308231-05	Flujograma Auditorias
 24	images/Flujograma_Gestion_Registro_Calificado.jpg	2024-12-05 14:49:19.527523-05	Flujograma Gestion Registro Calificado
 25	images/Flujograma_Aseguramiento_de_la_Calidad_de_Procesos.jpg	2024-12-05 14:57:39.361512-05	Flujograma Aseguramiento de la Calidad de Procesos
 26	images/Flujograma_Aseguramiento_de_Calidad_Academica.jpg	2024-12-05 15:00:54.633501-05	Flujograma Aseguramiento de Calidad Academica
-27	images/flujograma_de_caracterización_Gestion_y_Desarrollo_del_Talento_Humano.jpg	2024-12-18 10:44:28.298001-05	flujograma de caracterización Gestion y Desarrollo del Talento Humano
 28	images/flujograma_caracterizacion_de_control_disciplinario_.jpg	2024-12-18 11:55:31.969527-05	flujograma caracterizacion de control disciplinario 
 29	images/flujograma_bienestar_institucional_.jpg	2024-12-20 13:23:43.688757-05	flujograma bienestar institucional 
 30	images/Flujograma_Gestión_de_Cartera.jpg	2025-02-12 14:52:22.949295-05	Flujograma Gestión de Cartera
 31	images/Flujograma_Evaluación_y_Control.jpg	2025-02-14 08:52:31.631917-05	Flujograma Evaluación y Control
+33	images/Flujograma_Gestión_Contractual.jpg	2025-02-24 14:47:50.62797-05	Flujograma Gestión Contractual
+34	images/Flujograma_Gestion_de_servicio_al_usuario_7PFMhGp.jpg	2025-02-25 08:16:52.237284-05	Flujograma Gestion de servicio al usuario
+35	images/Flujograma_planeación_estratégica_institucional.jpg	2025-02-25 08:41:14.682854-05	Flujograma planeación estratégica institucional
+36	images/flujograma_de_comunicacion.jpg	2025-02-25 09:26:51.281537-05	flujograma de comunicacion
+38	images/Flujograma_Relacionamiento_con_egresados.jpg	2025-02-25 09:49:22.249929-05	Flujograma Relacionamiento con egresados
+43	images/Flujograma_interinstitucionalización_e_internacionalización..jpg	2025-02-27 08:31:12.296524-05	Flujograma interinstitucionalización e internacionalización.
 \.
 
 
@@ -5256,52 +5269,51 @@ COPY public.gestor_archivos_diagramasprocedimientos (id, image, uploaded_at, nom
 --
 
 COPY public.gestor_archivos_document (id_archivo, codigo, titulo, caracterizacion, file, fecha_creacion) FROM stdin;
-7	CR-FT-GIB	GESTIÓN DE LA INFORMACIÓN BIBLIOGRÁFICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN_BIBLIOGRÁFICA.pdf	2024-12-04 09:57:36-05
-8	CR-AF-GRF	GESTIÓN DE RECURSOS FINANCIEROS	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_RECURSOS_FINANCIEROS.pdf	2025-02-12 11:58:06.110782-05
-18	CR-DC-GDC	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	DOCENCIA DE CALIDAD	documents/ENSEÑANZA_APRENDIZAJE_Y_EVALUACIÓN.pdf	2025-02-10 09:03:21.156243-05
-48	CR-IP-GIV	GESTIÓN DE INVESTIGACIÓN	INVESTIGACIÓN PERTINENTE	documents/GESTIÓN_DE_INVESTIGACIÓN.pdf	2025-02-12 08:32:52.643416-05
-43	CR-PS-EPS	EXTENSIÓN Y PROYECCIÓN SOCIAL	PROYECCION SOCIAL DE IMPACTO	documents/EXTENSIÓN_Y_PROYECCIÓN_SOCIAL.pdf	2025-02-12 10:39:34.965566-05
+12	CR-FT-GCT	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA	documents/GESTION_DE_LOS_SISTEMAS_DE_COMUNICACIÓN_Y_TELECOMUNICACIONES.pdf	2025-02-25 11:59:17.444029-05
+18	CR-DC-GDC	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	DOCENCIA DE CALIDAD	documents/ENSEÑANZA_APRENDIZAJE_Y_EVALUACIÓN.pdf	2025-02-27 12:26:35.214922-05
+48	CR-IP-GIV	GESTIÓN DE INVESTIGACIÓN	INVESTIGACIÓN PERTINENTE	documents/GESTIÓN_DE_INVESTIGACIÓN.pdf	2025-02-27 12:51:32.724674-05
+40	CR-CI-ACA	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_ACADÉMICA.pdf	2025-02-25 12:14:43.264597-05
+38	CR-CI-GRC	GESTIÓN DEL REGISTRO CALIFICADO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_REGISTRO_CALIFICADO.pdf	2025-02-25 14:49:28.848421-05
+33	CR-CI-GSU	GESTIÓN DEL SERVICIO AL USUARIO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_SERVICIO_AL_USUARIO.pdf	2025-02-25 15:15:23.773309-05
+43	CR-PS-EPS	EXTENSIÓN Y PROYECCIÓN SOCIAL	PROYECCION SOCIAL DE IMPACTO	documents/EXTENSIÓN_Y_PROYECCIÓN_SOCIAL.pdf	2025-02-27 14:19:21.400882-05
+22	CR-PE-PEI	PLANEACIÓN ESTRATEGICA INSTITUCIONAL	PLANEACIÓN ESTRATÉGICA	documents/PLANEACIÓN_ESTRATEGICA_INSTITUCIONAL.pdf	2025-02-25 15:18:41.416119-05
+23	CR-PE-GIN	GESTIÓN DE LA INFORMACIÓN	PLANEACIÓN ESTRATÉGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN.pdf	2025-02-25 15:21:30.066701-05
+41	CR-PS-GRA	RELACIONAMIENTO CON EGRESADOS	PROYECCIÓN SOCIAL DE IMPACTO	documents/RELACIONAMIENTO_CON_EGRESADOS.pdf	2025-02-27 14:32:52.957182-05
+1	CR-GM-ARC	ADMISIONES, REGISTRO Y CONTROL	GESTIÓN DE MERCADEO	documents/ADMISIONES_REGISTRO_Y_CONTROL.pdf	2025-02-25 16:46:43.147287-05
+112	PR-RI-COM-01	PR-RI-COM-01 COMUNICACIONES	COMUNICACIÓN	documents/PROCEDIMIENTO_DE_COMUNICACIÓNES.docx	2025-02-26 15:00:37.895505-05
+27	CR-RI-COM	COMUNICACIÓN	RELACIONES INTERINSTITUCIONALES	documents/COMUNICACIÓN.pdf	2025-02-26 15:58:15.059236-05
+45	CR-RI-INI	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN	RELACIONES INTERINSTITUCIONALES	documents/INTERINSTITUCIONALIZACIÓN_E_INTERNACIONALIZACIÓN.pdf	2025-02-27 08:31:17.022222-05
+21	CR-DC-DRC	DESARROLLO CURRICULAR	DOCENCIA DE CALIDAD	documents/DESARROLLO_CURRICULAR.pdf	2025-02-27 08:43:38.35429-05
 5	CR-JC-GEJ	GESTIÓN JURÍDICA	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_JURÍDICA.pdf	2025-02-12 10:56:03.874697-05
-21	CR-DC-DRC	DESARROLLO CURRICULAR	DOCENCIA DE CALIDAD	documents/DESARROLLO_CURRICULAR.pdf	2025-02-11 15:01:49.260626-05
-6	CR-AF-GDO	GESTIÓN DOCUMENTAL	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DOCUMENTAL.pdf	2025-02-12 12:07:21.591213-05
-41	CR-PS-GRA	RELACIONAMIENTO CON EGRESADOS	PROYECCIÓN SOCIAL DE IMPACTO	documents/RELACIONAMIENTO_CON_EGRESADOS.pdf	2025-02-12 10:44:35.2223-05
 4	CR-JC-GEC	GESTIÓN CONTRACTUAL	GESTIÓN JURÍDICA Y CONTRACTUAL	documents/GESTIÓN_CONTRACTUAL.pdf	2025-02-12 10:49:54.445787-05
-1	CR-GM-ARC	ADMISIONES, REGISTRO Y CONTROL	GESTIÓN DE MERCADEO	documents/ADMISIONES_REGISTRO_Y_CONTROL.pdf	2025-02-12 11:00:08.376953-05
-23	CR-PE-GIN	GESTIÓN DE LA INFORMACIÓN	PLANEACIÓN ESTRATÉGICA	documents/GESTIÓN_DE_LA_INFORMACIÓN.pdf	2025-02-12 14:23:01.926241-05
-11	CR-FT-GIF	GESTION DE LA INFRAESTRUCTURA FISICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTION_DE_LA_INFRAESTRUCTURA_FISICA.pdf	2025-02-12 12:14:59.835238-05
 39	CR-CI-ACP	ASEGURAMIENTO DE LA CALIDAD DE PROCESOS	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_DE_PROCESOS.pdf	2025-02-17 08:36:56.866316-05
-33	CR-CI-GSU	GESTIÓN DEL SERVICIO AL USUARIO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_SERVICIO_AL_USUARIO.pdf	2025-02-12 14:28:06.378229-05
-12	CR-FT-GCT	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA	documents/GESTION_DE_LOS_SISTEMAS_DE_COMUNICACIÓN_Y_TELECOMUNICACIONES.pdf	2025-02-12 12:21:47.700634-05
-22	CR-PE-PEI	PLANEACIÓN ESTRATEGICA INSTITUCIONAL	PLANEACIÓN ESTRATÉGICA	documents/PLANEACIÓN_ESTRATEGICA_INSTITUCIONAL.pdf	2025-02-12 14:20:14.718783-05
+6	CR-AF-GDO	GESTIÓN DOCUMENTAL	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DOCUMENTAL.pdf	2025-02-25 11:52:14.955731-05
+8	CR-AF-GRF	GESTIÓN DE RECURSOS FINANCIEROS	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_RECURSOS_FINANCIEROS.pdf	2025-02-25 11:53:42.797983-05
 35	CR-CA-ADT	AUDITORIAS	CALIDAD INTEGRAL	documents/AUDITORIAS.pdf	2025-02-13 15:36:32.386771-05
-40	CR-CI-ACA	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	CALIDAD INTEGRAL	documents/ASEGURAMIENTO_DE_LA_CALIDAD_ACADÉMICA.pdf	2025-02-17 10:15:00.584124-05
+11	CR-FT-GIF	GESTION DE LA INFRAESTRUCTURA FISICA	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA	documents/GESTION_DE_LA_INFRAESTRUCTURA_FISICA.pdf	2025-02-25 11:55:47.512293-05
 31	CR-TB-CDI	CONTROL DISCIPLINARIO	TALENTO HUMANO Y BIENESTAR	documents/CONTROL_DISCIPLINARIO.pdf	2025-02-17 15:12:25.661619-05
-38	CR-CI-GRC	GESTIÓN DEL REGISTRO CALIFICADO	CALIDAD INTEGRAL	documents/GESTIÓN_DEL_REGISTRO_CALIFICADO.pdf	2025-02-17 08:20:01.067341-05
-45	CR-RI-INI	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN	RELACIONES INTERINSTITUCIONALES	documents/INTERINSTITUCIONALIZACIÓN_E_INTERNACIONALIZACIÓN.pdf	2025-02-17 10:18:15.105482-05
 32	CR-TB-BIN	BIENESTAR INSTITUCIONAL	TALENTO HUMANO Y BIENESTAR	documents/BIENESTAR_INSTITUCIONAL.pdf	2025-02-17 15:41:15.546395-05
-27	CR-RI-COM	COMUNICACIÓN	RELACIONES INTERINSTITUCIONALES	documents/COMUNICACIÓN.pdf	2025-02-17 12:07:39.806192-05
+80	PR-AF-GRF-02	PR-AF-GRF-02 APLICACIÓN DE BECAS, DESCUENTOS Y PATROCINIOS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-02_Aplicación_de_becas_descuentos_y_patrocinios.docx	2025-02-12 11:56:28.093092-05
+79	PR-AF GRF-01	PR-AF GRF-01  MATRICULAS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-01_Matriculas.docx	2025-02-12 11:14:01.074081-05
+86	CR-CA-EVC	EVALUACIÓN Y CONTROL	CALIDAD INTEGRAL	documents/EVALUACIÓN_Y_CONTROL.pdf	2025-02-25 12:20:59.285442-05
+84	CR-AF-GC	GESTIÓN DE CARTERA	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_CARTERA.pdf	2025-02-25 11:51:20.605447-05
+92	PR-CA-ACA-01	PR-CA-ACA-01 AUTOEVALUACIÓN DE PROGRAMAS E INSTITUCIONAL	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	documents/PR-CA-ACA-01_Autoevaluación_de_Programas_e_IES_1.docx	2025-02-17 08:55:38.246909-05
+91	PR-CA-GRC-04	PR-CA-GRC-04 PRE-RADICACIÓN DE CUMPLIMIENTO DE CONDICIONES DE CALIDAD INSTITUCIONAL	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-04_Pre-radicación_de_Cumplimiento_de_Condiciones_de_Calidad_Institucional.docx	2025-02-14 15:40:32.106765-05
+88	PR-CA-GRC-01	PR-CA-GRC-01 CREACIÓN DE PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-CPA-01_Creación_de_Programas_Académicos.docx	2025-02-14 15:02:14.367098-05
+90	PR-CA-GRC-03	PR-CA-GRC-03 MODIFICACIÓN A LOS PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-03_Modificación_a_los_Programas_Académicos.docx	2025-02-14 15:27:47.361367-05
+85	PR-CA-GSU-01	PR-CA-GSU-01 SERVICIO AL CLIENTE PQRF	GESTIÓN DEL SERVICIO AL USUARIO	documents/PR-CA-GSU-01_Servicio_al_cliente_FPQRS.docx	2025-02-12 14:58:14.940133-05
+72	PR-DC-EAE-02	PR-DC-EAE-02 REGISTRO, PUBLICACIÓN Y ADMINISTRACIÓN DE LOS TRABAJOS DE GRADO EN EL REPOSITORIO	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-_AF-GRF_-02_REGISTRO_PUBLICACIÓN_Y_ADMINISTRACIÓN_DE_LOS_TRABAJOS_DE_GRADO_EN_EL_REPOSITORIO_INSTITUCIONAL.docx	2025-02-10 10:18:32.466207-05
+73	PR-IP-GIV-01	PR-IP-GIV-01-CREACIÓN, FORMULACIÓN  Y VINCULACIÓN DE GRUPOS DE INVESTIGACIÓN	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_grupos_investiga_27sep2024.docx	2025-02-11 16:46:28.708105-05
+71	PR-DC-EAE-01	PR-DC-EAE-01-SOLICITUD DE GRADO PREGRADO,POSGRADO Y EDUCACIÓN CONTINUA.	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-AF-GRF-01_SOLICITU_DE_GRADOS_PREGRADO_Y_POSGRADOS_Y_EDUCACION_CONTINUA_-_2.docx	2025-02-10 09:49:47.661641-05
+74	PR-IP-GIV-02	PR-IP-GIV-02 CREACIÓN, FORMULACIÓN Y VINCULACIÓN DE SEMILLEROS	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_semilleros.docx	2025-02-12 08:31:34.093082-05
 67	PDI	Plan de Desarrollo Institucional	GLOBAL	documents/PDI-UNISANPABLO.-completo.pdf	2025-02-07 15:47:23.436854-05
 68	MRISO	Matriz de requisitos ISO	GLOBAL	documents/MatrizdeRequisitosISO_18112021.xlsx	2025-02-07 15:48:48.37628-05
 69	MPIP	Matriz de partes interesadas pertinentes UNISANPABLO	GLOBAL	documents/MatrizdePartesInteresadasPertinentes_12092019.xlsx	2025-02-10 08:54:52.313876-05
-71	PR-DC-EAE-01	PR-DC-EAE-01-SOLICITUD DE GRADO PREGRADO,POSGRADO Y EDUCACIÓN CONTINUA.	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-AF-GRF-01_SOLICITUd_DE_GRADOS_PREGRADO_Y_POSGRADOS_Y_EDUCACION_CONTINUA.docx	2025-02-10 09:49:47.661641-05
-72	PR-DC-EAE-02	PR-DC-EAE-02 REGISTRO, PUBLICACIÓN Y ADMINISTRACIÓN DE LOS TRABAJOS DE GRADO EN EL REPOSITORIO	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN	documents/PR-_REGISTRO_PUBLICACIÓN_Y_ADMINISTRACIÓN_DE_LOS_TRABAJOS_DE_GRADO_EN_EL_REPOSITORIO_INSTITUCIONAL.docx	2025-02-10 10:18:32.466207-05
-73	PR-IP-GIV-01	PR-IP-GIV-01-CREACIÓN, FORMULACIÓN  Y VINCULACIÓN DE GRUPOS DE INVESTIGACIÓN	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_grupos_investiga_27sep2024.docx	2025-02-11 16:46:28.708105-05
-74	PR-IP-GIV-02	PR-IP-GIV-02 CREACIÓN, FORMULACIÓN Y VINCULACIÓN DE SEMILLEROS	GESTIÓN DE INVESTIGACIÓN	documents/PR_Creacion_formulacion_y_vinculacion_de_semilleros.docx	2025-02-12 08:31:34.093082-05
 75	PR-PS-RCE-01	PR-PS-RCE-01 RELACIONAMIENTO CON EGRESADOS	RELACIONAMIENTO CON EGRESADOS	documents/PR-PS-GRA-01_Relacionamiento_con_egresados.docx	2025-02-12 08:48:20.769855-05
-79	PR-AF GRF-01	PR-AF GRF-01  MATRICULAS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-01_Matriculas.docx	2025-02-12 11:14:01.074081-05
-80	PR-AF-GRF-02	PR-AF-GRF-02 APLICACIÓN DE BECAS, DESCUENTOS Y PATROCINIOS	GESTIÓN DE RECURSOS FINANCIEROS	documents/PR-AF-GRF-02_Aplicación_de_becas_descuentos_y_patrocinios.docx	2025-02-12 11:56:28.093092-05
 81	IN-AF-GDO-01	IN-AF-GDO-01 Organización de Archivos y Transferencias Documentales	GESTIÓN DOCUMENTAL	documents/Instructivo_de_Organización_de_Archivos_y_Transferencias.docx	2025-02-12 12:06:15.559213-05
 89	PR-CA-GRC-02	PR-CA-GRC-02 RENOVACIÓN DE REGISTRO CALIFICADOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-02_Renovación_de_registros_calificados.docx	2025-02-14 15:18:21.29506-05
-90	PR-CA-GRC-03	PR-CA-GRC-03 MODIFICACIÓN A LOS PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-03_Modificación_a_los_Programas_Académicos.docx	2025-02-14 15:27:47.361367-05
-91	PR-CA-GRC-04	PR-CA-GRC-04 PRE-RADICACIÓN DE CUMPLIMIENTO DE CONDICIONES DE CALIDAD INSTITUCIONAL	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-GRC-04_Pre-radicación_de_Cumplimiento_de_Condiciones_de_Calidad_Institucional.docx	2025-02-14 15:40:32.106765-05
-92	PR-CA-ACA-01	PR-CA-ACA-01 AUTOEVALUACIÓN DE PROGRAMAS E INSTITUCIONAL	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA	documents/PR-CA-ACA-01_Autoevaluación_Programas_e_Institucional_22may2024.docx	2025-02-17 08:55:38.246909-05
-84	CR-AF-GC	GESTIÓN DE CARTERA	GESTIÓN ADMINISTRATIVA Y FINANCIERA	documents/GESTIÓN_DE_CARTERA.pdf	2025-02-12 14:46:05.236441-05
-85	PR-CA-GSU-01	PR-CA-GSU-01 SERVICIO AL CLIENTE PQRF	GESTIÓN DEL SERVICIO AL USUARIO	documents/PR-CA-GSU-01_Servicio_al_cliente_FPQRS.docx	2025-02-12 14:58:14.940133-05
-86	CR-CA-EVC	EVALUACIÓN Y CONTROL	CALIDAD INTEGRAL	documents/EVALUACIÓN_Y_CONTROL.pdf	2025-02-14 08:46:23.767658-05
 93	FR-RI-COM-01	FR-RI-COM-01 Autorización de uso de derechos de imagen sobre fotografías y fijaciones audiovisuales	COMUNICACIÓN	documents/FRAutorizacindederechosdeimagensobrefotografasyfijacionesaudiovisuales29abril2024.docx	2025-02-17 10:51:01.297537-05
-88	PR-CA-GRC-01	PR-CA-GRC-01 CREACIÓN DE PROGRAMAS ACADÉMICOS	GESTIÓN DEL REGISTRO CALIFICADO	documents/PR-CA-CPA-01_Creación_de_Programas_Académicos.docx	2025-02-14 15:02:14.367098-05
 94	FR-RI-COM-02	FR-RI-COM-02 AUTORIZACIÓN DE USO DE DERECHOS DE IMAGEN PARA MENORES	COMUNICACIÓN	documents/FR2_AUTORIZACIÓN_DE_DERECHOS_DE_IMAGEN_MENORES_29abril2024.docx	2025-02-17 10:52:51.107206-05
-95	PR-RI-COM-01	PR-RI-COM-01 COMUNICACIONES	COMUNICACIÓN	documents/PROCEDIMIENTO_DE_COMUNICACIÓNES.docx	2025-02-17 11:07:02.776018-05
 100	PR-TB-GDT-01	PR-TB-GDT-01 SELECCIÓN Y CONTRATACIÓN	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-GDT-01_Selección_y_Contratación.docx	2025-02-17 12:06:22.712402-05
 96	CR-CA-GIT	GESTIÓN INTEGRADA	CALIDAD INTEGRAL	documents/GESTIÓN_INTEGRADA.pdf	2025-02-17 11:27:30.002164-05
 101	PR-TB-GDT-02	PR-TB-GDT-02 INDUCCIÓN A COLABORADES	GESTION Y DESARROLLO DEL TALENTO HUMANO	documents/PR-TB-GDT-02_Inducción_a_Colaboradores.docx	2025-02-17 12:24:57.994178-05
@@ -5329,7 +5341,6 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 4	Código de Conducta	Conjunto de normas y expectativas de comportamiento establecidas por la universidad que los miembros de la comunidad deben seguir.
 5	Audiencia Disciplinaria	Proceso en el cual el Comité Disciplinario escucha pruebas y testimonios para determinar la responsabilidad del estudiante acusado de una violación al código de conducta.
 6	Sanciones Disciplinarias	Medidas impuestas como consecuencia de una violación al código de conducta, que pueden incluir advertencias escritas, restricciones, suspensiones temporales o expulsiones.
-8	Seguimiento y Evaluación	Actividad posterior a la aplicación de sanciones, destinada a garantizar el cumplimiento y evaluar la efectividad del proceso disciplinario.
 9	Registro Disciplinario	Archivos institucionales que documentan las infracciones disciplinarias, decisiones y sanciones aplicadas a colaboradores y estudiantes a lo largo del tiempo.
 10	Egresado	Se considera egresado, el estudiante que ha culminado su formación en un programa académico de educación superior ofrecido por la Institución y ha obtenido el título correspondiente.
 12	Programa Académico	Corresponde al conjunto de fundamentos, saberes, didácticas, innovaciones educativas, procesos de enseñanza – aprendizaje, y escenarios formativos tendientes a la formación integral del estudiante que conlleva a la obtención de un título académico en educación superior.
@@ -5388,6 +5399,7 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 71	Sistema Nacional de Información de la Educación Superior (SNIES)	Es un sistema de información que ha sido creado para responder a las necesidades de información de la educación superior en Colombia. En este sistema se recopila y organiza la información relevante sobre la educación superior que permite hacer planeación, monitoreo, evaluación, asesoría, inspección y vigilancia del sector.
 68	Registro Calificado	Es un requisito obligatorio y habilitante para que una institución de educación superior, legalmente reconocida por el Ministerio de Educación Nacional, y aquellas habilitadas por la Ley, pueda ofrecer y desarrollar programas académicos de educación superior en el territorio nacional, de conformidad con lo dispuesto en el artículo 1 de la Ley 1188 de 2008. El registro calificado del programa académico de educación superior es el instrumento del Sistema de Aseguramiento de la Calidad de la Educación Superior mediante el cual el estado verifica y evalúa el cumplimiento de las condiciones de calidad por parte de las instituciones de educación superior y aquellas habilitadas por la ley.
 96	Plan De Estudios	Es el esquema estructurado de las áreas obligatorias y fundamentales y de áreas optativas con sus respectivos cursos que forman parte del currículo de los establecimientos educativos. Organización temática, problemática de los espacios académicos que el estudiante debería aprobar.
+115	Mejora continua	Actividades recurrentes para mejorar el rendimiento del sistema de gestión en línea con la política y los objetivos de la institución.
 72	Sistema Nacional de Aseguramiento de la Calidad de Educación Superior	Es el conjunto de instituciones e instancias definidas por el marco normativo vigente, que se articulan por medio de políticas y procesos diseñados, con el propósito de asegurar la calidad de las instituciones y de sus programas. Este sistema promueve en las instituciones los procesos de autoevaluación, auto regulación y mejoramiento de sus labores formativas, académicas, docentes, científicas, culturales y de extensión, contribuyendo al avance y fortalecimiento de su comunidad y sus resultados académicos, bajo principios de equidad, diversidad, inclusión y sostenibilidad.
 73	Plan de Transición	Son las equivalencias asociadas a los espacios académicos de dos planes de estudio diferentes, a través de un proceso de homologación, que permiten la movilidad voluntaria de los estudiantes de un plan antiguo a uno nuevo aprobado por el MEN.
 74	Consejo Académico	Es la autoridad colegiada con la competencia en asuntos académicos, tanto en el desarrollo de las funciones sustantivas e institucionales, como en los asuntos con los estudiantes. El Consejo Académico es el encargado de implementar, contextualizar y desarrollar las políticas generales académicas.
@@ -5413,7 +5425,6 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 94	Historia Académica	Trazabilidad de los cursos que el estudiante ha aprobado y reprobado, en curso normal, en regularización, extraordinario, examen de suficiencia, examen de validación, examen global, examen especial, que se registra en el Sistema de Información Académica.
 95	Periodo Académico	Es el número determinado de semanas requerido para el desarrollo de los créditos establecidos en un programa académico. Los programas Académicos en UNISANPABLO se desarrollarán en periodicidad semestral de acuerdo con el calendario definido por la Institución. La periodicidad estará definida en el registro calificado de cada programa académico.
 97	Sistema de Información Académica (Q10)	Sistema de Información que administra y gestiona los procesos relacionados con los servicios académicos administrativos y financieros, en el cual se aloja la historia académica, admirativa y financiera del estudiante.
-98	Comisión Nacional Intersectorial de Aseguramiento de la Calidad de la Educación Superior – CONACES.	Organismo del Gobierno Nacional vinculado al Ministerio de Educación Nacional, de asesoría y coordinación sectorial perteneciente al Sector Administrativo de la Educación Superior, cuyas competencias están relacionadas con el Sistema de Aseguramiento de la Calidad de la Educación Superior que tiene como principales funciones: la coordinación y orientación del aseguramiento de la calidad de la educación superior, la evaluación del cumplimiento de los requisitos para la creación de instituciones de educación superior, su cambio de carácter académico redefinición, creación de seccionales y reconocimiento como universidades, así como también le corresponde evaluar que los programas académicos cumplan con las condiciones de calidad para su oferta y desarrollo, y emitir el respectivo concepto sobre la procedencia del otorgamiento o renovación del registro calificado. Referencia: Artículo 39º del Decreto 4675 de diciembre 28 de 2006, por el cual se modifica la estructura del Ministerio de Educación Nacional, y se dictan otras disposiciones.
 99	Par Académico MEN	Miembro o profesional destacado de comunidades académicas con amplia experiencia y conocimiento en los procesos de acreditación de Programas Académicos de Educación Superior, designado por el Ministerio de Educación Nacional. El «par» es el encargado de realizar la visita de verificación de las condiciones de calidad de los programas académicos y emitir un juicio sobre los mismos en la etapa de evaluación para contribuir eficazmente en el mejoramiento de su calidad.
 100	Comité de investigación y proyección social	El comité actuará como órgano consultor y estará integrado por el rector, la vicerrectoría académica, el director de investigaciones y los directores de programa. Tendrá como función apoyar los procesos de investigación especialmente aquellos relacionados con el aval de nuevos proyectos. Este actor será fundamental en la verificación y seguimiento de las acciones que se planteen. Este comité sesionará con una frecuencia mensual o de acuerdo con las necesidades de la institución.
 101	Investigador principal	Docente con horas asignadas, que se encargará de desarrollar y dar cumplimiento a los objetivos propuestos y entregar los productos comprometidos en los documentos propios de los proyectos de investigación, proyección social y creación artística, actualizando de forma frecuente la plataforma del ministerio correspondiente (CvLAC).
@@ -5430,12 +5441,35 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 112	Cliente	Define a una persona o entidad que adquiere un producto o servicio de otra.
 113	Evidencia objetiva	Cualquier información puede ser demostrada con hechos mediante examenes, observación, medición.
 114	Infraestructura	Conjunto de instalaciones, equipos y servicios necesarios para el normal desarrollo de una organización.
-115	Mejora continua	Instrumento para contribuir a la capacidad de lograr los objetivos de la organización.
 116	Revisión	Actividad que garantiza la conveniencia, adecuación y eficacia de la cuestión objeto de revisión, para lograr los objetivos establecidos.
 117	Liderazgo	Los líderes dentro de la organización deben establecer un sentido de dirección, involucrar a todos los niveles en la gestión de la calidad y crear un entorno propicio para el trabajo en equipo y la mejora.
 118	ISO 9001 2015	SO 9001 es una norma para la gestión de calidad reconocida mundialmente. Ayuda a organizaciones de todos los tamaños y sectores a mejorar su desempeño, cumplir con las expectativas de los clientes y demostrar su compromiso con la calidad. Sus requisitos definen cómo establecer, implementar, mantener y mejorar constantemente un sistema de gestión de calidad (SGC).
 119	Proceso	conjunto de actividades planificadas que implican la participación de un número de personas y de recursos materiales coordinados para conseguir un objetivo previamente identificado.
 120	Caracterización	herramienta táctica que facilita la descripción del como funciona el proceso a través de la identificación de elementos esenciales que permiten la gestión y control de los proceso.
+121	Auditoría Interna	Revisión sistemática de las actividades y procesos internos de una organización para evaluar su conformidad con los estándares establecidos e identificar oportunidades de mejora.
+122	Criterios de Auditoría	Normas, políticas, procedimientos u otros requisitos utilizados como referencia para evaluar el desempeño de un proceso o actividad durante la Auditoría.
+123	Acciones Correctivas	Acciones adoptadas para eliminar las causas de no conformidades detectadas y prevenir su repetición. Se toman en respuesta a los hallazgos de Auditoría o eventos no deseados.
+124	Control de proceso	Actividades para asegurar que los procesos del sistema de gestión de la calidad operen de manera efectiva y eficiente, cumpliendo con los requisitos especificados.
+125	Planificación de Auditoría	Proceso que involucra la definición del alcance, los objetivos y los recursos para llevar a cabo las auditorías internas, conforme a los requisitos de la norma ISO 9001:2015.
+126	Autoevaluación de Programa	Evaluación interna y reflexiva de un programa académico por parte de la institución educativa para identificar fortalezas, debilidades y áreas de mejora.
+127	Consejo Académico de Sede	Órgano colegiado encargado de asesorar en decisiones académicas y garantizar la calidad de los programas en una sede educativa.
+128	Consejo Superior de Sede	Órgano de gobierno de una sede educativa con funciones de toma de decisiones y supervisión general.
+129	Documento de Registro Calificado para la Renovación	Informe y documentación presentada ante autoridades educativas para solicitar la renovación del registro calificado de un programa académico.
+130	Espacio físico	Área física dentro de la institución que puede ser asignada para llevar a cabo actividades o funciones específicas; aulas de clase, auditorios, laboratorios, aulas de informática Zona verdes, entre otras
+131	Gestión de infraestructura	Es el conjunto de acciones y procesos que se realizan para planificar, diseñar, construir, mantener, mejorar y optimizar el uso del espacio físico de la institución.
+132	Solicitud	Petición formal presentada por un departamento, grupo o individuo para obtener espacio físico dentro de la universidad.
+133	Viabilidad	Evaluación de la posibilidad de satisfacer una solicitud de espacio físico, considerando factores como la disponibilidad, capacidad y cumplimiento de políticas.
+134	Disponibilidad	Estado de estar libre o accesible para su uso en cuanto espacio físico dentro de la institución.
+135	Propuesta de asignación	Documento que detalla cómo se asignarán los espacios físicos disponibles para cumplir con las necesidades identificadas, incluyendo la justificación y criterios utilizados para la asignación.
+136	Asignación	Acto de designar un espacio físico específico para una actividad o función determinada dentro de la institución.
+137	Publicación	Acción de hacer pública la asignación de espacios físicos para informar a todas las partes interesadas sobre las decisiones tomadas en el proceso de asignación.
+138	Seguimiento	Proceso de monitorear continuamente la asignación de espacios físicos para garantizar su adecuado uso y funcionamiento.
+139	Evaluación	Análisis sistemático de la eficacia y eficiencia del proceso de asignación de espacios físicos, con el fin de identificar áreas de mejora y optimización.
+140	Herramienta de cargue, análisis y auditoria (HECAA)	Es un aplicativo multiplataforma que permite a cualquier empresa solicitar a sus clientes o entidades adscritas o incluso a sus mismas áreas o dependencias, reportar información de una forma muy sencilla utilizando en su módulo central de carga un archivo de hoja de cálculo, el cual es descargado como plantilla y posteriormente diligenciado por el usuario.
+141	Participante	El SNIES cuenta con una variable transversal denominada “Participantes” que permite registrar la información básica de cada una de las personas que hacen parte de la comunidad académica de la Institución, bien sean estudiantes, docentes, órganos de gobierno, autoridades y directivos. Antes de vincular a una persona en alguna actividad académica en la IES, se debe confirmar que dicha persona se encuentre registrada en esta variable.
+142	Inscrito	Persona natural que, solicita y formaliza su interés de ser admitido en uno de los programas o cursos de la oferta académica disponible.
+143	Admitido	Persona natural que, adquiere el derecho de matricularse a un programa académico, una vez haya cumplido con todos los requisitos establecidos en la etapa de selección y los requisitos de ley.
+144	Planificación	La primera fase para cualquier mejora de procesos o planificación de proyectos es determinar qué necesitas hacer.
 \.
 
 
@@ -5444,19 +5478,17 @@ COPY public.glosario_glosario (id_termino, termino, definicion) FROM stdin;
 --
 
 COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, content) FROM stdin;
-10	editable10	(P1) Estudiantes.\n(P2) Admitidos.
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	12/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	12/Sep/2024
+28	editable28	12/09/2024
+12	editable12	(E3) Calendario académico.\n(E3) Información relacionada con el comportamiento de los Aspirantes.\n(E4) Confirmación de programas académicos configurados en los sistemas transaccionales institucionales.\n(E4) Información del estado los registros calificados.\n(E5) Necesidades de los clientes internos.
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
-11	editable11	(P3) Proceso Comercialización y Ventas.\n(P4) Proceso Gestión del Registro Calificado\n(P5) Todos los procesos.
-12	editable12	(E3) Calendario académico.\n(E3) Información relacionada con el comportamiento de los Aspirantes.\n(E4) Confirmación de programas académicos configurados en los sistemas transaccionales institucionales.\n(E4) Información del estado los registros calificados.\n(E5) Necesidades de los clientes internos.
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
 13	editable13	1. Establecer los Lineamientos para el proceso de Admisiones de pregrado y posgrado.
 14	editable14	2. Gestionar la admisión de aspirantes nuevos de pregrado y posgrado.\n3. Estudiar las solicitudes de transferencias, reingreso a programas académicos de pregrado y posgrado.\n4. Expedición de constancias de estudios y sábana de notas.\n5. Trámites para grado.\n6. Retiro definitivo y voluntario (cancelación o aplazamiento) de estudiantes activos en programas académicos.\n7. Actualización de datos personales.
 15	editable15	8. Verificar que la información académica cumpla con los requerimientos establecidos y desarrollar planes de mejoramiento.\n9.Verificar el cumplimiento de los diferentes procesos descritos.\n10. Verificar la tasa de absorción e indicador de retención y permanencia.
@@ -5465,13 +5497,11 @@ COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, conten
 18	editable18	(C1) Aspirantes \n(C2) Admitidos Estudiantes
 19	editable19	(C3) Proceso Planeación Estratégica\n(C4) Proceso Comercialización y Ventas\n(C5) Proceso al acompañamiento al Estudiante.\n(C6) Proceso Articulación. \n(C7) Todos los procesos.
 20	editable20	1
-21	editable21	12/Sep/2024
+21	editable21	12/09/2024
 22	editable22	Creación del proceso
-33	editable33	...
-34	editable34	...
-35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	12/Sep/2024
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -5484,6 +5514,10 @@ COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, conten
 7	editable7	Admisiones, Registro y Control
 8	editable8	Inicia desde el establecimiento de los lineamientos generales para la determinación de la oferta de cupos, admisión, incorporación de estudiantes a la institución, ya sea, por primera vez, reintegro o como transferencia y el otorgamiento de certificaciones que requiera cada estudiante y/o egresado.
 9	editable9	Garantizar el ingreso de nuevos estudiantes mediante la inscripción, transferencia, así como el reingreso y la gestión del registro y control académico tanto de estudiantes como de los egresados, que se lleva a cabo en los distintos programas académicos y cursos de educación continua que oferta la institución, bajo preceptos de equidad y transparencia.
+10	editable10	(P1) Estudiantes.\n(P2) Admitidos.
+11	editable11	(P3) Proceso Comercialización y Ventas.\n(P4) Proceso Gestión del Registro Calificado\n(P5) Todos los procesos.
+25	editable25	12/09/2024
+26	editable26	Martha Esperanza Rodríguez
 \.
 
 
@@ -5492,13 +5526,8 @@ COPY public.mapa_procesos_ec_admisiones_registro_control (id, identifier, conten
 --
 
 COPY public.mapa_procesos_ec_aseguramiento_calidad_academica (id, identifier, content) FROM stdin;
-3	editable5	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA
-5	editable6	Fecha: 18/Feb/2025
-7	editable7	Aseguramiento de la Calidad Académica
-8	editable8	Inicia con la identificación de los programas académicos en ejecución y culmina con la evaluación programas e instituciones, todo con el propósito de promover la mejora continua de la calidad. Este proceso se desarrolla a partir de la implementación de planes de mejora, generando así facilidades para la renovación de registros calificados y las acreditaciones correspondientes a programas e instituciones.
 11	editable9	Afianzar la cultura de calidad en la Institución y sus programas académicos se lleva a cabo mediante un enfoque sistemático y riguroso de autoevaluación. Este proceso implica la realización de ejercicios reflexivos, críticos y de análisis por parte de la comunidad educativa. El objetivo es asegurar el óptimo desarrollo de la Institución y sus programas en condiciones de calidad, buscando constantemente la mejora en las funciones sustantivas y de apoyo. Esto, a su vez, contribuye a facilitar los procesos de planeación estratégica y a obtener reconocimiento a nivel nacional e internacional por sus elevados estándares de calidad, cumpliendo con la normatividad institucional y la legislación vigente.
 12	editable10	(P1) Ministerio de Educación Nacional. \n(P2) Instituto Colombiano para la Evaluación de la Educación - ICFES
-9	editable11	(P3) Proceso Planeación Financiera y Presupuesto.\n(P4) Proceso Planeación Estratégica.\n(P5) Proceso Aseguramiento de la Calidad de Procesos.\n(P6) Proceso Gestión del Registro Calificado.\n(P7) Proceso gestión de la información.\n(P8) Proceso desarrollo curricular.\n(P9) Todos los procesos.
 10	editable12	(E1) Resoluciones de registros calificados o de acreditación institucional.\n(E1) Sistemas de información externa.\n(E1) Normatividad legal vigente.\n(E2) Resultados de las pruebas saber.\n(E3) Plan operativo.\n(E4) Plan de desarrollo institucional.\n(E5) Informe de la revisión por la dirección.\n(E6) Documento de registro calificado.\n(E6) Notificación de las brechas identificadas con relación a las condiciones de calidad institucional y de programas.\n(E6) Información del estado de los registros calificados.\n(E6) Informes de gestión.\n(E7) Información oficial institucional.\n(E8) Planes de mejoramiento y actualización curricular.\n(E9) Necesidades de los clientes internos.
 13	editable13	1.Implementar un modelo de autoevaluación, ya sea a nivel nacional o internacional, para los programas.\n2.Realizar un ciclo para llevar a cabo la autoevaluación periódica de programas e instituciones.\n3.Organizar actividades destinadas a llevar a cabo el proceso de autoevaluación periódica, tanto a nivel de programas e institucional.\n4.Organizar actividades para llevar a cabo el proceso de acreditación, ya sea a nivel nacional o internacional, tanto en los programas como para la institución.
 14	editable14	5.Ejecutar el ciclo definido para autoevaluación periódica de programas.\n6.Ejecutar el ciclo definido para autoevaluación periódica institucional.\n7.Elaborar informes y planes de mejoramiento de la institución, derivados de los procesos de autoevaluación periódica, alineados con la planeación operativa.\n8.Elaborar informes y planes de mejoramiento de la institución.\n9.Ejecutar los planes de mejoramiento y mantenimiento del ejercicio anterior de autoevaluación periódica de programas.
@@ -5508,30 +5537,35 @@ COPY public.mapa_procesos_ec_aseguramiento_calidad_academica (id, identifier, co
 17	editable18	(C1) Ministerio de Educación Nacional-MEN.\n(C2) Entes acreditadores.
 19	editable19	(C3) Comunidad educativa.\n(C4) Proceso Planeación financiera y presupuesto.\n(C5) Proceso Gestión del Registro Calificado.\n(C6) Todos los procesos.
 20	editable20	1
-21	editable21	18/Feb/2025
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-25	editable25	18/Feb/2025
+21	editable21	14/11/2024
+24	editable24	Aprendiz
+25	editable25	14/11/2024
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	18/Feb/2025
+28	editable28	14/11/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
-32	editable32	...
 33	editable33	...
+34	editable34	...
 35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	18/Feb/2025
 38	editable38	...
 40	editable39	...
 39	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-4	editable2	Código: CR-CI-ACA
 6	editable3	CALIDAD INTEGRAL
 2	editable4	Versión: 1
-24	editable24	Aprendiz
-34	editable34	...
+3	editable5	ASEGURAMIENTO DE LA CALIDAD ACADÉMICA
+5	editable6	Fecha: 14/Nov/2025
+7	editable7	Aseguramiento de la Calidad Académica
+8	editable8	Inicia con la identificación de los programas académicos en ejecución y culmina con la evaluación programas e instituciones, todo con el propósito de promover la mejora continua de la calidad. Este proceso se desarrolla a partir de la implementación de planes de mejora, generando así facilidades para la renovación de registros calificados y las acreditaciones correspondientes a programas e instituciones.
+9	editable11	(P3) Proceso Planeación Financiera y Presupuesto.\n(P4) Proceso Planeación Estratégica.\n(P5) Proceso Aseguramiento de la Calidad de Procesos.\n(P6) Proceso Gestión del Registro Calificado.\n(P7) Proceso gestión de la información.\n(P8) Proceso desarrollo curricular.\n(P9) Todos los procesos.
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+32	editable32	...
+36	editable36	Rector
+37	editable37	18/Feb/2025
+4	editable2	Código: CR-CI-ACA
 \.
 
 
@@ -5684,46 +5718,46 @@ COPY public.mapa_procesos_ec_bienestar_institucional (id, identifier, content) F
 --
 
 COPY public.mapa_procesos_ec_comunicacion (id, identifier, content) FROM stdin;
-16	editable16	13. Establecer Plan de Mejoramiento (Acciones Correctivas y Preventivas).
-17	editable17	(S1, S2, S3, S4, S5, S6, S7, S12, S13) Modelo Estratégico de Comunicación Corporativa.\n(S7, S12, S13) Plan integral de comunicación interna y externa.\n(S4, S9, S10) Plan de Relaciones Públicas.\n(S13) Uso y aplicación de imagen y marca institucional.\n(S13) Manejo de Voceros.\n(S13) Asesoría integral en comunicación.\n(S8) Medición y evaluación de canales de comunicación.\n(S8) Informe del Modelo Estratégico de Comunicación.\n(S8, S11) Resultados de la medición de posicionamiento y prestigio.\n(S8, S13) Informes de seguimiento.
-22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	06/Nov/2023
-26	editable26	Martha Esperanza Rodríguez.
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-RI-COM
-3	editable3	RELACIONES INTERINSTITUCIONALES
-4	editable4	Versión: 1
-5	editable5	COMUNICACIÓN
-6	editable6	Fecha: 06/Nov/2023
-7	editable7	Comunicación
-8	editable8	Inicia con actividades de planeación, ejecución, evaluación y mejora, y busca impactar la imagen institucional.
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
 9	editable9	Coordinar las actividades de comunicación institucional interna y externa, a través de la difusión y publicación oportuna de la información generada por la Institución y de interés general de la misma, con el fin de garantizar la visibilidad, el posicionamiento y el mejoramiento de la imagen institucional.
 10	editable10	(P1) Entidades gubernamentales o del sector privado.\n(P2) Redes universitarias y asociaciones del sector educativo.\n(P3) Medios de comunicación externos.
-11	editable11	(P4) Proceso Planeación Estratégica.\n(P5) Proceso Aseguramiento de la Calidad de los procesos.\n(P6) Proceso Gestión Editorial.\n(P7) Proceso Comercialización y Ventas\n(P8) Todos los procesos.
-12	editable12	(E1) Agendas públicas.\n(E2, E3) Información de interés del sector, investigación, docencia y proyección social.\n(E4) Necesidades de comunicación estratégicas.\n(E5) Caracterización de proceso creado o mejorado\n(E6) Catálogo de Publicaciones.\n(E7) Plan de Divulgación de campaña por periodo de matrícula a nivel orgánico.\n(E8) Necesidades de comunicación de acuerdo a los planes operativos.
-13	editable13	1. Estructurar el Modelo Estratégico de Comunicación.\n2. Formular y mantener la Política de Comunicaciones a través del Plan Estratégico de Comunicaciones y la formulación de sus Planes de Acción.\n3. Identificar necesidades de comunicación\n4. Diseñar y aprobar el plan integral de comunicación interna y externa.
 14	editable14	5. Socializar el Modelo Estratégico de Comunicación.\n6. Promover la participación oral y escrita con inclusión de la comunidad en general, a través de los medios de la institución posicionándola y desarrollando Eventos, Foros, Seminarios, Revistas, Páginas Web, Libros, Programas radiales, entre otros.\n7. Socializar el plan integral de comunicación interna y externa.
-15	editable15	9. Verificar la ejecución del plan integral de comunicación interna y externa.\n10. Presentar resultados del plan integral de comunicación interna y externa.\n11. Generar informes de seguimiento de la planeación y gestión del proceso.\n12. Realizar el seguimiento al impacto de las acciones realizadas tendientes al posicionamiento de la institución.
+15	editable15	8. Verificar la ejecución del plan integral de comunicación interna y externa.\n9. Presentar resultados del plan integral de comunicación interna y externa.\n10. Generar informes de seguimiento de la planeación y gestión del proceso.\n11. Realizar el seguimiento al impacto de las acciones realizadas tendientes al posicionamiento de la institución.
 18	editable18	(C1) IES nacionales e internacionales.\n(C2) Entidades gubernamentales y no gubernamentales.\n(C3) Entidades públicas y privadas.\n(C4) Medios de comunicación externos.\n(C5) Aspirantes\n(C6) Estudiantes.\n(C7) Graduados.
 19	editable19	(C8) Proceso Planeación Estratégica.\n(C9) Proceso Alianzas e Iniciativas Estratégicas.\n(C10) Proceso de Asuntos Globales.\n(C11) Proceso Inteligencia de Mercado.\n(C12) Proceso Relación con Egresados y Graduados\n(C16) Todos los procesos.
+37	editable37	...
+11	editable11	(P4) Proceso Planeación Estratégica.\n(P5) Proceso Aseguramiento de la Calidad de los procesos.\n(P6) Proceso Gestión Editorial.\n(P7) Proceso Comercialización y Ventas\n(P8) Todos los procesos.
+12	editable12	(E1) Agendas públicas.\n(E2, E3) Información de interés del sector, investigación, docencia y proyección social.\n(E4) Necesidades de comunicación estratégicas.\n(E5) Caracterización de proceso creado o mejorado\n(E6) Catálogo de Publicaciones.\n(E7) Plan de Divulgación de campaña por periodo de matrícula a nivel orgánico.\n(E8) Necesidades de comunicación de acuerdo a los planes operativos.
+13	editable13	1. Estructurar el Modelo Estratégico de Comunicación.\n2. Formular y mantener la Política de Comunicaciones y la formulación de sus Planes de Acción.\n3. Identificar necesidades de comunicación\n4. Diseñar y aprobar el plan integral de comunicación interna y externa.
+16	editable16	12. Establecer Plan de Mejoramiento (Acciones Correctivas y Preventivas).
+17	editable17	(S1, S2, S3, S4, S5, S6, S7, S12, S13) Modelo Estratégico de Comunicación Corporativa.\n(S7, S12, S13) Plan integral de comunicación interna y externa.\n(S4, S9, S10) Plan de Relaciones Públicas.\n(S13) Uso y aplicación de imagen y marca institucional.\n(S13) Manejo de Voceros.\n(S13) Asesoría integral en comunicación.\n(S8) Medición y evaluación de canales de comunicación.\n(S8) Informe del Modelo Estratégico de Comunicación.\n(S8, S11) Resultados de la medición de posicionamiento y prestigio.\n(S8, S13) Informes de seguimiento.
 20	editable20	1
-21	editable21	06/Nov/2023
-28	editable28	08/Nov/2023
+21	editable21	20/02/2025
+38	editable38	...
+39	editable39	...
+40	editable40	...
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	20/02/2025
+26	editable26	Martha Esperanza Rodríguez.
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	20/02/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
-38	editable38	...
-39	editable39	...
-40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-RI-COM
+3	editable3	RELACIONES INTERINSTITUCIONALES
+4	editable4	Versión: 1
+5	editable5	COMUNICACIÓN
+6	editable6	Fecha: 20/Feb/2025
+7	editable7	Comunicación
+8	editable8	Inicia con actividades de planeación, ejecución, evaluación y mejora, y busca impactar la imagen institucional.
 \.
 
 
@@ -5780,9 +5814,34 @@ COPY public.mapa_procesos_ec_control_disciplinario (id, identifier, content) FRO
 --
 
 COPY public.mapa_procesos_ec_desarrollo_curricular (id, identifier, content) FROM stdin;
+14	editable14	4.Ejecutar las iniciativas educativas de los programas académicos.\n5.Evaluación de propósito de formación.
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-DC-DRC
+3	editable3	DOCENCIA DE CALIDAD
+4	editable4	Versión: 1
+15	editable15	6.Gestionar el desarrollo del comité único de programa.\n7.Realizar seguimiento a los planes de actualización curricular de los programas académicos.\n8.Generar informe de seguimiento de la planeación y gestión del proceso.
+16	editable16	9.Implementar acciones de mejora de acuerdo con los resultados del proceso.
+17	editable17	(S1, S2)Cursos actualizados.\n(S2) Plan de estudios.\n(S2) Ambientes de aprendizaje.\n(S3) Planes de mejoramiento y actualización curricular.\n(S4) Informes de gestión.
+5	editable5	DESARROLLO CURRICULAR
+6	editable6	Fecha: 03/Sep/2024
+7	editable7	Desarrollo Curricular.
+8	editable8	Inicia con la elaboración de la hoja de ruta para diseñar los syllabus de los programas académicos y avanza hacia el monitoreo de los planes de actualización curricular de dichos programas.
+9	editable9	Asegurar que los syllabus de los programas académicos de educación superior sean diseñados, implementados, evaluados y actualizados de manera que sean pertinentes, innovadores y transformadores. Esto se logra respondiendo a las necesidades de los contextos regionales, nacionales e internacionales, en conformidad con la normativa actual, la misión institucional y la planificación estratégica.
+10	editable10	(P1) Ministerio de Educación Nacional.
+11	editable11	(P2) Proceso Aseguramiento de la Calidad Académica.\n(P3) Proceso Gestión del Registro Calificado.\n(P4) Proceso Relacionamiento con Egresados.\n(P5) Todos los procesos.
 12	editable12	(E1) Análisis de tendencias y necesidades de los sectores y de los campos de conocimiento.\n(E2) Resultados de la autoevaluación periódica de programas.\n(E3) Información del estado de los registros calificados.\n(E4) Caracterización de los egresados.\n(E4) Informe del seguimiento a la trayectoria de los egresados de acuerdo con los momentos definidos.\n(E5) Requisitos y necesidades de los clientes internos.
 13	editable13	1.Planear la ruta para la creación de los planes de curso de los programas académicos.\n2.Reconocer los marcos normativos, disciplinarios y contextuales, así como los requisitos del entorno externo, necesarios para la concepción de los planes educativos de los programas educativos.\n3.Gestionar los ambientes de aprendizaje para el óptimo desarrollo de los programas académicos.
-28	editable28	03/Sep/2024
+18	editable18	(C1)Estudiantes.
+19	editable19	(C2) Proceso gestión del registro calificado.\n(C3) Proceso de aseguramiento de la calidad académica.\n(C4) Todos los Proceso.
+20	editable20	1
+21	editable21	03/09/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	03/09/2024
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	03/09/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -5791,35 +5850,10 @@ COPY public.mapa_procesos_ec_desarrollo_curricular (id, identifier, content) FRO
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	03/Sep/2024
+37	editable37	18/02/2025
 38	editable38	...
-14	editable14	4.Ejecutar las iniciativas educativas de los programas académicos.\n5.Evaluación de propósito de formación.
-15	editable15	6.Gestionar el desarrollo del comité único de programa.\n7.Realizar seguimiento a los planes de actualización curricular de los programas académicos.\n8.Generar informe de seguimiento de la planeación y gestión del proceso.
-16	editable16	9.Implementar acciones de mejora de acuerdo con los resultados del proceso.
-17	editable17	(S1, S2)Cursos actualizados.\n(S2) Plan de estudios.\n(S2) Ambientes de aprendizaje.\n(S3) Planes de mejoramiento y actualización curricular.\n(S4) Informes de gestión.
-18	editable18	(C1)Estudiantes.
-19	editable19	(C2) Proceso gestión del registro calificado.\n(C3) Proceso de aseguramiento de la calidad académica.\n(C4) Todos los Proceso.
-20	editable20	1
-21	editable21	03/Sep/2024
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	03/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
 39	editable39	...
 40	editable40	...
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-DC-DRC
-3	editable3	DOCENCIA DE CALIDAD
-4	editable4	Versión: 1
-5	editable5	DESARROLLO CURRICULAR
-6	editable6	Fecha: 03/Sep/2024
-7	editable7	Desarrollo Curricular.
-8	editable8	Inicia con la elaboración de la hoja de ruta para diseñar los syllabus de los programas académicos y avanza hacia el monitoreo de los planes de actualización curricular de dichos programas.
-9	editable9	Asegurar que los syllabus de los programas académicos de educación superior sean diseñados, implementados, evaluados y actualizados de manera que sean pertinentes, innovadores y transformadores. Esto se logra respondiendo a las necesidades de los contextos regionales, nacionales e internacionales, en conformidad con la normativa actual, la misión institucional y la planificación estratégica.
-10	editable10	(P1) Ministerio de Educación Nacional.
-11	editable11	(P2) Proceso Aseguramiento de la Calidad Académica.\n(P3) Proceso Gestión del Registro Calificado.\n(P4) Proceso Relacionamiento con Egresados.\n(P5) Todos los procesos.
 \.
 
 
@@ -5828,14 +5862,6 @@ COPY public.mapa_procesos_ec_desarrollo_curricular (id, identifier, content) FRO
 --
 
 COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-DC-GDC
-3	editable3	DOCENCIA DE CALIDAD
-4	editable4	Versión: 1
-5	editable5	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN
-6	editable6	Fecha: 03/Sep/2024
-7	editable7	Enseñanza, aprendizaje y evaluación.
-8	editable8	Inicia con la identificación y análisis de las necesidades de la sociedad y su adecuación a los planes de estudio de cada Proyecto Curricular, continúa con el desarrollo de las actividades de Gestión Docente y Curricular que permiten el cumplimiento del objetivo del proceso, y finaliza con la realización de actividades de evaluación y control sobre los procedimientos realizados, focalizando los resultados a la implementación de la continua mejora del proceso.
 9	editable9	Garantizar que los Planes de Estudio establecidos para cada Proyecto Curricular, ofrezcan al estudiante de la UNISANPABLO una formación integral y de calidad, dirigida fundamentalmente a las necesidades de la sociedad, contando con la cantidad e idoneidad de Docentes y demás personal que influya directamente en tal Proceso de Formación, garantizando que se ejecute eficientemente el Proceso de Enseñanza-Aprendizaje.
 10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Instituto Colombiano para la Evaluación de la Educación - ICFES.\n(P3) Otras IES y organizaciones.\n(P4) Mesas sectoriales y técnicas.
 11	editable11	(P5) Todos los procesos.
@@ -5848,14 +5874,8 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 18	editable18	(C1) Estudiantes.
 19	editable19	(C2) Todos los Procesos.
 20	editable20	1
-21	editable21	03/Sep/2024
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	03/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	03/Sep/2024
+21	editable21	03/09/2024
+28	editable28	03/09/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -5864,10 +5884,24 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 34	editable34	...
 35	editable35	Henry  Lurbey Hueso
 36	editable36	Rector
-37	editable37	03/Sep/2024
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	03/09/2024
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+2	editable2	Código: CR-DC-GDC
+3	editable3	DOCENCIA DE CALIDAD
+4	editable4	Versión: 1
+5	editable5	ENSEÑANZA, APRENDIZAJE Y EVALUACIÓN
+6	editable6	Fecha: 03/Sep/2024
+7	editable7	Enseñanza, aprendizaje y evaluación.
+8	editable8	Inicia con la identificación y análisis de las necesidades de la sociedad y su adecuación a los planes de estudio de cada Proyecto Curricular, continúa con el desarrollo de las actividades de Gestión Docente y Curricular que permiten el cumplimiento del objetivo del proceso, y finaliza con la realización de actividades de evaluación y control sobre los procedimientos realizados, focalizando los resultados a la implementación de la continua mejora del proceso.
 \.
 
 
@@ -5876,7 +5910,16 @@ COPY public."mapa_procesos_ec_enseñanza_prendizaje_evaluacion" (id, identifier,
 --
 
 COPY public.mapa_procesos_ec_evaluacion_control (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+14	editable14	4. Desarrollar el Plan de Auditorías y realizar los seguimientos según Programa de Auditoria.\n5. Identificar los riesgos y las oportunidades. \n6. Establecer el equipo de auditoría de control. \n7. Realizar las auditorias de control, de acuerdo con el programa y los requerimientos de los entes de gobierno. \n8. Aplicar los planes de tratamiento para los riesgos y las oportunidades
+15	editable15	9. Controlar el cumplimiento al programa anual de auditorías y seguimientos. \n10. Evaluar el plan de acción,auditorias y autoevaluación.\n11. Elaborar y consolidar los informes de auditoría de control. \n12. Aplicar los controles para los riesgos identificados. \n13. Realizar seguimiento a la gestión del tratamiento de los riesgos y las oportunidades.\n14. Verificar la implementación de las acciones de mejora de acuerdo con los compromisos y los resultados del proceso.\n15. Evaluar la adecuada ejecución de las auditorias de control
+16	editable16	16. Reformular el programa de auditorías para aprobación del consejo superior.\n17. Realizar monitoreo a la gestión de los riesgos y oportunidades.\n18. Establecer acciones de mejora.
+17	editable17	(S2) Plan anual de auditoría de control. \n(S2) Seguimiento a planes de mejoramiento \n(S2) Matrices y mapas de riesgos. \n(S2) informes de auditoría de control. \n(S2) Reporte de evaluación de diseño de controles. \n(S2) Informe de monitoreo de los riesgos estratégicos críticos y de oportunidades priorizadas. \n(S2) Informe de monitoreo de los riesgos residuales. \n(S2) Controles correctivos, preventivos y defectivos.
+20	editable20	1
+21	editable21	07/11/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	07/11/2024
 2	editable2	Código: CR-CA-EVC
 3	editable3	CALIDAD INTEGRAL
 4	editable4	Versión: 1
@@ -5889,21 +5932,11 @@ COPY public.mapa_procesos_ec_evaluacion_control (id, identifier, content) FROM s
 11	editable11	(P3) Todos los procesos
 12	editable12	(E1) Normatividad aplicable y requerimientos normativos. \n(E3) Información documentada del proceso, normatividad, soportes de información. \n(E2, E3) Informes de auditorías anteriores. \n(E3) Matrices y mapas de riesgos. \n(E3) Plan de desarrollo. \n(E3) Diagnostico estratégico ajustado.
 13	editable13	1. Definir el programa anual de auditorías y los planes de las mismas. \n2. Analizar el contexto para la identificación de riesgos y oportunidades. \n3. Definir la programación de la ejecución de las auditorias de control.
-14	editable14	4. Desarrollar el Plan de Auditorías y realizar los seguimientos según Programa de Auditoria.\n5. Identificar los riesgos y las oportunidades. \n6. Establecer el equipo de auditoría de control. \n7. Realizar las auditorias de control, de acuerdo con el programa y los requerimientos de los entes de gobierno. \n8. Aplicar los planes de tratamiento para los riesgos y las oportunidades
-15	editable15	9. Controlar el cumplimiento al programa anual de auditorías y seguimientos. \n10. Evaluar el plan de acción,auditorias y autoevaluación.\n11. Elaborar y consolidar los informes de auditoría de control. \n12. Aplicar los controles para los riesgos identificados. \n13. Realizar seguimiento a la gestión del tratamiento de los riesgos y las oportunidades.\n14. Verificar la implementación de las acciones de mejora de acuerdo con los compromisos y los resultados del proceso.\n15. Evaluar la adecuada ejecución de las auditorias de control
-16	editable16	16. Reformular el programa de auditorías para aprobación del consejo superior.\n17. Realizar monitoreo a la gestión de los riesgos y oportunidades.\n18. Establecer acciones de mejora.
-17	editable17	(S2) Plan anual de auditoría de control. \n(S2) Seguimiento a planes de mejoramiento \n(S2) Matrices y mapas de riesgos. \n(S2) informes de auditoría de control. \n(S2) Reporte de evaluación de diseño de controles. \n(S2) Informe de monitoreo de los riesgos estratégicos críticos y de oportunidades priorizadas. \n(S2) Informe de monitoreo de los riesgos residuales. \n(S2) Controles correctivos, preventivos y defectivos.
 18	editable18	(C1) Entidades públicas.
 19	editable19	(C2) Todos los procesos.
-20	editable20	1
-21	editable21	07/Nov/2024
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	07/Nov/2024
 26	editable26	Martha Esperanza Rodríguez.
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	07/Nov/2024
+28	editable28	07/11/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -5912,10 +5945,11 @@ COPY public.mapa_procesos_ec_evaluacion_control (id, identifier, content) FROM s
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector.
-37	editable37	07/Nov/2024
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 \.
 
 
@@ -5924,29 +5958,12 @@ COPY public.mapa_procesos_ec_evaluacion_control (id, identifier, content) FROM s
 --
 
 COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM stdin;
-10	editable10	(P1) Ministerio de Educación Nacional de Colombia\n(P2) Ministerio del Trabajo\n(P3) Organizaciones, entidades públicas o privadas legalmente constituidas\n(P4) Organizaciones sociales y comunitarias\n(P5) Comunidad en general.
-11	editable11	(P6) Proceso Vida estudiantil\n(P7) Proceso Desarrollo Curricular.\n(P8) Macroproceso Investigación.\n(P9) Proceso Gestión de la información.\n(P9) Todos los procesos.
-12	editable12	(E3) Requerimiento de practicantes.\n(E4, E5) Necesidades de fortalecimiento de procesos sociales y territoriales en organizaciones sociales y comunitarias.\n(E4) Interés de organizaciones en convertirse en contextos de práctica en responsabilidad social.\n(E7) Plan de estudio de programa académico.\n(E7) Cursos actualizados.\n(E8) Información del cumplimiento del plan de trabajo de los estudiantes en práctica profesional en investigación.\n(E9) Información detallada según requerimiento\n(E10) Requisitos y necesidades de los clientes internos.
-13	editable13	1. Definir las políticas o lineamientos de Extensión y Proyección Social.\n2. Programar la inducción e inscripción de los estudiantes en las diferentes clasificaciones de la Práctica Profesional.\n3. Realizar la gestión para la consecución de escenarios de la Práctica Profesional.\n4. Garantizar la existencia de convenios para la realización de las prácticas en responsabilidad social.\n5. Definir los planes operativos para el desarrollo de las prácticas en responsabilidad social.\n6. Planear los seguimientos a los planes, programas y proyectos.\n7. Realizar la gestión de proyectos de Extensión y Proyección Social.
-14	editable14	8. La gestión de la Comunicación de la Extensión.\n9. Gestionar las condiciones administrativas y logísticas para el desarrollo de la oferta de educación continua.\n10. Implementar la evaluación del desarrollo de la práctica en responsabilidad social y Prácticas profesional.
-15	editable15	11. Seguimiento y acompañamiento a las prácticas en responsabilidad social, práctica en los diferentes contextos y prácticas profesionales.\n12. Evaluar la Gestión de los Proyectos de Extensión y Proyección Social.\n13. Generar informes de seguimiento de la planeación y gestión del proceso.\n14. Evaluar el porcentaje de satisfacción de los servicios de la Práctica Profesional.
 16	editable16	15. Realizar los ajustes al Proceso de Extensión y Proyección Social de la Institución, enfocados en la consolidación y/o acreditación del proceso.\n16. Implementar acciones de mejora de acuerdo con los resultados del proceso.
 17	editable17	(S1, S2) Proyectos de Práctica Profesional.\n(S2) Vinculación a las diferentes clasificaciones de Práctica Profesional.\n(S1) Evaluación de la Práctica por parte del escenario de la Práctica, el estudiante y el programa académico.\n(S3) Contextos de Práctica en Responsabilidad Social\n(S3, S4) Calificaciones del curso.\n(S4) Oportunidades de oferta de educación continua para el desarrollo de proyectos.\n(S5) Informes de gestión.
 18	editable18	(C1) Organizaciones, entidades públicas o privadas legalmente constituidas.\n(C2) Estudiantes.
-19	editable19	(C3) Proceso Vida Estudiantil.\n(C4) Proceso Gestión de Proyectos.\n(C5) Todos los Proceso.
-20	editable20	1
-21	editable21	26/Sep/2024
+21	editable21	26/09/2024
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	26/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-34	editable34	...
-35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	26/Sep/2024
-38	editable38	...
-39	editable39	...
 40	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-PS-EPS
@@ -5957,13 +5974,30 @@ COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM
 7	editable7	Extensión y Proyección Social.
 8	editable8	Inicia con la definición y planeación de las políticas, los planes y los programas de Extensión y Proyección Social. Finaliza con la realización de ajustes al proceso de Extensión y Proyección Social, enfocados en la consolidación y/o acreditación del proceso.
 9	editable9	Promover la vinculación de la UNISANPABLO con su entorno social, a través de la coordinación de los programas, planes y proyectos de Extensión y Proyección Social, en articulación a la Docencia y la Investigación.
+10	editable10	(P1) Ministerio de Educación Nacional de Colombia\n(P2) Ministerio del Trabajo\n(P3) Organizaciones, entidades públicas o privadas legalmente constituidas\n(P4) Organizaciones sociales y comunitarias\n(P5) Comunidad en general.
+11	editable11	(P6) Proceso Vida estudiantil\n(P7) Proceso Desarrollo Curricular.\n(P8) Macroproceso Investigación.\n(P9) Proceso Gestión de la información.\n(P9) Todos los procesos.
+12	editable12	(E3) Requerimiento de practicantes.\n(E4, E5) Necesidades de fortalecimiento de procesos sociales y territoriales en organizaciones sociales y comunitarias.\n(E4) Interés de organizaciones en convertirse en contextos de práctica en responsabilidad social.\n(E7) Plan de estudio de programa académico.\n(E7) Cursos actualizados.\n(E8) Información del cumplimiento del plan de trabajo de los estudiantes en práctica profesional en investigación.\n(E9) Información detallada según requerimiento\n(E10) Requisitos y necesidades de los clientes internos.
+13	editable13	1. Definir las políticas o lineamientos de Extensión y Proyección Social.\n2. Programar la inducción e inscripción de los estudiantes en las diferentes clasificaciones de la Práctica Profesional.\n3. Realizar la gestión para la consecución de escenarios de la Práctica Profesional.\n4. Garantizar la existencia de convenios para la realización de las prácticas en responsabilidad social.\n5. Definir los planes operativos para el desarrollo de las prácticas en responsabilidad social.\n6. Planear los seguimientos a los planes, programas y proyectos.\n7. Realizar la gestión de proyectos de Extensión y Proyección Social.
+14	editable14	8. La gestión de la Comunicación de la Extensión.\n9. Gestionar las condiciones administrativas y logísticas para el desarrollo de la oferta de educación continua.\n10. Implementar la evaluación del desarrollo de la práctica en responsabilidad social y Prácticas profesional.
+15	editable15	11. Seguimiento y acompañamiento a las prácticas en responsabilidad social, práctica en los diferentes contextos y prácticas profesionales.\n12. Evaluar la Gestión de los Proyectos de Extensión y Proyección Social.\n13. Generar informes de seguimiento de la planeación y gestión del proceso.\n14. Evaluar el porcentaje de satisfacción de los servicios de la Práctica Profesional.
+19	editable19	(C3) Proceso Vida Estudiantil.\n(C4) Proceso Gestión de Proyectos.\n(C5) Todos los Proceso.
+20	editable20	1
+24	editable24	Aprendiz
+25	editable25	26/09/2024
+26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	26/Sep/2024
+28	editable28	26/09/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/02/2025
+38	editable38	...
+39	editable39	...
 \.
 
 
@@ -5972,43 +6006,43 @@ COPY public.mapa_procesos_ec_extension_proyeccion (id, identifier, content) FROM
 --
 
 COPY public.mapa_procesos_ec_gestion_cartera (id, identifier, content) FROM stdin;
-6	editable6	Fecha: 10/Sep/2024
-7	editable7	Gestión De Cartera
-8	editable8	Inicia con la verificación de los saldos de los clientes de la cartera por edades hasta el recaudo de dicho cobro o determinación del castigo de dicha cuenta.
-9	editable9	Establecer las directrices y políticas que se deben seguir en el Departamento de Cartera para el cobro de las acreencias a favor de la Fundación Universitaria San Pablo.
-10	editable10	(P1) Entidades públicas y privadas.\n(P2) Entidades financieras.
-20	editable20	1
-21	editable21	10/Sep/2024
-22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	12/Dic/2023
-26	editable26	Martha Esperanza Rodríguez.
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	12/Dic/2023
-29	editable29	...
-30	editable30	...
-31	editable31	...
-32	editable32	...
-33	editable33	...
+16	editable16	19. Implementar acciones de mejora, de acuerdo a los resultados del proceso.
+17	editable17	(S1) Certificaciones de pagos.\n(S2) Recursos financieros disponibles.\n(S3) Información cobro de impuestos.\n(S3, S4) Cartera administrativa\n(S5) Informes de seguimiento.
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-AF-GC
 3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
 4	editable4	Versión: 1
 5	editable5	GESTIÓN DE CARTERA
+6	editable6	Fecha: 10/OCT/024
+7	editable7	Gestión De Cartera
+8	editable8	Inicia con la verificación de los saldos de los clientes de la cartera por edades hasta el recaudo de dicho cobro o determinación del castigo de dicha cuenta.
+9	editable9	Establecer las directrices y políticas que se deben seguir en el Departamento de Cartera para el cobro de las acreencias a favor de la Fundación Universitaria San Pablo.
+10	editable10	(P1) Entidades públicas y privadas.\n(P2) Entidades financieras.
 11	editable11	(P3) Proceso de Alianzas e Iniciativas Estratégicas.\n(P4) Todos los procesos.
 12	editable12	(E1) Soportes de pagos por transferencias bancarias y consignaciones manuales.\n(E2) Informes de pagos en entidades financieras.\n(E3) Banco de Alianzas y Aliados.\n(E4) Necesidades de los clientes internos.
 13	editable13	1.  Verificar la identificación plena del Deudor.\n2. Establecer las acreencias pendientes de pago, su exigibilidad, la existencia de hechos que den lugar a la suspensión de la prescripción.
 14	editable14	3. Incentivar el pago voluntario por parte del cliente.\n4. Gestionar cobro de cartera administrativa.\n5. Solicitar póliza de cumplimiento.\n6. Realizar notificaciones y citaciones.\n7. Efectuar cargos legales por obligaciones pendientes.\n8. Realizar acuerdos de pago.\n9. Generar pedidos y facturas administrativas.\n10. Registrar contablemente los ingresos.\n11. Elaborar certificaciones de pago.\n12. Realizar informe de cartera administrativa.\n13. Aplicar castigo de cartera según incumplimiento del deudor
 15	editable15	14. Evaluar facilidades de pago solicitadas por el deudor.\n15. Verificar el cumplimiento de los acuerdos de pago.\n16. Conciliar registro de ingresos.\n17. Realizar seguimiento al cobro de la cartera administrativa.\n18. Generar informes de la gestión del proceso.
-16	editable16	19. Implementar acciones de mejora, de acuerdo a los resultados del proceso.
-17	editable17	(S1) Certificaciones de pagos.\n(S2) Recursos financieros disponibles.\n(S3) Información cobro de impuestos.\n(S3, S4) Cartera administrativa\n(S5) Informes de seguimiento.
 18	editable18	(C1) Entidades Públicas y Privadas.
 19	editable19	(C2) Proceso Administración de Tesorería\n(C3) Proceso de Contabilidad Financiera y Costeo.\n(C4) Proceso Planeación Financiera y Presupuesto
+20	editable20	1
+21	editable21	10/10/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	10/10/2024
+26	editable26	Martha Esperanza Rodríguez.
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	10/10/2024
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
 34	editable34	...
-35	editable35	...
-36	editable36	...
-37	editable37	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -6020,46 +6054,46 @@ COPY public.mapa_procesos_ec_gestion_cartera (id, identifier, content) FROM stdi
 --
 
 COPY public.mapa_procesos_ec_gestion_contractual (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-JC-GEC
-3	editable3	GESTIÓN JURÍDICA Y CONTRACTUAL
-4	editable4	Versión: 1
-5	editable5	GESTIÓN CONTRACTUAL
-6	editable6	Fecha: 18/Feb/2025
-7	editable7	Gestión contractual
-8	editable8	Inicia con la identificación de la necesidad de las dependencias académicas y administrativas, la elaboración del Plan Anual de Adquisiciones y la solicitud de adquisición de un bien y/o servicio para determinar el mecanismo de contratación acorde con los estándares y normatividad vigente y termina con la evaluación a los proveedores y el ajuste al Plan Anual de Adquisiciones de la vigencia.
-9	editable9	Gestionar de manera transparente y eficaz los recursos para la contratación de los bienes y/o servicios a través de los diferentes mecanismos de contratación necesarios para el cumplimiento de la misión y visión de UNISANPABLO de acuerdo a los estándares y normatividad vigente.
-10	editable10	(P1) Proveedores de bienes y servicios.
-11	editable11	(P2) Proceso de Alianzas e Iniciativas Estratégicas.\n(P3) Proceso Gestión de Proyectos.\n(P4) Proceso Contratación y Nómina.\n(P5) Todos los procesos.
-12	editable12	(E1) información actualizada de los proveedores.\n(E2) Donaciones.\n(E3) Necesidades de bienes o servicios.\n(E4) Relación de finalización contractual.\n(E5) Necesidades de los clientes internos.
-13	editable13	1. Elaborar el plan anual de adquisiciones.
-14	editable14	2. Determinar el mecanismo de selección del contratista y seleccionar la oferta o propuesta más favorable.\n3. Realizar solicitud de pedido acorde a Data Maestra de Materiales, presupuesto y activo fijo según aplique.\n4. Seleccionar el proveedor.\n5. Realizar la contratación de acuerdo con los lineamientos del Manual de Contratación.\n6. Generar orden de pedido.\n7. Liberar pedido.
-15	editable15	8. Consolidar y aprobar la evaluación de proveedores.\n9. Evaluar los productos y/o servicios recibidos y evaluar los aspectos técnicos.\n10. Actualizar datos de proveedores de bienes o servicios.\n11. Evaluar y reevaluar proveedores de bienes y servicios.\n12. Generar informes de seguimiento de la planeación y gestión del proceso.\n13. Realizar seguimiento al plan anual de adquisiciones.
-16	editable16	14. Ajustar al plan anual de adquisiciones.\n15. Implementar acciones de mejora de acuerdo a los resultados del proceso.
-17	editable17	(S1,S5) Orden de pedido.\n(S1) Contratos de servicios o suministros.\n(S7) Bien o servicio entregado.\n(S4) Informe de movimiento de activos fijos\n(S1) Ordenes de servicio personas naturales.\n(S1,S7) Evaluación y revaluación de proveedores.\n(S6) Listado de bienes y equipos sujetos a mantenimiento.\n(S7) Informes de seguimiento.
+15	editable15	8.Consolidar y aprobar la evaluación de proveedores.\n9. Evaluar los productos y/o servicios recibidos y evaluar los aspectos técnicos.\n10.Actualizar datos de proveedores de bienes o servicios.\n11. Evaluar y reevaluar proveedores de bienes y servicios.\n12. Generar informes de seguimiento de la planeación y gestión del proceso.\n13.Realizar seguimiento al plan anual de adquisiciones.
+16	editable16	14. Ajustar al plan anual de adquisiciones.\n\n15.Implementar acciones de mejora de acuerdo con los resultados del proceso
+17	editable17	(S1,S5) Orden de pedido.\n(S1) Contratos de servicios o suministros.\n(S7) Bien o servicio entregado.\n(S4) Informe de movimiento de activos fijos.\n(S1) Ordenes de servicio personas naturales.\n(S1,S7) Evaluación y revaluación de proveedores.\n(S6) Listado de bienes y equipos sujetos a mantenimiento.\n(S7) Informes de seguimiento.
 18	editable18	(C1) Proveedores de bienes.\n(C2) Proveedores de servicios.
 19	editable19	(C3) Proceso Gestión del Riesgo.\n(C4) Proceso de Contabilidad Financiera y Costeo.\n(C5) Proceso Administración de Tesorería.\n(C6) Proceso Adecuaciones y Mantenimiento de la Infraestructura Física.\n(C7) Todos los procesos.
-20	editable20	1
-21	editable21	18/Feb/2025
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	18/Feb/2025
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	18/Feb/2025
-29	editable29	...
-30	editable30	...
-31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-JC-GEC
+3	editable3	GESTIÓN JURÍDICA Y CONTRACTUAL
+20	editable20	1
+21	editable21	20/02/2025
 36	editable36	Rector
-37	editable37	18/Feb/2025
+37	editable37	...
 38	editable38	...
 39	editable39	...
 40	editable40	...
+4	editable4	Versión: 1
+5	editable5	GESTIÓN CONTRACTUAL
+6	editable6	Fecha: 20/Feb/2025
+7	editable7	Gestión contractual
+8	editable8	inicia con la identificación de la necesidad de las dependencias académicas y administrativas, la elaboración del Plan Anual de Adquisiciones y la solicitud de adquisición de un bien y/o servicio para determinar el mecanismo de contratación acorde con los estándares y normatividad vigente y termina con la evaluación a los proveedores y el ajuste al Plan Anual de Adquisiciones de la vigencia.
+9	editable9	Gestionar de manera transparente y eficaz los recursos para la contratación de los bienes y/o servicios a través de los diferentes mecanismos de contratación necesarios para el cumplimiento de la misión y visión de UNISANPABLO de acuerdo a los estándares y normatividad vigente.
+10	editable10	(P1) Proveedores de bienes y servicios.
+11	editable11	(P2) Proceso de Alianzas e Iniciativas Estratégicas.\n\n(P3) Proceso Gestión de Proyectos.\n\n(P4) Proceso Contratación y Nómina.\n(P5) Todos los procesos.
+12	editable12	(E1) información actualizada de los proveedores.\n\n(E2) Donaciones\n\n(E3) Necesidades de bienes o servicios\n\n(E4) Relación de finalización contractual.\n\n(E5) Necesidades de los clientes internos
+13	editable13	1. Elaborar el plan anual de adquisiciones.
+14	editable14	2  Determinar el mecanismo de selección del contratista y seleccionar la oferta o propuesta más favorable.\n3. Realizar solicitud de pedido acorde a Data Maestra de Materiales, presupuesto y activo fijo según aplique.\n4.Seleccionar el proveedor.\n5.Realizar la contratación de acuerdo con los lineamientos de la política de la institución.\n6.Generar orden de pedido.\n7. Liberar pedido.
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	20/02/2025
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	20/02/2025
+29	editable29	...
+30	editable30	...
+31	editable31	...
 \.
 
 
@@ -6116,22 +6150,13 @@ COPY public.mapa_procesos_ec_gestion_desarrollo_humano (id, identifier, content)
 --
 
 COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM stdin;
-10	editable10	(P1) Archivo General de la Nación.\n(P2) Entidades Públicas y Privadas.\n(P3) Personas Naturales o Jurídicas.
 11	editable11	(P4) Todos los Procesos.
-12	editable12	(E1, E2, E4) Lineamientos y directrices de los programas de gestión documental.\n(E2, E3, E4) Correspondencia.\n(E4) Necesidades de los clientes internos.\n(E4) Transferencias documentales de los archivos de gestión que cumplieron su tiempo de retención en la oficina productora.\n(E4) Transferencias documentales de las historias laborales de colaboradores.\n(E4) Transferencias documentales de las historias académicas de estudiantes inactivos y graduados.\n(E4) Transferencias documentales de las historias académicas de Aspirantes que no finalizan su inscripción.
-13	editable13	1. Formular Políticas, Lineamientos e Instrumentos Archivísticos de la Gestión Documental.\n2. Definir y establecer los parámetros de Gestión Documental.
-14	editable14	3. Implementar los parámetros de la gestión documental.\n4. Crear tablas de retención documental.\n5. Recibir y conservar documentos oficiales.
-15	editable15	6. Evaluar y controlar las políticas de gestión documental.\n7. Evaluar el programa de gestión documental y demás Instrumentos archivísticos.\n8. Verificar que los documentos que hacen parte de la gestión de los procesos se encuentren en las Tablas de Retención Documental.\n9. Generar informes de seguimiento de la planeación y gestión del proceso.
-16	editable16	10. Implementar planes de mejoramiento que surjan de la revisión efectuada al proceso de todos los programas y proyectos establecidos en el programa de gestión documental.
 17	editable17	(S1) Archivo de los documentos digitalizados para consulta.\n(S1) Actualización de tablas de retención documental.\n(S1) Autorización del envío de las transferencias documentales.\n(S1) Aprobación de transferencias documentales.\n(S1) Capacitaciones y acompañamientos de transferencias y correspondencia.\n(S1) Inventarios documentales dispuestos a eliminación.\n(S1) Informes de gestión.
 18	editable18	...
 19	editable19	(C1) Todos los Procesos.
 20	editable20	1
-21	editable21	26/Sep/2024
+21	editable21	26/09/2024
 22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	26/Sep/2024
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-AF-GDO
 3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
@@ -6141,9 +6166,18 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 7	editable7	Gestión Documental
 8	editable8	Inicia con la planeación estratégica de la gestión documental y finaliza con la evaluación, seguimiento y control de la implementación de las políticas, directrices y procesos técnicos de la misma. Aplica a todas y cada una de las Unidades Académico y/o Administrativas de la institución.
 9	editable9	Garantizar la correcta planeación, organización, manejo, control y funcionamiento de la gestión documental, desde la producción hasta la disposición final de los documentos físicos, electrónicos e híbridos, en los archivos de gestión y central, que en su conjunto conforman el archivo total de UNISANPABLO, de forma lógica de acuerdo con la naturaleza y fines de la institución, cumpliendo con los estándares técnicos para el tratamiento de los documentos y la legislación vigente, para proteger el patrimonio documental, preservar los archivos en las mejores condiciones de acceso y seguridad, y garantizar la disponibilidad a la academia, la comunidad en general y del mejoramiento institucional.
+10	editable10	(P1) Archivo General de la Nación.\n(P2) Entidades Públicas y Privadas.\n(P3) Personas Naturales o Jurídicas.
+12	editable12	(E1, E2, E4) Lineamientos y directrices de los programas de gestión documental.\n(E2, E3, E4) Correspondencia.\n(E4) Necesidades de los clientes internos.\n(E4) Transferencias documentales de los archivos de gestión que cumplieron su tiempo de retención en la oficina productora.\n(E4) Transferencias documentales de las historias laborales de colaboradores.\n(E4) Transferencias documentales de las historias académicas de estudiantes inactivos y graduados.\n(E4) Transferencias documentales de las historias académicas de Aspirantes que no finalizan su inscripción.
+13	editable13	1. Formular Políticas, Lineamientos e Instrumentos Archivísticos de la Gestión Documental.\n2. Definir y establecer los parámetros de Gestión Documental.
+14	editable14	3. Implementar los parámetros de la gestión documental.\n4. Crear tablas de retención documental.\n5. Recibir y conservar documentos oficiales.
+15	editable15	6. Evaluar y controlar las políticas de gestión documental.\n7. Evaluar el programa de gestión documental y demás Instrumentos archivísticos.\n8. Verificar que los documentos que hacen parte de la gestión de los procesos se encuentren en las Tablas de Retención Documental.\n9. Generar informes de seguimiento de la planeación y gestión del proceso.
+16	editable16	10. Implementar planes de mejoramiento que surjan de la revisión efectuada al proceso de todos los programas y proyectos establecidos en el programa de gestión documental.
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	26/09/2024
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	26/Sep/2024
+28	editable28	26/09/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -6152,7 +6186,7 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	26/Sep/2024
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -6164,9 +6198,7 @@ COPY public.mapa_procesos_ec_gestion_documental (id, identifier, content) FROM s
 --
 
 COPY public.mapa_procesos_ec_gestion_informacion (id, identifier, content) FROM stdin;
-5	editable5	GESTIÓN DE LA INFORMACIÓN
-6	editable6	Fecha: 26/Sep/2024
-7	editable7	Gestión de la información.
+9	editable9	Garantizar que la información relevante, oportuna y confiable esté disponible y accesible, aportando valor a la toma de decisiones, y al mismo tiempo, promoviendo la protección, integridad y confidencialidad de los datos, en cumplimiento con las leyes y en línea con la estrategia institucional.
 10	editable10	(P1) Departamento Administrativo Nacional de Estadística (DANE).\n(P2) Ministerio de Educación Nacional (MEN).\n(P3) Instituciones de Educación Superior (IES).\n(P4) Cámara de Comercio.\n(P5) Registraduría Nacional de Estado Civil.\n(P6) Instituto Colombiano para la Evaluación de la Educación (ICFES).\n(P7) Entidades de Seguridad Social (EPS, AFP, ARL, Cajas).
 11	editable11	(P8) Todos los procesos.
 13	editable13	1. Definir el cronograma para reportes de información institucional.\n2. Definir la estructura, las fuentes y los medios para el tratamiento de la información.\n3. Definir los estándares y estrategia de calidad de datos e información.\n4. Definir la arquitectura de los datos.\n5. Definir la metodología para el adecuado gobierno y gestión de los datos e información de las partes interesadas.\n6. Definir la estrategia de datos.\n7. Establecer el almacenamiento y operación de los datos.\n8. Definir el gobierno de los datos a través de los buses de integración.\n9. Definir la estrategia de seguridad de los datos y de la información.\n10. Definir la metodología para el adecuado tratamiento de los datos personales e información.\n11. Diseñar la metodología de medición, evaluación y seguimiento de los indicadores de la institución.
@@ -6176,30 +6208,32 @@ COPY public.mapa_procesos_ec_gestion_informacion (id, identifier, content) FROM 
 17	editable17	(S1, S2, S5) Información estadística institucional.\n(S3) Información de Seguridad social de empleados.\n(S5) Incidentes de seguridad y protección de datos. personales.\n(S5) Registro de bases de datos.\n(S5) Informes de control.\n(S5) Información oficial institucional.\n(S5) Análisis del sector educativo.\n(S5) Informes estadísticos y de gestión oficiales.\n(S5) Información detallada según requerimiento.\n(S5) Análisis del sector educativo.\n(S5) Información sobre deserción y retención.\n(S5) Registro de incidentes de seguridad (Reporte de caso disciplinario).\n(S5) Respuesta a solicitudes de tratamiento de los datos personales por parte de los responsables de bases de datos.\n(S5) Arquitectura de datos e información.\n(S5) Fuentes de consulta y registro de información.\n(S5) Plan de mejora de los datos.\n(S5) Informes de Gestión.\n(S5) Resultados de Indicadores para toma de decisiones.
 18	editable18	(C1) Ministerio de Educación Nacional (MEN).\n(C2) Entidades públicas y privadas.\n(C3) Ministerio de Salud y Protección Social.\n(C4) Proveedor.
 19	editable19	(C5) Todos los Procesos.
-20	editable20	1
-21	editable21	26/Sep/2024
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	26/Sep/2024
+25	editable25	26/09/2024
 26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
-35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
 39	editable39	...
 40	editable40	...
 2	editable2	Código: CR-PE-GIN
 3	editable3	PLANEACIÓN ESTRATÉGICA
 4	editable4	Versión: 1
-9	editable9	Garantizar que la información relevante, oportuna y confiable esté disponible y accesible, aportando valor a la toma de decisiones, y al mismo tiempo, promoviendo la protección, integridad y confidencialidad de los datos, en cumplimiento con las leyes y en línea con la estrategia institucional.
+5	editable5	GESTIÓN DE LA INFORMACIÓN
+6	editable6	Fecha: 26/Sep/2024
+7	editable7	Gestión de la información.
+20	editable20	1
+21	editable21	26/09/2024
 22	editable22	Creación del proceso
-28	editable28	26/Sep/2024
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	26/09/2024
 29	editable29	...
-37	editable37	26/Sep/2024
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/02/2025
 38	editable38	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 8	editable8	Inicia con la identificación y el análisis de las fuentes de información relevantes para el desarrollo de la institución y sus programas académicos y de investigación, y termina con la definición y el seguimiento de indicadores que permitan evaluar el impacto y la eficiencia de la gestión de la información.
@@ -6260,41 +6294,41 @@ COPY public.mapa_procesos_ec_gestion_integrada (id, identifier, content) FROM st
 --
 
 COPY public.mapa_procesos_ec_gestion_investigacion (id, identifier, content) FROM stdin;
-16	editable16	18. Analizar los hallazgos de las actividades realizadas por el proceso de gestión de investigación.\n19. Generar e implementar las acciones de mejora correspondiente.
-18	editable18	(C1) Comunidades académicas y científicas externas (nacionales e internacionales) / Instituciones de educación superior.\n(C2) Entidades públicas y privadas.\n(C3) Ministerio de Ciencia, Tecnología e innovación.\n(C4) Redes Académicas.\n(C5) Estudiantes.
 29	editable29	...
 30	editable30	...
-31	editable31	...
 4	editable4	Versión: 1
 5	editable5	GESTIÓN DE INVESTIGACIÓN
 6	editable6	Fecha: 12/Sep/2024
 10	editable10	(P1) Ministerio de Educación Nacional – MEN\n(P2) Ministerio de Ciencia, Tecnología e Innovación.\n(P4) Embajadas/ Organismos de Cooperación Internacional / Organismos multilaterales. \n(P6) Empresas Públicas y Privadas.
 11	editable11	(P7) Todos los procesos.
-12	editable12	(E1) Plan Nacional de desarrollo.\n(E2) Plan Estratégico Departamental de Ciencia y Tecnología (PEDCT).\n(E3) Lineamientos de investigación para la Educación Superior.\n(E4) Plan Nacional de Ciencia, tecnología e innovación.\n(E4) Política para los semilleros de investigación.\n(E5) Políticas y lineamientos para el fomento a la investigación.\n(E5) Convocatorias nacional e internacional y oportunidades de investigación.\n(E7) Información de las tendencias de desarrollo en los sectores de referencia.\n(E7) Requisitos y necesidades de los clientes internos.
 13	editable13	1. Elaborar el Plan Maestro de investigación.\n2. Realizar el Plan de Acción de investigación\n3. Apoyar la creación y actualización de estructuras de investigación.\n4. Generar plan de publicaciones.\n5. Definir pautas generales para la producción académica de libros y revistas.
 14	editable14	6. Consolidar las líneas de investigación.\n7. Implementar el plan de publicaciones.\n8. Realizar convocatorias de investigación y de movilidad.\n9. Apoyar el desarrollo de proyectos de investigación.\n10. Desarrollar convenios y/o contratos de investigación.\n11. Divulgar los resultados de investigación.\n12. Realizar convocatorias formativas para estudiantes vinculados a semilleros de investigación.\n13. Apoyar la creación e indexación de revistas institucionales.
-15	editable15	14. Hacer seguimiento mensual al cumplimiento del Plan de Publicaciones.\n15. Administrar, realizar resguardo y custodia de las publicaciones.\n16. Efectuar un seguimiento y evaluación a los proyectos, convenios y/o contratos de gestión investigativa.\n17. Hacer seguimiento y elaborar los informes de la gestión de los semilleros de investigación.
+16	editable16	18. Analizar los hallazgos de las actividades realizadas por el proceso de gestión de investigación.\n19. Generar e implementar las acciones de mejora correspondiente.
 17	editable17	(S3, S6) Plan estratégico de los grupos de investigación.\n(S6) Ruta en investigación formativa para los programas académicos en sus diferentes niveles de formación.\n(S5) Convocatorias formativas para estudiantes.\n(S1,S6) Listado de semilleros de investigación/Red de Semilleros.\n(S6) Informe de resultados de ejecución y cumplimiento a la ruta en investigación pertinente para los programas académicos.\n(S6) Desarrollo de trabajos de grado derivados de proyectos de investigación formativa.\n(S6) Necesidades y oportunidades de participación / desarrollo de proyectos de investigación en convocatorias internas y externas de acuerdo con los términos de referencia.\n(S6) Informes de seguimiento.
+18	editable18	(C1) Comunidades académicas y científicas externas (nacionales e internacionales) / Instituciones de educación superior.\n(C2) Entidades públicas y privadas.\n(C3) Ministerio de Ciencia, Tecnología e innovación.\n(C4) Redes Académicas.\n(C5) Estudiantes.
 19	editable19	(C6) Todos los Procesos.
 20	editable20	1
-21	editable21	12/Dic/2023
+31	editable31	...
 32	editable32	...
-33	editable33	...
-34	editable34	...
-35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	12/Sep/2024
 7	editable7	Gestión de Investigación
 8	editable8	Inicia con la entrada de planes institucionales y propuestas de investigación, Abarca desde los investigadores, las estructuras (grupos, semilleros) pasando por cada Proyecto Curricular y sus Facultades (Programas académicos)  hasta obtener los resultados investigativos y sus oportunas transferencias.
 9	editable9	Administrar los recursos destinados al desarrollo de estrategias, programas, proyectos investigativos y contar con las condiciones estructurales-organizacionales para proyectarse como una universidad investigativa que promueva y potencie la capacidad del investigador de la Universidad y su labor tenga eco en el desarrollo científico y sociocultural de la ciudad, región y país.
+12	editable12	(E1) Plan Nacional de desarrollo.\n(E2) Plan Estratégico Departamental de Ciencia y Tecnología (PEDCT).\n(E3) Lineamientos de investigación para la Educación Superior.\n(E4) Plan Nacional de Ciencia, tecnología e innovación.\n(E4) Política para los semilleros de investigación.\n(E5) Políticas y lineamientos para el fomento a la investigación.\n(E5) Convocatorias nacional e internacional y oportunidades de investigación.\n(E7) Información de las tendencias de desarrollo en los sectores de referencia.\n(E7) Requisitos y necesidades de los clientes internos.
+15	editable15	14. Hacer seguimiento mensual al cumplimiento del Plan de Publicaciones.\n15. Administrar, realizar resguardo y custodia de las publicaciones.\n16. Efectuar un seguimiento y evaluación a los proyectos, convenios y/o contratos de gestión investigativa.\n17. Hacer seguimiento y elaborar los informes de la gestión de los semilleros de investigación.
+21	editable21	12/09/2024
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
 25	editable25	12/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
+36	editable36	Rector
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-IP-GIV
 3	editable3	INVESTIGACIÓN PERTINENTE
@@ -6356,9 +6390,38 @@ COPY public.mapa_procesos_ec_gestion_juridica (id, identifier, content) FROM std
 --
 
 COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, content) FROM stdin;
+36	editable36	Rector
+37	editable37	18/02/2025
+38	editable38	...
+9	editable9	Administrar, gestionar, registrar y controlar los recursos financieros en UNISANPABLO, cumpliendo con el marco constitucional, legal y normativo vigente; garantizando la transparencia y sostenibilidad financiera de acuerdo a los lineamientos establecidos en el contexto estratégico y misional de la institución.
+10	editable10	(P1) Entidades Gubernamentales.
+11	editable11	(P2) Todos los procesos.
+12	editable12	(E2) Reporte contable.\n(E2) Reporte contable del cierre de nómina.\n(E2) Información cobro de impuestos (estampillas).\n(E2) Cartera de estudiantes.\n(E2) Cartera administrativa.\n(E1) Cronograma tributario.\n(E2) Confirmación de programas académicos.\n(E2) Reporte contable del cierre de nómina\n(E2) Informe del movimiento de activos fijos.\n(E2) Necesidades de los clientes internos.
+13	editable13	1. Elaborar el Programa Anual de Caja y realizar las provisiones de la vigencia.\n2. Generar cronograma de cierres mensual y anual.\n3. Preparar información de estados financieros.\n4. Definir modelos de distribución de costos y gastos.
+14	editable14	5. Generar y registrar las operaciones presupuestales.\n6. Producir y registrar las órdenes de pago.\n7. Realizar el giro o pago de las obligaciones.\n8. Modificar y trasladar apropiaciones presupuestales.\n9. Declarar y pagar los Impuestos Nacionales y Distritales y realizar el cierre de la vigencia.
+15	editable15	10. Conciliar los movimientos de ingresos y egresos, de los saldos con las diferentes dependencias que manejan información financiera.\n11. Ajustar los movimientos de ingresos y egresos del registro físico del inventario en almacén contra las partidas contables.\n12. Analizar la naturaleza y razonabilidad de las cuentas y estados financieros.\n13. Realizar el seguimiento a la ejecución presupuestal.
+16	editable16	14. Generar toma de decisiones y acciones que mejoren la gestión contable y financiera derivadas de los resultados de estados financieros, informes financieros y estadísticos.\n15. Generar acciones correctivas frente a los ordenadores que incumplan los compromisos estipulados en el Programa Anual de Caja.
+17	editable17	(S4, S6) Reporte contable a través del sistema de información financiero.\n(S1, S2, S5) Comprobante de Pagos.\n(S1) Certificación de montos facturados.\n(S6) Informe de portafolio de inversiones.\n(S6) Extractos bancarios.\n(S6) Flujo de Caja Real.\n(S4, S6) Resultado de arqueos.\n(S3, S6) Informes de seguimiento.
+18	editable18	(C1) Proveedores y Acreedores.\n(C2) Entidades públicas o privadas.\n(C3) Unidades de Control.\n(C4) Revisoría Fiscal.\n(C5) Estudiantes.
 19	editable19	(C6) Todos los Procesos.
 20	editable20	1
-21	editable21	10/Oct/2024
+21	editable21	10/10/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	10/10/2024
+26	editable26	Martha Esperanza Rodríguez
+39	editable39	...
+40	editable40	...
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	10/10/2024
+29	editable29	...
+30	editable30	...
+31	editable31	...
+32	editable32	...
+33	editable33	...
+34	editable34	...
+35	editable35	Henry Lurbey Hueso
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-AF-GRF
 3	editable3	GESTIÓN ADMINISTRATIVA Y FINANCIERA
@@ -6367,35 +6430,6 @@ COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, conte
 6	editable6	Fecha: 10/Oct/2024
 7	editable7	Gestión De Recursos Financieros
 8	editable8	Inicia con la aprobación del presupuesto por parte del Rector, gestionando el recaudo de los ingresos y los pagos de las obligaciones; realizando el registro de todos los movimientos contables, emitir los informes que sean requeridos y responder las solicitudes de los organismos de control.
-9	editable9	Administrar, gestionar, registrar y controlar los recursos financieros en UNISANPABLO, cumpliendo con el marco constitucional, legal y normativo vigente; garantizando la transparencia y sostenibilidad financiera de acuerdo a los lineamientos establecidos en el contexto estratégico y misional de la institución.
-10	editable10	(P1) Entidades Gubernamentales.
-13	editable13	1. Elaborar el Programa Anual de Caja y realizar las provisiones de la vigencia.\n2. Generar cronograma de cierres mensual y anual.\n3. Preparar información de estados financieros.\n4. Definir modelos de distribución de costos y gastos.
-14	editable14	5. Generar y registrar las operaciones presupuestales.\n6. Producir y registrar las órdenes de pago.\n7. Realizar el giro o pago de las obligaciones.\n8. Modificar y trasladar apropiaciones presupuestales.\n9. Declarar y pagar los Impuestos Nacionales y Distritales y realizar el cierre de la vigencia.
-15	editable15	10. Conciliar los movimientos de ingresos y egresos, de los saldos con las diferentes dependencias que manejan información financiera.\n11. Ajustar los movimientos de ingresos y egresos del registro físico del inventario en almacén contra las partidas contables.\n12. Analizar la naturaleza y razonabilidad de las cuentas y estados financieros.\n13. Realizar el seguimiento a la ejecución presupuestal.
-16	editable16	14. Generar toma de decisiones y acciones que mejoren la gestión contable y financiera derivadas de los resultados de estados financieros, informes financieros y estadísticos.\n15. Generar acciones correctivas frente a los ordenadores que incumplan los compromisos estipulados en el Programa Anual de Caja.
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-11	editable11	(P2) Todos los procesos.
-12	editable12	(E2) Reporte contable.\n(E2) Reporte contable del cierre de nómina.\n(E2) Información cobro de impuestos (estampillas).\n(E2) Cartera de estudiantes.\n(E2) Cartera administrativa.\n(E1) Cronograma tributario.\n(E2) Confirmación de programas académicos.\n(E2) Reporte contable del cierre de nómina\n(E2) Informe del movimiento de activos fijos.\n(E2) Necesidades de los clientes internos.
-17	editable17	(S4, S6) Reporte contable a través del sistema de información financiero.\n(S1, S2, S5) Comprobante de Pagos.\n(S1) Certificación de montos facturados.\n(S6) Informe de portafolio de inversiones.\n(S6) Extractos bancarios.\n(S6) Flujo de Caja Real.\n(S4, S6) Resultado de arqueos.\n(S3, S6) Informes de seguimiento.
-18	editable18	(C1) Proveedores y Acreedores.\n(C2) Entidades públicas o privadas.\n(C3) Unidades de Control.\n(C4) Revisoría Fiscal.\n(C5) Estudiantes.
-25	editable25	10/Oct/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	10/Oct/2024
-29	editable29	...
-30	editable30	...
-31	editable31	...
-32	editable32	...
-33	editable33	...
-34	editable34	...
-35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	10/Oct/2024
-38	editable38	...
-39	editable39	...
-40	editable40	...
 \.
 
 
@@ -6404,46 +6438,46 @@ COPY public.mapa_procesos_ec_gestion_recursos_financieros (id, identifier, conte
 --
 
 COPY public.mapa_procesos_ec_gestion_registro_calificado (id, identifier, content) FROM stdin;
-15	editable14	7. Ejecutar cronograma para la renovación de programas académicos.\n8. Ejecutar cronograma para la modificación de programas académicos.\n9. Elaborar estudios de factibilidad del programa académico.\n10. Construir el Documento de registro calificado.\n11. Tramitar registro calificado ante el MEN.\n12. Ejecutar plan de contingencia por inactivación de programas.\n13. Socializar el programa académico (Obtención, renovación, modificación, ampliación de cobertura e inactivación).\n14. Atender las visitas de pares externos de acuerdo con el protocolo que la institución defina para ello.
-16	editable16	25. Implementar acciones de mejora de acuerdo con los resultados del proceso.\n26. Consolidar lecciones aprendidas.
+14	editable15	15. Realizar seguimiento a la ejecución de los planes de mejora, para cerrar las brechas identificadas en relación con las condiciones de calidad institucional.\n16. Validar la alineación del estudio de factibilidad del programa académico con el Documento de registro calificado.\n17. Acompañar y retroalimentar el Documento de registro calificado.\n18. Verificar que los ajustes realizados al Documento de registro calificado se hayan implementado y den cuenta de la retroalimentación recibida.\n19. Validar y aprobar Documento de registro calificado.\n20. Hacer seguimiento al cronograma para la renovación de programas académicos.\n21. Hacer seguimiento al cronograma para la modificación de programas académicos.\n22. Hacer seguimiento a los planes de contingencia.\n23. Atender las visitas de inspección y vigilancia.\n24. Generar informes de seguimiento de la planeación y gestión del proceso.
 18	editable17	(S1,S2) Documentos oficiales para la gestión del Registro calificado.\n(S2) Iniciativas de creación de programas académicos.\n(S2) Solicitud de pago.\n(S2) Información del estado los registros calificados.\n(S2) Documento de registro calificado.\n(S2) Informes de gestión.\n(S2) Solicitud de configuración del programa académico en los sistemas transaccionales institucionales.
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	18/Feb/2025
-26	editable26	Martha Esperanza Rodríguez
-40	editable40	...
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+29	editable28	18/Feb/2025
+28	editable29	...
+30	editable30	...
+31	editable31	...
+2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+1	editable2	Código: CR-CI-GRC
+5	editable3	CALIDAD INTEGRAL
 3	editable4	Versión: 1
 4	editable5	GESTIÓN DEL REGISTRO CALIFICADO
-6	editable6	Fecha: 18/Feb/2025
-7	editable7	Gestión del Registro Calificado
-8	editable8	Inicia con la formulación de la idea de un nuevo programa académico o la revisión de uno existente, la elaboración del documento de condiciones de calidad y la radicación de la solicitud de registro calificado ante el Ministerio de Educación Nacional, y finaliza con la recepción del acto administrativo que concede, deniega o cancela el registro calificado y la publicación de la información en el Sistema de Información de la Educación Superior (SNIES).
 9	editable9	Realizar los trámites necesarios para gestionar eficientemente los registros calificados, para garantizar la calidad de los programas académicos de la Institución, siguiendo las normas legales e internas correspondientes.
 10	editable10	(P1) Ministerio de Educación Nacional - MEN.\n(P2) Entes regulatorios del estado.
 12	editable11	(P3) Todos los procesos.
 11	editable12	(E1) Resoluciones de Registro Calificado.\n(E1) Aprobación de las condiciones de calidad institucionales.\n(E1, E2, E3) Notificaciones / Comunicaciones / Conceptos.\n(E3) Investigación de Mercado.\n(E3) Estudio de mercado de viabilidad de programa académico.\n(E3) Planes de mejoramiento.\n(E3) PEP y anexos actualizados.\n(E3) Cursos actualizados.\n(E3) Plan de Estudios.\n(E3) Información estadística institucional.\n(E3) Necesidades de los clientes internos.
 13	editable13	1. Garantizar las condiciones de calidad institucionales.\n2. Analizar factibilidad para la creación y renovación de programas académicos.\n3. Diseñar la propuesta preliminar del programa académico.\n4. Elaborar cronograma para la renovación de programas académicos.\n5. Elaborar cronograma para la modificación de programas académicos.\n6. Elaborar planes de contingencia por inactivación de programa.
-14	editable15	15. Realizar seguimiento a la ejecución de los planes de mejora, para cerrar las brechas identificadas en relación con las condiciones de calidad institucional.\n16. Validar la alineación del estudio de factibilidad del programa académico con el Documento de registro calificado.\n17. Acompañar y retroalimentar el Documento de registro calificado.\n18. Verificar que los ajustes realizados al Documento de registro calificado se hayan implementado y den cuenta de la retroalimentación recibida.\n19. Validar y aprobar Documento de registro calificado.\n20. Hacer seguimiento al cronograma para la renovación de programas académicos.\n21. Hacer seguimiento al cronograma para la modificación de programas académicos.\n22. Hacer seguimiento a los planes de contingencia.\n23. Atender las visitas de inspección y vigilancia.\n24. Generar informes de seguimiento de la planeación y gestión del proceso.
+15	editable14	7. Ejecutar cronograma para la renovación de programas académicos.\n8. Ejecutar cronograma para la modificación de programas académicos.\n9. Elaborar estudios de factibilidad del programa académico.\n10. Construir el Documento de registro calificado.\n11. Tramitar registro calificado ante el MEN.\n12. Ejecutar plan de contingencia por inactivación de programas.\n13. Socializar el programa académico (Obtención, renovación, modificación, ampliación de cobertura e inactivación).\n14. Atender las visitas de pares externos de acuerdo con el protocolo que la institución defina para ello.
+16	editable16	25. Implementar acciones de mejora de acuerdo con los resultados del proceso.\n26. Consolidar lecciones aprendidas.
 17	editable18	(C1) Ministerio de educación Nacional - MEN.
 19	editable19	(C2) Todos los Procesos.
 21	editable20	1
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-29	editable28	18/Feb/2025
-28	editable29	...
 20	editable21	26/Dic/2023
-22	editable22	Creación del proceso
-30	editable30	...
-31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
+6	editable6	Fecha: 18/Feb/2025
+7	editable7	Gestión del Registro Calificado
+8	editable8	Inicia con la formulación de la idea de un nuevo programa académico o la revisión de uno existente, la elaboración del documento de condiciones de calidad y la radicación de la solicitud de registro calificado ante el Ministerio de Educación Nacional, y finaliza con la recepción del acto administrativo que concede, deniega o cancela el registro calificado y la publicación de la información en el Sistema de Información de la Educación Superior (SNIES).
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
 35	editable35	Henry Lurbey Hueso
 37	editable36	Rector
+25	editable25	18/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
 36	editable37	18/Feb/2025
 38	editable38	...
 39	editable39	...
-2	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-1	editable2	Código: CR-CI-GRC
-5	editable3	CALIDAD INTEGRAL
+40	editable40	...
 \.
 
 
@@ -6452,46 +6486,46 @@ COPY public.mapa_procesos_ec_gestion_registro_calificado (id, identifier, conten
 --
 
 COPY public.mapa_procesos_ec_gestion_servicio_usuario (id, identifier, content) FROM stdin;
-12	editable10	(P1) Medios de comunicación.\n(P2) Aliados.\n(P3) Agencias de publicidad.
-9	editable11	(P11) Todos los procesos.
-11	editable12	(E1) Canales masivos para la divulgación de campañas.\n(E11) Programación académica.\n(E11) Información para la toma de decisiones referente al portafolio de programas académico.\n(E11) Portafolio de la oferta de educación continua. \n(E11) Calendario Académico.\n(E11) información del cumplimiento de metas de estudiantes e ingresos.\n(E11) Acuerdos para consecución de prospectos.\n(E11) Necesidades de los clientes internos.
-13	editable13	1. Establecer mecanismos que permitan garantizar la adecuada atención y acceso a la información institucional.
-14	editable14	2. Apertura de canales de atención.\n3. Capacitación a funcionarios y contratistas en temas relacionados con la atención a la ciudadanía.\n4. Medir la percepción del servicio y divulgar programas académicos, mecanismos de comunicación, trámites y gestión de la institución a las partes interesadas en ferias y eventos.\n5. Racionalización, priorización y publicación de trámites y otros procedimientos administrativos.
-15	editable15	6. Gestionar y realizar seguimiento a peticiones garantizando su respuesta oportuna y adecuada.\n7. Seguimiento a la actualización del portal web institucional.\n8. Realizar medición y seguimiento a los factores claves del proceso.
-17	editable16	9. Implementar planes de mejoramiento que surjan de la revisión efectuada al proceso de percepción del servicio y atención al ciudadano.
-16	editable17	(S1, S2, S3, S4, S5)Ofertas de programas académicos.\n(S6)Plan de divulgación de campaña por periodo de matrícula.\n(S3)Información relacionada con el comportamiento de los aspirantes.\n(S6)Información relacionada con estudiantes nuevos matriculados.\n(S3)Información de admitidos.\n(S6) Resultados de las mediciones en las diferentes etapas del embudo de ventas.\n(S6) Informes de seguimiento.
-18	editable18	(C1) Aspirantes.\n(C2) Estudiantes.\n(C3) Entidades Públicas y Privadas.\n(C4) Colegios.\n(C5) Egresados.
-19	editable19	(C6) todos los procesos.
-20	editable20	1
-21	editable21	18/Feb/2025
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-25	editable24	Aprendiz
-24	editable25	18/Feb/2025
-26	editable26	Martha Esperanza Rodríguez
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-6	editable2	Código: CR-CI-GSU
-3	editable3	CALIDAD INTEGRAL
-2	editable4	Versión: 1
-5	editable5	GESTIÓN DEL SERVICIO AL USUARIO
-4	editable6	Fecha: 18/Feb/2025
-7	editable7	Gestión del Servicio al Usuario
-8	editable8	Inicia con la transversalidad a todos los procesos institucionales, incluyendo los mecanismos de participación y consulta que involucran a la comunidad universitaria y la ciudadanía en general, así mismo la determinación e implementación de acciones que permiten mejorar la satisfacción de la ciudadanía y grupos de interés.
-10	editable9	Garantizar el acceso a la información, la correcta y oportuna atención a la ciudadanía y grupos de interés, en temas relacionados con el funcionamiento y cumplimiento de la misión de la institución, mediante la adecuación e implementación de canales de atención, la oportuna divulgación de información y el trámite oportuno de peticiones que interpongan los ciudadanos en el ejercicio de su función de control social.
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	18/Feb/2025
 29	editable29	...
 31	editable30	...
 30	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+6	editable2	Código: CR-CI-GSU
+3	editable3	CALIDAD INTEGRAL
+14	editable14	2.Apertura de canales de atención.\n3.Capacitación a funcionarios y contratistas en temas relacionados con la atención a los grupos de interés.\n4.Medir la percepción del servicio y divulgar programas académicos, mecanismos de comunicación, trámites y gestión de la institución a las partes interesadas en ferias y eventos.\n5. Racionalización, priorización y publicación de trámites y otros procedimientos administrativos.
+15	editable15	6. Gestionar y realizar seguimiento a peticiones garantizando su respuesta oportuna y adecuada.\n7.Seguimiento a la actualización del portal web institucional.\n8. Realizar medición y seguimiento a los factores claves del proceso.
+17	editable16	9. Implementar planes de mejoramiento que surjan de la revisión efectuada al proceso de percepción del servicio y atención a los grupos de interés.
+16	editable17	(S1, S2, S3, S4, S5)Ofertas de programas académicos.\n(S6)Plan de divulgación de campaña por periodo de matrícula.\n(S3)Información relacionada con el comportamiento de los aspirantes.\n(S6)Información relacionada con estudiantes.\n(S3)Información de admitidos.\n(S6) Resultados de las mediciones en las diferentes etapas del embudo de ventas.\n(S6) Informes de seguimiento
+18	editable18	(C1) Aspirantes.\n(C2) Estudiantes.\n(C3) Entidades Públicas y Privadas.\n(C4) Colegios.\n(C5) Egresados.
+19	editable19	(C6) todos los procesos.
+20	editable20	1
+21	editable21	20/Feb/2025
 35	editable35	Henry Lurbey Hueso
 37	editable36	Rector
-36	editable37	18/Feb/2025
+36	editable37	...
+2	editable4	Versión: 1
 38	editable38	...
 39	editable39	...
 40	editable40	...
+5	editable5	GESTIÓN DEL SERVICIO AL USUARIO
+4	editable6	Fecha: 20/Feb/2025
+7	editable7	Gestión del Servicio al Usuario
+8	editable8	Inicia con la transversalidad a todos los procesos institucionales, incluyendo los mecanismos de participación y consulta que involucran a la comunidad universitaria.
+10	editable9	Garantizar el acceso a la información, la correcta y oportuna atención a grupos de interés, en temas relacionados con el funcionamiento y cumplimiento de la misión de la institución, mediante la adecuación e implementación de canales de atención, la oportuna divulgación de información y el trámite oportuno de peticiones que interpongan los ciudadanos en el ejercicio de su función de control social.
+12	editable10	(P1) Medios de comunicación.\n(P2) Aliados.\n(P3) Agencias de publicidad.
+9	editable11	(P11) Todos los procesos.
+11	editable12	(E1) Canales masivos para la divulgación de campañas.\n(E11) Programación académica.\n(E11) Información para la toma de decisiones referente al portafolio de programas académicos.\n(E11) Portafolio de la oferta de educación continua.\n(E11) Calendario Académico.\n(E11) información del cumplimiento de metas de estudiantes e ingresos.\n(E11) Acuerdos para consecución de prospectos.\n(E11) Necesidades de los clientes internos.
+13	editable13	1. Establecer mecanismos que permitan garantizar la adecuada atención y acceso a la información institucional.
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+25	editable24	Aprendiz
+24	editable25	20/Feb/2025
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	20/Feb/2025
 \.
 
 
@@ -6500,43 +6534,43 @@ COPY public.mapa_procesos_ec_gestion_servicio_usuario (id, identifier, content) 
 --
 
 COPY public.mapa_procesos_ec_gestion_sistemas_comunicacion (id, identifier, content) FROM stdin;
-5	editable5	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES
-6	editable6	Fecha: 26/Sep/2024
-7	editable7	Gestión De Los Sistemas De Comunicación Y Telecomunicaciones.
-8	editable8	Inicia con la planificación de los Sistemas de Información y Telecomunicaciones y va hasta la mejora de los servicios prestados, las plataformas implementadas y la actualización de los documentos, procedimientos y servicios necesarios.
-12	editable12	(E4) Necesidades, requisitos y expectativas tecnológicas de las partes interesadas / Criterios funcionales y no funcionales.\n(E2) Requerimientos de alto nivel, Necesidades priorizadas, Documentos de estrategia tecnológica de alto nivel.\n(E1) Plan de las pruebas de concepto y evaluación de la prueba de concepto.\n(E1) Estrategia tecnológica detallada (investigación de mercado, documentos de arquitectura, diagramas de software, flujo, secuencia, modelos relacionales, de integración, de actividades, despliegue, etc.)\n(E2) Plan Maestro de Seguridad de la\ninformación y protección de datos personales.
 13	editable13	1. Formular políticas, estrategias, directrices, planes y proyectos para fortalecer la gestión de las TIC en la institución.\n2. Definir el plan estratégico de tecnologías de información.\n3. Definir el plan de mantenimiento y renovación de los equipos de tecnología.\n4. Definir el catálogo de servicios tecnológicos.
 14	editable14	5. Gestionar las solicitudes, incidentes, problemas, cambios y proyectos de TI con el fin de apoyar los procesos misionales de la institución.\n6. Implementar los servicios de tecnología.\n7. Administrar la gestión del conocimiento en tecnologías de la información.\n8. Gestionar y administrar la disponibilidad y continuidad de los sistemas, aplicaciones y plataformas tecnológicas.\n9. Gestionar y administrar los requerimientos e incidentes relacionados con el servicio.\n10. Gestionar el monitoreo de sistemas, aplicaciones y plataformas tecnológicas.\n11. Gestionar y administrar la infraestructura y plataformas tecnológicas.\n12. Prestar un servicio de calidad a la comunidad universitaria.
 15	editable15	13. Realizar el seguimiento al plan de acción y a la prestación de los servicios y Proyectos de TI asociados a las áreas gestoras de TIC en la institución.\n14. Efectuar seguimiento al plan de mantenimiento y renovación tecnológica
 16	editable16	15. Actualizar los procedimientos y la documentación asociada al proceso. \n16. Generar un Plan de Mejoramiento que contenga Acciones Correctivas y Preventivas.
 17	editable17	(S1) Catálogo de Servicios.\n(S6) Plan estratégico de tecnologías de información (PETI)\n(S1) Niveles para la prestación de los servicios de tecnología y Acuerdos de Niveles de Servicio (ANS).\n(S1) Informe de validación del monitoreo\n(S4, S7) Sistemas de información, mejoras, nuevas funcionalidades, actualizaciones, etc.\n(S7) Implementación de nuevas tecnologías.
 18	editable18	(C1) Proveedor de Tecnología.
-19	editable19	(C3) Proceso Gestión del Servicio de Tecnología.\n(C4) Proceso Aseguramiento de la calidad de procesos.\n(C6) Proceso Gestión de la Información.\n(C7) Todos los Procesos.
-20	editable20	1
-21	editable21	26/Sep/2024
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
-24	editable24	Aprendiz
-25	editable25	26/Sep/2024
+25	editable25	26/09/2024
 26	editable26	Martha Esperanza Rodríguez
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-FT-GCT
-3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA
-4	editable4	Versión: 1
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+6	editable6	Fecha: 26/Sep/2024
+7	editable7	Gestión De Los Sistemas De Comunicación Y Telecomunicaciones.
+8	editable8	Inicia con la planificación de los Sistemas de Información y Telecomunicaciones y va hasta la mejora de los servicios prestados, las plataformas implementadas y la actualización de los documentos, procedimientos y servicios necesarios.
 9	editable9	Gestionar los Sistemas de Información y las Telecomunicaciones para asegurar el acceso, adquisición, disponibilidad, confiabilidad, confidencialidad y seguridad de los activos de información a través de la infraestructura y las soluciones Informáticas en el marco de la normatividad vigente aplicable, como apoyo a los Procesos Misionales de la institución para satisfacer las necesidades de la comunidad universitaria.
 10	editable10	(P1) Proveedor de Tecnología.
-11	editable11	(P2) Proceso Gestión de la Información.\n(P3) Gestión Soluciones TI.\n(P4) Todos los procesos.
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	26/Sep/2024
+19	editable19	(C3) Proceso Gestión del Servicio de Tecnología.\n(C4) Proceso Aseguramiento de la calidad de procesos.\n(C6) Proceso Gestión de la Información.\n(C7) Todos los Procesos.
+20	editable20	1
+21	editable21	26/09/2024
+22	editable22	Creación del proceso
+28	editable28	26/09/2024
 29	editable29	...
 30	editable30	...
 31	editable31	...
 32	editable32	...
 33	editable33	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-FT-GCT
+3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TÉCNOLOGICA
+4	editable4	Versión: 1
+5	editable5	GESTION DE LOS SISTEMAS DE COMUNICACIÓN Y TELECOMUNICACIONES
+11	editable11	(P2) Proceso Gestión de la Información.\n(P3) Gestión Soluciones TI.\n(P4) Todos los procesos.
+12	editable12	(E4) Necesidades, requisitos y expectativas tecnológicas de las partes interesadas / Criterios funcionales y no funcionales.\n(E2) Requerimientos de alto nivel, Necesidades priorizadas, Documentos de estrategia tecnológica de alto nivel.\n(E1) Plan de las pruebas de concepto y evaluación de la prueba de concepto.\n(E1) Estrategia tecnológica detallada (investigación de mercado, documentos de arquitectura, diagramas de software, flujo, secuencia, modelos relacionales, de integración, de actividades, despliegue, etc.)\n(E2) Plan Maestro de Seguridad de la\ninformación y protección de datos personales.
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	26/Sep/2024
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -6596,13 +6630,7 @@ COPY public.mapa_procesos_ec_informacion_bibliografica (id, identifier, content)
 --
 
 COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FROM stdin;
-6	editable6	Fecha: 12/Sep/2024
-7	editable7	Gestión de la infraestructura física.
-8	editable8	Inicia con la Planeación operativa y ejecución de los diferentes servicios y finaliza con el servicio prestado en las distintas modalidades, incluyendo su seguimiento.
-9	editable9	Garantizar a través de su gestión los servicios relacionados con administración de bienes, infraestructura, planta física, mantenimiento, compras, inventarios, aseo y seguridad, requeridos para el óptimo desarrollo de las actividades académico-administrativas de UNISANPABLO.
 10	editable10	(P1) Entidades públicas y/o privadas.\n(P2) Proveedor.
-11	editable11	(P3) Proceso Planeación Estratégica.\n(P4) Proceso Seguridad, Salud en el Trabajo y Gestión Ambiental.\n(P5) Proceso Planeación Financiera y Presupuesto.\n(P6) Proceso Aprovisionamiento.\n(P7) Gestión Asesoría y Apoyo Jurídico\n(P8) Todos los procesos.
-12	editable12	(E3) Plan de desarrollo.\n(E1) Acto administrativo.\n(E3, E) Solicitudes de necesidades de espacios o mantenimiento.\n(E1) Lineamientos de orden público y privado.\n(E2) Planos de obra.\n(E6) Manuales de funcionamiento de equipos.\n(E2) Manuales de funcionamiento y mantenimiento.\n(E6) Órdenes de compra.\n(E8) Acciones y controles para los riesgos de infraestructura física.\n(E4) Programa para el control de vertimientos y emisiones.\n(E9) Planos de obra.\n(E4) Notificación de inspección al proveedor.\n(E7) Contratos de diseño, construcción e interventoría.\n(E5) Presupuesto Operativo.\n(E5) Presupuesto de Inversión.
 13	editable13	1.Analizar los lineamientos para la elaboración del plan maestro de desarrollo físico.\n2.Elaboración del plan anual de inventarios, almacenamiento y bajas.\n3.Elaborar el plan anual de conservación y mantenimiento de bienes muebles e inmuebles.\n4.Identificar las necesidades de crecimiento, adecuación o mantenimiento para atender la proyección académica y administrativa.\n5.Definir los diseños y presupuestos para construcción y/o adecuación de infraestructura física.
 14	editable14	6.Proyectar el plan operativo administrativo, físico y financiero.\n7.Implementar en las construcciones los compromisos adquiridos en los actos administrativos de cada norma urbana, trámites legales y normativos.\n8.Ejecutar los mantenimientos preventivos de maquinaria, equipos e infraestructura establecidos.\n9.Asegurar las actividades de instalación de elementos de seguridad industrial y cableado estructurado, según los lineamientos establecidos.\n10.Actualizar la información de la infraestructura física en cuanto a localización, usos, áreas de los espacios y gestión de inmuebles.
 15	editable15	11.Revisar el plan anual de inventarios, almacenamiento y bajas.\n12.Realizar seguimientos de los diseños arquitectónicos y técnicos para el desarrollo de la construcción y/o adecuación, según la normatividad vigente.\n13.Seguimiento al plan operativo administrativo, físico y financiero.
@@ -6611,29 +6639,35 @@ COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FR
 18	editable18	(C1) Entidades públicas y/o privadas.\n(C2) Proveedor.
 19	editable19	(C3) Proceso Gestión de la Información.\n(C4) Proceso Registro Calificado.\n(C5) Proceso Seguridad, Salud en el Trabajo y Gestión Ambiental.\n(C6) Proceso Vida Estudiantil.\n(C7) Proceso Planeación Financiera y Presupuesto.\n(C8) Proceso Asesoría y Apoyo Jurídico.\n(C9) Todos los procesos.
 20	editable20	1
-21	editable21	12/Sep/2024
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	12/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
 31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
-36	editable36	Rector
-37	editable37	12/Sep/2024
-38	editable38	...
-39	editable39	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-FT-GIF
 3	editable3	GESTIÓN DE LA INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA
 4	editable4	Versión: 1
 5	editable5	GESTION DE LA INFRAESTRUCTURA FISICA
+6	editable6	Fecha: 12/Sep/2024
+7	editable7	Gestión de la infraestructura física.
+8	editable8	Inicia con la Planeación operativa y ejecución de los diferentes servicios y finaliza con el servicio prestado en las distintas modalidades, incluyendo su seguimiento.
+9	editable9	Garantizar a través de su gestión los servicios relacionados con administración de bienes, infraestructura, planta física, mantenimiento, compras, inventarios, aseo y seguridad, requeridos para el óptimo desarrollo de las actividades académico-administrativas de UNISANPABLO.
+11	editable11	(P3) Proceso Planeación Estratégica.\n(P4) Proceso Seguridad, Salud en el Trabajo y Gestión Ambiental.\n(P5) Proceso Planeación Financiera y Presupuesto.\n(P6) Proceso Aprovisionamiento.\n(P7) Gestión Asesoría y Apoyo Jurídico\n(P8) Todos los procesos.
+12	editable12	(E3) Plan de desarrollo.\n(E1) Acto administrativo.\n(E3, E) Solicitudes de necesidades de espacios o mantenimiento.\n(E1) Lineamientos de orden público y privado.\n(E2) Planos de obra.\n(E6) Manuales de funcionamiento de equipos.\n(E2) Manuales de funcionamiento y mantenimiento.\n(E6) Órdenes de compra.\n(E8) Acciones y controles para los riesgos de infraestructura física.\n(E4) Programa para el control de vertimientos y emisiones.\n(E9) Planos de obra.\n(E4) Notificación de inspección al proveedor.\n(E7) Contratos de diseño, construcción e interventoría.\n(E5) Presupuesto Operativo.\n(E5) Presupuesto de Inversión.
+21	editable21	12/09/2024
+25	editable25	12/09/2024
+26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	12/Sep/2024
+28	editable28	12/09/2024
 29	editable29	...
+36	editable36	Rector
+37	editable37	18/02/2025
+38	editable38	...
+39	editable39	...
 30	editable30	...
 40	editable40	...
 \.
@@ -6644,43 +6678,43 @@ COPY public.mapa_procesos_ec_infraestructura_fisica (id, identifier, content) FR
 --
 
 COPY public.mapa_procesos_ec_internacionalizacion (id, identifier, content) FROM stdin;
+15	editable15	9. Realizar el seguimiento a corto plazo del plan de acción anual.\n10. Realizar a largo plazo, la política de Inter institucionalización e internacionalización.
+16	editable16	11. Retroalimentar y tomar acciones de mejora en el corto, mediano y largo plazo.
+17	editable17	(S1, S2, S3, S4, S5, S6, S7, S8, S9, S11, S12) Internacionalización en Casa.\n(S1, S2, S3, S4, S5, S6, S11, S12, S13, S14, S15) Movilidad estudiantes y graduados.\n(S1, S2, S3, S8, S9, S12) Movilidad Profesores y Colaboradores.\n(S1, S2, S3, S4, S5, S6, S7, S8, S9) Asesoramientos.\n(S4) Portafolio de servicios de movilidad.\n(S13) Informes de seguimiento.
+20	editable20	1
+21	editable21	26/09/2024
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+4	editable4	Versión: 1
+5	editable5	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN
 6	editable6	Fecha: 26/Sep/2024
 7	editable7	Interinstitucionalización e Internacionalización
 8	editable8	Inicia con la revisión y ajuste de la Política de Inter institucionalización e Internacionalización y la elaboración y ejecución de dicha política, hasta el seguimiento y evaluación de la misma.
 9	editable9	Direccionar y Gestionar la Inter institucionalización e Internacionalización de UNISANPABLO para contribuir con la formación integral de profesionales e investigadores globalmente competitivos a través de acciones de direccionamiento estratégico para la inmersión y participación activa de la institución en la sociedad del conocimiento en el ámbito local, Nacional e Internacional.
 10	editable10	(P1) IES Externas Nacionales e Internacionales.\n(P2) Entidades Privadas Nacionales e Internacionales.\n(P3) Entidades Públicas Nacionales e Internacionales.\n(P4) Estudiantes.\n(P5) Graduados.\n(P6) Aspirantes.\n(P7) Egresados.
+11	editable11	(P8) Profesores.\n(P9) Colaboradores\n(P10) Proceso Vida Estudiantil.\n(P11) Proceso Alianzas e Iniciativas Estratégicas.\n(P12) Proceso Gestión de Registro Calificado.\n(P13) Proceso Planeación Financiera y Presupuesto.\n(P14) Programas Académicos.\n(P15) Macroproceso de Investigación.\n(P16) Proceso Relacionamiento con Graduado y Egresado.\n(P17) Proceso de Relaciones Laborales.\n(P18) Proceso Comunicaciones Corporativas\n(P19) Todos los procesos.
 12	editable12	(E1) Información de becas, programas y lineamientos de movilidad.\n(E1, E4, E5, E6, E7) Solicitudes de movilidad de Estudiantes y Graduados.\n(E13) Presupuesto asignado/Plan operativo.\n(E14, E15) Iniciativas de internacionalización y movilidad de programas académicos.\n(E19) Necesidades de los clientes internos.
 13	editable13	1. Formular e institucionalizar la política de Inter institucionalización e internacionalización. \n2. Formular el plan de acción anual.
 14	editable14	3. Establecer la gestión integral y las acciones de direccionamiento estratégico para la Inter institucionalización e internacionalización de la UNISANPABLO.\n4. Desarrollar e implementar un sistema de información.\n5. Difundir y socializar la gestión del proceso.\n6. Promover la movilidad académica estudiantil y docente y el aprendizaje de otros idiomas.\n7. Fomentar la internacionalización de la investigación y la extensión.\n8. Gestionar la consecución de recursos e identificar y promover las relaciones interinstitucionales de la UNISANPABLO por medio de la gestión de convenios.
-15	editable15	9. Realizar el seguimiento a corto plazo del plan de acción anual.\n10. Realizar a largo plazo, la política de Inter institucionalización e internacionalización.
-16	editable16	11. Retroalimentar y tomar acciones de mejora en el corto, mediano y largo plazo.
-17	editable17	(S1, S2, S3, S4, S5, S6, S7, S8, S9, S11, S12) Internacionalización en Casa.\n(S1, S2, S3, S4, S5, S6, S11, S12, S13, S14, S15) Movilidad estudiantes y graduados.\n(S1, S2, S3, S8, S9, S12) Movilidad Profesores y Colaboradores.\n(S1, S2, S3, S4, S5, S6, S7, S8, S9) Asesoramientos.\n(S4) Portafolio de servicios de movilidad.\n(S13) Informes de seguimiento.
 18	editable18	(C1) IES Externas Nacionales e Internacionales.\n(C2) Entidades Privadas Nacionales e Internacionales.\n(C3) Entidades Públicas Nacionales e Internacionales.\n(C4) Estudiantes.\n(C5) Graduados.\n(C6) Aspirantes.\n(C7) Egresados.
 19	editable19	(C8) Profesores.\n(C9) Colaboradores.\n(C10) Proceso Aseguramiento de la Calidad Académica.\n(C11) Proceso Relacionamiento con Graduado y Egresado.\n(C12) Proceso Aseguramiento de la Calidad Académica.\n(C13) Todos los Procesos.
-20	editable20	1
-21	editable21	26/Sep/2024
-24	editable24	Aprendiz
-25	editable25	26/Sep/2024
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	26/Sep/2024
-29	editable29	...
-30	editable30	...
-31	editable31	...
+25	editable25	26/09/2024
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
 2	editable2	Código: CR-RI-INI
 3	editable3	RELACIONES INTERINSTITUCIONALES
-4	editable4	Versión: 1
-5	editable5	INTERINSTITUCIONALIZACIÓN E INTERNACIONALIZACIÓN
-11	editable11	(P8) Profesores.\n(P9) Colaboradores\n(P10) Proceso Vida Estudiantil.\n(P11) Proceso Alianzas e Iniciativas Estratégicas.\n(P12) Proceso Gestión de Registro Calificado.\n(P13) Proceso Planeación Financiera y Presupuesto.\n(P14) Programas Académicos.\n(P15) Macroproceso de Investigación.\n(P16) Proceso Relacionamiento con Graduado y Egresado.\n(P17) Proceso de Relaciones Laborales.\n(P18) Proceso Comunicaciones Corporativas\n(P19) Todos los procesos.
-22	editable22	Creación del proceso
-23	editable23	Daniela Torres Torres
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	26/09/2024
+29	editable29	...
+30	editable30	...
+31	editable31	...
 32	editable32	...
 33	editable33	...
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	26/Sep/2024
+37	editable37	18/02/2025
 38	editable38	...
 39	editable39	...
 40	editable40	...
@@ -6692,34 +6726,24 @@ COPY public.mapa_procesos_ec_internacionalizacion (id, identifier, content) FROM
 --
 
 COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifier, content) FROM stdin;
-1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
-2	editable2	Código: CR-PE-PEI
-3	editable3	PLANEACIÓN ESTRATÉGICA
-4	editable4	Versión: 1
-5	editable5	PLANEACIÓN ESTRATEGICA INSTITUCIONAL
-6	editable6	Fecha: 18/Feb/2025
-7	editable7	Planeación estratégica institucional.
-8	editable8	Inicia con la elaboración y ejecución del Plan de Desarrollo Institucional, conformado por los Planes: Estratégico, Operativo, de Acción y de Trabajo, y termina con su evaluación y seguimiento.
-9	editable9	Coordinar y orientar el diseño y la implementación de estrategias, políticas, programas, y proyectos con el fin de dar cumplimiento a la misión, visión y objetivos institucionales, enmarcados en el Sistema de Planeación Institucional.
-10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Departamento Administrativo Nacional de Estadística (DANE).\n(P3) Banco de la República.\n(P4) Entidades financieras.\n(P5) Departamento nacional de planeación.\n(P6) Gobernaciones y alcaldías. \n(P7) Departamento Nacional de Planeación (DNP).
-11	editable11	(P10) Todos los procesos.
-12	editable12	(E1, E2) Estadísticas nacionales\n(E1) Plan decenal de educación.\n(E3) Información estadística del sector.\n(E4) información de prospectiva económica.\n(E5) Estadísticas y plan nacional de desarrollo.\n(E6) Informes de competitividad .\n(E7) Análisis del sector educativo.\n(E8) Planes de mejoramiento.\n(E9) Informe parcial de ejecución presupuestal.\n(E10) Planes de acción.\n(E12) Informes de seguimiento.
-13	editable13	1. Elaborar el documento de línea base, estudio de prospectiva.\n2. Elaborar el Plan de desarrollo institucional.\n3. Realizar el Plan estratégico de desarrollo, Plan maestro, Plan indicativo.\n4. Efectuar el Plan general operativo, Planes de acción, Planes individuales de trabajo.
-14	editable14	5. Desarrollar la programación presupuestal.\n6. Implementar las acciones estratégicas definidas en el plan de desarrollo.
-15	editable15	7. Realizar seguimiento al Sistema de planeación institucional.\n8. Efectuar el seguimiento a la ejecución presupuestal.\n9. Realizar el seguimiento periódico a la ejecución de la estrategia.
-16	editable16	10. Revisar el desempeño del sistema integrado de gestión.\n11. Implementar acciones de mejora de acuerdo con los resultados del proceso.
-17	editable17	(S1, S2) Plan de desarrollo.\n(S4) Informes periódicos de seguimiento.\n(S4) Informes de ajuste y adaptación a la estrategia.\n(S3) Diagnóstico Estratégico.
+39	editable39	...
+40	editable40	...
+13	editable13	1. Elaborar el documento de línea base, estudio de prospectiva.\n2.  Elaborar el Plan de desarrollo institucional.\n3.Realizar el Plan estratégico de desarrollo, Plan maestro, Plan indicativo.\n4.Efectuar el Plan general operativo, Planes de acción, Planes individuales de trabajo.
+14	editable14	5.Desarrollar la programación presupuestal.\n6.Implementar las acciones estratégicas definidas en el plan de desarrollo.
+15	editable15	7.Realizar seguimiento al Sistema de planeación institucional.\n8.Efectuar el seguimiento a la ejecución presupuestal\n9.Realizar el seguimiento periódico a la ejecución de la estrategia
+16	editable16	10. Revisar el desempeño del sistema integrado de gestión.\n11.Implementar acciones de mejora de acuerdo con los resultados del proceso.
+17	editable17	(S1, S2) Plan de desarrollo.\n(S4) Informes periódicos de\nSeguimiento.\n(S4) Informes de ajuste y adaptación a la estrategia.\n(S3) Diagnóstico Estratégico
 18	editable18	(C1) Ministerio de Educación Nacional.\n(C2) Entidades Financieras.
 19	editable19	(C3) Proceso Planeación Financiera y Presupuesto.\n(C4) Todos los Procesos.
 20	editable20	1
-21	editable21	18/Feb/2025
+21	editable21	20/Feb/2025
 22	editable22	Creación del proceso
 23	editable23	Daniela Torres Torres
 24	editable24	Aprendiz
-25	editable25	18/Feb/2025
+25	editable25	20/Feb/2025
 26	editable26	Martha Esperanza Rodríguez
 27	editable27	subdirectora Calidad, Procesos y Riesgos.
-28	editable28	18/Feb/2025
+28	editable28	20/Feb/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -6728,10 +6752,20 @@ COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifie
 34	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	18/Feb/2025
+37	editable37	...
 38	editable38	...
-39	editable39	...
-40	editable40	...
+1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+2	editable2	Código: CR-PE-PEI
+3	editable3	PLANEACIÓN ESTRATÉGICA
+4	editable4	Versión: 1
+5	editable5	PLANEACIÓN ESTRATEGICA INSTITUCIONAL
+6	editable6	Fecha: 20/Feb/2025
+7	editable7	Planeación estratégica institucional.
+8	editable8	Inicia con la elaboración y ejecución del Plan de Desarrollo Institucional, conformado por los Planes: Estratégico, Operativo, de Acción y de Trabajo, y termina con su evaluación y seguimiento.
+9	editable9	Coordinar y orientar el diseño y la implementación de estrategias, políticas, programas, y proyectos con el fin de dar cumplimiento a la misión, visión y objetivos institucionales, enmarcados en el Sistema de Planeación Institucional.
+10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Departamento Administrativo Nacional de Estadística (DANE)\n(P3) Banco de la República.\n(P4) Entidades financieras.\n(P5) Departamento nacional de planeación.\n(P6) Gobernaciones y alcaldías.\n(P7) Departamento Nacional de Planeación (DNP)
+11	editable11	(P10) Todos los procesos.
+12	editable12	(E1, E2) Estadísticas nacionales\n(E1) Plan decenal de educación.\n(E3) Información estadística del sector.\n(E4) información de prospectiva económica.\n(E5) Estadísticas y plan nacional de desarrollo.\n(E6) Informes de competitividad\n(E7) Análisis del sector educativo\n(E8) Planes de mejoramiento\n(E9) Informe parcial de ejecución presupuestal\n(E10) Planes de acción\n(E12) Informes de seguimiento.
 \.
 
 
@@ -6740,36 +6774,35 @@ COPY public.mapa_procesos_ec_planeacion_estrategica_institucional (id, identifie
 --
 
 COPY public.mapa_procesos_ec_relacionamineto_egresados (id, identifier, content) FROM stdin;
-4	editable2	Código: CR-PS-GRA
-14	editable15	8. Evaluar la implementación del plan operativo según las líneas de acción definidas y su eficiencia.\n9. Generar informe de seguimiento de la planeación y gestión del proceso.
-16	editable16	10. Implementar acciones de mejora de acuerdo con los resultados del proceso.
-17	editable17	(S3) Caracterización de los egresados .\n(S1) Reconocimientos a los egresados.\n(S1) Comunicación permanente con los egresados.\n(S2, S4, S6) Información sobre los indicadores de las dimensiones evaluadas.\n(S3, S4, S5) Informe del seguimiento a la trayectoria de los egresados de acuerdo con los momentos definidos.\n(S6) Informes de gestión.
-18	editable18	(C1) Egresados y egresados ni graduados.\n(C2) Ministerio de educación nacional.
-19	editable19	(C3) Proceso desarrollo curricular.\n(C4) Proceso aseguramiento de la calidad académica.\n(C5) Proceso gestión de la información.\n(C6) Todos los procesos.
-21	editable20	1
-20	editable21	Dic/2023
-22	editable22	Creación del proceso
-23	editable23	Cristian Guillermo Velandia
-24	editable24	Aprendiz
-25	editable25	18/Feb/2025
-26	editable26	Martha Esperanza Rodríguez
-27	editable27	subdirectora Calidad, Procesos y Riesgos.
-39	editable39	...
+14	editable15	8.Evaluar la implementación del plan operativo según las líneas acción definidas y su eficiencia.\n9.Generar informe de seguimiento de la planeación y gestión del proceso.
 40	editable40	...
 1	editable1	CARACTERIZACIÓN DE PROCESOS UNISANPABLO
+4	editable2	Código: CR-PS-GRA
 3	editable3	PROYECCIÓN SOCIAL DE IMPACTO
 5	editable4	Versión: 1
 6	editable5	RELACIONAMIENTO CON EGRESADOS
-2	editable6	Fecha: 18/Feb/2025
+2	editable6	Fecha: 20/Feb/2025
 7	editable7	Relacionamiento con egresados
+16	editable16	10. Implementar acciones de mejora de acuerdo con los resultados del proceso.
+17	editable17	(S3) Caracterización de los egresados\n(S1) Reconocimientos a los egresados\n(S1) Comunicación permanente con los egresados\n(S2, S4, S6) Información sobre los indicadores de las dimensiones evaluadas\n(S3, S4, S5) Informe del seguimiento a la trayectoria de los egresados de acuerdo con los momentos definidos\n(S6) Informes de gestión
+18	editable18	(C1) Egresados y egresados ni graduados.\n(C2) Ministerio de educación nacional.
+19	editable19	(C3) Proceso desarrollo curricular.\n(C4) Proceso aseguramiento de la calidad académica.\n(C5) Proceso gestión de la información.\n(C6) Todos los procesos.
+21	editable20	1
+20	editable21	20/02/2025
+22	editable22	Creación del proceso
+23	editable23	Daniela Torres Torres
+24	editable24	Aprendiz
+25	editable25	20/02/2025
 9	editable8	Inicia desde la elaboración de los planes operativos destinados a llevar a cabo las líneas de acción, y culmina con la valoración de la ejecución de estos planes.
 8	editable9	Fomentar una colaboración continua con graduados y exalumnos, mediante iniciativas constantes de comunicación, capacitación, oferta de servicios variados, participación en órganos colegiados institucionales y seguimiento de su progreso, con el objetivo de fortalecer su conexión y sentido de pertenencia.
-10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Egresados
-12	editable11	(P3) Proceso desarrollo curricular.\n(P4) Proceso aseguramiento de la calidad académica.\n(P5) Proceso gestión jurídica.\n(P6) Proceso vida estudiantil.\n(P7) Todos los procesos.
-11	editable12	(E1) Indicadores del factor de egresados en los procesos de registro calificado.\n(E6, E3) Datos de contacto, de caracterización e información de la trayectoria de los egresados.\n(E6) Estadísticas de egresados por programa y cohorte.\n(E6) Egresados de programas académico.\n(E6) Historia académica actualizada.\n(E4, E7) Requisito y necesidades de los clientes internos.
-13	editable13	1. Definir el plan estratégico para el relacionamiento con los egresados.\n2. Definir los planes operativos para el cumplimiento de las líneas de acción.
-15	editable14	3. Ejecutar planes operativos según las líneas de acción definidas.\n4. Socializar los informes y seguimiento a la trayectoria de los egresados con las unidades pertinentes.\n5. Promover la participación de los egresados en los cuerpos colegiados de la institución.\n6. Promover la participación de los egresados en el voluntariado institucional.\n7. Promover los reconocimientos y las experiencias destacadas de los egresados.
-28	editable28	18/Feb/2025
+10	editable10	(P1) Ministerio de Educación Nacional.\n(P2) Egresados.
+12	editable11	(P3) Proceso desarrollo curricular\n(P4) Proceso aseguramiento de la calidad académica\n(P5) Proceso gestión jurídica\n(P6) Proceso vida estudiantil\n(P7) Todos los procesos .
+11	editable12	(E1) Indicadores del factor de egresados en los procesos de registro calificado\n(E6, E3) Datos de contacto, de caracterización e información de la trayectoria de los egresados\n(E6) Estadísticas de egresados por programa y cohorte\n(E6) Egresados de programas académico\n(E6) Historia académica actualizada\n(E4, E7) Requisito y necesidades de los clientes internos
+13	editable13	1.Definir el plan estratégico para el relacionamiento con los egresados.\n2.Definir los planes operativos para el cumplimiento de las líneas de acción.
+15	editable14	3. Ejecutar planes operativos según las líneas de acción definidas.\n4. Socializar los informes y seguimiento a la trayectoria de los egresados con las unidades pertinentes.\n5. Promover la participación de los egresados en los cuerpos colegiados de la institución.\n6. Promover la participación de los egresados en el voluntariado institucional.\n7.Promover los reconocimientos y las experiencias destacadas de los egresados.
+26	editable26	Martha Esperanza Rodríguez
+27	editable27	subdirectora Calidad, Procesos y Riesgos.
+28	editable28	20/02/2025
 29	editable29	...
 30	editable30	...
 31	editable31	...
@@ -6778,8 +6811,9 @@ COPY public.mapa_procesos_ec_relacionamineto_egresados (id, identifier, content)
 33	editable34	...
 35	editable35	Henry Lurbey Hueso
 36	editable36	Rector
-37	editable37	18/Feb/2025
+37	editable37	...
 38	editable38	...
+39	editable39	...
 \.
 
 
@@ -6858,7 +6892,7 @@ SELECT pg_catalog.setval('public.django_migrations_id_seq', 42, true);
 -- Name: documentacion_documentasociadosdiagramasflujo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.documentacion_documentasociadosdiagramasflujo_id_seq', 38, true);
+SELECT pg_catalog.setval('public.documentacion_documentasociadosdiagramasflujo_id_seq', 40, true);
 
 
 --
@@ -6872,21 +6906,21 @@ SELECT pg_catalog.setval('public.documentacion_documentformatosasociados_id_seq'
 -- Name: gestor_archivos_diagramasprocedimientos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.gestor_archivos_diagramasprocedimientos_id_seq', 31, true);
+SELECT pg_catalog.setval('public.gestor_archivos_diagramasprocedimientos_id_seq', 43, true);
 
 
 --
 -- Name: gestor_archivos_document_id_archivo_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.gestor_archivos_document_id_archivo_seq', 110, true);
+SELECT pg_catalog.setval('public.gestor_archivos_document_id_archivo_seq', 112, true);
 
 
 --
 -- Name: glosario_glosario_id_termino_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.glosario_glosario_id_termino_seq', 120, true);
+SELECT pg_catalog.setval('public.glosario_glosario_id_termino_seq', 144, true);
 
 
 --
@@ -7089,7 +7123,7 @@ SELECT pg_catalog.setval('public.mapa_procesos_ec_relacionamineto_egresados_id_s
 -- Name: mapa_procesos_videotutorial_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mapa_procesos_videotutorial_id_seq', 4, true);
+SELECT pg_catalog.setval('public.mapa_procesos_videotutorial_id_seq', 6, true);
 
 
 --
